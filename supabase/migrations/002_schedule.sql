@@ -4,7 +4,7 @@ create extension if not exists pg_cron;
 create extension if not exists pg_net;
 
 -- Store the function URL and the shared secret in Vault (encrypted), so they are not in the cron job text.
-select vault.create_secret('https://<<PROJECT-REF>>.supabase.co/functions/v1/collect', 'tm_collect_url');
+select vault.create_secret('https://pjywhozslhamcwvafwog.supabase.co/functions/v1/collect', 'tm_collect_url');
 select vault.create_secret('<<THE SAME CRON_SECRET YOU SET ON THE FUNCTION>>', 'tm_cron_secret');
 
 -- Every 15 minutes: refresh open rounds, snapshots, sharp odds (throttled inside), results.

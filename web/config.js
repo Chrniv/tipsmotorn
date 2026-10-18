@@ -1,5 +1,5 @@
-// Fill in from Supabase: Project Settings -> API. Both values are safe to publish.
+// Supabase project for Tipsmotorn. Both values are public by design (data access is controlled by row level security).
 window.TIPSMOTORN_CONFIG = {
-  url: 'https://YOUR-PROJECT-REF.supabase.co',
-  key: 'YOUR-ANON-OR-PUBLISHABLE-KEY'
+  url: 'https://pjywhozslhamcwvafwog.supabase.co',
+  key: 'sb_publishable_KJaBXPaZ4UtF9HOxo-_tKQ_BZ5YqNk5'
 };
