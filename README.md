@@ -17,7 +17,7 @@ Supabase → **SQL Editor** → New query → paste all of `supabase/migrations/
 
 ### 2. The collector function
 1. Supabase → **Edge Functions** → **Deploy a new function** → **Via Editor**.
-2. Name it exactly `collect`. Replace the example code with all of `supabase/functions/collect/index.ts`. Deploy.
+2. Name it `collect` (if the dashboard picks another name, e.g. `clever-api`, that is fine: put that function's URL in the Vault secret `tm_collect_url`). Replace the example code with all of `supabase/functions/collect/index.ts`. Deploy.
 3. Open the function → **Settings** (or Details) → turn **off** "Verify JWT" / "Enforce JWT verification" → save. The function is protected by its own secret instead.
 4. Edge Functions → **Secrets** → add:
    - `CRON_SECRET` = a long random string (generate one in your password manager, 30+ characters). Keep it; you need it in step 3.
