@@ -1,0 +1,1119 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#16212B">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Tipsmotorn">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<title>Tipsmotorn</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a pool coupon on the left (13 match rows, 1-X-2 boxes you mark), the system ticket on the right. */
+:root{
+  --paper:#EEF2F0; --card:#FFFFFF; --ink:#16212B; --muted:#5B6870; --line:#D3DBD8; --soft:#E4EAE7;
+  --accent:#C9481A; --accent-ink:#FFFFFF; --good:#1D7448; --good-bg:#DDEFE4; --bad:#A63D2A; --bad-bg:#F5E1DB;
+  --mark:#16212B; --mark-ink:#FFFFFF;
+  --f-display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#0E1418; --card:#161F26; --ink:#E4EBE8; --muted:#93A2A9; --line:#2A3740; --soft:#1D2830;
+  --accent:#FF7B45; --accent-ink:#1A0D06; --good:#57C78F; --good-bg:#16332A; --bad:#EE826C; --bad-bg:#3A201B;
+  --mark:#E4EBE8; --mark-ink:#0E1418; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#0E1418; --card:#161F26; --ink:#E4EBE8; --muted:#93A2A9; --line:#2A3740; --soft:#1D2830;
+  --accent:#FF7B45; --accent-ink:#1A0D06; --good:#57C78F; --good-bg:#16332A; --bad:#EE826C; --bad-bg:#3A201B;
+  --mark:#E4EBE8; --mark-ink:#0E1418; color-scheme:dark}
+*{box-sizing:border-box}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+[hidden]{display:none!important}
+a.btn{color:var(--ink)}
+body{background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.45;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 96px}
+.wrap{max-width:1180px;margin:0 auto}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.num{font-variant-numeric:tabular-nums}
+
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;padding-block:20px 14px;border-bottom:2px solid var(--ink)}
+.brand{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.brand h1{font-family:var(--f-display);font-weight:700;font-size:34px;letter-spacing:.01em;margin:0;line-height:1;text-transform:uppercase}
+.brand .tag{font-family:var(--f-mono);font-size:11.5px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.tabs{display:flex;gap:4px}
+.tab{border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:6px;cursor:pointer;font-weight:500}
+.tab[aria-selected="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+.roundbar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;padding-block:14px}
+.field{display:flex;flex-direction:column;gap:3px}
+.field label,.lbl{font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.inp,select.inp{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:7px 9px;min-width:0}
+.inp:focus{border-color:var(--accent)}
+.btn{border:1px solid var(--line);background:var(--card);border-radius:6px;padding:7px 12px;cursor:pointer;font-weight:500;white-space:nowrap}
+.btn:hover{border-color:var(--ink)}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
+.btn.primary:hover{filter:brightness(1.06)}
+.btn.small{padding:4px 9px;font-size:12.5px}
+.btn.ghost{background:transparent}
+.spacer{flex:1}
+.example{font-size:12.5px;color:var(--accent);font-weight:600}
+
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:24px;align-items:start}
+@media (max-width:980px){.grid{grid-template-columns:minmax(0,1fr)}}
+
+.coupon{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.chead{display:grid;grid-template-columns:34px minmax(0,1fr) repeat(3,92px) 52px;gap:8px;align-items:end;padding:10px 14px;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.chead .c{text-align:center}
+.match{display:grid;grid-template-columns:34px minmax(0,1fr) repeat(3,92px) 52px;gap:8px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--soft)}
+.match:last-child{border-bottom:0}
+.match.locked{background:color-mix(in srgb,var(--accent) 6%,var(--card))}
+.mno{font-family:var(--f-display);font-weight:700;font-size:22px;color:var(--muted);text-align:center}
+.teams{min-width:0}
+.teams .t{font-weight:600;overflow-wrap:anywhere}
+.teams .meta{font-size:12px;color:var(--muted)}
+.oc{display:flex;flex-direction:column;align-items:center;gap:3px;border:0;background:none;padding:4px 2px;cursor:pointer;border-radius:8px}
+.oc:hover .box{border-color:var(--ink)}
+.box{width:38px;height:32px;display:grid;place-items:center;border:1.5px solid var(--line);border-radius:5px;font-family:var(--f-display);font-weight:700;font-size:20px;background:var(--card);transition:background .12s}
+.oc[aria-pressed="true"] .box{background:var(--mark);color:var(--mark-ink);border-color:var(--mark)}
+.pp{font-family:var(--f-mono);font-size:11px;color:var(--muted);line-height:1.3;text-align:center;white-space:nowrap}
+.pp b{color:var(--ink);font-weight:500}
+.vchip{font-family:var(--f-mono);font-size:11px;padding:1px 6px;border-radius:999px;background:var(--soft);color:var(--muted)}
+.vchip.good{background:var(--good-bg);color:var(--good);font-weight:500}
+.vchip.bad{background:var(--bad-bg);color:var(--bad)}
+.lockb{font-size:11.5px;padding:4px 6px}
+.lockb[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.editrow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px}
+.editrow .inp{padding:4px 5px;font-family:var(--f-mono);font-size:12px;width:100%;text-align:center}
+.edtm{display:flex;flex-wrap:wrap;gap:4px}
+.edtm .inp{padding:4px 6px;width:100%;min-width:0}
+.edcell{display:flex;flex-direction:column;gap:4px;align-items:stretch}
+.edcell .lbl{font-size:10px;text-align:center}
+
+@media (max-width:640px){
+  .chead{display:none}
+  .match{grid-template-columns:28px minmax(0,1fr) 52px;grid-template-areas:"no tm lk" "o o o";row-gap:8px}
+  .mno{grid-area:no;font-size:18px}
+  .teams{grid-area:tm}
+  .lockcell{grid-area:lk}
+  .outs{grid-area:o;display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+}
+@media (min-width:641px){.outs{display:contents}}
+
+.nrow{display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center;margin-top:4px}
+.nchip{font-size:11px;font-family:var(--f-mono);padding:1px 7px;border-radius:999px;background:var(--soft);color:var(--muted)}
+.nchip.lv-medium{background:color-mix(in srgb,var(--accent) 14%,var(--card));color:var(--ink)}
+.nchip.lv-high{background:var(--accent);color:var(--accent-ink);font-weight:500}
+.nchip.adj{background:var(--ink);color:var(--paper)}
+.linkbtn{border:0;background:none;padding:0;font-size:12px;color:var(--accent);text-decoration:underline;text-underline-offset:2px;cursor:pointer}
+.npanel{grid-column:1/-1;background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:10px 12px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.nlist{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:3px;font-size:13px}
+.ntake{margin:0;font-size:13px}
+.nsrc{margin:0;font-size:12px;display:flex;flex-wrap:wrap;gap:4px 8px}
+.nsrc a{color:var(--muted)}
+.adjrow{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.adjf{display:inline-flex;align-items:center;gap:4px;font-family:var(--f-display);font-weight:700;font-size:16px}
+.adjf .inp{width:64px;padding:4px 6px;font-family:var(--f-mono);font-size:12.5px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12px;color:var(--muted);padding-block:10px 0}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+
+aside.ticket{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);display:flex;flex-direction:column;gap:14px}
+@media (max-width:980px){aside.ticket{position:static}}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:10px}
+.panel h2{font-family:var(--f-display);font-weight:700;font-size:18px;letter-spacing:.04em;text-transform:uppercase;margin:0}
+.cost{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.cost .big{font-family:var(--f-display);font-weight:700;font-size:46px;line-height:1}
+.cost .sub{font-size:12.5px;color:var(--muted);text-align:right}
+.stats{display:grid;grid-template-columns:1fr auto;gap:5px 12px;font-size:13px}
+.stats dt{color:var(--muted)}
+.stats dd{margin:0;text-align:right;font-family:var(--f-mono);font-weight:500}
+.stats dd.good{color:var(--good)} .stats dd.bad{color:var(--bad)}
+.hint{font-size:12px;color:var(--muted);margin:0}
+.row2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+.panel .inp{width:100%;max-width:100%}
+.slider{width:100%;accent-color:var(--accent)}
+.sl-lbl{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted)}
+textarea.out{width:100%;min-height:96px;font-family:var(--f-mono);font-size:12px;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:8px;resize:vertical}
+.toast{font-size:12.5px;color:var(--good);min-height:1em;margin:0}
+.warn{font-size:12.5px;color:var(--bad);margin:0}
+
+.bottombar{display:none}
+@media (max-width:980px){
+  .bottombar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--ink);color:var(--paper);
+    padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));
+    align-items:center;justify-content:space-between;gap:12px;font-family:var(--f-mono);font-size:12.5px}
+  .bottombar a{color:var(--paper);font-weight:500}
+}
+
+.importbox{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-block:0 14px;display:flex;flex-direction:column;gap:8px}
+.importbox textarea{width:100%;min-height:150px;font-family:var(--f-mono);font-size:12px;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:8px}
+.importbox code{font-family:var(--f-mono);font-size:12px;background:var(--soft);padding:1px 5px;border-radius:4px}
+
+.saved{display:flex;flex-direction:column;gap:12px;padding-block:16px}
+.sys{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 16px}
+.sys h3{margin:0;font-family:var(--f-display);font-size:20px;font-weight:700;letter-spacing:.02em}
+.sys .meta{font-size:12.5px;color:var(--muted)}
+.sys .figs{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--f-mono);font-size:12.5px}
+.sys .grade{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.sys .grade .inp{font-family:var(--f-mono);letter-spacing:.12em;width:16ch}
+.res{display:flex;flex-wrap:wrap;gap:6px}
+.pill{font-family:var(--f-mono);font-size:12px;padding:2px 8px;border-radius:999px;background:var(--soft)}
+.pill.hit{background:var(--good-bg);color:var(--good);font-weight:500}
+.empty{background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:28px 18px;color:var(--muted);text-align:center}
+.status{font-size:11.5px;color:var(--muted);font-family:var(--f-mono)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.rowsnote{background:color-mix(in srgb,var(--accent) 10%,var(--card));border:1px solid color-mix(in srgb,var(--accent) 40%,var(--line));border-radius:10px;padding:10px 14px;margin-block:0 10px;font-size:13px;display:flex;flex-direction:column;gap:6px}
+.rowsnote p{margin:0}
+.oc.share .box{color:var(--ink);border-color:color-mix(in srgb,var(--accent) 55%,var(--line))}
+.oc.share.none .box{border-color:var(--line);color:var(--muted)}
+.cnt{font-family:var(--f-mono);font-size:10.5px;color:var(--ink);font-weight:500}
+.roundcard{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-block:0 14px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:14px 24px}
+@media (max-width:820px){.roundcard{grid-template-columns:minmax(0,1fr)}}
+.rc-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.rc-head h2{font-family:var(--f-display);font-weight:700;font-size:18px;letter-spacing:.04em;text-transform:uppercase;margin:0}
+.grade-pill{font-family:var(--f-display);font-weight:700;font-size:15px;letter-spacing:.04em;text-transform:uppercase;padding:3px 10px;border-radius:999px;background:var(--soft);color:var(--ink)}
+.grade-pill.g0{background:var(--bad-bg);color:var(--bad)}
+.grade-pill.g2{background:var(--good-bg);color:var(--good)}
+.grade-pill.g3{background:var(--accent);color:var(--accent-ink)}
+.rc-figs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.fig{display:flex;flex-direction:column;gap:2px;min-width:0}
+.fig .v{font-family:var(--f-display);font-weight:700;font-size:28px;line-height:1.05}
+.fig .k{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.fig .s{font-size:11.5px;color:var(--muted)}
+.rc-side{display:flex;flex-direction:column;gap:8px;min-width:0}
+.rc-inputs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+@media (max-width:480px){.rc-inputs,.rc-figs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.rc-inputs .inp{width:100%}
+.facts{margin:0;padding-left:18px;font-size:12.5px;display:flex;flex-direction:column;gap:2px}
+.nchip.ok{background:var(--good-bg);color:var(--good)}
+.nchip.sharp{background:color-mix(in srgb,var(--good) 18%,var(--card));color:var(--ink)}
+.progress{height:4px;background:var(--soft);border-radius:2px;overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:var(--accent);transition:width .2s}
+.hist{display:flex;flex-direction:column;gap:16px;padding-block:16px}
+.hcard{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.hcard h2{font-family:var(--f-display);font-weight:700;font-size:20px;letter-spacing:.03em;margin:0;text-transform:uppercase}
+.hcard p{margin:0;max-width:68ch}
+.tblwrap{overflow-x:auto}
+table.t{border-collapse:collapse;font-size:13px;min-width:420px;width:100%}
+table.t th,table.t td{padding:6px 10px;border-bottom:1px solid var(--soft);text-align:right;white-space:nowrap}
+table.t th:first-child,table.t td:first-child{text-align:left}
+table.t th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+table.t td{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+table.t td:first-child{font-family:var(--f-body)}
+table.t tr.hl td{background:color-mix(in srgb,var(--good) 10%,var(--card))}
+.bars{display:flex;flex-direction:column;gap:6px}
+.bar{display:grid;grid-template-columns:120px minmax(0,1fr) 56px;gap:8px;align-items:center;font-size:12.5px}
+.bar .tr{height:12px;background:var(--soft);border-radius:3px;position:relative;overflow:hidden}
+.bar .tr i{position:absolute;left:0;top:0;bottom:0;background:var(--muted);border-radius:3px}
+.bar.best .tr i{background:var(--good)}
+.bar .val{font-family:var(--f-mono);text-align:right}
+.ref{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ink)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1>Tipsmotorn</h1>
+      <span class="tag">Spelvärde · odds mot streck</span>
+    </div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-coupon" aria-selected="true">Kupong</button>
+      <button class="tab" role="tab" id="tab-saved" aria-selected="false">Sparade <span id="savedCount" class="num"></span></button>
+      <button class="tab" role="tab" id="tab-hist" aria-selected="false">Historik</button>
+    </div>
+  </header>
+
+  <section id="view-coupon">
+    <div class="roundbar">
+      <div class="field"><label for="game">Spel</label>
+        <select id="game" class="inp"><option>Stryktipset</option><option>Europatipset</option></select></div>
+      <div class="field" style="flex:1;min-width:200px"><label for="roundSel">Omgång</label>
+        <select id="roundSel" class="inp"></select></div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;align-self:flex-end">
+        <button class="btn" id="btnRefresh">Uppdatera</button>
+        <button class="btn" id="btnEdit" aria-pressed="false">Redigera data</button>
+        <button class="btn ghost" id="btnClear">Rensa tecken</button>
+      </div>
+    </div>
+    <p class="status" id="newsStatus" style="margin:0 0 8px">Nyheter laddas när sidan är inloggad</p>
+
+    <div class="rowsnote" id="resultBox" hidden></div>
+
+    <div class="roundcard" id="roundCard">
+      <div style="display:flex;flex-direction:column;gap:10px;min-width:0">
+        <div class="rc-head"><h2>Omgången</h2><span class="grade-pill" id="gradePill">Räknar</span></div>
+        <div class="rc-figs">
+          <div class="fig"><span class="k">Ditt system</span><span class="v num" id="figSys">–</span><span class="s">kr per krona, optimistiskt eftersom raderna är utvalda på samma modell</span></div>
+          <div class="fig"><span class="k">Folkets rader</span><span class="v num" id="figCrowd">–</span><span class="s">kr per krona</span></div>
+          <div class="fig"><span class="k">Föreslagen insats</span><span class="v num" id="figStake">–</span><span class="s" id="figStakeSub">av grundinsatsen</span></div>
+        </div>
+        <ul class="facts" id="facts"></ul>
+      </div>
+      <div class="rc-side">
+        <div class="rc-inputs">
+          <div class="field"><label for="turnover">Väntad oms., kr</label><input id="turnover" class="inp num" type="number" min="100000" step="100000"></div>
+          <div class="field"><label for="jackpot">Jackpott 13 rätt</label><input id="jackpot" class="inp num" type="number" min="0" step="100000" placeholder="0"></div>
+          <div class="field"><label for="baseStake">Grundinsats</label><input id="baseStake" class="inp num" type="number" min="1" step="1"></div>
+        </div>
+        <label class="hint" style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="useBlend"> Väg in folkets streck i sannolikheten (historiskt bättre, särskilt på Europatipset)</label>
+        <p class="hint">Siffrorna är modellens förväntade återbetalning, räknad över alla utfall med 10 till 13 rätt, Svenska Spels prisfördelning, 15-kronorsregeln och garantin. Modellen har legat cirka 0,10–0,15 lägre än utfallet historiskt, så se den som försiktig. Insatsförslaget är en tumregel, inte en garanti.</p>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div style="min-width:0">
+        <div class="rowsnote" id="rowsNote" hidden></div>
+        <div class="coupon" id="coupon">
+          <div class="chead"><span class="c">#</span><span>Match</span><span class="c">1</span><span class="c">X</span><span class="c">2</span><span class="c">Lås</span></div>
+          <div id="matches"></div>
+        </div>
+        <div class="legend">
+          <span><b class="num">p</b> = sannolikhet som motorn använder</span>
+          <span><b class="num">f</b> = folkets streck</span>
+          <span><span class="vchip good">1,40</span> spelvärde (p ÷ f över 1,15)</span>
+          <span><span class="vchip bad">0,70</span> överstreckat (under 0,85)</span>
+        </div>
+      </div>
+
+      <aside class="ticket" id="ticket">
+        <div class="panel">
+          <h2>Systemet</h2>
+          <div class="cost"><span class="big num" id="costBig">0 kr</span><span class="sub num" id="costSub"></span></div>
+          <dl class="stats" id="stats"></dl>
+          <div class="progress" id="prog" hidden><i id="progBar"></i></div>
+        </div>
+
+        <div class="panel">
+          <h2>Bygg system</h2>
+          <div class="row2">
+            <div class="field"><label for="budget">Budget, kr</label><input id="budget" class="inp num" type="number" min="1" step="1" value="96"></div>
+            <div class="field"><label for="reduce">Urval</label>
+              <select id="reduce" class="inp">
+                <option value="ev">Bästa rader efter värde</option>
+                <option value="full">Helt M-system</option>
+                <option value="crowd">M-system minus folkrader</option>
+              </select></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="maxFav">Max folkfavoriter per rad</label>
+              <select id="maxFav" class="inp"><option value="0">Ingen gräns</option><option value="10">10</option><option value="9">9</option><option value="8">8</option><option value="7">7</option><option value="6">6</option></select></div>
+            <div class="field" id="crowdCutField"><label for="crowdCut">Ta bort folkrader</label>
+              <select id="crowdCut" class="inp"><option value="0.1">Mest spelade 10 %</option><option value="0.25">Mest spelade 25 %</option><option value="0.4">Mest spelade 40 %</option></select></div>
+          </div>
+          <div class="field">
+            <label for="tilt">Värdelutning</label>
+            <input id="tilt" class="slider" type="range" min="0" max="100" value="35">
+            <div class="sl-lbl"><span>Följ oddsen</span><span id="tiltVal" class="num"></span><span>Mot folket</span></div>
+          </div>
+          <button class="btn primary" id="btnOptimise">Bygg system inom budget</button>
+          <p class="hint">Låsta matcher behålls. Med <b>Bästa rader efter värde</b> drar motorn rader över hela kupongen, viktade efter sannolikhet och spelvärde, räknar förväntad utdelning för varje rad och behåller de bästa inom budget. Raderna bildar inget vanligt M-system, så spela dem som egna rader. De två andra valen bygger klassiska M-system.</p>
+          <p class="warn" id="optMsg"></p>
+        </div>
+
+        <div class="panel">
+          <h2>Exportera</h2>
+          <div class="field"><label for="fmt">Format</label>
+            <select id="fmt" class="inp"><option value="comma">1,X,2,… en rad per systemrad</option><option value="compact">1X2… kompakt</option></select></div>
+          <textarea class="out" id="out" readonly spellcheck="false"></textarea>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <button class="btn primary" id="btnCopy">Kopiera rader</button>
+            <button class="btn" id="btnSave">Spara system</button>
+          </div>
+          <p class="toast" id="toast" role="status"></p>
+          <p class="hint">Kontrollera Svenska Spels filformat för egna rader innan första uppladdningen.</p>
+        </div>
+        <span class="status" id="storeStatus">Data från Svenska Spel via din Supabase</span>
+      </aside>
+    </div>
+  </section>
+
+  <section id="view-saved" hidden>
+    <div class="saved" id="savedList"></div>
+  </section>
+
+  <section id="view-hist" hidden>
+    <div class="hist" id="histView"></div>
+  </section>
+</div>
+
+<div class="bottombar" id="bottombar"><span id="bbText"></span><a href="#ticket">Systemet ↓</a></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="config.js"></script>
+<script>
+// ===================== Engine (shared by page and worker) =====================
+function tmEngine(q, s, cfg){
+  const M = q.length;
+  const lam0 = {13:Math.exp(cfg.bias[13]||0)*cfg.N, 12:Math.exp(cfg.bias[12]||0)*cfg.N, 11:Math.exp(cfg.bias[11]||0)*cfg.N, 10:Math.exp(cfg.bias[10]||0)*cfg.N};
+  const pot = {13: cfg.share[13]*cfg.pool + (cfg.jackpot||0), 12: cfg.share[12]*cfg.pool, 11: cfg.share[11]*cfg.pool, 10: cfg.share[10]*cfg.pool};
+  const minPay = cfg.minPay || 15;
+  function pay(k, lam){
+    const P = pot[k]; if(!(P > 0)) return 0;
+    if(P/(lam+1) < minPay) return 0;
+    let v = lam < 1e-9 ? P : P*(1-Math.exp(-lam))/lam;
+    if(k===13 && cfg.guarantee > P) v += Math.exp(-lam)*(cfg.guarantee - P);
+    return v;
+  }
+  function rowEV(r){
+    let pq = 1, pc = 1; const c = new Array(M), x = new Array(M), qa = new Array(M); let P1=0,P2=0,P3=0;
+    for(let j=0;j<M;j++){ const cj = Math.max(1e-4, s[j][r[j]]); c[j]=cj; pc*=cj; qa[j]=Math.max(1e-6,q[j][r[j]]); pq*=qa[j]; const xj=(1-cj)/cj; x[j]=xj; P1+=xj; P2+=xj*xj; P3+=xj*xj*xj; }
+    let ev = pq * pay(13, lam0[13]*pc);
+    const alt = [];
+    for(let j=0;j<M;j++){ const a=[]; for(let w=0;w<3;w++) if(w!==r[j]){ const cw=Math.max(1e-4,s[j][w]); a.push({qr:q[j][w]/qa[j], cr:cw/c[j], dx:(1-cw)/cw}); } alt.push(a); }
+    for(let j=0;j<M;j++) for(const A of alt[j]){ const pW = pq*A.qr; if(pW<1e-14) continue; ev += pW * pay(12, lam0[12]*pc*A.cr*(P1 - x[j] + A.dx)); }
+    for(let j=0;j<M;j++) for(const A of alt[j]) for(let k=j+1;k<M;k++) for(const B of alt[k]){
+      const pW = pq*A.qr*B.qr; if(pW<1e-14) continue;
+      const s1 = P1 - x[j] - x[k] + A.dx + B.dx, s2 = P2 - x[j]*x[j] - x[k]*x[k] + A.dx*A.dx + B.dx*B.dx;
+      ev += pW * pay(11, lam0[11]*pc*A.cr*B.cr*(s1*s1 - s2)/2);
+    }
+    for(let j=0;j<M;j++) for(const A of alt[j]) for(let k=j+1;k<M;k++) for(const B of alt[k]){
+      const pAB = pq*A.qr*B.qr; if(pAB<1e-14) continue;
+      for(let l=k+1;l<M;l++) for(const C of alt[l]){
+        const pW = pAB*C.qr; if(pW<1e-14) continue;
+        const s1 = P1 - x[j]-x[k]-x[l] + A.dx+B.dx+C.dx;
+        const s2 = P2 - x[j]*x[j]-x[k]*x[k]-x[l]*x[l] + A.dx*A.dx+B.dx*B.dx+C.dx*C.dx;
+        const s3 = P3 - x[j]**3-x[k]**3-x[l]**3 + A.dx**3+B.dx**3+C.dx**3;
+        const e2 = (s1*s1 - s2)/2, e3 = (e2*s1 - s1*s2 + s3)/3;
+        ev += pW * pay(10, lam0[10]*pc*A.cr*B.cr*C.cr*e3);
+      }
+    }
+    return ev;
+  }
+  return {rowEV, pot};
+}
+function tmRows(strs){ return strs.map(t=>Array.from(t,ch=>ch==='1'?0:ch==='X'?1:2)); }
+function tmRng(seed){ let x = seed>>>0 || 1; return ()=>{ x ^= x<<13; x>>>=0; x ^= x>>>17; x ^= x<<5; x>>>=0; return x/4294967296; }; }
+function tmRank(q, s, cfg, strs, top, onProg){
+  const E = tmEngine(q,s,cfg), rows = tmRows(strs);
+  let idx = rows.map((_,i)=>i);
+  if(rows.length > 1500){
+    const sc = rows.map(r=>{ let a=0; for(let j=0;j<r.length;j++) a += Math.log(Math.max(1e-6,q[j][r[j]])) - 0.5*Math.log(Math.max(1e-4,s[j][r[j]])); return a; });
+    idx.sort((a,b)=>sc[b]-sc[a]); idx = idx.slice(0,1500);
+  }
+  const ev = new Map();
+  idx.forEach((i,n)=>{ ev.set(i, E.rowEV(rows[i])); if(onProg && n%40===0) onProg(n/idx.length); });
+  idx.sort((a,b)=>ev.get(b)-ev.get(a));
+  const keep = idx.slice(0, top);
+  return {rows: keep.map(i=>strs[i]), evs: keep.map(i=>ev.get(i))};
+}
+function tmStats(q, s, cfg, strs, onProg){
+  const E = tmEngine(q,s,cfg), rows = tmRows(strs), n = rows.length, M = q.length;
+  const rnd = tmRng(4242);
+  let evIdx = rows.map((_,i)=>i), sampled = false;
+  if(n > 700){ sampled = true; evIdx = []; for(let t=0;t<700;t++) evIdx.push(Math.floor(rnd()*n)); }
+  let evSum = 0;
+  evIdx.forEach((i,k)=>{ evSum += E.rowEV(rows[i]); if(onProg && k%40===0) onProg(0.85*k/evIdx.length); });
+  let p13 = 0; for(const r of rows){ let p=1; for(let j=0;j<M;j++) p*=q[j][r[j]]; p13+=p; }
+  const sims = Math.max(200, Math.min(3000, Math.floor(8e6/Math.max(1,n*M))));
+  let c12=0,c11=0,c10=0; const W = new Array(M);
+  const flat = new Uint8Array(n*M); rows.forEach((r,i)=>{ for(let j=0;j<M;j++) flat[i*M+j]=r[j]; });
+  for(let t=0;t<sims;t++){
+    for(let j=0;j<M;j++){ const u=rnd(); W[j] = u<q[j][0]?0:(u<q[j][0]+q[j][1]?1:2); }
+    let best = 0;
+    for(let i=0;i<n && best<13;i++){ let h=0; const o=i*M; for(let j=0;j<M;j++) if(flat[o+j]===W[j]) h++; if(h>best) best=h; }
+    if(best>=12) c12++; if(best>=11) c11++; if(best>=10) c10++;
+  }
+  if(onProg) onProg(1);
+  return {ev: evSum/evIdx.length, sampled, p13, p12: c12/sims, p11: c11/sims, p10: c10/sims};
+}
+function tmBase(q, s, cfg, tiltB){
+  const E = tmEngine(q,s,cfg), rnd = tmRng(777), M = q.length;
+  const pick = pr => { const u=rnd(); return u<pr[0]?0:(u<pr[0]+pr[1]?1:2); };
+  const tq = q.map((qq,j)=>{ const a = qq.map((p,i)=>p*Math.pow(p/Math.max(1e-4,s[j][i]), tiltB)); const t=a[0]+a[1]+a[2]; return a.map(v=>v/t); });
+  let cr=0, va=0; const n=50;
+  for(let t=0;t<n;t++){ cr += E.rowEV(s.map(pick)); va += E.rowEV(tq.map(pick)); }
+  return {crowd: cr/n, value: va/n};
+}
+function tmWorkerMain(){
+  self.onmessage = e => {
+    const d = e.data, prog = p => self.postMessage({id:d.id, progress:p});
+    try{
+      let res;
+      if(d.kind==='rank') res = tmRank(d.q,d.s,d.cfg,d.rows,d.top,prog);
+      else if(d.kind==='stats') res = tmStats(d.q,d.s,d.cfg,d.rows,prog);
+      else if(d.kind==='base') res = tmBase(d.q,d.s,d.cfg,d.tilt);
+      self.postMessage({id:d.id, result:res});
+    }catch(err){ self.postMessage({id:d.id, error:String(err)}); }
+  };
+}
+
+(() => {
+// ===================== Constants =====================
+const SIGNS = ['1','X','2'];
+const PARAMS = {
+  payout: 0.65, minPay: 15,
+  Stryktipset: {share:{13:.40,12:.15,11:.12,10:.25}, guarantee:1e7, bias:{13:0,12:0,11:0,10:0}, blend:{a:.85,b:.10}, tilt:35, turnover:{6:24500000,0:22400000,def:24500000}, rollFactor:1.1},
+  Europatipset: {share:{13:.39,12:.22,11:.12,10:.25}, guarantee:0, bias:{13:-.10,12:-.10,11:-.08,10:-.07}, blend:{a:.60,b:.30}, tilt:20, turnover:{0:8600000,2:5500000,3:5600000,4:4900000,def:6500000}, rollFactor:1.4}
+};
+const BT = {
+  range: {s:'113 omgångar, juli 2024 – oktober 2026', e:'211 omgångar, september 2024 – oktober 2026'},
+  strat: [
+    {k:'Folkets rader', d:'Tecken i samma proportion som strecken', s:.707, e:.756, ds:null, de:null},
+    {k:'Oddsens rader', d:'Tecken efter oddsens sannolikhet', s:.903, e:.812, ds:[.197,3.69], de:[.056,1.76]},
+    {k:'Lätt värdelutning', d:'Oddsen, lätt vägda mot understreckade tecken', s:.948, e:.814, ds:[.242,3.57], de:[.058,1.37]},
+    {k:'Mellan värdelutning', d:'Som ovan, starkare vikt', s:.986, e:.809, ds:[.280,3.40], de:[.053,.99]},
+    {k:'Kraftig värdelutning', d:'Starkt mot folket', s:1.034, e:.777, ds:[.327,2.89], de:[.021,.27]}
+  ],
+  signs: [{k:'1 (hemmaseger)', st:45.8, od:43.4, ut:43.7},{k:'X (oavgjort)', st:23.6, od:25.0, ut:25.7},{k:'2 (bortaseger)', st:30.5, od:31.6, ut:30.6}],
+  calib: {s:{cp:.56,cr:.71,vp:.86,vr:.98}, e:{cp:.61,cr:.76,vp:.65,vr:.80}},
+};
+const CFG = window.TIPSMOTORN_CONFIG || {};
+const SETTINGS_KEY = 'tm.settings.v1', ROUND_KEY = id => 'tm.round.' + id;
+const lsGet = k => { try { return JSON.parse(localStorage.getItem(k) || 'null'); } catch(e){ return null; } };
+const lsSet = (k,v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} };
+function emptyRound(game){
+  const st = lsGet(SETTINGS_KEY) || {};
+  return {id:null, game, name:'', draw:null, close:null, state:null, fetchedSale:null, turnover:null, jackpot:0, guarantee:PARAMS[game].guarantee, rollSale:0,
+    base: st.base || 100, useBlend: st.useBlend!==false, tilt: (st.tilt && st.tilt[game]!=null) ? st.tilt[game] : PARAMS[game].tilt,
+    budget: st.budget || 96, reduce: st.reduce || 'ev', maxFav: st.maxFav || 0, cut: st.cut || 0.25, fmt: st.fmt || 'comma', rows:null, matches:[], result:null, updatedAt:null};
+}
+let S = emptyRound((lsGet(SETTINGS_KEY)||{}).game || 'Stryktipset');
+let editing = false, saved = [], sb = null, session = null, lastLoad = 0;
+const $ = id => document.getElementById(id);
+const parseNum = v => { if(v==null||v==='') return null; const n = parseFloat(String(v).replace(/\s/g,'').replace(',','.')); return isFinite(n) ? n : null; };
+const fmtPct = (x,d=1) => x==null||!isFinite(x) ? '–' : (x*100).toLocaleString('sv-SE',{minimumFractionDigits:d,maximumFractionDigits:d})+' %';
+const fmtNum = (x,d=2) => x==null||!isFinite(x) ? '–' : x.toLocaleString('sv-SE',{minimumFractionDigits:d,maximumFractionDigits:d});
+const fmtKr = x => Math.round(x).toLocaleString('sv-SE')+' kr';
+const fmtMkr = x => (x/1e6).toLocaleString('sv-SE',{maximumFractionDigits:1})+' Mkr';
+const esc = s => String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const norm = a => { const t=a.reduce((x,y)=>x+y,0); return a.map(x=>x/t); };
+const hhmm = iso => { const d=new Date(iso); return isNaN(d) ? '' : d.toLocaleTimeString('sv-SE',{hour:'2-digit',minute:'2-digit'}); };
+const dayTime = iso => { const d=new Date(iso); return isNaN(d) ? '' : d.toLocaleString('sv-SE',{weekday:'short',hour:'2-digit',minute:'2-digit'}); };
+
+// ===================== Probabilities =====================
+function oddsProbs(o){ return Array.isArray(o) && o.every(x=>x>1) ? norm(o.map(x=>1/x)) : null; }
+function crowd(m){ if(!Array.isArray(m.s) || m.s.some(x=>!(x>=0)) || m.s.reduce((a,b)=>a+b,0)<=0) return null; return norm(m.s.map(x=>Math.max(x,0.5))); }
+const hasAdj = m => Array.isArray(m.adj) && m.adj.some(x=>x);
+const hasSharp = m => Array.isArray(m.o2) && m.o2.every(x=>x>1);
+function probs(m){
+  let base;
+  if(hasSharp(m)) base = oddsProbs(m.o2);
+  else {
+    base = oddsProbs(m.o); const f = crowd(m);
+    if(base && f && S.useBlend){ const B = PARAMS[S.game].blend; base = norm(base.map((p,i)=>Math.pow(p,B.a)*Math.pow(f[i],B.b))); }
+  }
+  if(!base) return null;
+  if(hasAdj(m)) base = norm(base.map((x,i)=>Math.max(0.01, x + (m.adj[i]||0)/100)));
+  return base;
+}
+function values(m){ const p=probs(m), f=crowd(m); return p&&f ? p.map((x,i)=>x/f[i]) : null; }
+const tiltB = () => (+S.tilt||0)/100;
+function tilted(m){ const p=probs(m), f=crowd(m); if(!p||!f) return null; return norm(p.map((x,i)=>x*Math.pow(x/f[i], tiltB()))); }
+function defaultTurnover(){ const P=PARAMS[S.game]; const d=new Date(S.close); const wd=isNaN(d)?null:d.getDay(); return (wd!=null && P.turnover[wd]) || P.turnover.def; }
+function cfgFor(){
+  const P = PARAMS[S.game], N = Math.max(1e5, +S.turnover || defaultTurnover()), pool = PARAMS.payout*N, base13 = P.share[13]*pool;
+  const roll = S.rollSale ? P.rollFactor*P.share[13]*PARAMS.payout*S.rollSale : 0;
+  const jp = +S.jackpot || 0;
+  const extra = Math.max(roll, jp>0 ? jp-base13 : 0, 0);
+  const guarantee = S.guarantee!=null ? +S.guarantee : P.guarantee;
+  return {N, pool, share:P.share, jackpot:extra, guarantee, bias:P.bias, minPay:PARAMS.minPay};
+}
+const ready = () => S.matches.length===13 && S.matches.every(m=>probs(m)&&crowd(m));
+const QS = () => ({q:S.matches.map(probs), s:S.matches.map(crowd)});
+
+// ===================== Rows =====================
+const selIdx = m => [0,1,2].filter(i=>m.sel[i]);
+function enumerate(limit){
+  if(S.matches.length!==13) return null;
+  const sets = S.matches.map(selIdx);
+  if(sets.some(x=>!x.length)) return null;
+  const total = sets.reduce((a,x)=>a*x.length,1);
+  if(total > limit) return {tooMany:true, total};
+  const out = [], idx = new Array(13);
+  for(let n=0;n<total;n++){ let k=n, r=''; for(let j=12;j>=0;j--){ const L=sets[j].length; idx[j]=sets[j][k%L]; k=Math.floor(k/L); } for(let j=0;j<13;j++) r+=SIGNS[idx[j]]; out.push(r); }
+  return {rows:out, total};
+}
+function favFilter(rows){
+  const mf = +S.maxFav||0; if(!mf) return rows;
+  const fav = S.matches.map(m=>{ const f=crowd(m); return f?SIGNS[f.indexOf(Math.max(...f))]:null; });
+  return rows.filter(r=>{ let c=0; for(let j=0;j<13;j++) if(r[j]===fav[j]) c++; return c<=mf; });
+}
+function crowdCut(rows){
+  const cut = +S.cut||0; if(!cut || S.reduce!=='crowd') return rows;
+  const fs = S.matches.map(crowd); if(fs.some(f=>!f)) return rows;
+  const sc = rows.map(r=>{ let p=1; for(let j=0;j<13;j++) p*=fs[j][SIGNS.indexOf(r[j])]; return p; });
+  const order = rows.map((_,i)=>i).sort((a,b)=>sc[b]-sc[a]);
+  const drop = new Set(order.slice(0, Math.floor(rows.length*cut)));
+  return rows.filter((_,i)=>!drop.has(i));
+}
+function currentRows(){
+  if(Array.isArray(S.rows) && S.rows.length) return {rows:S.rows.slice()};
+  const e = enumerate(60000); if(!e) return null; if(e.tooMany) return e;
+  return {rows: crowdCut(favFilter(e.rows))};
+}
+function coverDP(cap){
+  const ts = S.matches.map(tilted);
+  const subsets = [[0],[1],[2],[0,1],[0,2],[1,2],[0,1,2]];
+  let dp = new Map([['0,0',{score:0,pick:[]}]]);
+  for(let j=0;j<13;j++){
+    const m=S.matches[j], t=ts[j];
+    const opts = m.lock && selIdx(m).length ? [selIdx(m)] : subsets;
+    const nd = new Map();
+    for(const [key,st] of dp){
+      const [a,b] = key.split(',').map(Number);
+      for(const o of opts){
+        const na=a+(o.length===2), nb=b+(o.length===3);
+        if(Math.pow(2,na)*Math.pow(3,nb) > cap) continue;
+        const sc = st.score + Math.log(o.reduce((x,i)=>x+t[i],0));
+        const k2 = na+','+nb, cur = nd.get(k2);
+        if(!cur || sc>cur.score) nd.set(k2,{score:sc,pick:[...st.pick,o]});
+      }
+    }
+    dp = nd; if(!dp.size) return null;
+  }
+  let best=null; for(const st of dp.values()) if(!best || st.score>best.score) best=st;
+  return best.pick;
+}
+
+// ===================== Worker =====================
+let worker = null, jobSeq = 0; const jobs = new Map();
+try{
+  const src = [tmEngine, tmRows, tmRng, tmRank, tmStats, tmBase, tmWorkerMain].map(f=>f.toString()).join('\n') + '\ntmWorkerMain();';
+  worker = new Worker(URL.createObjectURL(new Blob([src],{type:'text/javascript'})));
+  worker.onmessage = e => { const d=e.data, j=jobs.get(d.id); if(!j) return; if(d.progress!=null){ j.onProg && j.onProg(d.progress); return; } jobs.delete(d.id); d.error ? j.reject(new Error(d.error)) : j.resolve(d.result); };
+  worker.onerror = () => { worker = null; };
+}catch(e){ worker = null; }
+function runJob(kind, payload, onProg){
+  if(worker){ const id=++jobSeq; return new Promise((resolve,reject)=>{ jobs.set(id,{resolve,reject,onProg}); worker.postMessage({id, kind, ...payload}); }); }
+  return new Promise((resolve,reject)=>setTimeout(()=>{ try{
+    if(kind==='rank') resolve(tmRank(payload.q,payload.s,payload.cfg,payload.rows,payload.top,onProg));
+    else if(kind==='stats') resolve(tmStats(payload.q,payload.s,payload.cfg,payload.rows,onProg));
+    else resolve(tmBase(payload.q,payload.s,payload.cfg,payload.tilt));
+  }catch(err){ reject(err); } }, 20));
+}
+function setProg(p){ if(p==null){ $('prog').hidden=true; return; } $('prog').hidden=false; $('progBar').style.width=Math.round(p*100)+'%'; }
+
+// ===================== Build system =====================
+let building = false;
+async function buildSystem(){
+  if(building) return;
+  $('optMsg').textContent='';
+  if(!ready()){ $('optMsg').textContent='Alla 13 matcher behöver odds och streck.'; return; }
+  const B = Math.max(1, Math.floor(+S.budget||1));
+  const mode = S.reduce;
+  S.rows = null;
+  if(mode==='ev'){
+    // Sample candidate rows across the whole coupon, weighted by probability tilted toward value (the strategy the backtest validated),
+    // then keep the rows with the highest expected payout.
+    const lockedEmpty = S.matches.some(m=>m.lock && !selIdx(m).length);
+    if(lockedEmpty){ $('optMsg').textContent='En låst match saknar tecken.'; return; }
+    const t = S.matches.map(m=>{ let tj = tilted(m); if(m.lock){ const sel=selIdx(m); tj = norm(tj.map((x,i)=>sel.includes(i)?x:0)); } return tj; });
+    const pool = B > 1500 ? B : Math.min(1500, Math.max(B*3, B+20));
+    const seen = new Set(); const rnd = tmRng((Date.now() ^ 0x9e3779b9)>>>0);
+    const fav = S.matches.map(m=>{ const f=crowd(m); return f.indexOf(Math.max(...f)); });
+    const mf = +S.maxFav||0;
+    let space = 1; S.matches.forEach((m,j)=>{ space *= t[j].filter(x=>x>1e-9).length; });
+    const target = Math.min(pool, space);
+    for(let a=0; a<target*40 && seen.size<target; a++){
+      let r='', nf=0;
+      for(let j=0;j<13;j++){ const u=rnd(), p=t[j]; const i = u<p[0]?0:(u<p[0]+p[1]?1:2); if(i===fav[j]) nf++; r+=SIGNS[i]; }
+      if(mf && nf>mf) continue;
+      seen.add(r);
+    }
+    let rows = [...seen];
+    if(!rows.length){ $('optMsg').textContent='Filtret på folkfavoriter tog bort alla rader.'; return; }
+    if(rows.length > B){
+      building = true; $('btnOptimise').disabled = true; $('btnOptimise').textContent='Räknar rader…'; setProg(0);
+      const {q,s} = QS();
+      try{ const res = await runJob('rank',{q,s,cfg:cfgFor(),rows,top:B}, setProg); rows = res.rows; }
+      catch(err){ $('optMsg').textContent='Beräkningen misslyckades. Försök igen.'; }
+      building = false; $('btnOptimise').disabled=false; $('btnOptimise').textContent='Bygg system inom budget'; setProg(null);
+    }
+    S.rows = rows.slice(0, B).sort();
+    S.matches.forEach((m,j)=>{ m.sel=[0,1,2].map(i=>S.rows.some(r=>r[j]===SIGNS[i])); });
+    if(S.rows.length < B) $('optMsg').textContent = `Hittade ${S.rows.length} olika rader inom låsningar och filter.`;
+  } else {
+    const cap = mode==='crowd' ? Math.max(B, Math.floor(B/(1-(+S.cut||0)))) : B;
+    const pick = coverDP(cap);
+    if(!pick){ $('optMsg').textContent='Budgeten räcker inte för de låsta matcherna.'; return; }
+    pick.forEach((o,j)=>{ S.matches[j].sel=[0,1,2].map(i=>o.includes(i)); });
+  }
+  renderMatches(); renderTicket(); persist(); scheduleStats();
+}
+
+// ===================== Stats & round card =====================
+let statsVer = 0, statsRes = null, baseRes = null, baseKey = '';
+let statsTimer = null;
+function scheduleStats(){ clearTimeout(statsTimer); statsTimer = setTimeout(runStats, 350); }
+async function runStats(){
+  const v = ++statsVer; statsRes = null; renderTicket(); renderRound();
+  if(!ready()) return;
+  const {q,s} = QS(), cfg = cfgFor();
+  const key = JSON.stringify([q,s,cfg,S.tilt]);
+  if(key!==baseKey){
+    baseKey = key; baseRes = null;
+    try{ const b = await runJob('base',{q,s,cfg,tilt:tiltB()}); if(key===baseKey) baseRes=b; }catch(e){}
+    if(v!==statsVer) return;
+    renderRound();
+  }
+  const cr = currentRows();
+  if(!cr || cr.tooMany || !cr.rows || !cr.rows.length || cr.rows.length>20000) { renderTicket(); renderRound(); return; }
+  if(!building) setProg(0);
+  try{
+    const r = await runJob('stats',{q,s,cfg,rows:cr.rows}, p=>{ if(v===statsVer && !building) setProg(p); });
+    if(v!==statsVer) return;
+    statsRes = r;
+  }catch(e){}
+  if(!building) setProg(null);
+  renderTicket(); renderRound();
+}
+function grade(ev){
+  if(ev==null) return null;
+  if(ev < 0.70) return {t:'Svag omgång', c:'g0', m:0.5};
+  if(ev < 0.85) return {t:'Normal omgång', c:'g1', m:1};
+  if(ev < 1.00) return {t:'Bra omgång', c:'g2', m:1.5};
+  return {t:'Toppomgång', c:'g3', m:2};
+}
+function lineupInfo(){
+  const close = Date.parse(S.close); if(isNaN(close)) return null;
+  const known = S.matches.filter(m=>{ const k=Date.parse(m.ko); return !isNaN(k) && k-3600e3 < close; });
+  if(!known.length) return {n:0};
+  const latest = Math.max(...known.map(m=>Date.parse(m.ko)-3600e3));
+  return {n:known.length, at:new Date(latest).toISOString()};
+}
+function renderRound(){
+  const cfg = cfgFor();
+  $('turnover').placeholder = Math.round(defaultTurnover()).toString();
+  const sysEV = statsRes ? statsRes.ev : null;
+  $('figSys').textContent = sysEV==null ? '–' : fmtNum(sysEV);
+  $('figCrowd').textContent = baseRes ? fmtNum(baseRes.crowd) : '–';
+  const g = grade(baseRes ? baseRes.value : null);
+  const pill = $('gradePill');
+  pill.className = 'grade-pill ' + (g?g.c:'');
+  pill.textContent = g ? g.t : (ready() ? 'Räknar' : 'Saknar data');
+  const baseStake = Math.max(1, +S.base||100);
+  $('figStake').textContent = g ? fmtKr(baseStake*g.m) : '–';
+  $('figStakeSub').innerHTML = g ? `${fmtNum(g.m,1)} × grundinsatsen <button class="linkbtn" id="useStake">Använd som budget</button>` : 'av grundinsatsen';
+  const facts = [];
+  if(baseRes) facts.push(`Betyget bygger på värdelutade rader utan urval: <b>${fmtNum(baseRes.value)} kr per krona</b>, mot ${fmtNum(baseRes.crowd)} för rader som följer folket.`);
+  if(S.close) facts.push(`Spelstopp ${esc(dayTime(S.close))}.`);
+  const tot = +S.turnover || defaultTurnover();
+  facts.push(`Väntad omsättning ${fmtMkr(tot)}${S.fetchedSale?`, hittills ${fmtMkr(S.fetchedSale)}`:''}. 13-rättspotten blir cirka ${fmtMkr(PARAMS[S.game].share[13]*PARAMS.payout*tot + cfg.jackpot)}.`);
+  if(+S.jackpot) facts.push(`<b>Jackpott ${fmtMkr(+S.jackpot)}</b> på 13 rätt. Höjer värdet på omgången.`);
+  if(S.rollSale) facts.push(`<b>Rullpott:</b> ingen fick 13 rätt förra omgången, cirka ${fmtMkr(cfg.jackpot)} extra i potten.`);
+  if(cfg.guarantee) facts.push(`Garanti: ensam vinnare på 13 rätt får minst ${fmtMkr(cfg.guarantee)}.`);
+  const li = lineupInfo();
+  if(li && li.n) facts.push(`<b>${li.n} av 13</b> matcher har startelvor före spelstopp (sista ca ${hhmm(li.at)}). Appen hämtar nya siffror automatiskt, bygg om efter det.`);
+  const nSharp = S.matches.filter(hasSharp).length;
+  facts.push(nSharp ? `Skarpa odds i ${nSharp} av 13 matcher, Svenska Spels odds i resten.` : `Sannolikhet från Svenska Spels odds${S.useBlend?', vägt med folkets streck':''}. Skarpa odds kommer automatiskt när ODDS_API_KEY finns i Supabase.`);
+  $('facts').innerHTML = facts.map(f=>`<li>${f}</li>`).join('');
+  $('turnover').value = S.turnover ? S.turnover : '';
+  $('jackpot').value = S.jackpot ? S.jackpot : '';
+  $('baseStake').value = S.base || 100;
+  $('useBlend').checked = !!S.useBlend;
+}
+
+// ===================== Render: matches =====================
+const IMPACT = {none:'inga', low:'små', medium:'märkbara', high:'stora'};
+const openNews = new Set();
+let NEWS = null, newsDocs = [];
+function normName(s){ return String(s||'').toLowerCase().normalize('NFD').replace(/[^a-z]/g,'').slice(0,5); }
+function pickNews(){
+  let best=null, bestScore=0;
+  for(const d of newsDocs){
+    if(!Array.isArray(d.matches)) continue;
+    let sc=0; S.matches.forEach(m=>{ if(d.matches.some(x=>normName(x.home)===normName(m.home) && normName(x.away)===normName(m.away))) sc++; });
+    if(sc>bestScore || (sc===bestScore && best && (d.updatedAt||0)>(best.updatedAt||0))){ best=d; bestScore=sc; }
+  }
+  NEWS = bestScore>=7 ? best : null;
+}
+function newsFor(j){ if(!NEWS) return null; const m=S.matches[j]; return NEWS.matches.find(x=>normName(x.home)===normName(m.home) && normName(x.away)===normName(m.away)) || null; }
+function moveText(m){
+  const a = oddsProbs(m.so), b = oddsProbs(m.o); if(!a||!b) return null;
+  const d = [0,1,2].map(i=>b[i]-a[i]); const k = d.reduce((bi,x,i)=>Math.abs(x)>Math.abs(d[bi])?i:bi,0);
+  if(Math.abs(d[k])<0.02) return null;
+  return {short:`Odds ${SIGNS[k]} ${d[k]>0?'+':''}${Math.round(d[k]*100)} p.e.`, long:[0,1,2].map(i=>`${SIGNS[i]}: ${fmtNum(m.so[i])} → ${fmtNum(m.o[i])}`).join(' · ')};
+}
+function driftText(m){
+  if(!Array.isArray(m.sPrev)) return null;
+  const d = [0,1,2].map(i=>(m.s[i]||0)-(m.sPrev[i]||0)); const k = d.reduce((bi,x,i)=>Math.abs(x)>Math.abs(d[bi])?i:bi,0);
+  if(Math.abs(d[k])<2) return null;
+  return `Streck ${SIGNS[k]} ${d[k]>0?'+':''}${Math.round(d[k])}`;
+}
+function lineupChip(m){
+  const k = Date.parse(m.ko), c = Date.parse(S.close); if(isNaN(k)) return '';
+  const at = k-3600e3, before = !isNaN(c) && at < c;
+  return `<span class="nchip ${before?'ok':''}" title="Startelvor brukar komma en timme före avspark">Elvor ~${hhmm(new Date(at).toISOString())}${before?' · före stopp':''}</span>`;
+}
+function newsPanel(m,j,nw,mv){
+  const sug = nw && Array.isArray(nw.suggest) && nw.suggest.some(x=>x) ? nw.suggest : null;
+  const adj = Array.isArray(m.adj) ? m.adj : [0,0,0];
+  const notes = nw ? `<ul class="nlist">${(nw.notes||[]).map(t=>`<li>${esc(t)}</li>`).join('')}</ul>
+      ${nw.lineup?`<p class="ntake"><b>Startelvor:</b> ${esc(nw.lineup)}</p>`:''}
+      ${nw.take?`<p class="ntake"><b>Bedömning:</b> ${esc(nw.take)}</p>`:''}
+      <p class="nsrc">${(nw.sources||[]).map(s=>`<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a>`).join(' · ')}</p>`
+    : `<p class="hint">Inga nyheter inlästa för den här matchen.</p>`;
+  const sp = hasSharp(m) ? `<p class="hint">Skarpa odds (${esc(m.o2bk||'')}): ${m.o2.map(fmtNum).join(' / ')}. Svenska Spel: ${m.o.map(fmtNum).join(' / ')}.</p>` : '';
+  return `<div class="npanel">${notes}
+    ${mv?`<p class="hint">Odds sedan öppning: ${esc(mv.long)}</p>`:''}${sp}
+    <div class="adjrow"><span class="lbl">Din justering, procentenheter</span>
+      ${[0,1,2].map(i=>`<label class="adjf"><span>${SIGNS[i]}</span><input class="inp num" id="adj${j}_${i}" data-adj="${j}" data-i="${i}" type="number" step="1" value="${adj[i]||0}"></label>`).join('')}
+      ${sug?`<button class="btn small" data-sug="${j}">Använd förslag (${sug.map((x,i)=>SIGNS[i]+' '+(x>0?'+':'')+x).join(', ')})</button>`:''}
+      <button class="btn small ghost" data-reset="${j}">Nollställ</button></div>
+    <p class="hint">Justera bara när nyheten är färskare än oddsen, till exempel en startelva, eller när du vet något marknaden missat.</p>
+  </div>`;
+}
+function renderMatches(){
+  const valueRows = Array.isArray(S.rows) && S.rows.length ? S.rows : null;
+  const note = $('rowsNote');
+  if(valueRows){
+    note.hidden = false;
+    note.innerHTML = `<p><b>Systemet är ${valueRows.length.toLocaleString('sv-SE')} enskilda rader för ${fmtKr(valueRows.length)}</b>, inte ett M-system. Rutorna visar hur många av raderna som har varje tecken, och färgen hur ofta.</p><p>Spela raderna som egna rader: kopiera dem under Exportera och ladda upp dem hos Svenska Spel. Klickar du på en ruta görs systemet om till ett vanligt M-system.</p>`;
+  } else note.hidden = true;
+  const counts = valueRows ? S.matches.map((_,j)=>[0,1,2].map(i=>valueRows.reduce((a,r)=>a+(r[j]===SIGNS[i]?1:0),0))) : null;
+  $('matches').innerHTML = S.matches.map((m,j)=>{
+    const p = probs(m), f = crowd(m), v = values(m), nw = newsFor(j), mv = moveText(m), dr = driftText(m);
+    const chips = [];
+    if(m.outcome) chips.push(`<span class="nchip ok">Utfall ${esc(m.outcome)}${m.score?' ('+esc(m.score)+')':''}</span>`);
+    if(nw) chips.push(`<span class="nchip lv-${esc(nw.impact||'none')}">Nyheter: ${esc(IMPACT[nw.impact]||'inga')}</span>`);
+    if(hasSharp(m)) chips.push(`<span class="nchip sharp">Skarpa odds</span>`);
+    if(mv) chips.push(`<span class="nchip">${esc(mv.short)}</span>`);
+    if(dr) chips.push(`<span class="nchip">${esc(dr)}</span>`);
+    if(hasAdj(m)) chips.push(`<span class="nchip adj">Justerad</span>`);
+    chips.push(lineupChip(m));
+    const teams = editing
+      ? `<div class="edtm"><input class="inp" id="h${j}" data-j="${j}" data-k="home" value="${esc(m.home)}" placeholder="Hemmalag" aria-label="Hemmalag match ${j+1}"><input class="inp" id="a${j}" data-j="${j}" data-k="away" value="${esc(m.away)}" placeholder="Bortalag" aria-label="Bortalag match ${j+1}"></div>`
+      : `<div class="t">${esc(m.home||'Hemmalag')} – ${esc(m.away||'Bortalag')}</div><div class="meta">${esc(m.league||'')}${m.ko?' · '+esc(dayTime(m.ko)):''}</div>
+         <div class="nrow">${chips.join('')}<button class="linkbtn" data-news="${j}" aria-expanded="${openNews.has(j)}">${openNews.has(j)?'Dölj':'Detaljer'}</button></div>`;
+    const cells = [0,1,2].map(i=>{
+      if(editing) return `<div class="edcell"><span class="lbl">${SIGNS[i]}</span>
+          <input class="inp num" id="o${j}_${i}" data-j="${j}" data-k="o" data-i="${i}" value="${m.o[i]??''}" inputmode="decimal" aria-label="Odds ${SIGNS[i]} match ${j+1}" style="font-family:var(--f-mono);font-size:12px;text-align:center;padding:4px">
+          <input class="inp num" id="s${j}_${i}" data-j="${j}" data-k="s" data-i="${i}" value="${m.s[i]??''}" inputmode="decimal" aria-label="Streck % ${SIGNS[i]} match ${j+1}" placeholder="%" style="font-family:var(--f-mono);font-size:12px;text-align:center;padding:4px"></div>`;
+      const vv = v ? v[i] : null, cls = vv==null ? '' : vv>=1.15 ? 'good' : vv<=0.85 ? 'bad' : '';
+      if(counts){
+        const c = counts[j][i], pct = Math.round(c/valueRows.length*100);
+        return `<button class="oc share${c?'':' none'}" data-j="${j}" data-i="${i}" aria-pressed="false" aria-label="Match ${j+1} tecken ${SIGNS[i]}, i ${c} rader">
+        <span class="box" style="background:color-mix(in srgb,var(--accent) ${Math.round(pct*0.7)}%,var(--card))">${SIGNS[i]}</span>
+        <span class="cnt num">${c} rader</span>
+        <span class="pp num">p <b>${p?Math.round(p[i]*100):'–'}</b> · f <b>${f?Math.round(f[i]*100):'–'}</b></span>
+        <span class="vchip num ${cls}">${vv==null?'–':fmtNum(vv)}</span></button>`;
+      }
+      return `<button class="oc" data-j="${j}" data-i="${i}" aria-pressed="${m.sel[i]}" aria-label="Match ${j+1} tecken ${SIGNS[i]}">
+        <span class="box">${SIGNS[i]}</span>
+        <span class="pp num">p <b>${p?Math.round(p[i]*100):'–'}</b> · f <b>${f?Math.round(f[i]*100):'–'}</b></span>
+        <span class="vchip num ${cls}">${vv==null?'–':fmtNum(vv)}</span></button>`;
+    }).join('');
+    const panel = (!editing && openNews.has(j)) ? newsPanel(m,j,nw,mv) : '';
+    return `<div class="match${m.lock?' locked':''}"><span class="mno num">${j+1}</span><div class="teams">${teams}</div><div class="outs">${cells}</div>
+      <div class="lockcell"><button class="btn small lockb" data-lock="${j}" aria-pressed="${m.lock}" title="Motorn behåller dina tecken">${m.lock?'Låst':'Lås'}</button></div>${panel}</div>`;
+  }).join('');
+}
+
+// ===================== Render: ticket =====================
+let rowsCache = null;
+function renderTicket(){
+  rowsCache = currentRows();
+  const r = rowsCache;
+  const missing = S.matches.filter(m=>!selIdx(m).length).length;
+  if(!r){ $('costBig').textContent='–'; $('costSub').textContent=`${missing} match${missing===1?'':'er'} saknar tecken`; $('stats').innerHTML=''; $('out').value=''; $('bbText').textContent='Markera tecken i alla 13 matcher'; return; }
+  if(r.tooMany){ $('costBig').textContent=fmtKr(r.total); $('costSub').textContent='För många rader för beräkning'; $('stats').innerHTML=''; $('out').value=`Systemet har ${r.total.toLocaleString('sv-SE')} rader. Max 60 000.`; return; }
+  const n = r.rows.length;
+  let half=0, full=0; S.matches.forEach(m=>{ const k=selIdx(m).length; if(k===2) half++; if(k===3) full++; });
+  $('costBig').textContent = fmtKr(n);
+  const mfull = Math.pow(2,half)*Math.pow(3,full);
+  $('costSub').innerHTML = (Array.isArray(S.rows) && S.rows.length)
+    ? `${n.toLocaleString('sv-SE')} enskilda rader<br>à 1 kr, inget M-system`
+    : `${n.toLocaleString('sv-SE')} rader<br>${half} halv · ${full} hel${n<mfull?`<br>reducerat från ${mfull.toLocaleString('sv-SE')}`:''}`;
+  const st = statsRes, cls = st ? (st.ev>=0.85?'good':st.ev<0.7?'bad':'') : '';
+  $('stats').innerHTML = `
+    <dt>Förväntad återbetalning</dt><dd class="${cls}">${st?fmtNum(st.ev)+' kr/kr'+(st.sampled?'*':''):'räknar…'}</dd>
+    <dt>Chans 13 rätt</dt><dd>${st?fmtPct(st.p13,2):'–'}</dd>
+    <dt>Chans minst 12 rätt</dt><dd>${st?fmtPct(st.p12,1):'–'}</dd>
+    <dt>Chans minst 11 rätt</dt><dd>${st?fmtPct(st.p11,1):'–'}</dd>
+    <dt>Chans minst 10 rätt</dt><dd>${st?fmtPct(st.p10,1):'–'}</dd>
+    ${st&&st.sampled?'<dt style="grid-column:1/-1;font-size:11px">* uppskattat från ett urval av raderna</dt>':''}`;
+  $('out').value = r.rows.map(x=>S.fmt==='compact'?x:x.split('').join(',')).join('\n');
+  $('bbText').textContent = `${fmtKr(n)} · ${st?fmtNum(st.ev)+' kr/kr':'räknar'} · 13 rätt ${st?fmtPct(st.p13,2):'–'}`;
+}
+function renderControls(){
+  $('game').value=S.game; $('budget').value=S.budget; $('tilt').value=S.tilt; $('tiltVal').textContent=fmtNum(tiltB());
+  $('reduce').value=S.reduce; $('maxFav').value=String(S.maxFav||0); $('crowdCut').value=String(S.cut||0.25); $('fmt').value=S.fmt;
+  $('crowdCutField').style.visibility = S.reduce==='crowd' ? 'visible' : 'hidden';
+  $('btnEdit').setAttribute('aria-pressed', editing); $('btnEdit').textContent = editing ? 'Klar med data' : 'Redigera data';
+}
+function render(){ renderControls(); renderMatches(); renderTicket(); renderRound(); }
+function renderHist(){
+  const bar = (label, val, max, best) => `<div class="bar${best?' best':''}"><span>${esc(label)}</span><span class="tr"><i style="width:${Math.min(100,val/max*100)}%"></i><span class="ref" style="left:${0.65/max*100}%" title="65 öre, Svenska Spels återbetalning"></span></span><span class="val">${fmtNum(val)}</span></div>`;
+  const tbl = g => `<div class="tblwrap"><table class="t"><thead><tr><th>Strategi</th><th>Kr tillbaka per krona</th><th>Mot folkets rader</th><th>Säkerhet (t)</th></tr></thead><tbody>${BT.strat.map(r=>{ const d=r['d'+g]; return `<tr class="${d&&d[1]>=2.5?'hl':''}"><td>${esc(r.k)}<br><span class="hint">${esc(r.d)}</span></td><td>${fmtNum(r[g])}</td><td>${d?(d[0]>0?'+':'')+fmtNum(d[0]):'–'}</td><td>${d?fmtNum(d[1],1):'–'}</td></tr>`; }).join('')}</tbody></table></div>`;
+  $('histView').innerHTML = `
+    <div class="hcard"><h2>Vad historiken säger</h2>
+      <p>Tipsmotorn är testad mot alla omgångar sedan sommaren 2024. På Stryktipset gav rader byggda på oddsen och spelvärde tydligt mer tillbaka än rader som följer folket, och resultatet håller i båda halvorna av perioden. På Europatipset är fördelen liten och osäker.</p>
+      <p class="hint">Testet räknar exakt förväntad utdelning för varje strategi givet de verkliga resultaten och de verkliga vinsterna per rad. Oddsen är öppningsoddsen, eftersom stängningsodds inte sparas för gamla omgångar. ${esc(BT.range.s)} på Stryktipset, ${esc(BT.range.e)} på Europatipset.</p></div>
+    <div class="hcard"><h2>Stryktipset</h2>
+      <div class="bars">${BT.strat.map((r,i)=>bar(r.k,r.s,1.1,i===3)).join('')}</div>
+      ${tbl('s')}
+      <p class="hint">t över cirka 2,5 betyder att skillnaden mot folkets rader knappast är slump. Den svarta linjen är 65 öre, det Svenska Spel betalar tillbaka i snitt. Folkets rader ligger över den tack vare jackpottar och garantin.</p></div>
+    <div class="hcard"><h2>Europatipset</h2>
+      <div class="bars">${BT.strat.map((r,i)=>bar(r.k,r.e,1.1,i===2)).join('')}</div>
+      ${tbl('e')}</div>
+    <div class="hcard"><h2>Folkets snedvridning</h2>
+      <p>Över 4 360 matcher streckar folket hemmasegrar för högt och kryss för lågt. Oddsen ligger nära utfallet.</p>
+      <div class="tblwrap"><table class="t"><thead><tr><th>Tecken</th><th>Folkets streck</th><th>Oddsens sannolikhet</th><th>Utfall</th></tr></thead><tbody>${BT.signs.map(r=>`<tr><td>${esc(r.k)}</td><td>${fmtNum(r.st,1)} %</td><td>${fmtNum(r.od,1)} %</td><td>${fmtNum(r.ut,1)} %</td></tr>`).join('')}</tbody></table></div></div>
+    <div class="hcard"><h2>Hur vinsterna fördelas</h2>
+      <ul class="facts">
+        <li>65 % av insatserna går tillbaka. Stryktipset: 40 % till 13 rätt, 15 % till 12, 12 % till 11, 25 % till 10. Europatipset: 39 / 22 / 12 / 25 %.</li>
+        <li>En vinstgrupp betalas inte ut om vinsten blir under 15 kr. 10 rätt föll bort i 26 % av Stryktipsomgångarna och 35 % av Europatipsomgångarna.</li>
+        <li>När ingen fick 13 rätt (5 gånger på Stryktipset, 13 på Europatipset) var nästa 13-rättspott i snitt 1,1–1,4 gånger den outdelade potten större.</li>
+        <li>Ensam vinnare på Stryktipset har fått garantin på 10 Mkr fyra gånger under perioden.</li>
+        <li>Antalet vinnare per vinstgrupp följer folkets streck utan systematiskt fel, så modellen kan räkna ut vad en rad är värd.</li>
+      </ul></div>
+    <div class="hcard"><h2>Vad som inte är bevisat</h2>
+      <ul class="facts">
+        <li>Modellens förväntade återbetalning har legat 0,10–0,15 kr lägre än utfallet (Stryktipset: värderader 0,86 förväntat mot 0,98 utfall), troligen för att jackpottar inte fanns med i testet. Rangordningen mellan strategier stämmer.</li>
+        <li>Att välja enskilda rader efter beräknat värde går inte att bevisa med två säsonger: resultatet styrs av ett fåtal 13-rättare. Det som är bevisat är att värdelutade rader i stort slår folket.</li>
+        <li>Hur strecken rör sig fram till spelstopp finns inte i historiken. Appen sparar varje hämtning så att det går att mäta framöver.</li>
+        <li>Poolspel är spel med negativ förväntan i de flesta omgångar. En fördel mot folket betyder att du förlorar mindre och vinner mer när du vinner, inte att du går med vinst varje vecka.</li>
+      </ul></div>`;
+}
+
+// ===================== Data from Supabase =====================
+let roundsList = [], chosenId = null;
+function initSupabase(){
+  if(!window.supabase || !CFG.url || !CFG.key || /YOUR-/.test(CFG.url)) return null;
+  return window.supabase.createClient(CFG.url, CFG.key, {auth:{persistSession:true, autoRefreshToken:true, detectSessionInUrl:true}});
+}
+function setStatus(t){ $('newsStatus').textContent = t; }
+function saveSettings(){
+  const st = lsGet(SETTINGS_KEY) || {};
+  Object.assign(st, {game:S.game, base:S.base, useBlend:S.useBlend, budget:S.budget, reduce:S.reduce, maxFav:S.maxFav, cut:S.cut, fmt:S.fmt});
+  st.tilt = Object.assign({}, st.tilt||{}, {[S.game]: S.tilt});
+  lsSet(SETTINGS_KEY, st);
+}
+function saveRoundState(){
+  if(!S.id) return;
+  lsSet(ROUND_KEY(S.id), {turnover:S.turnover, rows:S.rows, builtAt:S.builtAt||null,
+    matches:S.matches.map(m=>({n:m.n, sel:m.sel, lock:m.lock, adj:m.adj, edited:!!m.edited, o:m.edited?m.o:null, s:m.edited?m.s:null}))});
+}
+let saveTimer = null;
+function persist(){ clearTimeout(saveTimer); saveTimer = setTimeout(()=>{ saveSettings(); saveRoundState(); }, 500); }
+function changed(){ renderTicket(); renderRound(); persist(); scheduleStats(); }
+const nums = a => Array.isArray(a) ? a.map(x=>x==null?null:Number(x)) : null;
+
+async function loadRound(game, opts={}){
+  if(!sb){ setStatus('Appen är inte kopplad till databasen ännu. Fyll i config.js.'); renderEmpty('Ingen databas kopplad.'); return; }
+  setStatus('Hämtar senaste siffrorna…');
+  const {data:rounds, error} = await sb.from('rounds').select('*').eq('game', game).order('close_at', {ascending:false}).limit(8);
+  if(error){ setStatus('Kunde inte hämta omgångar: ' + error.message); return; }
+  roundsList = rounds || [];
+  renderRoundPicker();
+  if(!roundsList.length){ renderEmpty(`Ingen ${game}-omgång hämtad ännu. Insamlingen körs var 15:e minut.`); setStatus(''); return; }
+  let pick = chosenId && roundsList.find(r=>r.id===chosenId);
+  if(!pick){ const up = roundsList.filter(r=>Date.parse(r.close_at) > Date.now()).sort((a,b)=>Date.parse(a.close_at)-Date.parse(b.close_at)); pick = up[0] || roundsList[0]; }
+  chosenId = pick.id; $('roundSel').value = pick.id;
+  const [ms, res, nw, snaps] = await Promise.all([
+    sb.from('matches').select('*').eq('round_id', pick.id).order('n'),
+    sb.from('results').select('*').eq('round_id', pick.id).maybeSingle(),
+    sb.from('news').select('*').eq('round_id', pick.id).maybeSingle(),
+    sb.from('snapshots').select('taken_at,streck').eq('round_id', pick.id).order('taken_at', {ascending:false}).limit(80),
+  ]);
+  if(ms.error){ setStatus('Kunde inte hämta matcher: ' + ms.error.message); return; }
+  applyRound(pick, ms.data||[], res.data||null, nw.data||null, snaps.data||[]);
+  lastLoad = Date.now();
+  const open = Date.parse(pick.close_at) > Date.now();
+  setStatus(`${open?'Uppdaterad':'Hämtad'} ${hhmm(pick.updated_at)} · ${open?'nya siffror hämtas automatiskt var 15:e minut':'omgången är stängd'}`);
+  if(!opts.quiet) showTab('coupon');
+}
+function applyRound(r, ms, res, nw, snaps){
+  const same = S.id === r.id;
+  if(!same){
+    S = emptyRound(r.game);
+    const local = lsGet(ROUND_KEY(r.id));
+    if(local){ S.turnover = local.turnover||null; S.rows = local.rows||null; S.builtAt = local.builtAt||null; S._local = local.matches||[]; }
+  }
+  Object.assign(S, {id:r.id, game:r.game, name:r.name||r.id, draw:r.draw, close:r.close_at, state:r.state, fetchedSale:r.sale!=null?Number(r.sale):null,
+    jackpot:Number(r.jackpot||0), guarantee:r.guarantee!=null && Number(r.guarantee)>0 ? Number(r.guarantee) : PARAMS[r.game].guarantee,
+    rollSale:Number(r.roll_sale||0), updatedAt:r.updated_at, result:res});
+  // Streck a few hours ago, for the movement chips.
+  let prev = null;
+  if(snaps.length > 1){ const latest = Date.parse(snaps[0].taken_at); prev = snaps.find(x=>Date.parse(x.taken_at) <= latest - 3*3600e3) || snaps[snaps.length-1]; }
+  const old = same ? S.matches : [];
+  S.matches = ms.map((m,i)=>{
+    const o = old.find(x=>x.n===m.n) || (S._local||[]).find(x=>x.n===m.n) || {};
+    const edited = !!o.edited;
+    return {n:m.n, home:m.home, away:m.away, league:m.league, ko:m.kickoff,
+      o: edited && o.o ? o.o : nums(m.odds), s: edited && o.s ? o.s : nums(m.streck), so: nums(m.start_odds),
+      o2: nums(m.sharp), o2bk: m.sharp_bk, sharpAt: m.sharp_at, outcome:m.outcome, score:m.score,
+      sPrev: prev && prev.streck && prev.streck[i] ? nums(prev.streck[i]) : null,
+      adj: o.adj || [0,0,0], sel: o.sel || [false,false,false], lock: !!o.lock, edited};
+  });
+  delete S._local;
+  NEWS = nw && nw.data && Array.isArray(nw.data.matches) ? Object.assign({updatedAt: Date.parse(nw.updated_at)}, nw.data) : null;
+  render(); renderResult();
+  if(S.matches.length===13 && S.matches.every(m=>!selIdx(m).length) && ready() && Date.parse(S.close) > Date.now()) buildSystem(); else scheduleStats();
+}
+function renderRoundPicker(){
+  $('roundSel').innerHTML = roundsList.map(r=>{
+    const open = Date.parse(r.close_at) > Date.now();
+    return `<option value="${esc(r.id)}">${esc((r.name||r.id).replace(/, stänger.*/,''))} · ${open?'stänger '+esc(dayTime(r.close_at)):'stängd'}</option>`;
+  }).join('');
+}
+function renderEmpty(msg){ S.matches = []; $('matches').innerHTML = `<div class="empty" style="margin:16px">${esc(msg)}</div>`; renderTicket(); renderRound(); $('resultBox').hidden = true; }
+function renderResult(){
+  const box = $('resultBox'), r = S.result;
+  if(!r){ box.hidden = true; return; }
+  const t = r.tiers || {};
+  box.hidden = false;
+  box.innerHTML = `<p><b>Rätt rad: <span class="num" style="font-family:var(--f-mono);letter-spacing:.12em">${esc(r.correct_row||'')}</span></b></p>
+    <p class="num">${[13,12,11,10].map(k=>t[k]&&t[k].w?`${k} rätt: ${fmtKr(t[k].a)} (${Number(t[k].w).toLocaleString('sv-SE')} st)`:`${k} rätt: ingen utdelning`).join(' · ')}</p>`;
+}
+
+// ===================== Saved systems (Supabase, login) =====================
+let pendingDelete = null;
+async function loadSaved(){
+  if(!sb || !session){ saved = []; renderSaved(); return; }
+  const {data, error} = await sb.from('systems').select('*').order('created_at', {ascending:false}).limit(60);
+  if(error){ flash('Kunde inte hämta sparade system.'); return; }
+  saved = data || []; renderSaved();
+}
+function renderSaved(){
+  $('savedCount').textContent = saved.length ? `(${saved.length})` : '';
+  const host = $('savedList');
+  if(!sb){ host.innerHTML = `<div class="empty">Ingen databas kopplad.</div>`; return; }
+  if(!session){
+    host.innerHTML = `<div class="hcard"><h2>Logga in</h2><p>Sparade system lagras i ditt konto och rättas automatiskt när omgången är klar. Du får en inloggningslänk via mejl, inget lösenord.</p>
+      <div style="display:flex;gap:8px;flex-wrap:wrap"><input class="inp" id="loginEmail" type="email" autocomplete="email" placeholder="din@mejl.se" style="flex:1;min-width:200px"><button class="btn primary" id="btnLogin">Skicka länk</button></div>
+      <p class="toast" id="loginMsg"></p></div>`;
+    return;
+  }
+  const top = `<div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><span class="status">Inloggad som ${esc(session.user.email||'')}</span><button class="btn small ghost" id="btnLogout">Logga ut</button></div>`;
+  if(!saved.length){ host.innerHTML = top + `<div class="empty">Inga sparade system ännu. Bygg ett system och tryck <b>Spara system</b>. Det rättas automatiskt när omgången är klar.</div>`; return; }
+  const total = saved.reduce((a,s)=>({cost:a.cost+(s.result?s.cost||0:0), win:a.win+(s.result?Number(s.payout||0):0)}), {cost:0, win:0});
+  const sum = total.cost ? `<div class="hcard"><h2>Hittills</h2><p class="num">Insats på rättade system ${fmtKr(total.cost)} · utdelning ${fmtKr(total.win)} · ${fmtNum(total.win/total.cost)} kr tillbaka per krona</p></div>` : '';
+  host.innerHTML = top + sum + saved.map(s=>{
+    const d = new Date(s.created_at).toLocaleString('sv-SE',{dateStyle:'medium',timeStyle:'short'}), r = s.result, n = Math.round((s.rows||'').length/13);
+    const res = r ? `<div class="res">${['13','12','11','10'].map(k=>`<span class="pill ${r['c'+k]?'hit':''} num">${k} rätt: ${r['c'+k]||0}</span>`).join('')}<span class="pill num">Bästa rad: ${r.best} rätt</span>${s.payout!=null?`<span class="pill hit num">Utdelning ${fmtKr(s.payout)}</span>`:''}</div>` : '<span class="hint">Rättas automatiskt när omgången är klar.</span>';
+    return `<article class="sys"><div><h3>${esc(s.label||s.round_id||'System')}</h3><div class="meta">${esc((s.settings&&s.settings.game)||'')} · sparat ${d}</div></div>
+      <div style="display:flex;gap:6px;align-items:flex-start"><button class="btn small" data-load="${esc(s.id)}">Öppna</button><button class="btn small ghost" data-del="${esc(s.id)}">${pendingDelete===s.id?'Ta bort?':'Ta bort'}</button></div>
+      <div class="figs num" style="grid-column:1/-1"><span>${fmtKr(s.cost||n)}</span><span>${n.toLocaleString('sv-SE')} rader</span><span>13 rätt ${fmtPct(s.p13,2)}</span><span>Förväntat ${fmtNum(s.ev)} kr/kr</span></div>
+      <div class="grade">${res}</div></article>`;
+  }).join('');
+}
+
+// ===================== Events =====================
+function flash(msg){ $('toast').textContent = msg; setTimeout(()=>{ if($('toast').textContent===msg) $('toast').textContent=''; }, 4000); }
+let adjTimer = null;
+const _build = buildSystem;
+buildSystem = async function(){ await _build(); S.builtAt = Date.now(); persist(); };
+document.addEventListener('click', async e=>{
+  const oc = e.target.closest('.oc');
+  if(oc){
+    const m=S.matches[+oc.dataset.j];
+    if(Array.isArray(S.rows) && S.rows.length){
+      const rows=S.rows;
+      S.matches.forEach((mm,k)=>{ const c=[0,1,2].map(i=>rows.reduce((a,r)=>a+(r[k]===SIGNS[i]?1:0),0)); const top=c.indexOf(Math.max(...c)); mm.sel=[0,1,2].map(i=>i===top); });
+      S.rows=null; m.sel[+oc.dataset.i] = true;
+      if(S.reduce==='ev'){ S.reduce='full'; }
+      renderControls(); renderMatches(); changed(); return;
+    }
+    m.sel[+oc.dataset.i]=!m.sel[+oc.dataset.i]; oc.setAttribute('aria-pressed', m.sel[+oc.dataset.i]); changed(); return;
+  }
+  const nb = e.target.closest('[data-news]');
+  if(nb){ const j=+nb.dataset.news; openNews.has(j)?openNews.delete(j):openNews.add(j); renderMatches(); return; }
+  const sg = e.target.closest('[data-sug]');
+  if(sg){ const j=+sg.dataset.sug, nw=newsFor(j); if(nw&&nw.suggest){ S.matches[j].adj=[...nw.suggest]; renderMatches(); changed(); } return; }
+  const rs = e.target.closest('[data-reset]');
+  if(rs){ S.matches[+rs.dataset.reset].adj=[0,0,0]; renderMatches(); changed(); return; }
+  const lk = e.target.closest('[data-lock]');
+  if(lk){ const m=S.matches[+lk.dataset.lock]; m.lock=!m.lock; renderMatches(); persist(); return; }
+  if(e.target.id==='useStake'){ const g=grade(baseRes?baseRes.value:null); if(g){ S.budget=Math.round(Math.max(1,+S.base||100)*g.m); renderControls(); persist(); flash(`Budget satt till ${fmtKr(S.budget)}. Tryck Bygg system.`); } return; }
+  if(e.target.id==='btnLogin'){
+    const email = ($('loginEmail').value||'').trim(); if(!/^\S+@\S+\.\S+$/.test(email)){ $('loginMsg').textContent='Skriv en giltig mejladress.'; return; }
+    const {error} = await sb.auth.signInWithOtp({email, options:{emailRedirectTo: location.origin + location.pathname}});
+    $('loginMsg').textContent = error ? 'Det gick inte: ' + error.message : 'Kolla din mejl och öppna länken på den här enheten.'; return;
+  }
+  if(e.target.id==='btnLogout'){ await sb.auth.signOut(); return; }
+  const ld = e.target.closest('[data-load]');
+  if(ld){
+    const s = saved.find(x=>x.id===ld.dataset.load); if(!s) return;
+    const st = s.settings || {};
+    if(st.game && st.game!==S.game) S.game = st.game;
+    chosenId = s.round_id; await loadRound(st.game || S.game);
+    if(S.id === s.round_id){ S.rows = (s.rows||'').match(/.{13}/g) || null; if(Array.isArray(st.sel)) S.matches.forEach((m,j)=>{ if(st.sel[j]) m.sel = st.sel[j]; }); if(st.reduce) S.reduce = st.reduce; render(); persist(); scheduleStats(); }
+    else flash('Omgången för det systemet finns inte längre i listan.');
+    return;
+  }
+  const dl = e.target.closest('[data-del]');
+  if(dl){ const id=dl.dataset.del; if(pendingDelete===id){ pendingDelete=null; await sb.from('systems').delete().eq('id', id); loadSaved(); } else { pendingDelete=id; renderSaved(); } return; }
+});
+document.addEventListener('input', e=>{
+  const t=e.target;
+  if(t.dataset && t.dataset.adj!=null){
+    const m=S.matches[+t.dataset.adj]; if(!Array.isArray(m.adj)) m.adj=[0,0,0];
+    m.adj[+t.dataset.i] = Math.max(-50,Math.min(50, Math.round(parseNum(t.value)||0)));
+    changed(); clearTimeout(adjTimer); adjTimer=setTimeout(()=>{ const f=document.activeElement&&document.activeElement.id; renderMatches(); if(f&&$(f)) $(f).focus(); }, 900);
+    return;
+  }
+  if(t.dataset && t.dataset.j!=null && t.dataset.k){
+    const m=S.matches[+t.dataset.j];
+    if(t.dataset.k==='o'||t.dataset.k==='s'){ m[t.dataset.k][+t.dataset.i]=parseNum(t.value); m.edited = true; } else m[t.dataset.k]=t.value;
+    changed();
+  }
+});
+$('btnEdit').onclick=()=>{ editing=!editing; render(); };
+$('btnClear').onclick=()=>{ S.matches.forEach(m=>{ if(!m.lock) m.sel=[false,false,false]; }); S.rows=null; render(); persist(); scheduleStats(); };
+$('btnRefresh').onclick=()=>loadRound(S.game, {quiet:true});
+$('game').onchange=e=>{ saveRoundState(); chosenId=null; S = emptyRound(e.target.value); saveSettings(); render(); loadRound(S.game, {quiet:true}); };
+$('roundSel').onchange=e=>{ saveRoundState(); chosenId=e.target.value; loadRound(S.game, {quiet:true}); };
+$('budget').oninput=e=>{ S.budget=Math.max(1,+e.target.value||1); persist(); };
+$('tilt').oninput=e=>{ S.tilt=+e.target.value; $('tiltVal').textContent=fmtNum(tiltB()); renderMatches(); persist(); scheduleStats(); };
+$('reduce').onchange=e=>{ S.reduce=e.target.value; S.rows=null; renderControls(); changed(); };
+$('maxFav').onchange=e=>{ S.maxFav=+e.target.value; S.rows=null; changed(); };
+$('crowdCut').onchange=e=>{ S.cut=+e.target.value; S.rows=null; changed(); };
+$('fmt').onchange=e=>{ S.fmt=e.target.value; renderTicket(); persist(); };
+$('turnover').oninput=e=>{ S.turnover=parseNum(e.target.value); persist(); scheduleStats(); };
+$('jackpot').oninput=e=>{ S.jackpot=parseNum(e.target.value)||0; persist(); scheduleStats(); };
+$('baseStake').oninput=e=>{ S.base=Math.max(1,parseNum(e.target.value)||100); renderRound(); persist(); };
+$('useBlend').onchange=e=>{ S.useBlend=e.target.checked; S.rows=null; renderMatches(); changed(); };
+$('btnOptimise').onclick=()=>buildSystem();
+$('btnCopy').onclick=()=>{
+  const ta=$('out'); if(!ta.value){ flash('Inget att kopiera ännu.'); return; }
+  const fallback=()=>{ ta.focus(); ta.select(); flash('Markerat. Kopiera med Ctrl/Cmd+C.'); };
+  if(navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(ta.value).then(()=>flash(`Kopierade ${ta.value.split('\n').length.toLocaleString('sv-SE')} rader.`), fallback); else fallback();
+};
+$('btnSave').onclick=async()=>{
+  const r = rowsCache;
+  if(!r || r.tooMany || !r.rows || !r.rows.length){ flash('Bygg ett komplett system först.'); return; }
+  if(r.rows.length>15000){ flash('Systemet är för stort för att sparas (max 15 000 rader).'); return; }
+  if(!sb || !session){ flash('Logga in under Sparade för att spara system.'); showTab('saved'); return; }
+  const row = {round_id:S.id, label:(S.name||'').replace(/, stänger.*/,''), rows:r.rows.join(''), cost:r.rows.length, ev:statsRes?statsRes.ev:null, p13:statsRes?statsRes.p13:null,
+    settings:{game:S.game, reduce:S.reduce, tilt:S.tilt, budget:S.budget, sel:S.matches.map(m=>m.sel), crowdEv: baseRes?baseRes.crowd:null}};
+  const {error} = await sb.from('systems').insert(row);
+  if(error){ flash('Kunde inte spara: ' + error.message); return; }
+  flash('Sparat. Det rättas automatiskt när omgången är klar.'); loadSaved();
+};
+function showTab(t){
+  ['coupon','saved','hist'].forEach(x=>{ $('tab-'+x).setAttribute('aria-selected', t===x); $('view-'+x).hidden = t!==x; });
+  $('bottombar').style.visibility = t==='coupon' ? 'visible' : 'hidden';
+  if(t==='saved'){ renderSaved(); loadSaved(); } if(t==='hist') renderHist();
+}
+$('tab-coupon').onclick=()=>showTab('coupon');
+$('tab-saved').onclick=()=>showTab('saved');
+$('tab-hist').onclick=()=>showTab('hist');
+
+// ===================== Boot =====================
+sb = initSupabase();
+$('game').value = S.game;
+render(); renderSaved();
+if(sb){
+  sb.auth.getSession().then(({data})=>{ session = data.session; renderSaved(); if(session) loadSaved(); });
+  sb.auth.onAuthStateChange((_ev, s)=>{ session = s; renderSaved(); if(s) loadSaved(); else { saved=[]; renderSaved(); } });
+}
+loadRound(S.game, {quiet:true});
+// Refresh while the app is open, and when it comes back to the foreground.
+setInterval(()=>{ if(document.visibilityState==='visible' && Date.now()-lastLoad > 4*60e3) loadRound(S.game, {quiet:true}); }, 60e3);
+document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='visible' && Date.now()-lastLoad > 2*60e3) loadRound(S.game, {quiet:true}); });
+if('serviceWorker' in navigator && location.protocol==='https:') navigator.serviceWorker.register('sw.js').catch(()=>{});
+})();
+</script>
+
+</body>
+</html>
