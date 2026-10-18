@@ -40,6 +40,8 @@ const db: any = { rounds: {}, matches: {}, snapshots: [], results: {}, history: 
 const store: Store = {
   async getRound(id) { return db.rounds[id] || null; },
   async upsertRound(r) { db.rounds[r.id] = { ...(db.rounds[r.id] || {}), ...r }; },
+  async updateRound(id, p) { if (!db.rounds[id]) throw new Error('update of missing round'); Object.assign(db.rounds[id], p); },
+  async updateMatch(id, n, p) { const k = id + '#' + n; if (!db.matches[k]) { db.matches[k] = { round_id: id, n }; } Object.assign(db.matches[k], p); },
   async upsertMatches(rows) { rows.forEach(r => { const k = r.round_id + "#" + r.n; db.matches[k] = { ...(db.matches[k] || {}), ...r }; }); },
   async getMatches(id) { return Object.values(db.matches).filter((m: any) => m.round_id === id); },
   async lastSnapshotAt(id) { const s = db.snapshots.filter((x: any) => x.round_id === id); return s.length ? s[s.length - 1].t : null; },
@@ -68,6 +70,7 @@ assert(Object.values(db.matches).filter((m: any) => m.round_id === "europatipset
 const m1 = db.matches["europatipset-2617#1"];
 assert(m1.odds[0] === 2.1 && m1.streck[0] === 48 && m1.start_odds[2] === 3.7, "odds, streck and start odds parsed with Swedish decimals");
 assert(o1[0].sharp === 13 && db.matches["europatipset-2617#12"].sharp_bk === "Pinnacle", "sharp odds matched for all 13 matches incl. Malmö/Häcken");
+assert(db.rounds["europatipset-2617"].sharp_stage === "p", "sharp stage recorded so the next run skips the fetch");
 assert(db.snapshots.length === 1, "snapshot stored");
 const calls1 = oddsCalls;
 NOW += 15 * 60e3; await collectOpen(deps);

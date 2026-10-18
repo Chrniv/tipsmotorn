@@ -14,7 +14,9 @@ type Fetch = typeof fetch;
 export interface Store {
   getRound(id: string): Promise<any | null>;
   upsertRound(row: any): Promise<void>;
+  updateRound(id: string, patch: any): Promise<void>;
   upsertMatches(rows: any[]): Promise<void>;
+  updateMatch(roundId: string, n: number, patch: any): Promise<void>;
   getMatches(roundId: string): Promise<any[]>;
   lastSnapshotAt(roundId: string): Promise<number | null>;
   insertSnapshot(row: any): Promise<void>;
@@ -95,7 +97,7 @@ export async function collectOpen(d: Deps) {
       let sharp = 0;
       const stage = sharpStage(closeMs, nowMs);
       if (d.oddsKey && stage && existing?.sharp_stage !== stage) {
-        try { sharp = await fetchSharp(d, id, matches); await d.store.upsertRound({ id, sharp_stage: stage }); }
+        try { sharp = await fetchSharp(d, id, matches); await d.store.updateRound(id, { sharp_stage: stage }); }
         catch (e) { d.log?.(`sharp ${id}: ${e}`); }
       }
       out.push({ id, state: dr.drawState, matches: matches.length, jackpot, guarantee, roll, snap, sharp, stage });
@@ -131,7 +133,7 @@ export async function fetchSharp(d: Deps, roundId: string, matches: any[]): Prom
     }
     if (best && bs >= 2.5) upd.push({ round_id: roundId, n: m.n, sharp: best.o, sharp_bk: best.bk === "pinnacle" ? "Pinnacle" : "Betfair Exchange", sharp_at: now });
   }
-  if (upd.length) await d.store.upsertMatches(upd);
+  for (const u of upd) { const { round_id, n, ...patch } = u; await d.store.updateMatch(round_id, n, patch); }
   return upd.length;
 }
 
@@ -153,7 +155,7 @@ export async function collectResults(d: Deps) {
     const g = String(rd.game).toLowerCase();
     try {
       const dr = (await getJSON(d.fetch, `${SS}${g}/draws/${rd.draw}`)).draw;
-      if (!dr || dr.drawState !== "Finalized") { await d.store.upsertRound({ id: rd.id, state: dr?.drawState || rd.state }); out.push({ id: rd.id, state: dr?.drawState }); continue; }
+      if (!dr || dr.drawState !== "Finalized") { await d.store.updateRound(rd.id, { state: dr?.drawState || rd.state }); out.push({ id: rd.id, state: dr?.drawState }); continue; }
       const r = (await getJSON(d.fetch, `${SS}${g}/draws/${rd.draw}/result`)).result;
       const byN: Record<number, any> = {}; (r.events || []).forEach((e: any) => byN[e.eventNumber] = e);
       const evs = (dr.drawEvents || []).slice().sort((a: any, b: any) => a.eventNumber - b.eventNumber);
@@ -161,8 +163,8 @@ export async function collectResults(d: Deps) {
       const tiers: any = {}; (r.distribution || []).forEach((t: any) => { const k = parseInt(t.name); if (k) tiers[k] = { w: t.winners, a: num(t.amount) || 0 }; });
       const sale = num(r.currentNetSale);
       await d.store.insertResult({ round_id: rd.id, correct_row: correct, tiers, sale });
-      await d.store.upsertMatches(evs.map((e: any) => { const x = byN[e.eventNumber]; return { round_id: rd.id, n: e.eventNumber, outcome: x?.cancelled ? "C" : x?.outcome || null, score: x?.outcomeScore ? `${x.outcomeScore.home}-${x.outcomeScore.away}` : null, streck: triple(e.svenskaFolket) || undefined }; }).map(stripUndef));
-      await d.store.upsertRound({ id: rd.id, state: "Finalized", sale });
+      for (const e of evs) { const x = byN[e.eventNumber]; await d.store.updateMatch(rd.id, e.eventNumber, stripUndef({ outcome: x?.cancelled ? "C" : x?.outcome || null, score: x?.outcomeScore ? `${x.outcomeScore.home}-${x.outcomeScore.away}` : null, streck: triple(e.svenskaFolket) || undefined })); }
+      await d.store.updateRound(rd.id, { state: "Finalized", sale });
       await d.store.upsertHistory({ game: rd.game, draw: rd.draw, close_at: rd.close_at, sale, tiers, events: evs.map((e: any) => ({ r: byN[e.eventNumber]?.outcome || null, so: triple(e.startOdds), s: triple(e.svenskaFolket), lg: e.match?.league?.name || null, ko: e.match?.matchStart || null })) });
       let graded = 0;
       for (const s of await d.store.systemsForRound(rd.id)) { const { result, payout } = gradeRows(s.rows || "", correct, tiers); await d.store.updateSystem(s.id, { result, payout }); graded++; }
@@ -196,7 +198,9 @@ export function supabaseStore(url: string, key: string): Store {
   return {
     async getRound(id) { return chk(await sb.from("rounds").select("*").eq("id", id).maybeSingle()); },
     async upsertRound(row) { chk(await sb.from("rounds").upsert(row)); },
+    async updateRound(id, patch) { chk(await sb.from("rounds").update(patch).eq("id", id)); },
     async upsertMatches(rows) { chk(await sb.from("matches").upsert(rows)); },
+    async updateMatch(roundId, n, patch) { chk(await sb.from("matches").update(patch).eq("round_id", roundId).eq("n", n)); },
     async getMatches(roundId) { return chk(await sb.from("matches").select("*").eq("round_id", roundId).order("n")); },
     async lastSnapshotAt(roundId) { const r = chk(await sb.from("snapshots").select("taken_at").eq("round_id", roundId).order("taken_at", { ascending: false }).limit(1)); return r?.[0] ? Date.parse(r[0].taken_at) : null; },
     async insertSnapshot(row) { chk(await sb.from("snapshots").insert(row)); },
