@@ -1,12 +1,18 @@
 // Tipsmotorn collector (Supabase Edge Function "collect").
-// Runs every 15 minutes via pg_cron. Fetches open Stryktipset/Europatipset rounds from Svenska Spel,
+// Runs every 15 minutes via pg_cron. Fetches open Stryktipset, Europatipset and Topptipset rounds from Svenska Spel,
 // jackpots and rollovers, streck snapshots, sharp odds (throttled), and results for finished rounds.
 // Secrets (Edge Functions -> Secrets): CRON_SECRET (required), ODDS_API_KEY (optional).
 // SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY are provided automatically by Supabase.
 import { createClient } from "npm:@supabase/supabase-js@2.45.4";
 
 const SS = "https://api.spela.svenskaspel.se/draw/1/";
-const GAMES: Record<string, string> = { stryktipset: "Stryktipset", europatipset: "Europatipset" };
+// Products. Topptipset (8 matches) is listed through one "family" endpoint that covers Topptipset, Topptipset Stryk and
+// Topptipset Extra; each product has its own draw numbers, so ids use the product slug, e.g. "topptipsetstryk-986".
+const GAMES: Record<string, string> = { stryktipset: "Stryktipset", europatipset: "Europatipset", topptipset: "Topptipset" };
+const LIST_PATH: Record<string, string> = { stryktipset: "stryktipset", europatipset: "europatipset", topptipset: "topptipsetfamily" };
+export const slugOf = (productName: string) => String(productName || "").toLowerCase().replace(/[^a-z]/g, "");
+export const productOfId = (id: string) => String(id).split("-")[0];
+const familyOf = (slug: string) => slug.startsWith("topptipset") ? "topptipset" : slug;
 const UA = { "accept": "application/json", "user-agent": "Tipsmotorn/1.0 (personal use)" };
 const LEAGUE_KEYS: Record<string, string> = {"premier league":"soccer_epl","championship":"soccer_efl_champ","league one":"soccer_england_league1","league two":"soccer_england_league2","allsvenskan":"soccer_sweden_allsvenskan","superettan":"soccer_sweden_superettan","la liga":"soccer_spain_la_liga","laliga":"soccer_spain_la_liga","serie a":"soccer_italy_serie_a","serie b":"soccer_italy_serie_b","bundesliga":"soccer_germany_bundesliga","2. bundesliga":"soccer_germany_bundesliga2","ligue 1":"soccer_france_ligue_one","ligue 2":"soccer_france_ligue_two","eredivisie":"soccer_netherlands_eredivisie","eliteserien":"soccer_norway_eliteserien","champions league":"soccer_uefa_champs_league","europa league":"soccer_uefa_europa_league","conference league":"soccer_uefa_europa_conference_league","premiership":"soccer_spl","primeira liga":"soccer_portugal_primeira_liga","superligaen":"soccer_denmark_superliga","superliga":"soccer_denmark_superliga","fa cup":"soccer_fa_cup","efl cup":"soccer_england_efl_cup","super lig":"soccer_turkey_super_league","pro league":"soccer_belgium_first_div","segunda division":"soccer_spain_segunda_division","mls":"soccer_usa_mls"};
 
@@ -58,25 +64,32 @@ export async function collectOpen(d: Deps) {
   const out: any[] = [];
   let jackpots: any[] = [];
   try { jackpots = (await getJSON(d.fetch, SS + "jackpots")).jackpots || []; } catch (e) { d.log?.("jackpots: " + e); }
+  const oddsCache = new Map<string, any[]>(); // one Odds API call per league per run, shared by all rounds
   for (const g of Object.keys(GAMES)) {
     let draws: any[] = [];
-    try { draws = (await getJSON(d.fetch, SS + g + "/draws")).draws || []; } catch (e) { d.log?.(`${g} draws: ${e}`); continue; }
+    try { draws = (await getJSON(d.fetch, SS + LIST_PATH[g] + "/draws")).draws || []; } catch (e) { d.log?.(`${g} draws: ${e}`); continue; }
     for (const dr of draws) {
-      const id = `${g}-${dr.drawNumber}`;
+      const slug = dr.productName ? slugOf(dr.productName) : g;
+      if (familyOf(slug) !== g) continue;
+      const id = `${slug}-${dr.drawNumber}`;
       const existing = await d.store.getRound(id);
-      let roll = existing ? Number(existing.roll_sale || 0) : 0;
-      if (!existing) {
+      // Rollover. Topptipset reports it on the draw (fund.rolloverIn + extraMoney, in kr added to the pot).
+      // Stryktipset/Europatipset: if the previous draw had no top-tier winner, store its turnover; the app scales it.
+      // null = not known yet (previous draw not finished), retried on the next run.
+      const fund = dr.fund ? (num(dr.fund.rolloverIn) || 0) + (num(dr.fund.extraMoney) || 0) : null;
+      let roll: number | null = existing && existing.roll_sale != null ? Number(existing.roll_sale) : null;
+      if (fund == null && roll == null) {
         try {
-          const p = (await getJSON(d.fetch, `${SS}${g}/draws/${dr.drawNumber - 1}/result`)).result;
+          const p = (await getJSON(d.fetch, `${SS}${slug}/draws/${dr.drawNumber - 1}/result`)).result;
           const t = (p?.distribution || []).find((z: any) => z.winDiv === 0);
-          if (p && (!t || !t.winners)) roll = num(p.currentNetSale) || 0;
-        } catch (_) { /* previous round unknown: no rollover */ }
+          roll = p ? ((!t || !t.winners) ? (num(p.currentNetSale) || 0) : 0) : null;
+        } catch (_) { roll = null; }
       }
-      const jp = jackpots.find((z: any) => String(z.productName).toLowerCase() === g && z.drawNumber === dr.drawNumber);
+      const jp = jackpots.find((z: any) => slugOf(z.productName) === slug && z.drawNumber === dr.drawNumber);
       const jackpot = num((jp?.jackpots || []).find((z: any) => z.windiv === 0)?.jackpotAmount) || 0;
       const guarantee = num((jp?.guaranteedJackpots || []).find((z: any) => z.windiv === 0)?.jackpotAmount) || 0;
-      const round = { id, game: GAMES[g], draw: dr.drawNumber, name: dr.regCloseDescription || null, close_at: dr.regCloseTime, state: dr.drawState,
-        sale: num(dr.currentNetSale), row_price: num(dr.rowPrice) || 1, jackpot, guarantee, roll_sale: roll, updated_at: new Date(d.now()).toISOString() };
+      const round = { id, game: GAMES[g], product: dr.productName || GAMES[g], draw: dr.drawNumber, name: dr.regCloseDescription || null, close_at: dr.regCloseTime, state: dr.drawState,
+        sale: num(dr.currentNetSale), row_price: num(dr.rowPrice) || 1, jackpot, guarantee, roll_sale: fund == null ? roll : 0, extra: fund || 0, updated_at: new Date(d.now()).toISOString() };
       await d.store.upsertRound(round);
       const matches = (dr.drawEvents || []).map((e: any) => {
         const ps = e.match?.participants || [];
@@ -86,32 +99,42 @@ export async function collectOpen(d: Deps) {
           odds: triple(e.odds), start_odds: triple(e.startOdds), streck: triple(e.svenskaFolket) };
       });
       if (matches.length) await d.store.upsertMatches(matches);
-      // Streck/odds snapshot for drift analysis: within 5 days of the close, at most every 14 minutes.
+      // Streck/odds snapshot for drift analysis: within 5 days of the close; every 14 minutes in the last day, hourly before that.
       const closeMs = Date.parse(dr.regCloseTime), nowMs = d.now();
       let snap = false;
       if (closeMs - nowMs < 5 * 86400e3 && closeMs > nowMs && matches.length) {
         const last = await d.store.lastSnapshotAt(id);
-        if (!last || nowMs - last > 14 * 60e3) { await d.store.insertSnapshot({ round_id: id, sale: round.sale, odds: matches.map((m: any) => m.odds), streck: matches.map((m: any) => m.streck) }); snap = true; }
+        const every = closeMs - nowMs < 86400e3 ? 14 * 60e3 : 59 * 60e3;
+        if (!last || nowMs - last > every) { await d.store.insertSnapshot({ round_id: id, sale: round.sale, odds: matches.map((m: any) => m.odds), streck: matches.map((m: any) => m.streck) }); snap = true; }
       }
-      // Sharp odds, throttled to one fetch per time window.
+      // Sharp odds, throttled to one fetch per time window. Topptipset only in the pre-lineup window, to stay within the free credits.
       let sharp = 0;
-      const stage = sharpStage(closeMs, nowMs);
+      let stage = sharpStage(closeMs, nowMs);
+      if (g === "topptipset" && stage !== "p") stage = null;
       if (d.oddsKey && stage && existing?.sharp_stage !== stage) {
-        try { sharp = await fetchSharp(d, id, matches); await d.store.updateRound(id, { sharp_stage: stage }); }
+        try { sharp = await fetchSharp(d, id, matches, oddsCache); await d.store.updateRound(id, { sharp_stage: stage }); }
         catch (e) { d.log?.(`sharp ${id}: ${e}`); }
       }
-      out.push({ id, state: dr.drawState, matches: matches.length, jackpot, guarantee, roll, snap, sharp, stage });
+      out.push({ id, state: dr.drawState, matches: matches.length, jackpot, guarantee, roll, extra: fund || 0, snap, sharp, stage });
     }
   }
   return out;
 }
 
-export async function fetchSharp(d: Deps, roundId: string, matches: any[]): Promise<number> {
+export async function fetchSharp(d: Deps, roundId: string, matches: any[], cache: Map<string, any[]> = new Map()): Promise<number> {
   const keys = [...new Set(matches.map((m) => sportKey(m.league)).filter(Boolean))] as string[];
   const events: any[] = [];
   for (const k of keys) {
-    const url = `https://api.the-odds-api.com/v4/sports/${k}/odds/?apiKey=${d.oddsKey}&bookmakers=pinnacle,betfair_ex_eu,betfair_ex_uk&markets=h2h&oddsFormat=decimal`;
-    try { const j = await getJSON(d.fetch, url); if (Array.isArray(j)) events.push(...j); } catch (e) { d.log?.(`odds ${k}: ${e}`); }
+    if (!cache.has(k)) {
+      const url = `https://api.the-odds-api.com/v4/sports/${k}/odds/?apiKey=${d.oddsKey}&bookmakers=pinnacle,betfair_ex_eu,betfair_ex_uk&markets=h2h&oddsFormat=decimal`;
+      try {
+        const r = await d.fetch(url, { headers: UA });
+        if (!r.ok) throw new Error(`${r.status}`);
+        const left = r.headers.get("x-requests-remaining"); if (left != null) d.log?.(`odds credits left: ${left}`);
+        const j = await r.json(); cache.set(k, Array.isArray(j) ? j : []);
+      } catch (e) { d.log?.(`odds ${k}: ${e}`); cache.set(k, []); }
+    }
+    events.push(...(cache.get(k) || []));
   }
   const cands = events.map((ev) => {
     const bk = ["pinnacle", "betfair_ex_eu", "betfair_ex_uk"].map((k) => (ev.bookmakers || []).find((b: any) => b.key === k)).find(Boolean);
@@ -138,13 +161,20 @@ export async function fetchSharp(d: Deps, roundId: string, matches: any[]): Prom
 }
 
 // ---------- finished rounds ----------
+// Rows are stored concatenated; the row length is the number of matches (13, or 8 on Topptipset).
+// Paying tiers come from the result itself, so 13/12/11/10 and Topptipset's single 8-rätt tier both work.
 export function gradeRows(rowsConcat: string, correct: string, tiers: any) {
-  const res: any = { row: correct, best: 0, c13: 0, c12: 0, c11: 0, c10: 0 }; let payout = 0;
-  for (let i = 0; i + 13 <= rowsConcat.length; i += 13) {
-    const r = rowsConcat.slice(i, i + 13); let k = 0;
-    for (let j = 0; j < 13; j++) if (correct[j] === "C" || r[j] === correct[j]) k++;
+  const M = correct.length;
+  const paying = Object.keys(tiers || {}).map(Number).filter((k) => k > 0);
+  const low = paying.length ? Math.min(...paying) : M;
+  const res: any = { row: correct, best: 0, n: M }; for (let k = low; k <= M; k++) res["c" + k] = 0;
+  let payout = 0;
+  if (!M) return { result: res, payout };
+  for (let i = 0; i + M <= rowsConcat.length; i += M) {
+    const r = rowsConcat.slice(i, i + M); let k = 0;
+    for (let j = 0; j < M; j++) if (correct[j] === "C" || r[j] === correct[j]) k++;
     if (k > res.best) res.best = k;
-    if (k >= 10) { res["c" + k]++; payout += tiers?.[k]?.a || 0; }
+    if (k >= low) { res["c" + k]++; payout += tiers?.[k]?.a || 0; }
   }
   return { result: res, payout };
 }
@@ -152,7 +182,7 @@ export async function collectResults(d: Deps) {
   const out: any[] = [];
   const pending = await d.store.roundsAwaitingResults(new Date(d.now()).toISOString());
   for (const rd of pending) {
-    const g = String(rd.game).toLowerCase();
+    const g = productOfId(rd.id);
     try {
       const dr = (await getJSON(d.fetch, `${SS}${g}/draws/${rd.draw}`)).draw;
       if (!dr || dr.drawState !== "Finalized") { await d.store.updateRound(rd.id, { state: dr?.drawState || rd.state }); out.push({ id: rd.id, state: dr?.drawState }); continue; }
@@ -165,7 +195,7 @@ export async function collectResults(d: Deps) {
       await d.store.insertResult({ round_id: rd.id, correct_row: correct, tiers, sale });
       for (const e of evs) { const x = byN[e.eventNumber]; await d.store.updateMatch(rd.id, e.eventNumber, stripUndef({ outcome: x?.cancelled ? "C" : x?.outcome || null, score: x?.outcomeScore ? `${x.outcomeScore.home}-${x.outcomeScore.away}` : null, streck: triple(e.svenskaFolket) || undefined })); }
       await d.store.updateRound(rd.id, { state: "Finalized", sale });
-      await d.store.upsertHistory({ game: rd.game, draw: rd.draw, close_at: rd.close_at, sale, tiers, events: evs.map((e: any) => ({ r: byN[e.eventNumber]?.outcome || null, so: triple(e.startOdds), s: triple(e.svenskaFolket), lg: e.match?.league?.name || null, ko: e.match?.matchStart || null })) });
+      await d.store.upsertHistory({ game: rd.product || rd.game, draw: rd.draw, close_at: rd.close_at, sale, tiers, events: evs.map((e: any) => ({ r: byN[e.eventNumber]?.outcome || null, so: triple(e.startOdds), s: triple(e.svenskaFolket), lg: e.match?.league?.name || null, ko: e.match?.matchStart || null })) });
       let graded = 0;
       for (const s of await d.store.systemsForRound(rd.id)) { const { result, payout } = gradeRows(s.rows || "", correct, tiers); await d.store.updateSystem(s.id, { result, payout }); graded++; }
       out.push({ id: rd.id, correct, graded });
@@ -177,14 +207,14 @@ const stripUndef = (o: any) => Object.fromEntries(Object.entries(o).filter(([, v
 
 // ---------- history backfill (one-off, ~40 rounds per call) ----------
 export async function backfill(d: Deps, game: string, from: number, to: number) {
-  const g = game.toLowerCase(); let n = 0; const errors: string[] = [];
+  const g = slugOf(game); let n = 0; const errors: string[] = [];
   for (let k = to; k >= from && n < 40; k--, n++) {
     try {
       const [dj, rj] = await Promise.all([getJSON(d.fetch, `${SS}${g}/draws/${k}`), getJSON(d.fetch, `${SS}${g}/draws/${k}/result`)]);
       const dr = dj.draw, r = rj.result; if (!dr || !r || r.cancelled) continue;
       const byN: Record<number, any> = {}; (r.events || []).forEach((e: any) => byN[e.eventNumber] = e);
       const tiers: any = {}; (r.distribution || []).forEach((t: any) => { const kk = parseInt(t.name); if (kk) tiers[kk] = { w: t.winners, a: num(t.amount) || 0 }; });
-      await d.store.upsertHistory({ game: GAMES[g], draw: k, close_at: dr.regCloseTime, sale: num(dr.currentNetSale), tiers,
+      await d.store.upsertHistory({ game: dr.productName || GAMES[g] || g, draw: k, close_at: dr.regCloseTime, sale: num(dr.currentNetSale), tiers,
         events: (dr.drawEvents || []).map((e: any) => ({ r: byN[e.eventNumber]?.cancelled ? "C" : byN[e.eventNumber]?.outcome || null, so: triple(e.startOdds), s: triple(e.svenskaFolket), lg: e.match?.league?.name || null, ko: e.match?.matchStart || null })) });
     } catch (e) { errors.push(`${k}: ${e}`); }
   }

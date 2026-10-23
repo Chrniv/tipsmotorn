@@ -235,7 +235,7 @@ table.t tr.hl td{background:color-mix(in srgb,var(--good) 10%,var(--card))}
   <section id="view-coupon">
     <div class="roundbar">
       <div class="field"><label for="game">Spel</label>
-        <select id="game" class="inp"><option>Stryktipset</option><option>Europatipset</option></select></div>
+        <select id="game" class="inp"><option>Stryktipset</option><option>Europatipset</option><option>Topptipset</option></select></div>
       <div class="field" style="flex:1;min-width:200px"><label for="roundSel">Omgång</label>
         <select id="roundSel" class="inp"></select></div>
       <div style="display:flex;gap:6px;flex-wrap:wrap;align-self:flex-end">
@@ -261,11 +261,11 @@ table.t tr.hl td{background:color-mix(in srgb,var(--good) 10%,var(--card))}
       <div class="rc-side">
         <div class="rc-inputs">
           <div class="field"><label for="turnover">Väntad oms., kr</label><input id="turnover" class="inp num" type="number" min="100000" step="100000"></div>
-          <div class="field"><label for="jackpot">Jackpott 13 rätt</label><input id="jackpot" class="inp num" type="number" min="0" step="100000" placeholder="0"></div>
+          <div class="field"><label for="jackpot" id="jackpotLbl">Jackpott 13 rätt</label><input id="jackpot" class="inp num" type="number" min="0" step="100000" placeholder="0"></div>
           <div class="field"><label for="baseStake">Grundinsats</label><input id="baseStake" class="inp num" type="number" min="1" step="1"></div>
         </div>
         <label class="hint" style="display:flex;gap:6px;align-items:center"><input type="checkbox" id="useBlend"> Väg in folkets streck i sannolikheten (historiskt bättre, särskilt på Europatipset)</label>
-        <p class="hint">Siffrorna är modellens förväntade återbetalning, räknad över alla utfall med 10 till 13 rätt, Svenska Spels prisfördelning, 15-kronorsregeln och garantin. Modellen har legat cirka 0,10–0,15 lägre än utfallet historiskt, så se den som försiktig. Insatsförslaget är en tumregel, inte en garanti.</p>
+        <p class="hint" id="modelHint">Siffrorna är modellens förväntade återbetalning, räknad över alla utfall med 10 till 13 rätt, Svenska Spels prisfördelning, 15-kronorsregeln och garantin. Modellen har legat cirka 0,10–0,15 lägre än utfallet historiskt, så se den som försiktig. Insatsförslaget är en tumregel, inte en garanti.</p>
       </div>
     </div>
 
@@ -305,7 +305,7 @@ table.t tr.hl td{background:color-mix(in srgb,var(--good) 10%,var(--card))}
           </div>
           <div class="row2">
             <div class="field"><label for="maxFav">Max folkfavoriter per rad</label>
-              <select id="maxFav" class="inp"><option value="0">Ingen gräns</option><option value="10">10</option><option value="9">9</option><option value="8">8</option><option value="7">7</option><option value="6">6</option></select></div>
+              <select id="maxFav" class="inp"><option value="0">Ingen gräns</option></select></div>
             <div class="field" id="crowdCutField"><label for="crowdCut">Ta bort folkrader</label>
               <select id="crowdCut" class="inp"><option value="0.1">Mest spelade 10 %</option><option value="0.25">Mest spelade 25 %</option><option value="0.4">Mest spelade 40 %</option></select></div>
           </div>
@@ -352,30 +352,32 @@ table.t tr.hl td{background:color-mix(in srgb,var(--good) 10%,var(--card))}
 <script>
 // ===================== Engine (shared by page and worker) =====================
 function tmEngine(q, s, cfg){
+  // Tiers are indexed by misses d: d=0 is all right (13, or 8 on Topptipset). A tier with no share is skipped.
   const M = q.length;
-  const lam0 = {13:Math.exp(cfg.bias[13]||0)*cfg.N, 12:Math.exp(cfg.bias[12]||0)*cfg.N, 11:Math.exp(cfg.bias[11]||0)*cfg.N, 10:Math.exp(cfg.bias[10]||0)*cfg.N};
-  const pot = {13: cfg.share[13]*cfg.pool + (cfg.jackpot||0), 12: cfg.share[12]*cfg.pool, 11: cfg.share[11]*cfg.pool, 10: cfg.share[10]*cfg.pool};
-  const minPay = cfg.minPay || 15;
-  function pay(k, lam){
-    const P = pot[k]; if(!(P > 0)) return 0;
-    if(P/(lam+1) < minPay) return 0;
+  const lam0 = [0,1,2,3].map(d=>Math.exp((cfg.bias||{})[M-d]||0)*cfg.N);
+  const pot = [0,1,2,3].map(d=>((cfg.share||{})[M-d]||0)*cfg.pool + (d===0 ? (cfg.jackpot||0) : 0));
+  const minPay = cfg.minPay || 0;
+  function pay(d, lam){
+    const P = pot[d]; if(!(P > 0)) return 0;
+    if(minPay && P/(lam+1) < minPay) return 0;
     let v = lam < 1e-9 ? P : P*(1-Math.exp(-lam))/lam;
-    if(k===13 && cfg.guarantee > P) v += Math.exp(-lam)*(cfg.guarantee - P);
+    if(d===0 && cfg.guarantee > P) v += Math.exp(-lam)*(cfg.guarantee - P);
     return v;
   }
   function rowEV(r){
     let pq = 1, pc = 1; const c = new Array(M), x = new Array(M), qa = new Array(M); let P1=0,P2=0,P3=0;
     for(let j=0;j<M;j++){ const cj = Math.max(1e-4, s[j][r[j]]); c[j]=cj; pc*=cj; qa[j]=Math.max(1e-6,q[j][r[j]]); pq*=qa[j]; const xj=(1-cj)/cj; x[j]=xj; P1+=xj; P2+=xj*xj; P3+=xj*xj*xj; }
-    let ev = pq * pay(13, lam0[13]*pc);
+    let ev = pq * pay(0, lam0[0]*pc);
+    if(!(pot[1]>0) && !(pot[2]>0) && !(pot[3]>0)) return ev;
     const alt = [];
     for(let j=0;j<M;j++){ const a=[]; for(let w=0;w<3;w++) if(w!==r[j]){ const cw=Math.max(1e-4,s[j][w]); a.push({qr:q[j][w]/qa[j], cr:cw/c[j], dx:(1-cw)/cw}); } alt.push(a); }
-    for(let j=0;j<M;j++) for(const A of alt[j]){ const pW = pq*A.qr; if(pW<1e-14) continue; ev += pW * pay(12, lam0[12]*pc*A.cr*(P1 - x[j] + A.dx)); }
-    for(let j=0;j<M;j++) for(const A of alt[j]) for(let k=j+1;k<M;k++) for(const B of alt[k]){
+    if(pot[1]>0) for(let j=0;j<M;j++) for(const A of alt[j]){ const pW = pq*A.qr; if(pW<1e-14) continue; ev += pW * pay(1, lam0[1]*pc*A.cr*(P1 - x[j] + A.dx)); }
+    if(pot[2]>0) for(let j=0;j<M;j++) for(const A of alt[j]) for(let k=j+1;k<M;k++) for(const B of alt[k]){
       const pW = pq*A.qr*B.qr; if(pW<1e-14) continue;
       const s1 = P1 - x[j] - x[k] + A.dx + B.dx, s2 = P2 - x[j]*x[j] - x[k]*x[k] + A.dx*A.dx + B.dx*B.dx;
-      ev += pW * pay(11, lam0[11]*pc*A.cr*B.cr*(s1*s1 - s2)/2);
+      ev += pW * pay(2, lam0[2]*pc*A.cr*B.cr*(s1*s1 - s2)/2);
     }
-    for(let j=0;j<M;j++) for(const A of alt[j]) for(let k=j+1;k<M;k++) for(const B of alt[k]){
+    if(pot[3]>0) for(let j=0;j<M;j++) for(const A of alt[j]) for(let k=j+1;k<M;k++) for(const B of alt[k]){
       const pAB = pq*A.qr*B.qr; if(pAB<1e-14) continue;
       for(let l=k+1;l<M;l++) for(const C of alt[l]){
         const pW = pAB*C.qr; if(pW<1e-14) continue;
@@ -383,7 +385,7 @@ function tmEngine(q, s, cfg){
         const s2 = P2 - x[j]*x[j]-x[k]*x[k]-x[l]*x[l] + A.dx*A.dx+B.dx*B.dx+C.dx*C.dx;
         const s3 = P3 - x[j]**3-x[k]**3-x[l]**3 + A.dx**3+B.dx**3+C.dx**3;
         const e2 = (s1*s1 - s2)/2, e3 = (e2*s1 - s1*s2 + s3)/3;
-        ev += pW * pay(10, lam0[10]*pc*A.cr*B.cr*C.cr*e3);
+        ev += pW * pay(3, lam0[3]*pc*A.cr*B.cr*C.cr*e3);
       }
     }
     return ev;
@@ -412,6 +414,7 @@ function tmStats(q, s, cfg, strs, onProg){
   if(n > 700){ sampled = true; evIdx = []; for(let t=0;t<700;t++) evIdx.push(Math.floor(rnd()*n)); }
   let evSum = 0;
   evIdx.forEach((i,k)=>{ evSum += E.rowEV(rows[i]); if(onProg && k%40===0) onProg(0.85*k/evIdx.length); });
+  // Chance that at least one row is all right: rows are distinct, so the per-row chances add up exactly.
   let p13 = 0; for(const r of rows){ let p=1; for(let j=0;j<M;j++) p*=q[j][r[j]]; p13+=p; }
   const sims = Math.max(200, Math.min(3000, Math.floor(8e6/Math.max(1,n*M))));
   let c12=0,c11=0,c10=0; const W = new Array(M);
@@ -419,10 +422,11 @@ function tmStats(q, s, cfg, strs, onProg){
   for(let t=0;t<sims;t++){
     for(let j=0;j<M;j++){ const u=rnd(); W[j] = u<q[j][0]?0:(u<q[j][0]+q[j][1]?1:2); }
     let best = 0;
-    for(let i=0;i<n && best<13;i++){ let h=0; const o=i*M; for(let j=0;j<M;j++) if(flat[o+j]===W[j]) h++; if(h>best) best=h; }
-    if(best>=12) c12++; if(best>=11) c11++; if(best>=10) c10++;
+    for(let i=0;i<n && best<M;i++){ let h=0; const o=i*M; for(let j=0;j<M;j++) if(flat[o+j]===W[j]) h++; if(h>best) best=h; }
+    if(best>=M-1) c12++; if(best>=M-2) c11++; if(best>=M-3) c10++;
   }
   if(onProg) onProg(1);
+  // p13 = chance of all right (13, or 8 on Topptipset); p12/p11/p10 = at least one, two, three misses.
   return {ev: evSum/evIdx.length, sampled, p13, p12: c12/sims, p11: c11/sims, p10: c10/sims};
 }
 function tmBase(q, s, cfg, tiltB){
@@ -449,11 +453,17 @@ function tmWorkerMain(){
 (() => {
 // ===================== Constants =====================
 const SIGNS = ['1','X','2'];
+// Per game: matches, payout share of stakes, split per tier (by number right), minimum payout per row,
+// default final turnover, and how a previous round without a top-tier winner carries over.
 const PARAMS = {
-  payout: 0.65, minPay: 15,
-  Stryktipset: {share:{13:.40,12:.15,11:.12,10:.25}, guarantee:1e7, bias:{13:0,12:0,11:0,10:0}, blend:{a:.85,b:.10}, tilt:35, turnover:{6:24500000,0:22400000,def:24500000}, rollFactor:1.1},
-  Europatipset: {share:{13:.39,12:.22,11:.12,10:.25}, guarantee:0, bias:{13:-.10,12:-.10,11:-.08,10:-.07}, blend:{a:.60,b:.30}, tilt:20, turnover:{0:8600000,2:5500000,3:5600000,4:4900000,def:6500000}, rollFactor:1.4}
+  Stryktipset: {matches:13, payout:.65, minPay:15, share:{13:.40,12:.15,11:.12,10:.25}, guarantee:1e7, bias:{13:0,12:0,11:0,10:0}, blend:{a:.85,b:.10}, tilt:35, turnover:{6:24500000,0:22400000,def:24500000}, rollFactor:1.1, favOpts:[10,9,8,7,6], tested:true},
+  Europatipset: {matches:13, payout:.65, minPay:15, share:{13:.39,12:.22,11:.12,10:.25}, guarantee:0, bias:{13:-.10,12:-.10,11:-.08,10:-.07}, blend:{a:.60,b:.30}, tilt:20, turnover:{0:8600000,2:5500000,3:5600000,4:4900000,def:6500000}, rollFactor:1.4, favOpts:[10,9,8,7,6], tested:true},
+  // Topptipset: 8 matches, one tier (8 rätt), 70 % paid out (checked against results 4400 and Stryk 985).
+  // Rollover arrives as kr in rounds.extra. Blend and tilt are not backtested yet; set between the two calibrated games.
+  Topptipset: {matches:8, payout:.70, minPay:10, share:{8:1}, guarantee:0, bias:{8:0}, blend:{a:.75,b:.20}, tilt:25, turnover:{def:1200000}, productTurnover:{'Topptipset Stryk':2000000,'Topptipset Extra':1500000}, rollFactor:0, favOpts:[6,5,4,3], tested:false}
 };
+const NM = () => PARAMS[S.game].matches;
+const TOP = () => NM();
 const BT = {
   range: {s:'113 omgångar, juli 2024 – oktober 2026', e:'211 omgångar, september 2024 – oktober 2026'},
   strat: [
@@ -472,11 +482,11 @@ const lsGet = k => { try { return JSON.parse(localStorage.getItem(k) || 'null');
 const lsSet = (k,v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} };
 function emptyRound(game){
   const st = lsGet(SETTINGS_KEY) || {};
-  return {id:null, game, name:'', draw:null, close:null, state:null, fetchedSale:null, turnover:null, jackpot:0, guarantee:PARAMS[game].guarantee, rollSale:0,
+  return {id:null, game, product:game, name:'', draw:null, close:null, state:null, fetchedSale:null, turnover:null, jackpot:0, guarantee:PARAMS[game].guarantee, rollSale:0, extra:0,
     base: st.base || 100, useBlend: st.useBlend!==false, tilt: (st.tilt && st.tilt[game]!=null) ? st.tilt[game] : PARAMS[game].tilt,
     budget: st.budget || 96, reduce: st.reduce || 'ev', maxFav: st.maxFav || 0, cut: st.cut || 0.25, fmt: st.fmt || 'comma', rows:null, matches:[], result:null, updatedAt:null};
 }
-let S = emptyRound((lsGet(SETTINGS_KEY)||{}).game || 'Stryktipset');
+let S = emptyRound(PARAMS[(lsGet(SETTINGS_KEY)||{}).game] ? lsGet(SETTINGS_KEY).game : 'Stryktipset');
 let editing = false, saved = [], sb = null, session = null, lastLoad = 0;
 const $ = id => document.getElementById(id);
 const parseNum = v => { if(v==null||v==='') return null; const n = parseFloat(String(v).replace(/\s/g,'').replace(',','.')); return isFinite(n) ? n : null; };
@@ -508,39 +518,58 @@ function probs(m){
 function values(m){ const p=probs(m), f=crowd(m); return p&&f ? p.map((x,i)=>x/f[i]) : null; }
 const tiltB = () => (+S.tilt||0)/100;
 function tilted(m){ const p=probs(m), f=crowd(m); if(!p||!f) return null; return norm(p.map((x,i)=>x*Math.pow(x/f[i], tiltB()))); }
-function defaultTurnover(){ const P=PARAMS[S.game]; const d=new Date(S.close); const wd=isNaN(d)?null:d.getDay(); return (wd!=null && P.turnover[wd]) || P.turnover.def; }
-function cfgFor(){
-  const P = PARAMS[S.game], N = Math.max(1e5, +S.turnover || defaultTurnover()), pool = PARAMS.payout*N, base13 = P.share[13]*pool;
-  const roll = S.rollSale ? P.rollFactor*P.share[13]*PARAMS.payout*S.rollSale : 0;
-  const jp = +S.jackpot || 0;
-  const extra = Math.max(roll, jp>0 ? jp-base13 : 0, 0);
-  const guarantee = S.guarantee!=null ? +S.guarantee : P.guarantee;
-  return {N, pool, share:P.share, jackpot:extra, guarantee, bias:P.bias, minPay:PARAMS.minPay};
+function defaultTurnover(){
+  const P=PARAMS[S.game]; if(P.productTurnover && P.productTurnover[S.product]) return P.productTurnover[S.product];
+  const d=new Date(S.close); const wd=isNaN(d)?null:d.getDay(); return (wd!=null && P.turnover[wd]) || P.turnover.def;
 }
-const ready = () => S.matches.length===13 && S.matches.every(m=>probs(m)&&crowd(m));
+// Expected final turnover. Closed round: the real figure. Open round: scale up the sale so far by the share that is
+// usually sold at this many hours before the close (measured on Europatipset 2618, Oct 2026: only 74 % is in at the
+// close, the rest is registered after), and lean on the typical turnover for the game while the close is far off.
+const SALE_CURVE = [[0,.74],[.5,.68],[1,.59],[2,.51],[3,.43],[4,.38],[5,.32],[6,.28],[8,.23],[10,.18],[12,.15],[18,.13],[24,.12],[30,.093],[36,.067],[48,.047]];
+function soldShare(h){
+  const C = SALE_CURVE; if(h <= 0) return C[0][1]; if(h >= C[C.length-1][0]) return C[C.length-1][1];
+  for(let i=1;i<C.length;i++) if(h <= C[i][0]){ const [h0,f0]=C[i-1], [h1,f1]=C[i]; return f0 + (f1-f0)*(h-h0)/(h1-h0); }
+}
+function expectedTurnover(){
+  if(+S.turnover) return +S.turnover;
+  const sale = +S.fetchedSale || 0, h = (Date.parse(S.close) - Date.now())/3600e3, def = defaultTurnover();
+  if(sale > 0 && !(h > 0)) return S.state==='Finalized' ? sale : sale/SALE_CURVE[0][1];
+  if(!(sale > 0)) return def;
+  const w = Math.max(0, Math.min(1, 1 - h/30));            // trust in the sale-based estimate
+  return Math.max(sale, w*(sale/soldShare(h)) + (1-w)*def);
+}
+function cfgFor(){
+  const P = PARAMS[S.game], top = P.matches, N = Math.max(5e4, expectedTurnover()), pool = P.payout*N, baseTop = (P.share[top]||0)*pool;
+  const roll = S.rollSale ? P.rollFactor*(P.share[top]||0)*P.payout*S.rollSale : 0;
+  const jp = +S.jackpot || 0;
+  const extra = Math.max(roll, jp>0 ? jp-baseTop : 0, 0) + (+S.extra || 0);
+  const guarantee = S.guarantee!=null ? +S.guarantee : P.guarantee;
+  return {N, pool, share:P.share, jackpot:extra, guarantee, bias:P.bias, minPay:P.minPay};
+}
+const ready = () => S.matches.length===NM() && S.matches.every(m=>probs(m)&&crowd(m));
 const QS = () => ({q:S.matches.map(probs), s:S.matches.map(crowd)});
 
 // ===================== Rows =====================
 const selIdx = m => [0,1,2].filter(i=>m.sel[i]);
 function enumerate(limit){
-  if(S.matches.length!==13) return null;
+  const M = NM(); if(S.matches.length!==M) return null;
   const sets = S.matches.map(selIdx);
   if(sets.some(x=>!x.length)) return null;
   const total = sets.reduce((a,x)=>a*x.length,1);
   if(total > limit) return {tooMany:true, total};
-  const out = [], idx = new Array(13);
-  for(let n=0;n<total;n++){ let k=n, r=''; for(let j=12;j>=0;j--){ const L=sets[j].length; idx[j]=sets[j][k%L]; k=Math.floor(k/L); } for(let j=0;j<13;j++) r+=SIGNS[idx[j]]; out.push(r); }
+  const out = [], idx = new Array(M);
+  for(let n=0;n<total;n++){ let k=n, r=''; for(let j=M-1;j>=0;j--){ const L=sets[j].length; idx[j]=sets[j][k%L]; k=Math.floor(k/L); } for(let j=0;j<M;j++) r+=SIGNS[idx[j]]; out.push(r); }
   return {rows:out, total};
 }
 function favFilter(rows){
   const mf = +S.maxFav||0; if(!mf) return rows;
   const fav = S.matches.map(m=>{ const f=crowd(m); return f?SIGNS[f.indexOf(Math.max(...f))]:null; });
-  return rows.filter(r=>{ let c=0; for(let j=0;j<13;j++) if(r[j]===fav[j]) c++; return c<=mf; });
+  return rows.filter(r=>{ let c=0; for(let j=0;j<r.length;j++) if(r[j]===fav[j]) c++; return c<=mf; });
 }
 function crowdCut(rows){
   const cut = +S.cut||0; if(!cut || S.reduce!=='crowd') return rows;
   const fs = S.matches.map(crowd); if(fs.some(f=>!f)) return rows;
-  const sc = rows.map(r=>{ let p=1; for(let j=0;j<13;j++) p*=fs[j][SIGNS.indexOf(r[j])]; return p; });
+  const sc = rows.map(r=>{ let p=1; for(let j=0;j<r.length;j++) p*=fs[j][SIGNS.indexOf(r[j])]; return p; });
   const order = rows.map((_,i)=>i).sort((a,b)=>sc[b]-sc[a]);
   const drop = new Set(order.slice(0, Math.floor(rows.length*cut)));
   return rows.filter((_,i)=>!drop.has(i));
@@ -554,7 +583,7 @@ function coverDP(cap){
   const ts = S.matches.map(tilted);
   const subsets = [[0],[1],[2],[0,1],[0,2],[1,2],[0,1,2]];
   let dp = new Map([['0,0',{score:0,pick:[]}]]);
-  for(let j=0;j<13;j++){
+  for(let j=0;j<S.matches.length;j++){
     const m=S.matches[j], t=ts[j];
     const opts = m.lock && selIdx(m).length ? [selIdx(m)] : subsets;
     const nd = new Map();
@@ -597,7 +626,7 @@ let building = false;
 async function buildSystem(){
   if(building) return;
   $('optMsg').textContent='';
-  if(!ready()){ $('optMsg').textContent='Alla 13 matcher behöver odds och streck.'; return; }
+  if(!ready()){ $('optMsg').textContent=`Alla ${NM()} matcher behöver odds och streck.`; return; }
   const B = Math.max(1, Math.floor(+S.budget||1));
   const mode = S.reduce;
   S.rows = null;
@@ -615,7 +644,7 @@ async function buildSystem(){
     const target = Math.min(pool, space);
     for(let a=0; a<target*40 && seen.size<target; a++){
       let r='', nf=0;
-      for(let j=0;j<13;j++){ const u=rnd(), p=t[j]; const i = u<p[0]?0:(u<p[0]+p[1]?1:2); if(i===fav[j]) nf++; r+=SIGNS[i]; }
+      for(let j=0;j<t.length;j++){ const u=rnd(), p=t[j]; const i = u<p[0]?0:(u<p[0]+p[1]?1:2); if(i===fav[j]) nf++; r+=SIGNS[i]; }
       if(mf && nf>mf) continue;
       seen.add(r);
     }
@@ -668,6 +697,7 @@ async function runStats(){
 }
 function grade(ev){
   if(ev==null) return null;
+  ev = ev * 0.65 / PARAMS[S.game].payout; // same bar relative to what the game pays back
   if(ev < 0.70) return {t:'Svag omgång', c:'g0', m:0.5};
   if(ev < 0.85) return {t:'Normal omgång', c:'g1', m:1};
   if(ev < 1.00) return {t:'Bra omgång', c:'g2', m:1.5};
@@ -682,7 +712,12 @@ function lineupInfo(){
 }
 function renderRound(){
   const cfg = cfgFor();
-  $('turnover').placeholder = Math.round(defaultTurnover()).toString();
+  const top = TOP();
+  $('turnover').placeholder = Math.round(expectedTurnover()).toString();
+  $('jackpotLbl').textContent = `Jackpott ${top} rätt`;
+  $('modelHint').textContent = PARAMS[S.game].tested
+    ? `Siffrorna är modellens förväntade återbetalning, räknad över alla utfall med ${top-3} till ${top} rätt, Svenska Spels prisfördelning, 15-kronorsregeln och garantin. Modellen har legat cirka 0,10–0,15 lägre än utfallet historiskt, så se den som försiktig. Insatsförslaget är en tumregel, inte en garanti.`
+    : `Topptipset: bara 8 rätt ger vinst, 70 % av insatserna går tillbaka och rullpotten räknas in. Modellen är samma som för Stryktipset men ännu inte testad mot Topptipsets historik, så se siffrorna som en riktning. Insatsförslaget är en tumregel.`;
   const sysEV = statsRes ? statsRes.ev : null;
   $('figSys').textContent = sysEV==null ? '–' : fmtNum(sysEV);
   $('figCrowd').textContent = baseRes ? fmtNum(baseRes.crowd) : '–';
@@ -696,15 +731,16 @@ function renderRound(){
   const facts = [];
   if(baseRes) facts.push(`Betyget bygger på värdelutade rader utan urval: <b>${fmtNum(baseRes.value)} kr per krona</b>, mot ${fmtNum(baseRes.crowd)} för rader som följer folket.`);
   if(S.close) facts.push(`Spelstopp ${esc(dayTime(S.close))}.`);
-  const tot = +S.turnover || defaultTurnover();
-  facts.push(`Väntad omsättning ${fmtMkr(tot)}${S.fetchedSale?`, hittills ${fmtMkr(S.fetchedSale)}`:''}. 13-rättspotten blir cirka ${fmtMkr(PARAMS[S.game].share[13]*PARAMS.payout*tot + cfg.jackpot)}.`);
-  if(+S.jackpot) facts.push(`<b>Jackpott ${fmtMkr(+S.jackpot)}</b> på 13 rätt. Höjer värdet på omgången.`);
-  if(S.rollSale) facts.push(`<b>Rullpott:</b> ingen fick 13 rätt förra omgången, cirka ${fmtMkr(cfg.jackpot)} extra i potten.`);
-  if(cfg.guarantee) facts.push(`Garanti: ensam vinnare på 13 rätt får minst ${fmtMkr(cfg.guarantee)}.`);
+  const tot = cfg.N, P = PARAMS[S.game];
+  facts.push(`Väntad omsättning ${fmtMkr(tot)}${S.fetchedSale?`, hittills ${fmtMkr(S.fetchedSale)}`:''}${+S.turnover?' (din siffra)':''}. ${top}-rättspotten blir cirka ${fmtMkr((P.share[top]||0)*P.payout*tot + cfg.jackpot)}.`);
+  if(+S.jackpot) facts.push(`<b>Jackpott ${fmtMkr(+S.jackpot)}</b> på ${top} rätt. Höjer värdet på omgången.`);
+  if(S.rollSale) facts.push(`<b>Rullpott:</b> ingen fick ${top} rätt förra omgången, cirka ${fmtMkr(cfg.jackpot)} extra i potten.`);
+  if(+S.extra) facts.push(`<b>Rullpott:</b> ${fmtMkr(+S.extra)} extra i ${top}-rättspotten den här omgången.`);
+  if(cfg.guarantee) facts.push(`Garanti: ensam vinnare på ${top} rätt får minst ${fmtMkr(cfg.guarantee)}.`);
   const li = lineupInfo();
-  if(li && li.n) facts.push(`<b>${li.n} av 13</b> matcher har startelvor före spelstopp (sista ca ${hhmm(li.at)}). Appen hämtar nya siffror automatiskt, bygg om efter det.`);
+  if(li && li.n) facts.push(`<b>${li.n} av ${S.matches.length}</b> matcher har startelvor före spelstopp (sista ca ${hhmm(li.at)}). Appen hämtar nya siffror automatiskt, bygg om efter det.`);
   const nSharp = S.matches.filter(hasSharp).length;
-  facts.push(nSharp ? `Skarpa odds i ${nSharp} av 13 matcher, Svenska Spels odds i resten.` : `Sannolikhet från Svenska Spels odds${S.useBlend?', vägt med folkets streck':''}. Skarpa odds kommer automatiskt när ODDS_API_KEY finns i Supabase.`);
+  facts.push(nSharp ? `Skarpa odds i ${nSharp} av ${S.matches.length} matcher, Svenska Spels odds i resten.` : `Sannolikhet från Svenska Spels odds${S.useBlend?', vägt med folkets streck':''}. Skarpa odds kommer automatiskt när ODDS_API_KEY finns i Supabase.`);
   $('facts').innerHTML = facts.map(f=>`<li>${f}</li>`).join('');
   $('turnover').value = S.turnover ? S.turnover : '';
   $('jackpot').value = S.jackpot ? S.jackpot : '';
@@ -724,7 +760,7 @@ function pickNews(){
     let sc=0; S.matches.forEach(m=>{ if(d.matches.some(x=>normName(x.home)===normName(m.home) && normName(x.away)===normName(m.away))) sc++; });
     if(sc>bestScore || (sc===bestScore && best && (d.updatedAt||0)>(best.updatedAt||0))){ best=d; bestScore=sc; }
   }
-  NEWS = bestScore>=7 ? best : null;
+  NEWS = bestScore>=Math.max(4, Math.round(S.matches.length*0.55)) ? best : null;
 }
 function newsFor(j){ if(!NEWS) return null; const m=S.matches[j]; return NEWS.matches.find(x=>normName(x.home)===normName(m.home) && normName(x.away)===normName(m.away)) || null; }
 function moveText(m){
@@ -814,7 +850,7 @@ function renderTicket(){
   rowsCache = currentRows();
   const r = rowsCache;
   const missing = S.matches.filter(m=>!selIdx(m).length).length;
-  if(!r){ $('costBig').textContent='–'; $('costSub').textContent=`${missing} match${missing===1?'':'er'} saknar tecken`; $('stats').innerHTML=''; $('out').value=''; $('bbText').textContent='Markera tecken i alla 13 matcher'; return; }
+  if(!r){ $('costBig').textContent='–'; $('costSub').textContent=`${missing} match${missing===1?'':'er'} saknar tecken`; $('stats').innerHTML=''; $('out').value=''; $('bbText').textContent=`Markera tecken i alla ${NM()} matcher`; return; }
   if(r.tooMany){ $('costBig').textContent=fmtKr(r.total); $('costSub').textContent='För många rader för beräkning'; $('stats').innerHTML=''; $('out').value=`Systemet har ${r.total.toLocaleString('sv-SE')} rader. Max 60 000.`; return; }
   const n = r.rows.length;
   let half=0, full=0; S.matches.forEach(m=>{ const k=selIdx(m).length; if(k===2) half++; if(k===3) full++; });
@@ -824,17 +860,19 @@ function renderTicket(){
     ? `${n.toLocaleString('sv-SE')} enskilda rader<br>à 1 kr, inget M-system`
     : `${n.toLocaleString('sv-SE')} rader<br>${half} halv · ${full} hel${n<mfull?`<br>reducerat från ${mfull.toLocaleString('sv-SE')}`:''}`;
   const st = statsRes, cls = st ? (st.ev>=0.85?'good':st.ev<0.7?'bad':'') : '';
+  const top = TOP(), tiersOn = Object.keys(PARAMS[S.game].share).map(Number).sort((a,b)=>b-a);
+  const pk = {0:'p13',1:'p12',2:'p11',3:'p10'};
   $('stats').innerHTML = `
     <dt>Förväntad återbetalning</dt><dd class="${cls}">${st?fmtNum(st.ev)+' kr/kr'+(st.sampled?'*':''):'räknar…'}</dd>
-    <dt>Chans 13 rätt</dt><dd>${st?fmtPct(st.p13,2):'–'}</dd>
-    <dt>Chans minst 12 rätt</dt><dd>${st?fmtPct(st.p12,1):'–'}</dd>
-    <dt>Chans minst 11 rätt</dt><dd>${st?fmtPct(st.p11,1):'–'}</dd>
-    <dt>Chans minst 10 rätt</dt><dd>${st?fmtPct(st.p10,1):'–'}</dd>
+    ${tiersOn.map(k=>{ const d=top-k; return d===0 ? `<dt>Chans ${top} rätt</dt><dd>${st?fmtPct(st.p13,2):'–'}</dd>` : `<dt>Chans minst ${k} rätt</dt><dd>${st?fmtPct(st[pk[d]],1):'–'}</dd>`; }).join('')}
     ${st&&st.sampled?'<dt style="grid-column:1/-1;font-size:11px">* uppskattat från ett urval av raderna</dt>':''}`;
   $('out').value = r.rows.map(x=>S.fmt==='compact'?x:x.split('').join(',')).join('\n');
-  $('bbText').textContent = `${fmtKr(n)} · ${st?fmtNum(st.ev)+' kr/kr':'räknar'} · 13 rätt ${st?fmtPct(st.p13,2):'–'}`;
+  $('bbText').textContent = `${fmtKr(n)} · ${st?fmtNum(st.ev)+' kr/kr':'räknar'} · ${top} rätt ${st?fmtPct(st.p13,2):'–'}`;
 }
 function renderControls(){
+  const fo = PARAMS[S.game].favOpts;
+  if($('maxFav').dataset.game !== S.game){ $('maxFav').innerHTML = `<option value="0">Ingen gräns</option>` + fo.map(v=>`<option value="${v}">${v}</option>`).join(''); $('maxFav').dataset.game = S.game; }
+  if(S.maxFav && !fo.includes(+S.maxFav)) S.maxFav = 0;
   $('game').value=S.game; $('budget').value=S.budget; $('tilt').value=S.tilt; $('tiltVal').textContent=fmtNum(tiltB());
   $('reduce').value=S.reduce; $('maxFav').value=String(S.maxFav||0); $('crowdCut').value=String(S.cut||0.25); $('fmt').value=S.fmt;
   $('crowdCutField').style.visibility = S.reduce==='crowd' ? 'visible' : 'hidden';
@@ -855,6 +893,8 @@ function renderHist(){
     <div class="hcard"><h2>Europatipset</h2>
       <div class="bars">${BT.strat.map((r,i)=>bar(r.k,r.e,1.1,i===2)).join('')}</div>
       ${tbl('e')}</div>
+    <div class="hcard"><h2>Topptipset</h2>
+      <p>Topptipset är inte testat mot historiken ännu. Spelet har 8 matcher, betalar bara ut på 8 rätt och ger tillbaka 70 % av insatserna, mer än Stryktipsets 65 %. Rullpotter räknas in automatiskt. Folkets snedvridning mot hemmalag och favoriter borde gälla även här, men det är inte mätt.</p></div>
     <div class="hcard"><h2>Folkets snedvridning</h2>
       <p>Över 4 360 matcher streckar folket hemmasegrar för högt och kryss för lågt. Oddsen ligger nära utfallet.</p>
       <div class="tblwrap"><table class="t"><thead><tr><th>Tecken</th><th>Folkets streck</th><th>Oddsens sannolikhet</th><th>Utfall</th></tr></thead><tbody>${BT.signs.map(r=>`<tr><td>${esc(r.k)}</td><td>${fmtNum(r.st,1)} %</td><td>${fmtNum(r.od,1)} %</td><td>${fmtNum(r.ut,1)} %</td></tr>`).join('')}</tbody></table></div></div>
@@ -901,9 +941,12 @@ const nums = a => Array.isArray(a) ? a.map(x=>x==null?null:Number(x)) : null;
 async function loadRound(game, opts={}){
   if(!sb){ setStatus('Appen är inte kopplad till databasen ännu. Fyll i config.js.'); renderEmpty('Ingen databas kopplad.'); return; }
   setStatus('Hämtar senaste siffrorna…');
-  const {data:rounds, error} = await sb.from('rounds').select('*').eq('game', game).order('close_at', {ascending:false}).limit(8);
+  // Open rounds (soonest first) plus those closed in the last 4 days. Topptipset can have 15+ open draws at once.
+  const since = new Date(Date.now() - 4*86400e3).toISOString();
+  let {data:rounds, error} = await sb.from('rounds').select('*').eq('game', game).gt('close_at', since).order('close_at', {ascending:true}).limit(40);
   if(error){ setStatus('Kunde inte hämta omgångar: ' + error.message); return; }
-  roundsList = rounds || [];
+  if(!rounds || !rounds.length){ const r2 = await sb.from('rounds').select('*').eq('game', game).order('close_at', {ascending:false}).limit(6); rounds = r2.data || []; }
+  roundsList = rounds.slice().sort((a,b)=>{ const now=Date.now(), oa=Date.parse(a.close_at)>now, ob=Date.parse(b.close_at)>now; if(oa!==ob) return oa?-1:1; return oa ? Date.parse(a.close_at)-Date.parse(b.close_at) : Date.parse(b.close_at)-Date.parse(a.close_at); });
   renderRoundPicker();
   if(!roundsList.length){ renderEmpty(`Ingen ${game}-omgång hämtad ännu. Insamlingen körs var 15:e minut.`); setStatus(''); return; }
   let pick = chosenId && roundsList.find(r=>r.id===chosenId);
@@ -929,7 +972,7 @@ function applyRound(r, ms, res, nw, snaps){
     const local = lsGet(ROUND_KEY(r.id));
     if(local){ S.turnover = local.turnover||null; S.rows = local.rows||null; S.builtAt = local.builtAt||null; S._local = local.matches||[]; }
   }
-  Object.assign(S, {id:r.id, game:r.game, name:r.name||r.id, draw:r.draw, close:r.close_at, state:r.state, fetchedSale:r.sale!=null?Number(r.sale):null,
+  Object.assign(S, {id:r.id, game:r.game, product:r.product||r.game, extra:Number(r.extra||0), name:r.name||r.id, draw:r.draw, close:r.close_at, state:r.state, fetchedSale:r.sale!=null?Number(r.sale):null,
     jackpot:Number(r.jackpot||0), guarantee:r.guarantee!=null && Number(r.guarantee)>0 ? Number(r.guarantee) : PARAMS[r.game].guarantee,
     rollSale:Number(r.roll_sale||0), updatedAt:r.updated_at, result:res});
   // Streck a few hours ago, for the movement chips.
@@ -948,7 +991,7 @@ function applyRound(r, ms, res, nw, snaps){
   delete S._local;
   NEWS = nw && nw.data && Array.isArray(nw.data.matches) ? Object.assign({updatedAt: Date.parse(nw.updated_at)}, nw.data) : null;
   render(); renderResult();
-  if(S.matches.length===13 && S.matches.every(m=>!selIdx(m).length) && ready() && Date.parse(S.close) > Date.now()) buildSystem(); else scheduleStats();
+  if(S.matches.length===NM() && S.matches.every(m=>!selIdx(m).length) && ready() && Date.parse(S.close) > Date.now()) buildSystem(); else scheduleStats();
 }
 function renderRoundPicker(){
   $('roundSel').innerHTML = roundsList.map(r=>{
@@ -963,7 +1006,7 @@ function renderResult(){
   const t = r.tiers || {};
   box.hidden = false;
   box.innerHTML = `<p><b>Rätt rad: <span class="num" style="font-family:var(--f-mono);letter-spacing:.12em">${esc(r.correct_row||'')}</span></b></p>
-    <p class="num">${[13,12,11,10].map(k=>t[k]&&t[k].w?`${k} rätt: ${fmtKr(t[k].a)} (${Number(t[k].w).toLocaleString('sv-SE')} st)`:`${k} rätt: ingen utdelning`).join(' · ')}</p>`;
+    <p class="num">${Object.keys(t).map(Number).filter(k=>k>0).sort((a,b)=>b-a).map(k=>t[k]&&t[k].w?`${k} rätt: ${fmtKr(t[k].a)} (${Number(t[k].w).toLocaleString('sv-SE')} st)`:`${k} rätt: ingen utdelning`).join(' · ')}</p>`;
 }
 
 // ===================== Saved systems (Supabase, login) =====================
@@ -989,11 +1032,13 @@ function renderSaved(){
   const total = saved.reduce((a,s)=>({cost:a.cost+(s.result?s.cost||0:0), win:a.win+(s.result?Number(s.payout||0):0)}), {cost:0, win:0});
   const sum = total.cost ? `<div class="hcard"><h2>Hittills</h2><p class="num">Insats på rättade system ${fmtKr(total.cost)} · utdelning ${fmtKr(total.win)} · ${fmtNum(total.win/total.cost)} kr tillbaka per krona</p></div>` : '';
   host.innerHTML = top + sum + saved.map(s=>{
-    const d = new Date(s.created_at).toLocaleString('sv-SE',{dateStyle:'medium',timeStyle:'short'}), r = s.result, n = Math.round((s.rows||'').length/13);
-    const res = r ? `<div class="res">${['13','12','11','10'].map(k=>`<span class="pill ${r['c'+k]?'hit':''} num">${k} rätt: ${r['c'+k]||0}</span>`).join('')}<span class="pill num">Bästa rad: ${r.best} rätt</span>${s.payout!=null?`<span class="pill hit num">Utdelning ${fmtKr(s.payout)}</span>`:''}</div>` : '<span class="hint">Rättas automatiskt när omgången är klar.</span>';
+    const g = (s.settings&&s.settings.game) || 'Stryktipset', M = (r0=>r0&&r0.n)(s.result) || (PARAMS[g]||PARAMS.Stryktipset).matches;
+    const d = new Date(s.created_at).toLocaleString('sv-SE',{dateStyle:'medium',timeStyle:'short'}), r = s.result, n = Math.round((s.rows||'').length/M);
+    const tierKeys = r ? Object.keys(r).filter(k=>/^c\d+$/.test(k)).map(k=>k.slice(1)).sort((a,b)=>b-a) : [];
+    const res = r ? `<div class="res">${tierKeys.map(k=>`<span class="pill ${r['c'+k]?'hit':''} num">${k} rätt: ${r['c'+k]||0}</span>`).join('')}<span class="pill num">Bästa rad: ${r.best} rätt</span>${s.payout!=null?`<span class="pill hit num">Utdelning ${fmtKr(s.payout)}</span>`:''}</div>` : '<span class="hint">Rättas automatiskt när omgången är klar.</span>';
     return `<article class="sys"><div><h3>${esc(s.label||s.round_id||'System')}</h3><div class="meta">${esc((s.settings&&s.settings.game)||'')} · sparat ${d}</div></div>
       <div style="display:flex;gap:6px;align-items:flex-start"><button class="btn small" data-load="${esc(s.id)}">Öppna</button><button class="btn small ghost" data-del="${esc(s.id)}">${pendingDelete===s.id?'Ta bort?':'Ta bort'}</button></div>
-      <div class="figs num" style="grid-column:1/-1"><span>${fmtKr(s.cost||n)}</span><span>${n.toLocaleString('sv-SE')} rader</span><span>13 rätt ${fmtPct(s.p13,2)}</span><span>Förväntat ${fmtNum(s.ev)} kr/kr</span></div>
+      <div class="figs num" style="grid-column:1/-1"><span>${fmtKr(s.cost||n)}</span><span>${n.toLocaleString('sv-SE')} rader</span><span>${M} rätt ${fmtPct(s.p13,2)}</span><span>Förväntat ${fmtNum(s.ev)} kr/kr</span></div>
       <div class="grade">${res}</div></article>`;
   }).join('');
 }
@@ -1037,7 +1082,7 @@ document.addEventListener('click', async e=>{
     const st = s.settings || {};
     if(st.game && st.game!==S.game) S.game = st.game;
     chosenId = s.round_id; await loadRound(st.game || S.game);
-    if(S.id === s.round_id){ S.rows = (s.rows||'').match(/.{13}/g) || null; if(Array.isArray(st.sel)) S.matches.forEach((m,j)=>{ if(st.sel[j]) m.sel = st.sel[j]; }); if(st.reduce) S.reduce = st.reduce; render(); persist(); scheduleStats(); }
+    if(S.id === s.round_id){ S.rows = (s.rows||'').match(new RegExp('.{'+NM()+'}','g')) || null; if(Array.isArray(st.sel)) S.matches.forEach((m,j)=>{ if(st.sel[j]) m.sel = st.sel[j]; }); if(st.reduce) S.reduce = st.reduce; render(); persist(); scheduleStats(); }
     else flash('Omgången för det systemet finns inte längre i listan.');
     return;
   }

@@ -1,10 +1,11 @@
 # Tipsmotorn
 
-Personal Stryktipset and Europatipset engine. A Supabase backend collects rounds, streck, jackpots, sharp odds and results every 15 minutes; the phone app (an installable web app) reads them and builds value-based systems.
+Personal Stryktipset, Europatipset and Topptipset engine. A Supabase backend collects rounds, streck, jackpots, sharp odds and results every 15 minutes; the phone app (an installable web app) reads them and builds value-based systems.
 
 ```
 supabase/migrations/001_init.sql     tables and access rules
 supabase/migrations/002_schedule.sql runs the collector every 15 minutes
+supabase/migrations/003_topptipset.sql adds Topptipset columns (run before deploying the matching collector)
 supabase/functions/collect/index.ts  the collector (Edge Function)
 supabase/functions/collect/test.ts   tests (TM_TEST=1 deno run --allow-env test.ts)
 web/                                 the app (static files, hosted on Netlify)
@@ -56,6 +57,9 @@ Europatipset: `"game":"europatipset","from":2400,"to":2616`.
    - iPhone: Safari → Share → **Add to Home Screen**.
    - Android: Chrome → ⋮ → **Install app**.
 5. In the app: **Sparade** → log in with your email (magic link, no password). Saved systems are graded automatically after each round.
+
+## Topptipset
+Topptipset, Topptipset Stryk and Topptipset Extra are listed through `draw/1/topptipsetfamily/draws`; results come from each product's own path (`topptipset`, `topptipsetstryk`, `topptipsetextra`). Round ids use the product slug, e.g. `topptipsetstryk-986`. 8 matches, one tier (8 rätt), 70 % paid out; rollover comes from the draw's `fund`. Sharp odds for Topptipset are fetched once per draw (2 h before the close) and each league is fetched once per run, to keep within the free Odds API credits.
 
 ## How it runs
 - Every 15 min: open rounds, odds, streck, jackpot/guarantee/rollover, a streck snapshot (for drift), results of finished rounds, and automatic grading of saved systems.
