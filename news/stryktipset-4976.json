@@ -1,0 +1,333 @@
+{
+ "game": "Stryktipset",
+ "draw": 4976,
+ "round": "Stryktipset v 43",
+ "author": "Claude",
+ "checkedAt": {
+  "d": "2026-10-24T09:30:00+02:00"
+ },
+ "matches": [
+  {
+   "n": 1,
+   "home": "Chelsea",
+   "away": "Tottenham",
+   "impact": "medium",
+   "notes": [
+    "Tottenham saknar många: Simons, Udogie, Odobert, Bergvall, Savio och Mudryk skadade, Bentancur avstängd (rött kort). Porro och Robertson tveksamma.",
+    "Chelsea: målvakten Martínez borta (käkfraktur), även James, Gittens och Emegha. Gusto och Chavarría tveksamma.",
+    "Chelsea 4:a med 13 p, Tottenham 16:e med 6 p. Avspark 18.30, efter spelstopp, så startelvorna hinner inte komma."
+   ],
+   "take": "Spurs skadelista är lång men känd sedan flera dagar, så oddsen (1,94) har den med. Folket streckar Chelsea till 62 % mot oddsens cirka 50 %. Ingen justering, 1:an är redan överstreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole: Chelsea, 22 okt",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/martinez-james-chavarria-updates-chelsea-injury-suspension-list-vs-spurs_607365.html"
+    },
+    {
+     "title": "Sports Mole: Spurs, 23 okt",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/porro-savio-bergvall-updates-spurs-injury-suspension-list-vs-chelsea_607355.html"
+    },
+    {
+     "title": "starting11",
+     "url": "https://starting11.com/fixtures/chelsea-vs-tottenham"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "home": "Arsenal",
+   "away": "Everton",
+   "impact": "medium",
+   "notes": [
+    "Arsenal: Saliba (rygg) och Tzolis borta. Saka (lår) 50 %, Hincapié och Zubimendi tveksamma. Spelade Champions League för tre dagar sedan och väntas rotera.",
+    "Everton: inga skador på listan, Mykolenko liten fråga.",
+    "Arsenal 2:a med 18 p, Everton 8:a med 10 p."
+   ],
+   "take": "Arsenal kan sakna både Saliba och Saka och roterar efter Europaspel, medan Everton är fullt. Folket har 78 % på 1:an mot oddsens cirka 65 %. Talar svagt mot 1:an. Kolla startelvan cirka 15.00.",
+   "suggest": [
+    -2,
+    1,
+    1
+   ],
+   "sources": [
+    {
+     "title": "starting11",
+     "url": "https://starting11.com/fixtures/arsenal-vs-everton"
+    },
+    {
+     "title": "FootballDream GW8, 23 okt",
+     "url": "https://www.footballdream.in/blog/arsenal-vs-everton-gw8-premier-league-2026-27"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "home": "Coventry",
+   "away": "Fulham",
+   "impact": "medium",
+   "notes": [
+    "Coventry: Woolfenden, Eccles, Amenda och Wright borta. Kesler-Hayden tveksam.",
+    "Fulham: Sessegnon avstängd (rött kort), Larsson borta. Robinson och Cairney tveksamma.",
+    "Coventry 17:e med 6 p, Fulham 18:e med 5 p. Coventry slog Newcastle 4–1 för två omgångar sedan."
+   ],
+   "take": "Frånvaro på båda sidor, något fler hos Coventry. Ingen tydlig riktning, ingen justering.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "starting11",
+     "url": "https://starting11.com/fixtures/coventry-vs-fulham"
+    },
+    {
+     "title": "FootballDream GW8, 23 okt",
+     "url": "https://www.footballdream.in/blog/coventry-city-vs-fulham-gw8-premier-league-2026-27"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "home": "Blackburn",
+   "away": "Wrexham",
+   "impact": "medium",
+   "notes": [
+    "Blackburn: sex borta, bland andra Forshaw, Ohashi, Wharton och Ribeiro. Samspelt lag, 89 % av elvan kvar senaste sex matcherna.",
+    "Wrexham: åtta borta, bland andra Broadhead, Windass, Cacace, James och Cleworth. Roterar mer."
+   ],
+   "take": "Wrexham har fler och viktigare avbräck. Talar svagt för 1:an, som folket och oddsen ser som jämn.",
+   "suggest": [
+    2,
+    0,
+    -2
+   ],
+   "sources": [
+    {
+     "title": "starting11",
+     "url": "https://starting11.com/fixtures/blackburn-vs-wrexham"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "home": "Cardiff",
+   "away": "Birmingham",
+   "impact": "low",
+   "notes": [
+    "Cardiff: Osho avstängd (rött kort). Lawlor, Colwill och Chambers borta. Samma elva tre matcher i rad.",
+    "Birmingham: Leonard och Seung-Ho borta. Samma elva två matcher i rad.",
+    "Cardiff har 12 vinster på 23 möten, Birmingham 3."
+   ],
+   "take": "Små avbräck, mest hos Cardiff. Folket har bara 29 % på 1:an mot oddsens cirka 35 %, så 1:an är redan understreckad. Ingen justering.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "starting11",
+     "url": "https://starting11.com/fixtures/cardiff-vs-birmingham"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "home": "Lincoln",
+   "away": "Burnley",
+   "impact": "high",
+   "notes": [
+    "Burnley: tio spelare borta, bland andra Amdouni, Barnes, Ahmedhodžić, Beyer, Humphreys, Cullen, Mejbri och Ramsey.",
+    "Lincoln: Elerewe och Draper avstängda, Melia och Darikwa skadade.",
+    "Burnley väntad elva: Coudert; Walker, Ekdal, Igor, Pires; Hatate, Alleyne; Ramazani, Laurent, Edwards; Satpaev."
+   ],
+   "take": "Burnley saknar nästan ett helt lag men har fortfarande en stark elva. Folket har 45 % på 2:an, i nivå med oddsen. Lätt mot 2:an.",
+   "suggest": [
+    1,
+    1,
+    -2
+   ],
+   "sources": [
+    {
+     "title": "starting11",
+     "url": "https://starting11.com/fixtures/lincoln-vs-burnley"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "home": "Preston",
+   "away": "West Bromwich",
+   "impact": "medium",
+   "notes": [
+    "Preston: sex borta, bland andra McCann, Potts, Carroll och Clarke. Kenny tveksam.",
+    "West Brom: Johnston (benbrott) och Galves borta.",
+    "West Brom har vunnit 10 av 14 möten, senast 2–0 i Preston i april."
+   ],
+   "take": "Prestons skadelista talar för 2:an, men folket har redan 67 % på West Brom mot oddsens cirka 47 %. Kraftigt överstreckat, så ingen justering uppåt.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "starting11",
+     "url": "https://starting11.com/fixtures/preston-vs-west-brom"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "home": "Queens Park Rangers",
+   "away": "Swansea",
+   "impact": "low",
+   "notes": [
+    "QPR: sju borta, bland andra Chair, Dembélé och Mbengue.",
+    "Swansea: Burgess, Key och Kukharevych borta. Eustáquio tveksam.",
+    "Senaste mötet: QPR 1–2 Swansea i april."
+   ],
+   "take": "Fler borta hos QPR, men de flesta är kända sedan länge. Ingen justering.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "starting11",
+     "url": "https://starting11.com/fixtures/qpr-vs-swansea"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "home": "Stoke",
+   "away": "Bristol City",
+   "impact": "low",
+   "notes": [
+    "Stoke: Gallagher, Cresswell och Ingelsson borta. Samma elva tre matcher i rad.",
+    "Bristol City: Dickie, Tolaj, Eile och Williams borta. Roterar mer.",
+    "Bristol City vann senaste mötet 2–0."
+   ],
+   "take": "Små avbräck. Folket har 63 % på 1:an mot oddsens cirka 41 %, så 1:an är kraftigt överstreckad. Ingen justering behövs, värdet ligger redan på X och 2.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "starting11",
+     "url": "https://starting11.com/fixtures/stoke-city-vs-bristol-city"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "home": "West Ham",
+   "away": "Southampton",
+   "impact": "none",
+   "notes": [
+    "West Ham: bara Lamadrid borta. Southampton: Downes borta.",
+    "West Ham vann 4–1 i Southampton i ligacupen i augusti."
+   ],
+   "take": "Inga viktiga avbräck. Ingen justering.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "starting11",
+     "url": "https://starting11.com/fixtures/west-ham-vs-southampton"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "home": "Wolverhampton",
+   "away": "Watford",
+   "impact": "low",
+   "notes": [
+    "Wolves: Jiménez, Armstrong, Gomes och båda Traoré borta.",
+    "Watford: Bove, Ngakia, Baah och Akomeah borta.",
+    "Båda lagen roterar mycket."
+   ],
+   "take": "Avbräck på båda sidor. Ingen justering.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "starting11",
+     "url": "https://starting11.com/fixtures/wolves-vs-watford"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "home": "Cambridge",
+   "away": "Plymouth",
+   "impact": "none",
+   "notes": [
+    "Ingen publicerad skadelista hittades för något av lagen.",
+    "Cambridge 4:a med 20 p på 11, Plymouth 5:a med 19 p på 12.",
+    "Plymouth roterar mycket, bara 49 % av elvan kvar senaste sex matcherna."
+   ],
+   "take": "Jämnt topplagsmöte utan nyheter. Ingen justering.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "starting11",
+     "url": "https://starting11.com/fixtures/cambridge-united-vs-plymouth"
+    },
+    {
+     "title": "Tabell, 21 okt",
+     "url": "https://www.footballwebpages.co.uk/league-one/league-table"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "home": "Oxford",
+   "away": "Bradford",
+   "impact": "low",
+   "notes": [
+    "Ingen publicerad skadelista hittades för något av lagen.",
+    "Bradford 3:a med 21 p på 11, Oxford 8:a med 18 p på 9 (två matcher mindre).",
+    "Bradford spelar igen om tre dagar och väntas rotera."
+   ],
+   "take": "Bradfords rotation talar svagt mot 2:an. Folket har bara 30 % på 1:an mot oddsens cirka 35 %. Lätt mot 1:an.",
+   "suggest": [
+    1,
+    0,
+    -1
+   ],
+   "sources": [
+    {
+     "title": "starting11",
+     "url": "https://starting11.com/fixtures/oxford-united-vs-bradford"
+    },
+    {
+     "title": "Tabell, 21 okt",
+     "url": "https://www.footballwebpages.co.uk/league-one/league-table"
+    }
+   ]
+  }
+ ],
+ "updatedAt": 1792827299705
+}
