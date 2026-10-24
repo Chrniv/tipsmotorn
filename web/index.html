@@ -322,14 +322,16 @@ table.t tr.hl td{background:color-mix(in srgb,var(--good) 10%,var(--card))}
         <div class="panel">
           <h2>Exportera</h2>
           <div class="field"><label for="fmt">Format</label>
-            <select id="fmt" class="inp"><option value="comma">1,X,2,… en rad per systemrad</option><option value="compact">1X2… kompakt</option></select></div>
+            <select id="fmt" class="inp"><option value="ss">Svenska Spel-fil (för uppladdning)</option><option value="comma">1,X,2,… en rad per systemrad</option><option value="compact">1X2… kompakt</option></select></div>
           <textarea class="out" id="out" readonly spellcheck="false"></textarea>
           <div style="display:flex;gap:8px;flex-wrap:wrap">
-            <button class="btn primary" id="btnCopy">Kopiera rader</button>
+            <button class="btn primary" id="btnFile">Spara fil</button>
+            <button class="btn" id="btnCopy">Kopiera</button>
             <button class="btn" id="btnSave">Spara system</button>
           </div>
           <p class="toast" id="toast" role="status"></p>
-          <p class="hint">Kontrollera Svenska Spels filformat för egna rader innan första uppladdningen.</p>
+          <p class="warn" id="exportWarn"></p>
+          <p class="hint" id="exportHint">Filen följer Svenska Spels filspecifikation: produkt på första raden, sedan en rad per enkelrad (E,…) eller per M-system (M96,…). Ladda upp den under Externa systemspel. Max 10 000 enkelrader och 20 000 kr per fil (2 200 rader i Spela tillsammans).</p>
         </div>
         <span class="status" id="storeStatus">Data från Svenska Spel via din Supabase</span>
       </aside>
@@ -484,7 +486,7 @@ function emptyRound(game){
   const st = lsGet(SETTINGS_KEY) || {};
   return {id:null, game, product:game, name:'', draw:null, close:null, state:null, fetchedSale:null, turnover:null, jackpot:0, guarantee:PARAMS[game].guarantee, rollSale:0, extra:0,
     base: st.base || 100, useBlend: st.useBlend!==false, tilt: (st.tilt && st.tilt[game]!=null) ? st.tilt[game] : PARAMS[game].tilt,
-    budget: st.budget || 96, reduce: st.reduce || 'ev', maxFav: st.maxFav || 0, cut: st.cut || 0.25, fmt: st.fmt || 'comma', rows:null, matches:[], result:null, updatedAt:null};
+    budget: st.budget || 96, reduce: st.reduce || 'ev', maxFav: st.maxFav || 0, cut: st.cut || 0.25, fmt: (st.fmtV===2 && st.fmt) || 'ss', rows:null, matches:[], result:null, updatedAt:null};
 }
 let S = emptyRound(PARAMS[(lsGet(SETTINGS_KEY)||{}).game] ? lsGet(SETTINGS_KEY).game : 'Stryktipset');
 let editing = false, saved = [], sb = null, session = null, lastLoad = 0;
@@ -875,8 +877,40 @@ function renderTicket(){
     <dt>Förväntad återbetalning</dt><dd class="${cls}">${st?fmtNum(st.ev)+' kr/kr'+(st.sampled?'*':''):'räknar…'}</dd>
     ${tiersOn.map(k=>{ const d=top-k; return d===0 ? `<dt>Chans ${top} rätt</dt><dd>${st?fmtPct(st.p13,2):'–'}</dd>` : `<dt>Chans minst ${k} rätt</dt><dd>${st?fmtPct(st[pk[d]],1):'–'}</dd>`; }).join('')}
     ${st&&st.sampled?'<dt style="grid-column:1/-1;font-size:11px">* uppskattat från ett urval av raderna</dt>':''}`;
-  $('out').value = r.rows.map(x=>S.fmt==='compact'?x:x.split('').join(',')).join('\n');
+  const ex = ssExport();
+  $('out').value = S.fmt==='ss' ? (ex ? ex.text : '') : r.rows.map(x=>S.fmt==='compact'?x:x.split('').join(',')).join('\n');
+  $('exportWarn').textContent = ex && ex.warn ? ex.warn : '';
   $('bbText').textContent = `${fmtKr(n)} · ${st?fmtNum(st.ev)+' kr/kr':'räknar'} · ${top} rätt ${st?fmtPct(st.p13,2):'–'}`;
+}
+// Svenska Spel upload file: product on the first line, then either one "E,1,X,2,…" line per single row or one
+// "M<rows>,1X,2,…" line per mathematical system. Single rows and M-systems cannot be mixed in one file.
+// A plain full M-system (no value rows, no filters) goes as one M line; everything else as single rows.
+function ssExport(){
+  const r = rowsCache; if(!r || r.tooMany || !r.rows || !r.rows.length) return null;
+  const product = S.product || S.game, n = r.rows.length;
+  const isFullM = !(Array.isArray(S.rows) && S.rows.length) && S.reduce==='full' && !(+S.maxFav) && S.matches.every(m=>selIdx(m).length);
+  let lines, kind;
+  if(isFullM){ kind='M'; lines = [`M${n},` + S.matches.map(m=>selIdx(m).map(i=>SIGNS[i]).join('')).join(',')]; }
+  else { kind='E'; lines = r.rows.map(x=>'E,'+x.split('').join(',')); }
+  let warn = '';
+  if(kind==='E' && n > 10000) warn = `Svenska Spel tar max 10 000 enkelrader per fil. Systemet har ${n.toLocaleString('sv-SE')}.`;
+  else if(n > 20000) warn = `Max insats per fil är 20 000 kr. Systemet kostar ${fmtKr(n)}.`;
+  else if(kind==='E' && n > 2200) warn = 'Över 2 200 enkelrader går inte i Spela tillsammans, men fungerar som eget spel.';
+  return {text: [product, ...lines].join('\n'), kind, n, warn};
+}
+async function saveFile(){
+  const ex = ssExport(); if(!ex){ flash('Bygg ett komplett system först.'); return; }
+  if(/10 000|20 000/.test(ex.warn)){ flash(ex.warn); return; }
+  const name = `${(S.id||S.game||'tipsmotorn').toLowerCase()}-${ex.kind==='M'?'msystem':'enkelrader'}.txt`;
+  const blob = new Blob([ex.text.replace(/\n/g,'\r\n') + '\r\n'], {type:'text/plain'});
+  // Phones: share sheet (Spara i Filer, then upload in Svenska Spel). Computers: normal download.
+  try{
+    const file = new File([blob], name, {type:'text/plain'});
+    if(matchMedia('(pointer:coarse)').matches && navigator.canShare && navigator.canShare({files:[file]})){ await navigator.share({files:[file], title:name}); flash(`Filen ${name} är klar.`); return; }
+  }catch(e){ if(e && e.name==='AbortError') return; }
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click();
+  setTimeout(()=>{ URL.revokeObjectURL(a.href); a.remove(); }, 1500);
+  flash(`Sparade ${name}: ${ex.n.toLocaleString('sv-SE')} ${ex.kind==='M'?'rader i ett M-system':'enkelrader'}.`);
 }
 function renderControls(){
   const fo = PARAMS[S.game].favOpts;
@@ -933,7 +967,7 @@ function initSupabase(){
 function setStatus(t){ $('newsStatus').textContent = t; }
 function saveSettings(){
   const st = lsGet(SETTINGS_KEY) || {};
-  Object.assign(st, {game:S.game, base:S.base, useBlend:S.useBlend, budget:S.budget, reduce:S.reduce, maxFav:S.maxFav, cut:S.cut, fmt:S.fmt});
+  Object.assign(st, {game:S.game, base:S.base, useBlend:S.useBlend, budget:S.budget, reduce:S.reduce, maxFav:S.maxFav, cut:S.cut, fmt:S.fmt, fmtV:2});
   st.tilt = Object.assign({}, st.tilt||{}, {[S.game]: S.tilt});
   lsSet(SETTINGS_KEY, st);
 }
@@ -1130,10 +1164,11 @@ $('jackpot').oninput=e=>{ S.jackpot=parseNum(e.target.value)||0; persist(); sche
 $('baseStake').oninput=e=>{ S.base=Math.max(1,parseNum(e.target.value)||100); renderRound(); persist(); };
 $('useBlend').onchange=e=>{ S.useBlend=e.target.checked; S.rows=null; renderMatches(); changed(); };
 $('btnOptimise').onclick=()=>buildSystem();
+$('btnFile').onclick=()=>saveFile();
 $('btnCopy').onclick=()=>{
   const ta=$('out'); if(!ta.value){ flash('Inget att kopiera ännu.'); return; }
   const fallback=()=>{ ta.focus(); ta.select(); flash('Markerat. Kopiera med Ctrl/Cmd+C.'); };
-  if(navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(ta.value).then(()=>flash(`Kopierade ${ta.value.split('\n').length.toLocaleString('sv-SE')} rader.`), fallback); else fallback();
+  if(navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(ta.value).then(()=>flash(`Kopierat (${ta.value.split('\n').length.toLocaleString('sv-SE')} rader text).`), fallback); else fallback();
 };
 $('btnSave').onclick=async()=>{
   const r = rowsCache;
