@@ -61,12 +61,14 @@ Europatipset: `"game":"europatipset","from":2400,"to":2616`.
 ## Topptipset
 Topptipset, Topptipset Stryk and Topptipset Extra are listed through `draw/1/topptipsetfamily/draws`; results come from each product's own path (`topptipset`, `topptipsetstryk`, `topptipsetextra`). Round ids use the product slug, e.g. `topptipsetstryk-986`. 8 matches, one tier (8 rätt), 70 % paid out; rollover comes from the draw's `fund`. Sharp odds for Topptipset are fetched once per draw (2 h before the close) and each league is fetched once per run, to keep within the free Odds API credits.
 
-## Team news (automatic)
-With the function secret `ANTHROPIC_API_KEY` set and `004_news.sql` run, the collector researches team news with Claude and web search:
-one pass within 26 h of the close (injuries, suspensions, rotation, form, other news) and one in the last 54 minutes (confirmed starting XIs).
-Each call covers 4 matches; the 5-minute schedule finishes a 13-match round in about 20 minutes. Sources are kept only if they came back
-from the searches. Defaults: Stryktipset and Europatipset (`NEWS_GAMES`), model `claude-sonnet-5-5` (`NEWS_MODEL`). Topptipset Stryk/Extra
-reuse that news in the app when the teams match.
+## Team news (free path, in use)
+- The `fixtures` GitHub Action copies the open Stryktipset/Europatipset rounds to `fixtures.json` on the `data` branch every 30 minutes.
+- Scheduled Claude tasks research the news and commit `news/<round id>.json` to the `data` branch: daily 09:47 for rounds closing in 2–36 h,
+  and starting XIs Saturday 15:05 (Stryktipset), Sunday 14:05 and Tue–Thu 20:07 (Europatipset).
+- Every collector run imports a news file when it is newer than what the app has. No API key, no charges.
+
+The collector also has an optional paid mode (`{"news":true}`, Claude API with web search, needs `ANTHROPIC_API_KEY` and `004_news.sql`).
+It is switched off; use it when the project goes public.
 
 ## How it runs
 - Every 15 min: open rounds, odds, streck, jackpot/guarantee/rollover, a streck snapshot (for drift), results of finished rounds, and automatic grading of saved systems.
