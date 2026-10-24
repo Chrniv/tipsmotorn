@@ -739,6 +739,10 @@ function renderRound(){
   if(cfg.guarantee) facts.push(`Garanti: ensam vinnare på ${top} rätt får minst ${fmtMkr(cfg.guarantee)}.`);
   const li = lineupInfo();
   if(li && li.n) facts.push(`<b>${li.n} av ${S.matches.length}</b> matcher har startelvor före spelstopp (sista ca ${hhmm(li.at)}). Appen hämtar nya siffror automatiskt, bygg om efter det.`);
+  const nNews = S.matches.filter((_,j)=>newsFor(j)).length;
+  if(nNews){ const ck = NEWS && NEWS.checkedAt ? NEWS.checkedAt : null; const lu = ck && ck.l ? ` · startelvor kollade ${hhmm(ck.l)}` : '';
+    facts.push(`Nyheter för ${nNews} av ${S.matches.length} matcher${ck && ck.d ? `, kollade ${esc(dayTime(ck.d))}` : NEWS && NEWS.updatedAt ? `, uppdaterade ${esc(dayTime(new Date(NEWS.updatedAt).toISOString()))}` : ''}${lu}. Öppna <b>Detaljer</b> på en match.`); }
+  else if(S.close && Date.parse(S.close) > Date.now()) facts.push(`Inga nyheter ännu. De hämtas automatiskt dygnet före spelstopp och startelvorna strax före.`);
   const nSharp = S.matches.filter(hasSharp).length;
   facts.push(nSharp ? `Skarpa odds i ${nSharp} av ${S.matches.length} matcher, Svenska Spels odds i resten.` : `Sannolikhet från Svenska Spels odds${S.useBlend?', vägt med folkets streck':''}. Skarpa odds kommer automatiskt när ODDS_API_KEY finns i Supabase.`);
   $('facts').innerHTML = facts.map(f=>`<li>${f}</li>`).join('');
@@ -762,7 +766,12 @@ function pickNews(){
   }
   NEWS = bestScore>=Math.max(4, Math.round(S.matches.length*0.55)) ? best : null;
 }
-function newsFor(j){ if(!NEWS) return null; const m=S.matches[j]; return NEWS.matches.find(x=>normName(x.home)===normName(m.home) && normName(x.away)===normName(m.away)) || null; }
+// News for this round first; otherwise the same fixture researched for another round (Topptipset shares matches with Stryk/Europa).
+function newsFor(j){
+  const m=S.matches[j]; if(!m) return null;
+  const hit = d => d && Array.isArray(d.matches) ? d.matches.find(x=>normName(x.home)===normName(m.home) && normName(x.away)===normName(m.away)) : null;
+  return hit(NEWS) || newsDocs.reduce((a,d)=>a||hit(d), null);
+}
 function moveText(m){
   const a = oddsProbs(m.so), b = oddsProbs(m.o); if(!a||!b) return null;
   const d = [0,1,2].map(i=>b[i]-a[i]); const k = d.reduce((bi,x,i)=>Math.abs(x)>Math.abs(d[bi])?i:bi,0);
@@ -955,11 +964,13 @@ async function loadRound(game, opts={}){
   const [ms, res, nw, snaps] = await Promise.all([
     sb.from('matches').select('*').eq('round_id', pick.id).order('n'),
     sb.from('results').select('*').eq('round_id', pick.id).maybeSingle(),
-    sb.from('news').select('*').eq('round_id', pick.id).maybeSingle(),
+    sb.from('news').select('*').gt('updated_at', new Date(Date.now()-3*86400e3).toISOString()).order('updated_at',{ascending:false}).limit(12),
     sb.from('snapshots').select('taken_at,streck').eq('round_id', pick.id).order('taken_at', {ascending:false}).limit(80),
   ]);
   if(ms.error){ setStatus('Kunde inte hämta matcher: ' + ms.error.message); return; }
-  applyRound(pick, ms.data||[], res.data||null, nw.data||null, snaps.data||[]);
+  const nws = nw.data||[];
+  newsDocs = nws.filter(x=>x.round_id!==pick.id && x.data).map(x=>Object.assign({updatedAt:Date.parse(x.updated_at)}, x.data));
+  applyRound(pick, ms.data||[], res.data||null, nws.find(x=>x.round_id===pick.id)||null, snaps.data||[]);
   lastLoad = Date.now();
   const open = Date.parse(pick.close_at) > Date.now();
   setStatus(`${open?'Uppdaterad':'Hämtad'} ${hhmm(pick.updated_at)} · ${open?'nya siffror hämtas automatiskt var 15:e minut':'omgången är stängd'}`);

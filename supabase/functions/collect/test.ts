@@ -1,5 +1,5 @@
 // Run: TM_TEST=1 deno run --allow-env test.ts
-import { collectOpen, collectResults, gradeRows, handle, sharpStage, slugOf, teamSim, type Store } from "./index.ts";
+import { cleanSuggest, collectNews, collectOpen, collectResults, gradeRows, handle, newsStage, sharpStage, slugOf, teamSim, type Store } from "./index.ts";
 
 const assert = (c: unknown, m: string) => { if (!c) { throw new Error("FAIL: " + m); } console.log("ok  " + m); };
 const teams = [["Nottingham","Arsenal","Premier League"],["Leeds","Manchester United","Premier League"],["Brighton","Crystal Palace","Premier League"],["Bournemouth","Sunderland","Premier League"],["Juventus","Lazio","Serie A"],["Milan","Atalanta","Serie A"],["Fiorentina","Como","Serie A"],["Málaga","Real Sociedad","La Liga"],["Celta de Vigo","Alavés","La Liga"],["Bayer Leverkusen","Freiburg","Bundesliga"],["Paris FC","Rennes","Ligue 1"],["Malmö","Häcken","Allsvenskan"],["Örgryte","GAIS","Allsvenskan"]];
@@ -31,9 +31,20 @@ const routes: Record<string, any> = {
   "draw/1/stryktipset/draws/4975": { draw: strykFinal },
   "draw/1/stryktipset/draws/4975/result": { result: strykResult },
 };
-let oddsCalls = 0;
-const mockFetch = (async (url: string) => {
+let oddsCalls = 0, claudeCalls = 0; const claudeBodies: any[] = [];
+const mockFetch = (async (url: string, init?: any) => {
   const u = String(url);
+  if (u.includes("api.anthropic.com")) {
+    claudeCalls++; const body = JSON.parse(init.body); claudeBodies.push(body);
+    const ns = [...body.messages[0].content.matchAll(/^(\d+)\. /gm)].map((m: any) => Number(m[1]));
+    if (body.messages.length === 1 && claudeCalls === 1) // first call pauses once
+      return new Response(JSON.stringify({ stop_reason: "pause_turn", content: [{ type: "server_tool_use", id: "s1", name: "web_search", input: { query: "x" } },
+        { type: "web_search_tool_result", tool_use_id: "s1", content: [{ type: "web_search_result", url: "https://real.example/news", title: "Real" }] }] }), { status: 200 });
+    const items = ns.map((n) => ({ n, impact: n === 1 ? "high" : "low", notes: [`note ${n}`], lineup: body.messages[0].content.includes("STARTELVOR") ? `XI ${n}` : "", take: `take ${n}`,
+      suggest: n === 1 ? [9, 0, -2] : [0, 0, 0], sources: [{ title: "Real", url: "https://real.example/news" }, { title: "Invented", url: "https://made.up/x" }] }));
+    return new Response(JSON.stringify({ stop_reason: "end_turn", content: [{ type: "server_tool_use", id: "s2", name: "web_search", input: { query: "y" } },
+      { type: "text", text: "```json\n" + JSON.stringify(items) + "\n```" }] }), { status: 200 });
+  }
   if (u.includes("the-odds-api.com")) {
     oddsCalls++;
     const sport = u.split("/sports/")[1].split("/")[0];
@@ -64,6 +75,9 @@ const store: Store = {
   async upsertHistory(r) { db.history[r.game + r.draw] = r; },
   async systemsForRound(id) { return Object.values(db.systems).filter((s: any) => s.round_id === id && !s.result); },
   async updateSystem(id, p) { Object.assign(db.systems[id], p); },
+  async roundsForNews(nowIso) { const now = Date.parse(nowIso); return Object.values(db.rounds).filter((r: any) => Date.parse(r.close_at) > now && Date.parse(r.close_at) < now + 26 * 3600e3); },
+  async getNews(id) { return db.news?.[id] ? { data: db.news[id] } : null; },
+  async upsertNews(id, data) { (db.news ||= {})[id] = JSON.parse(JSON.stringify(data)); },
 };
 const deps = { fetch: mockFetch, store, now: () => NOW, oddsKey: "test-key", log: (m: string) => console.log("  log:", m) };
 
@@ -126,6 +140,30 @@ assert(db.systems.t1.result.c8 === 1 && db.systems.t1.result.best === 8 && db.sy
 assert(db.history["Topptipset4400"], "Topptipset history stored under product name");
 const g = gradeRows("22111222X211" + "1", row, strykResult.distribution.reduce((a: any, t: any) => (a[parseInt(t.name)] = { a: Number(t.amount.replace(",", ".")) }, a), {}));
 assert(g.result.c12 === 1 && g.payout === 1500, "12 rätt graded");
+
+// team news
+assert(newsStage(Date.parse(close), Date.parse("2026-10-17T20:00:00+02:00")) === "d" && newsStage(Date.parse(close), Date.parse("2026-10-18T14:10:00+02:00")) === "l" && newsStage(Date.parse(close), Date.parse("2026-10-16T08:00:00+02:00")) === null, "news stages: day before, lineups, too early");
+assert(JSON.stringify(cleanSuggest([9, 0, -2])) === "[5,-3,-2]" && JSON.stringify(cleanSuggest("x")) === "[0,0,0]", "suggestions clamped to ±5 and summing to zero");
+assert((await collectNews(deps) as any).skipped, "news skipped without an API key");
+const nd = { ...deps, anthropicKey: "k" };
+NOW = Date.parse("2026-10-18T10:00:00+02:00");
+const n1: any = await collectNews(nd);
+assert(n1.round === "europatipset-2617" && n1.stage === "d" && n1.matches.join() === "1,2,3,4" && n1.remaining === 9, "first batch: 4 matches of the soonest round");
+assert(claudeCalls === 2 && claudeBodies[1].messages.length === 2, "paused turn continued with the assistant content");
+assert(claudeBodies[0].tools[0].type === "web_search_20250305" && claudeBodies[0].tools[0].max_uses === 9, "web search tool with a search cap");
+const nw = db.news["europatipset-2617"];
+assert(nw.matches[0].sources.length === 1 && nw.matches[0].sources[0].url === "https://real.example/news", "invented source links dropped");
+assert(JSON.stringify(nw.matches[0].suggest) === "[5,-3,-2]" && nw.matches[0].impact === "high", "suggestion cleaned and stored");
+for (let k = 0; k < 3; k++) await collectNews(nd);
+assert(db.news["europatipset-2617"].done.d.length === 13, "all 13 matches covered after four calls");
+const idle: any = await collectNews(nd);
+assert(idle.round !== "europatipset-2617" || idle.stage !== "d", "day pass not repeated");
+NOW = Date.parse("2026-10-18T14:10:00+02:00");
+const l1: any = await collectNews(nd);
+assert(l1.round && l1.stage === "l", "lineup pass starts within the last hour");
+const lw = db.news[l1.round];
+assert(lw.matches.find((m: any) => m.n === 1).lineup === "XI 1", "lineup stored");
+if (l1.round === "europatipset-2617") assert(lw.matches.length === 13 && lw.matches.find((m: any) => m.n === 13).notes[0] === "note 13", "earlier notes kept for matches not yet rechecked");
 
 // auth
 const bad = await handle(new Request("http://x", { method: "POST", body: "{}" }), deps, "s3cret");
