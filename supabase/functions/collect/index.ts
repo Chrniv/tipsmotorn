@@ -33,7 +33,7 @@ export interface Store {
   upsertHistory(row: any): Promise<void>;
   systemsForRound(roundId: string): Promise<any[]>;
   updateSystem(id: string, patch: any): Promise<void>;
-  roundsForNews?(nowIso: string): Promise<any[]>;
+  roundsForNews?(nowIso: string, hours?: number): Promise<any[]>;
   getNews?(roundId: string): Promise<any | null>;
   upsertNews?(roundId: string, data: any): Promise<void>;
 }
@@ -341,6 +341,32 @@ export async function collectNews(d: Deps) {
   return { idle: true };
 }
 
+// ---------- team news from the repository (free path) ----------
+// Scheduled Claude tasks research the news and commit news/<round id>.json to the "data" branch of the public repo.
+// Each collector run imports a file when it is newer than what the app already has.
+export const NEWS_RAW = "https://raw.githubusercontent.com/Chrniv/tipsmotorn/data/news/";
+export async function importNews(d: Deps) {
+  const st = d.store; if (!st.roundsForNews || !st.getNews || !st.upsertNews) return [];
+  const now = d.now(), out: any[] = [];
+  const rounds = (await st.roundsForNews(new Date(now - 3 * 3600e3).toISOString(), 60))
+    .filter((r: any) => ["stryktipset", "europatipset"].includes(productOfId(r.id)));
+  for (const rd of rounds) {
+    try {
+      const r = await d.fetch(`${NEWS_RAW}${rd.id}.json?t=${Math.floor(now / 60e3)}`, { headers: { accept: "application/json" } });
+      if (r.status === 404) continue;
+      if (!r.ok) throw new Error(String(r.status));
+      const data = await r.json();
+      if (!data || !Array.isArray(data.matches)) throw new Error("no matches");
+      const cur = (await st.getNews(rd.id))?.data;
+      if (cur && Number(cur.updatedAt || 0) >= Number(data.updatedAt || 0)) continue;
+      data.matches = data.matches.filter((m: any) => m && Number.isFinite(Number(m.n))).map((m: any) => ({ ...m, n: Number(m.n), suggest: cleanSuggest(m.suggest) }));
+      await st.upsertNews(rd.id, data);
+      out.push({ id: rd.id, matches: data.matches.length });
+    } catch (e) { d.log?.(`news ${rd.id}: ${e}`); }
+  }
+  return out;
+}
+
 // ---------- Supabase-backed store ----------
 export function supabaseStore(url: string, key: string): Store {
   const sb = createClient(url, key, { auth: { persistSession: false } });
@@ -363,8 +389,8 @@ export function supabaseStore(url: string, key: string): Store {
     async upsertHistory(row) { chk(await sb.from("history").upsert(row)); },
     async systemsForRound(roundId) { return chk(await sb.from("systems").select("id,rows").eq("round_id", roundId).is("result", null)) || []; },
     async updateSystem(id, patch) { chk(await sb.from("systems").update(patch).eq("id", id)); },
-    async roundsForNews(nowIso) {
-      const until = new Date(Date.parse(nowIso) + 26 * 3600e3).toISOString();
+    async roundsForNews(nowIso, hours = 26) {
+      const until = new Date(Date.parse(nowIso) + hours * 3600e3).toISOString();
       return chk(await sb.from("rounds").select("id,game,draw,name,close_at").gt("close_at", nowIso).lt("close_at", until)) || [];
     },
     async getNews(roundId) { return chk(await sb.from("news").select("data,updated_at").eq("round_id", roundId).maybeSingle()); },
@@ -382,7 +408,8 @@ export async function handle(req: Request, d: Deps, secret: string | undefined):
   if (body.news) { try { return json({ news: await collectNews(d), logs }); } catch (e) { return json({ news: { error: String(e) }, logs }); } }
   const open = await collectOpen(d);
   const results = await collectResults(d);
-  return json({ ok: true, open, results, logs });
+  const news = await importNews(d);
+  return json({ ok: true, open, results, news, logs });
 }
 
 if (!Deno.env.get("TM_TEST")) {

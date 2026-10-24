@@ -1,5 +1,5 @@
 // Run: TM_TEST=1 deno run --allow-env test.ts
-import { cleanSuggest, collectNews, collectOpen, collectResults, gradeRows, handle, newsStage, sharpStage, slugOf, teamSim, type Store } from "./index.ts";
+import { cleanSuggest, collectNews, importNews, collectOpen, collectResults, gradeRows, handle, newsStage, sharpStage, slugOf, teamSim, type Store } from "./index.ts";
 
 const assert = (c: unknown, m: string) => { if (!c) { throw new Error("FAIL: " + m); } console.log("ok  " + m); };
 const teams = [["Nottingham","Arsenal","Premier League"],["Leeds","Manchester United","Premier League"],["Brighton","Crystal Palace","Premier League"],["Bournemouth","Sunderland","Premier League"],["Juventus","Lazio","Serie A"],["Milan","Atalanta","Serie A"],["Fiorentina","Como","Serie A"],["Málaga","Real Sociedad","La Liga"],["Celta de Vigo","Alavés","La Liga"],["Bayer Leverkusen","Freiburg","Bundesliga"],["Paris FC","Rennes","Ligue 1"],["Malmö","Häcken","Allsvenskan"],["Örgryte","GAIS","Allsvenskan"]];
@@ -34,6 +34,10 @@ const routes: Record<string, any> = {
 let oddsCalls = 0, claudeCalls = 0; const claudeBodies: any[] = [];
 const mockFetch = (async (url: string, init?: any) => {
   const u = String(url);
+  if (u.includes("raw.githubusercontent.com")) {
+    const id = u.split("/news/")[1].split(".json")[0];
+    return routes["gh:" + id] ? new Response(JSON.stringify(routes["gh:" + id]), { status: 200 }) : new Response("404: Not Found", { status: 404 });
+  }
   if (u.includes("api.anthropic.com")) {
     claudeCalls++; const body = JSON.parse(init.body); claudeBodies.push(body);
     const ns = [...body.messages[0].content.matchAll(/^(\d+)\. /gm)].map((m: any) => Number(m[1]));
@@ -75,7 +79,7 @@ const store: Store = {
   async upsertHistory(r) { db.history[r.game + r.draw] = r; },
   async systemsForRound(id) { return Object.values(db.systems).filter((s: any) => s.round_id === id && !s.result); },
   async updateSystem(id, p) { Object.assign(db.systems[id], p); },
-  async roundsForNews(nowIso) { const now = Date.parse(nowIso); return Object.values(db.rounds).filter((r: any) => Date.parse(r.close_at) > now && Date.parse(r.close_at) < now + 26 * 3600e3); },
+  async roundsForNews(nowIso, hours = 26) { const now = Date.parse(nowIso); return Object.values(db.rounds).filter((r: any) => Date.parse(r.close_at) > now && Date.parse(r.close_at) < now + hours * 3600e3); },
   async getNews(id) { return db.news?.[id] ? { data: db.news[id] } : null; },
   async upsertNews(id, data) { (db.news ||= {})[id] = JSON.parse(JSON.stringify(data)); },
 };
@@ -164,6 +168,17 @@ assert(l1.round && l1.stage === "l", "lineup pass starts within the last hour");
 const lw = db.news[l1.round];
 assert(lw.matches.find((m: any) => m.n === 1).lineup === "XI 1", "lineup stored");
 if (l1.round === "europatipset-2617") assert(lw.matches.length === 13 && lw.matches.find((m: any) => m.n === 13).notes[0] === "note 13", "earlier notes kept for matches not yet rechecked");
+
+// news committed to the repository by the scheduled tasks
+delete db.news["europatipset-2617"];
+NOW = Date.parse("2026-10-18T10:00:00+02:00");
+assert((await importNews(deps)).length === 0, "no file in the repository: nothing imported");
+routes["gh:europatipset-2617"] = { updatedAt: 100, author: "Claude (schemalagd)", matches: [{ n: "1", home: "Nottingham", away: "Arsenal", impact: "high", notes: ["a"], suggest: [7, 0, 0] }] };
+const im = await importNews(deps);
+assert(im.length === 1 && db.news["europatipset-2617"].matches[0].n === 1 && JSON.stringify(db.news["europatipset-2617"].matches[0].suggest) === "[5,-5,0]", "news file imported and cleaned");
+assert((await importNews(deps)).length === 0, "same file not imported twice");
+routes["gh:europatipset-2617"] = { ...routes["gh:europatipset-2617"], updatedAt: 200 };
+assert((await importNews(deps)).length === 1, "newer file imported");
 
 // auth
 const bad = await handle(new Request("http://x", { method: "POST", body: "{}" }), deps, "s3cret");
