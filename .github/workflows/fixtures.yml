@@ -1,0 +1,27 @@
+# Copies the open Stryktipset/Europatipset rounds to the "data" branch (fixtures.json) every 30 minutes,
+# so the scheduled news tasks know which matches to research. Free on public repositories.
+name: fixtures
+on:
+  schedule: [{ cron: "7,37 * * * *" }]
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency: { group: data-branch, cancel-in-progress: false }
+jobs:
+  fixtures:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: node scripts/fixtures.mjs
+      - name: Commit to data branch if changed
+        run: |
+          git config user.name "tipsmotorn-bot"; git config user.email "actions@users.noreply.github.com"
+          git fetch origin data && git worktree add ../data origin/data -B data || (git worktree add --orphan -b data ../data)
+          # Keep only fixture identity in the change check, so odds/streck movements alone do not create commits.
+          old=$(node -e "try{const f=require('../data/fixtures.json');console.log(JSON.stringify(f.rounds.map(r=>[r.id,r.close,r.matches.map(m=>m.home+m.away)])))}catch(e){console.log('')}")
+          new=$(node -e "const f=require('./out/fixtures.json');console.log(JSON.stringify(f.rounds.map(r=>[r.id,r.close,r.matches.map(m=>m.home+m.away)])))")
+          cp out/fixtures.json ../data/fixtures.json
+          cd ../data
+          if [ "$old" != "$new" ]; then git add fixtures.json && git commit -m "fixtures: $(date -u +%FT%TZ)" && git push origin data; else echo "no fixture change"; fi
