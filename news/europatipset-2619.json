@@ -1,0 +1,396 @@
+{
+ "game": "Europatipset",
+ "draw": 2619,
+ "round": "Europatipset v 43, stänger 2026-10-25 14:59",
+ "author": "Claude (schemalagd)",
+ "updatedAt": 1792828484682,
+ "checkedAt": {
+  "d": "2026-10-24T09:54:44+02:00"
+ },
+ "matches": [
+  {
+   "n": 1,
+   "home": "Sunderland",
+   "away": "Leeds",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Danso avstängd. Mundle och Ballard borta, Isidor trolig frånvaro, Meunier tveksam. Brobbey väntas tillbaka. Spelade 1–1 mot Lech Poznan i EL i torsdags, viss rotation trolig.",
+    "Bortalag: Calvert-Lewin (fot), Stach och Okafor (adduktor) samt James (rygg) tveksamma. Rodon och Joseph borta. Sports Mole tippar Nmecha på topp. Inget Europaspel i veckan.",
+    "Form/tabell: Sunderland jumbo med 4 p, en seger på sju. Leeds 7:a med 10 p."
+   ],
+   "lineup": "",
+   "take": "Färska tveksamheter i Leeds anfall drar ner bortalaget något. Folket streckar 2:an 51 % mot oddsens 38 % – kraftigt överstreckad, 1 och X är värdetecken.",
+   "suggest": [
+    1,
+    1,
+    -2
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 23 okt 2026",
+     "url": "https://www.sportsmole.co.uk/football/sunderland/preview/sunderland-vs-leeds-prediction-team-news-lineups_607537.html"
+    },
+    {
+     "title": "Sports Mole, 23 okt 2026",
+     "url": "https://www.sportsmole.co.uk/football/leeds-united/predicted-lineups/who-starts-up-front-after-calvert-lewin-news-leeds-predicted-xi-vs-sunderland_607602.html"
+    },
+    {
+     "title": "Footballdream, 23 okt 2026",
+     "url": "https://www.footballdream.in/blog/sunderland-vs-leeds-united-gw8-premier-league-2026-27"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "home": "Liverpool",
+   "away": "Brighton",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Szoboszlai borta (hamstring). Frimpong, Ekitike, Leoni och Bradley borta, Muñoz tveksam. Barcola tillgänglig. Spelade CL i tisdags (4–3 mot Villarreal).",
+    "Bortalag: Inga skador på officiella listan. Minteh kan göra säsongsdebut från bänken.",
+    "Form/tabell: Liverpool 5:a med 12 p. Brighton 3:a med 16 p och fyra raka ligasegrar."
+   ],
+   "lineup": "",
+   "take": "Skadorna är kända sedan förra helgen. Liverpool streckas 53 % mot oddsens 46 %, Brightons 2:a (23 % mot 29 %) är understreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 23 okt 2026",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/title-race/preview/liverpool-vs-brighton-prediction-team-news-lineups_607574.html"
+    },
+    {
+     "title": "Sports Mole, 23 okt 2026",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/injury-news/predicted-lineups/szoboszlai-out-ngumoha-in-predicted-liverpool-xi-vs-brighton_607594.html"
+    },
+    {
+     "title": "Footballdream, 23 okt 2026",
+     "url": "https://www.footballdream.in/blog/liverpool-vs-brighton-gw8-premier-league-2026-27"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "home": "Manchester United",
+   "away": "Bournemouth",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Shaw, Dorgu, Mainoo och Ugarte borta. Šeško, Rashford och Martínez tveksamma. Förlorade 1–4 mot Como i CL i onsdags, Cunha och Mazraoui väntas petas.",
+    "Bortalag: Scott och Tóth borta, Kroupi tillbaka. Vann 3–0 mot Milan i EL i torsdags, Petrović och Smith tillbaka i elvan.",
+    "Form/tabell: United 13:e med 7 p och sju raka utan seger i alla turneringar. Bournemouth 15:e med 6 p men tre raka segrar, obesegrat i sex raka ligamöten med United."
+   ],
+   "lineup": "",
+   "take": "United i djup formkris men det är redan känt. Hemmasegern streckas 51 % mot oddsens 45 % – 1:an något överstreckad, 2:an (24 % mot 29 %) understreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 23 okt 2026",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/preview/man-utd-vs-bournemouth-prediction-team-news-lineups_607577.html"
+    },
+    {
+     "title": "Sports Mole, 23 okt 2026",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/predicted-lineups/cunha-mazraoui-axed-man-utd-predicted-xi-vs-bournemouth_607579.html"
+    },
+    {
+     "title": "Footballdream, 23 okt 2026",
+     "url": "https://www.footballdream.in/blog/manchester-united-vs-afc-bournemouth-gw8-premier-league-2026-27"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "home": "Crystal Palace",
+   "away": "Newcastle",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Disasi tillbaka från avstängning. Henderson osäker. Timber, Strand Larsen, Tomiyasu och Riad borta. Spelade EL i torsdags, rotation trolig.",
+    "Bortalag: Elanga och Fernández-Pardo tveksamma, beslut nära match. Ramsey, Livramento och Jaouen borta.",
+    "Form/tabell: Palace 14:e med 7 p, Newcastle 11:e med 8 p och tre förluster på fyra."
+   ],
+   "lineup": "",
+   "take": "Två formsvaga lag, små nyheter. Strecket ligger i linje med oddsen.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 23 okt 2026",
+     "url": "https://www.sportsmole.co.uk/football/crystal-palace/preview/crystal-palace-vs-newcastle-prediction-team-news-lineups_607523.html"
+    },
+    {
+     "title": "Sports Mole, 24 okt 2026",
+     "url": "https://www.sportsmole.co.uk/football/newcastle-united/predicted-lineups/elanga-fernandez-pardo-decisions-predicted-newcastle-xi-vs-palace_607529.html"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "home": "Hull",
+   "away": "Brentford",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Butland, Mendy, Targett, Hughes, Matazo, Gyabi, Ansah och Vaz borta. Gourna-Douath och Cho tveksamma.",
+    "Bortalag: Janelt och Yarmoliuk avstängda. Dasilva, Milambo och Furo borta. Schuster tillbaka i träning.",
+    "Form/tabell: Hull 9:e med 9 p, en seger på sex. Brentford 6:a med 10 p, förlorade 1–2 mot Liverpool senast."
+   ],
+   "lineup": "",
+   "take": "Avstängningarna är kända sedan en vecka. Strecket följer oddsen, 2:an marginellt överstreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "thestatszone, 23 okt 2026",
+     "url": "https://www.thestatszone.com/hull-vs-brentford-preview-team-news-prediction-2026-27-english-premier-league-231627"
+    },
+    {
+     "title": "Brentford FC, 21 okt 2026",
+     "url": "https://www.brentfordfc.com/en/news/match-previews-hull-city-v-brentford-premier-league-25-10-2026"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "home": "Barcelona",
+   "away": "Real Madrid",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Olmo, Eric García, Christensen och Bardghji borta. Koundé stort frågetecken, De Jong väntas inte starta. Förlorade 2–4 mot PSG i CL i tisdags.",
+    "Bortalag: Vinícius Jr avstängd. Rodrygo, Mendy och Asencio skadade. Fyra raka segrar.",
+    "Form/tabell: Barcelona etta med 27 p, Real Madrid trea med 21 p."
+   ],
+   "lineup": "",
+   "take": "Vinícius avstängning är känd sedan flera dagar. 2:an streckas 18 % mot oddsens 24 % – understreckad; X lätt överstreckat.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 23 okt 2026",
+     "url": "https://www.sportsmole.co.uk/football/barcelona/el-clasico/preview/barcelona-vs-real-madrid-prediction-team-news-lineups_607543.html"
+    },
+    {
+     "title": "Sports Mole, 22 okt 2026",
+     "url": "https://www.sportsmole.co.uk/football/barcelona/el-clasico/injuries-and-suspensions/rodrygo-mendy-updates-real-madrid-injury-suspension-news-vs-barcelona_607438.html"
+    },
+    {
+     "title": "El Gol Digital, 23 okt 2026",
+     "url": "https://www.elgoldigital.com/futbol/fc-barcelona/alineacion-barcelona-clasico-xavi-espart-kounde"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "home": "Celta de Vigo",
+   "away": "Real Betis",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Starfelt, Borja Iglesias, Miguel Román, Álvaro Núñez och El Abdellaoui skadade. Spelade EL i torsdags (2–1 mot Celtic).",
+    "Bortalag: Bernal avstängd, Firpo och Cucho Hernández skadade. Spelade CL i onsdags och har cupmatch efter, rotation möjlig.",
+    "Form/tabell: Betis 4:a med 19 p men 2–5 mot Barcelona senast. Celta 8:a med 11 p, obesegrat i fyra raka mot Betis."
+   ],
+   "lineup": "",
+   "take": "Inga sena nyheter. Celtas 1:a streckas 23 % mot oddsens 32 % – understreckad, 2:an överstreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 23 okt 2026",
+     "url": "https://www.sportsmole.co.uk/football/celta-vigo/preview/celta-vigo-vs-betis-prediction-team-news-lineups_607558.html"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "home": "Lecce",
+   "away": "Juventus",
+   "impact": "high",
+   "notes": [
+    "Hemmalag: Coulibaly, Pierotti och Ilić skadade, Berisha tveksam. Utvilat utan Europaspel.",
+    "Bortalag: Skadekris – Yıldız, Conceição, Thuram, Locatelli, Ekhator och Grabara borta, nu även Çelik och Nico González från EL-matchen mot Rennes. Spalletti ställde in presskonferensen.",
+    "Form/tabell: Juventus 8:a med 11 p efter 0–3 mot Lazio. Lecce två poäng bakom, vann 3–0 mot Udinese senast."
+   ],
+   "lineup": "",
+   "take": "Färska skador och oro kring Spalletti talar mot 1.45 på Juve. 2:an redan något överstreckad (70 % mot 67 %) – gardera gärna.",
+   "suggest": [
+    2,
+    1,
+    -3
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 23 okt 2026",
+     "url": "https://www.sportsmole.co.uk/football/lecce/preview/lecce-vs-juventus-prediction-team-news-lineups_607563.html"
+    },
+    {
+     "title": "SoloLecce, 24 okt 2026",
+     "url": "https://www.sololecce.it/news/375291022854/qui-juventus-emergenza-verso-lecce-2-nuovi-stop-muscolari-spalletti-cancella-la-conferenza-stampa"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "home": "Udinese",
+   "away": "Milan",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Alaba, Bayo och Gueye skadade. Zaniolo, Piotrowski och Zanoli tveksamma. Fem raka ligaförluster.",
+    "Bortalag: Saelemaekers, Gabbia och Chukwueze borta, Loftus-Cheek tveksam. Gonçalo Ramos väntas starta. Förlorade 0–3 mot Bournemouth i EL i torsdags, Bologna och derby väntar – rotation möjlig.",
+    "Form/tabell: Milan obesegrat i ligan, topp 4 med 15 p. Udinese strax ovanför strecket."
+   ],
+   "lineup": "",
+   "take": "Små förändringar. 2:an kraftigt överstreckad (72 % mot oddsens 57 %) – X och 1 ger värde som gardering.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 23 okt 2026",
+     "url": "https://www.sportsmole.co.uk/football/udinese/preview/udinese-vs-ac-milan-prediction-team-news-lineups_607553.html"
+    },
+    {
+     "title": "PianetaMilan, 24 okt 2026",
+     "url": "https://www.pianetamilan.it/partite/probabili-formazioni/amorim-cambia-il-milan-per-ludinese-la-probabile-formazione/"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "home": "Genoa",
+   "away": "Venezia",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Magvirus i truppen, bl.a. Baldanzi och Colombo bedöms på matchdagen. Venturino och Sow skadade.",
+    "Bortalag: Busio, Šverko, Franjić och Adorante skadade, Mazzocchi tveksam.",
+    "Form/tabell: Bottenmöte, båda bland de fyra sista. Genoa 4 p på 7 matcher. Venezia bröt förlustsvit med 1–0 mot Napoli."
+   ],
+   "lineup": "",
+   "take": "Virusutbrottet är färskt och försvagar Genoa. 1:an är redan kraftigt överstreckad (63 % mot 44 %) – X och 2 är tydliga värdetecken.",
+   "suggest": [
+    -2,
+    1,
+    1
+   ],
+   "sources": [
+    {
+     "title": "TuttoMercatoWeb, 24 okt 2026",
+     "url": "https://www.tuttomercatoweb.com/serie-a/genoa-vigilia-valutazioni-de-rossi-recuperare-sfida-venezia-2286592"
+    },
+    {
+     "title": "SOS Fanta, 23 okt 2026",
+     "url": "https://www.sosfanta.com/news/probabili-formazioni-genoa-venezia-el-shaarawy-adams-busio-yeboah-vitinha-hainaut-traore/"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "home": "Freiburg",
+   "away": "Bayern München",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Engelhardt (höft) och Lienhart tveksamma. Förlorade 0–3 i Monaco i torsdags.",
+    "Bortalag: Tränaren Kompany kollapsade fredag och togs till sjukhus (stabil), assisterande Aaron Danks leder laget. Luis Díaz skadad mot Arsenal, Kimmich osäker. Pokalmatch tre dagar efter.",
+    "Form/tabell: Bayern etta med 14 p, Freiburg trea med 13 p."
+   ],
+   "lineup": "",
+   "take": "Kompany-nyheten är mycket färsk men påverkar truppen lite. 2:an redan överstreckad (79 % mot 68 %) – gardera.",
+   "suggest": [
+    1,
+    1,
+    -2
+   ],
+   "sources": [
+    {
+     "title": "SRF Sport, 23 okt 2026",
+     "url": "https://www.srf.ch/sport/fussball/fussball-allgemein/vor-spiel-gegen-freiburg-bayern-trainer-kompany-nach-kollaps-im-spital"
+    },
+    {
+     "title": "Sportschau, 23 okt 2026",
+     "url": "https://www.sportschau.de/regional/br/br-nach-zusammenbruch-fcb-coach-kompany-in-klinik-gebracht-102.html"
+    },
+    {
+     "title": "Sports Mole, 23 okt 2026",
+     "url": "https://www.sportsmole.co.uk/football/freiburg/bundesliga-title-race/preview/freiburg-vs-bayern-prediction-team-news-lineups_607552.html"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "home": "Monaco",
+   "away": "Lille",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Dier och Idumbo skadade. Roterade fem spelare i 3–0 mot Freiburg i Conference League, Brunner tillbaka från avstängning.",
+    "Bortalag: Tiago Santos, Ethan Mbappé, Ueda, Igamane och Sahraoui borta. Förlorade 2–4 mot Galatasaray i CL i onsdags.",
+    "Form/tabell: Båda på 14 p, fem lag delar toppen."
+   ],
+   "lineup": "",
+   "take": "Inga sena nyheter. 1:an överstreckad (58 % mot 46 %), 2:an understreckad (16 % mot 26 %).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Africafoot, 23 okt 2026",
+     "url": "https://africafoot.com/monaco-lille-les-compos-probables-avant-le-choc/"
+    },
+    {
+     "title": "Monaco Life, 23 okt 2026",
+     "url": "https://monacolife.net/football-monaco-return-to-winning-ways-with-conference-league-win"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "home": "Mjällby",
+   "away": "Hammarby",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Dalsgaard, Stavitski, Youssef och Helge borta. Spelade 1–1 i Tbilisi i Conference League i torsdags – lång resa och kort vila.",
+    "Bortalag: Oliver Hagen nytt lårbakslag, Boudri borta säsongen ut. Tunn trupp. Hahn redo trots knäproblem.",
+    "Form/tabell: Mjällby 12:a, åtta raka utan seger, tre poäng före kvalplats. Hammarby trea och jagar andraplatsen."
+   ],
+   "lineup": "",
+   "take": "Mjällbys resa och form talar för Hammarby, men det är känt. Strecket i linje med oddsen.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Bollsvenskan, 23 okt 2026",
+     "url": "https://bollsvenskan.se/bergstrom-tatt-schema-men-noll-gnall-siktar-pa-gamla-mjallby-mot-hammarby/"
+    },
+    {
+     "title": "Bollsvenskan, 22 okt 2026",
+     "url": "https://bollsvenskan.se/hagen-brot-traningen-larbakslag-oklar-aterkomst/"
+    },
+    {
+     "title": "tvmatchen.nu, 22 okt 2026",
+     "url": "https://www.tvmatchen.nu/sport/fotboll/iberia-mjallby-22-oktober-2026/"
+    }
+   ]
+  }
+ ]
+}
