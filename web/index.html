@@ -309,6 +309,8 @@ table.t tr.hl td{background:color-mix(in srgb,var(--good) 10%,var(--card))}
             <div class="field" id="crowdCutField"><label for="crowdCut">Ta bort folkrader</label>
               <select id="crowdCut" class="inp"><option value="0.1">Mest spelade 10 %</option><option value="0.25">Mest spelade 25 %</option><option value="0.4">Mest spelade 40 %</option></select></div>
           </div>
+          <div class="field"><label for="profile">Radprofil</label>
+            <select id="profile" class="inp"><option value="1">Mest värde (standard)</option><option value="1.5">Balans: fler rätt, lite lägre värde</option><option value="2">Fler rätt: tätare rader, lägre värde</option></select></div>
           <div class="field">
             <label for="tilt">Värdelutning</label>
             <input id="tilt" class="slider" type="range" min="0" max="100" value="35">
@@ -486,7 +488,7 @@ function emptyRound(game){
   const st = lsGet(SETTINGS_KEY) || {};
   return {id:null, game, product:game, name:'', draw:null, close:null, state:null, fetchedSale:null, turnover:null, jackpot:0, guarantee:PARAMS[game].guarantee, rollSale:0, extra:0,
     base: st.base || 100, useBlend: st.useBlend!==false, tilt: (st.tilt && st.tilt[game]!=null) ? st.tilt[game] : PARAMS[game].tilt,
-    budget: st.budget || 96, reduce: st.reduce || 'ev', maxFav: st.maxFav || 0, cut: st.cut || 0.25, fmt: (st.fmtV===2 && st.fmt) || 'ss', rows:null, matches:[], result:null, updatedAt:null};
+    budget: st.budget || 96, reduce: st.reduce || 'ev', maxFav: st.maxFav || 0, cut: st.cut || 0.25, profile: +st.profile || 1, fmt: (st.fmtV===2 && st.fmt) || 'ss', rows:null, matches:[], result:null, updatedAt:null};
 }
 let S = emptyRound(PARAMS[(lsGet(SETTINGS_KEY)||{}).game] ? lsGet(SETTINGS_KEY).game : 'Stryktipset');
 let editing = false, saved = [], sb = null, session = null, lastLoad = 0;
@@ -637,7 +639,10 @@ async function buildSystem(){
     // then keep the rows with the highest expected payout.
     const lockedEmpty = S.matches.some(m=>m.lock && !selIdx(m).length);
     if(lockedEmpty){ $('optMsg').textContent='En låst match saknar tecken.'; return; }
-    const t = S.matches.map(m=>{ let tj = tilted(m); if(m.lock){ const sel=selIdx(m); tj = norm(tj.map((x,i)=>sel.includes(i)?x:0)); } return tj; });
+    // Row profile: raising the value-tilted chances to a power above 1 packs the rows closer to the likeliest outcomes,
+    // which gives more right per row but less value (see the scoreboard under Historik).
+    const gp = +S.profile || 1;
+    const t = S.matches.map(m=>{ let tj = tilted(m); if(gp!==1) tj = norm(tj.map(x=>Math.pow(x,gp))); if(m.lock){ const sel=selIdx(m); tj = norm(tj.map((x,i)=>sel.includes(i)?x:0)); } return tj; });
     const pool = B > 1500 ? B : Math.min(1500, Math.max(B*3, B+20));
     const seen = new Set(); const rnd = tmRng((Date.now() ^ 0x9e3779b9)>>>0);
     const fav = S.matches.map(m=>{ const f=crowd(m); return f.indexOf(Math.max(...f)); });
@@ -919,13 +924,79 @@ function renderControls(){
   $('game').value=S.game; $('budget').value=S.budget; $('tilt').value=S.tilt; $('tiltVal').textContent=fmtNum(tiltB());
   $('reduce').value=S.reduce; $('maxFav').value=String(S.maxFav||0); $('crowdCut').value=String(S.cut||0.25); $('fmt').value=S.fmt;
   $('crowdCutField').style.visibility = S.reduce==='crowd' ? 'visible' : 'hidden';
+  $('profile').value = String(S.profile||1); $('profile').disabled = S.reduce!=='ev';
   $('btnEdit').setAttribute('aria-pressed', editing); $('btnEdit').textContent = editing ? 'Klar med data' : 'Redigera data';
 }
 function render(){ renderControls(); renderMatches(); renderTicket(); renderRound(); }
+// ---------- Live scoreboard from the stored history ----------
+// For each strategy: the exact expected payout of a row drawn from its sign distribution, given each round's real result
+// and real payouts per tier (Poisson-binomial over the 13 matches). Same method as the original backtest.
+let HIST = null, histLoading = false;
+async function loadHistory(){
+  if(HIST || histLoading || !sb) return HIST; histLoading = true;
+  try{
+    let all = [];
+    for(let off=0; off<2000; off+=500){
+      const {data, error} = await sb.from('history').select('game,draw,tiers,events').in('game',['Stryktipset','Europatipset']).order('draw').range(off, off+499);
+      if(error) throw error; all = all.concat(data||[]); if(!data || data.length<500) break;
+    }
+    HIST = all.filter(h=>Array.isArray(h.events) && h.events.length===13 && h.events.every(e=>e && '1X2'.includes(e.r) && Array.isArray(e.so) && e.so.every(x=>x>1) && Array.isArray(e.s)));
+  }catch(e){ HIST = []; }
+  histLoading = false; return HIST;
+}
+function poisBin(ps){ let d=[1]; for(const p of ps){ const n=new Array(d.length+1).fill(0); for(let i=0;i<d.length;i++){ n[i]+=d[i]*(1-p); n[i+1]+=d[i]*p; } d=n; } return d; }
+function backtest(game, tilt, prof, crowdOnly, nRows){
+  const P = PARAMS[game], H2 = (HIST||[]).filter(h=>h.game===game); if(!H2.length) return null;
+  const per=[]; let c10=0, c11=0;
+  for(const h of H2){
+    const ps = h.events.map(e=>{ const k='1X2'.indexOf(e.r), o=norm(e.so.map(x=>1/x)), c=norm(e.s.map(x=>Math.max(+x,0.5)));
+      let w = c; if(!crowdOnly){ const q = norm(o.map((p,i)=>Math.pow(p,P.blend.a)*Math.pow(c[i],P.blend.b))); w = norm(q.map((p,i)=>p*Math.pow(p/c[i], tilt))); }
+      if(prof!==1) w = norm(w.map(v=>Math.pow(v,prof))); return w[k]; });
+    const d = poisBin(ps); let r = 0;
+    for(const k of [10,11,12,13]){ const t = h.tiers && h.tiers[k]; r += d[k]*(t && t.w ? Number(t.a) : 0); }
+    per.push(r); const q10=d[10]+d[11]+d[12]+d[13], q11=d[11]+d[12]+d[13];
+    c10 += 1-Math.pow(1-q10, nRows); c11 += 1-Math.pow(1-q11, nRows);
+  }
+  const n = per.length, mean = per.reduce((a,b)=>a+b,0)/n, se = Math.sqrt(per.reduce((a,x)=>a+(x-mean)**2,0)/Math.max(1,n-1)/n);
+  const half = n>>1, h1 = per.slice(0,half).reduce((a,b)=>a+b,0)/Math.max(1,half), h2 = per.slice(half).reduce((a,b)=>a+b,0)/Math.max(1,n-half);
+  return {n, mean, se, h1, h2, p10:c10/n, p11:c11/n};
+}
+function sourceScores(game){
+  const P = PARAMS[game], H2 = (HIST||[]).filter(h=>h.game===game); let n=0; const L={o:0,c:0,b:0};
+  for(const h of H2) for(const e of h.events){ const k='1X2'.indexOf(e.r), o=norm(e.so.map(x=>1/x)), c=norm(e.s.map(x=>Math.max(+x,0.5))), b=norm(o.map((p,i)=>Math.pow(p,P.blend.a)*Math.pow(c[i],P.blend.b)));
+    L.o-=Math.log(o[k]); L.c-=Math.log(c[k]); L.b-=Math.log(b[k]); n++; }
+  return n ? {n, o:Math.exp(-L.o/n), c:Math.exp(-L.c/n), b:Math.exp(-L.b/n)} : null;
+}
+async function renderLiveBT(){
+  const host = $('liveBT'); if(!host) return;
+  const game = PARAMS[S.game] && PARAMS[S.game].tested ? S.game : 'Stryktipset';
+  host.innerHTML = `<h2>Din motor mot historiken: ${esc(game)}</h2><p class="hint">Räknar…</p>`;
+  await loadHistory();
+  if(!HIST || !HIST.length){ host.innerHTML = `<h2>Din motor mot historiken</h2><p class="hint">Ingen historik i databasen ännu.</p>`; return; }
+  const nR = Math.max(1, Math.round(+S.budget||96)), tl = tiltB(), pr = +S.profile||1;
+  const strat = [
+    ['Folkets rader', 'Tecken i samma proportion som strecken', 0, 1, true],
+    ['Oddsens rader', 'Ingen värdelutning', 0, 1],
+    [`Dina inställningar`, `Lutning ${fmtNum(tl)}, radprofil ${pr===1?'mest värde':pr===1.5?'balans':'fler rätt'}`, tl, pr, false, true],
+    ['Lutning 0,50', 'Mest värde', 0.5, 1],
+    [`Lutning ${fmtNum(tl)}, balans`, 'Tätare rader', tl, 1.5],
+    [`Lutning ${fmtNum(tl)}, fler rätt`, 'Ännu tätare rader', tl, 2],
+  ];
+  const rows = strat.map(([k,d,t,p,crowdOnly,mine])=>({k,d,mine,r:backtest(game,t,p,!!crowdOnly,nR)})).filter(x=>x.r);
+  const sc = sourceScores(game), n = rows[0] ? rows[0].r.n : 0;
+  host.innerHTML = `<h2>Din motor mot historiken: ${esc(game)}</h2>
+    <p>${n} avgjorda omgångar med verkliga resultat och verkliga vinster per rad. Kr per krona är vad en rad i snitt hade gett. Chansen gäller ett system på ${nR.toLocaleString('sv-SE')} rader (din budget).</p>
+    <div class="tblwrap"><table class="t"><thead><tr><th>Strategi</th><th>Kr per krona</th><th>Första / andra halvan</th><th>Chans ≥10 rätt</th><th>Chans ≥11 rätt</th></tr></thead><tbody>
+    ${rows.map(x=>`<tr class="${x.mine?'hl':''}"><td>${esc(x.k)}<br><span class="hint">${esc(x.d)}</span></td><td>${fmtNum(x.r.mean)} <span class="hint">±${fmtNum(x.r.se)}</span></td><td>${fmtNum(x.r.h1)} / ${fmtNum(x.r.h2)}</td><td>${fmtPct(x.r.p10,0)}</td><td>${fmtPct(x.r.p11,0)}</td></tr>`).join('')}
+    </tbody></table></div>
+    ${sc?`<p class="hint">Träffsäkerhet per match (genomsnittlig sannolikhet för det som hände, ${sc.n.toLocaleString('sv-SE')} matcher): oddsen ${fmtPct(sc.o)}, folket ${fmtPct(sc.c)}, motorns blandning ${fmtPct(sc.b)}. Högre är bättre.</p>`:''}
+    <p class="hint">Fler rätt per omgång kostar i längden: de extra rätten är favoriter som alla andra också har, så vinsten delas med fler. ± är osäkerheten; ett fåtal stora vinster styr snittet.</p>`;
+}
 function renderHist(){
   const bar = (label, val, max, best) => `<div class="bar${best?' best':''}"><span>${esc(label)}</span><span class="tr"><i style="width:${Math.min(100,val/max*100)}%"></i><span class="ref" style="left:${0.65/max*100}%" title="65 öre, Svenska Spels återbetalning"></span></span><span class="val">${fmtNum(val)}</span></div>`;
   const tbl = g => `<div class="tblwrap"><table class="t"><thead><tr><th>Strategi</th><th>Kr tillbaka per krona</th><th>Mot folkets rader</th><th>Säkerhet (t)</th></tr></thead><tbody>${BT.strat.map(r=>{ const d=r['d'+g]; return `<tr class="${d&&d[1]>=2.5?'hl':''}"><td>${esc(r.k)}<br><span class="hint">${esc(r.d)}</span></td><td>${fmtNum(r[g])}</td><td>${d?(d[0]>0?'+':'')+fmtNum(d[0]):'–'}</td><td>${d?fmtNum(d[1],1):'–'}</td></tr>`; }).join('')}</tbody></table></div>`;
   $('histView').innerHTML = `
+    <div class="hcard" id="liveBT"></div>
     <div class="hcard"><h2>Vad historiken säger</h2>
       <p>Tipsmotorn är testad mot alla omgångar sedan sommaren 2024. På Stryktipset gav rader byggda på oddsen och spelvärde tydligt mer tillbaka än rader som följer folket, och resultatet håller i båda halvorna av perioden. På Europatipset är fördelen liten och osäker.</p>
       <p class="hint">Testet räknar exakt förväntad utdelning för varje strategi givet de verkliga resultaten och de verkliga vinsterna per rad. Oddsen är öppningsoddsen, eftersom stängningsodds inte sparas för gamla omgångar. ${esc(BT.range.s)} på Stryktipset, ${esc(BT.range.e)} på Europatipset.</p></div>
@@ -967,7 +1038,7 @@ function initSupabase(){
 function setStatus(t){ $('newsStatus').textContent = t; }
 function saveSettings(){
   const st = lsGet(SETTINGS_KEY) || {};
-  Object.assign(st, {game:S.game, base:S.base, useBlend:S.useBlend, budget:S.budget, reduce:S.reduce, maxFav:S.maxFav, cut:S.cut, fmt:S.fmt, fmtV:2});
+  Object.assign(st, {game:S.game, base:S.base, useBlend:S.useBlend, budget:S.budget, reduce:S.reduce, maxFav:S.maxFav, cut:S.cut, profile:S.profile, fmt:S.fmt, fmtV:2});
   st.tilt = Object.assign({}, st.tilt||{}, {[S.game]: S.tilt});
   lsSet(SETTINGS_KEY, st);
 }
@@ -1158,6 +1229,7 @@ $('tilt').oninput=e=>{ S.tilt=+e.target.value; $('tiltVal').textContent=fmtNum(t
 $('reduce').onchange=e=>{ S.reduce=e.target.value; S.rows=null; renderControls(); changed(); };
 $('maxFav').onchange=e=>{ S.maxFav=+e.target.value; S.rows=null; changed(); };
 $('crowdCut').onchange=e=>{ S.cut=+e.target.value; S.rows=null; changed(); };
+$('profile').onchange=e=>{ S.profile=+e.target.value; persist(); flash('Tryck Bygg system för att använda den nya radprofilen.'); };
 $('fmt').onchange=e=>{ S.fmt=e.target.value; renderTicket(); persist(); };
 $('turnover').oninput=e=>{ S.turnover=parseNum(e.target.value); persist(); scheduleStats(); };
 $('jackpot').oninput=e=>{ S.jackpot=parseNum(e.target.value)||0; persist(); scheduleStats(); };
@@ -1184,7 +1256,7 @@ $('btnSave').onclick=async()=>{
 function showTab(t){
   ['coupon','saved','hist'].forEach(x=>{ $('tab-'+x).setAttribute('aria-selected', t===x); $('view-'+x).hidden = t!==x; });
   $('bottombar').style.visibility = t==='coupon' ? 'visible' : 'hidden';
-  if(t==='saved'){ renderSaved(); loadSaved(); } if(t==='hist') renderHist();
+  if(t==='saved'){ renderSaved(); loadSaved(); } if(t==='hist'){ renderHist(); renderLiveBT(); }
 }
 $('tab-coupon').onclick=()=>showTab('coupon');
 $('tab-saved').onclick=()=>showTab('saved');
