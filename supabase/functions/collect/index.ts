@@ -58,11 +58,13 @@ export function sportKey(league: string): string | null {
   if (LEAGUE_KEYS[l]) return LEAGUE_KEYS[l];
   const hit = Object.keys(LEAGUE_KEYS).find((x) => l.includes(x)); return hit ? LEAGUE_KEYS[hit] : null;
 }
-// Fetch sharp odds at most once per time window before the close: day before, same day, pre-lineup, after lineups.
+// Fetch sharp odds at most once per time window before the close: day before, same day, pre-lineup, after lineups,
+// and a last one in the final 15 minutes (the collector runs every 15 minutes, so it lands 0-15 minutes before the close),
+// when the odds have absorbed the starting XIs and are closest to the closing line.
 export function sharpStage(closeMs: number, nowMs: number): string | null {
   const h = (closeMs - nowMs) / 3600e3;
   if (h <= 0 || h > 30) return null;
-  if (h > 8) return "d"; if (h > 2) return "h"; if (h > 0.95) return "p"; return "f";
+  if (h > 8) return "d"; if (h > 2) return "h"; if (h > 0.95) return "p"; if (h > 0.25) return "f"; return "z";
 }
 
 // ---------- open rounds ----------
@@ -195,13 +197,14 @@ export async function collectResults(d: Deps) {
       const r = (await getJSON(d.fetch, `${SS}${g}/draws/${rd.draw}/result`)).result;
       const byN: Record<number, any> = {}; (r.events || []).forEach((e: any) => byN[e.eventNumber] = e);
       const evs = (dr.drawEvents || []).slice().sort((a: any, b: any) => a.eventNumber - b.eventNumber);
-      const correct = evs.map((e: any) => { const x = byN[e.eventNumber]; return x?.cancelled ? "C" : (x?.outcome || "?"); }).join("");
+      // A cancelled match is decided by lot ("Matchen lottad till en 1:a"); the drawn sign is in outcome. "C" only if it is missing.
+      const correct = evs.map((e: any) => { const x = byN[e.eventNumber]; return x?.outcome || (x?.cancelled ? "C" : "?"); }).join("");
       const tiers: any = {}; (r.distribution || []).forEach((t: any) => { const k = parseInt(t.name); if (k) tiers[k] = { w: t.winners, a: num(t.amount) || 0 }; });
       const sale = num(r.currentNetSale);
       await d.store.insertResult({ round_id: rd.id, correct_row: correct, tiers, sale });
-      for (const e of evs) { const x = byN[e.eventNumber]; await d.store.updateMatch(rd.id, e.eventNumber, stripUndef({ outcome: x?.cancelled ? "C" : x?.outcome || null, score: x?.outcomeScore ? `${x.outcomeScore.home}-${x.outcomeScore.away}` : null, streck: triple(e.svenskaFolket) || undefined })); }
+      for (const e of evs) { const x = byN[e.eventNumber]; await d.store.updateMatch(rd.id, e.eventNumber, stripUndef({ outcome: x?.outcome || (x?.cancelled ? "C" : null), score: x?.cancelled ? "lottad" : x?.outcomeScore ? `${x.outcomeScore.home}-${x.outcomeScore.away}` : null, streck: triple(e.svenskaFolket) || undefined })); }
       await d.store.updateRound(rd.id, { state: "Finalized", sale });
-      await d.store.upsertHistory({ game: rd.product || rd.game, draw: rd.draw, close_at: rd.close_at, sale, tiers, events: evs.map((e: any) => ({ r: byN[e.eventNumber]?.outcome || null, so: triple(e.startOdds), s: triple(e.svenskaFolket), lg: e.match?.league?.name || null, ko: e.match?.matchStart || null })) });
+      await d.store.upsertHistory({ game: rd.product || rd.game, draw: rd.draw, close_at: rd.close_at, sale, tiers, events: evs.map((e: any) => ({ r: byN[e.eventNumber]?.outcome || null, c: byN[e.eventNumber]?.cancelled ? 1 : undefined, so: triple(e.startOdds), s: triple(e.svenskaFolket), lg: e.match?.league?.name || null, ko: e.match?.matchStart || null })) });
       let graded = 0;
       for (const s of await d.store.systemsForRound(rd.id)) { const { result, payout } = gradeRows(s.rows || "", correct, tiers); await d.store.updateSystem(s.id, { result, payout }); graded++; }
       out.push({ id: rd.id, correct, graded });
@@ -221,7 +224,7 @@ export async function backfill(d: Deps, game: string, from: number, to: number) 
       const byN: Record<number, any> = {}; (r.events || []).forEach((e: any) => byN[e.eventNumber] = e);
       const tiers: any = {}; (r.distribution || []).forEach((t: any) => { const kk = parseInt(t.name); if (kk) tiers[kk] = { w: t.winners, a: num(t.amount) || 0 }; });
       await d.store.upsertHistory({ game: dr.productName || GAMES[g] || g, draw: k, close_at: dr.regCloseTime, sale: num(dr.currentNetSale), tiers,
-        events: (dr.drawEvents || []).map((e: any) => ({ r: byN[e.eventNumber]?.cancelled ? "C" : byN[e.eventNumber]?.outcome || null, so: triple(e.startOdds), s: triple(e.svenskaFolket), lg: e.match?.league?.name || null, ko: e.match?.matchStart || null })) });
+        events: (dr.drawEvents || []).map((e: any) => ({ r: byN[e.eventNumber]?.outcome || null, c: byN[e.eventNumber]?.cancelled ? 1 : undefined, so: triple(e.startOdds), s: triple(e.svenskaFolket), lg: e.match?.league?.name || null, ko: e.match?.matchStart || null })) });
     } catch (e) { errors.push(`${k}: ${e}`); }
   }
   return { done: n, next: to - n, errors: errors.slice(0, 5) };

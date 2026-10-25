@@ -92,6 +92,7 @@ assert(teamSim("Malmö", "Malmo FF") >= 1.5, "team match Malmö / Malmo FF");
 assert(sharpStage(Date.parse(close), NOW) === "p", "stage 1.5h before close is pre-lineup");
 assert(sharpStage(Date.parse(close), Date.parse("2026-10-17T21:00:00+02:00")) === "d", "stage evening before is day-before");
 assert(sharpStage(Date.parse(close), Date.parse("2026-10-16T12:00:00+02:00")) === null, "no sharp fetch >30h before");
+assert(sharpStage(Date.parse(close), Date.parse("2026-10-18T14:20:00+02:00")) === "f" && sharpStage(Date.parse(close), Date.parse("2026-10-18T14:46:00+02:00")) === "z", "after-lineups and last-15-minutes windows");
 
 // open round
 const o1 = await collectOpen(deps);
@@ -144,6 +145,12 @@ assert(db.systems.t1.result.c8 === 1 && db.systems.t1.result.best === 8 && db.sy
 assert(db.history["Topptipset4400"], "Topptipset history stored under product name");
 const g = gradeRows("22111222X211" + "1", row, strykResult.distribution.reduce((a: any, t: any) => (a[parseInt(t.name)] = { a: Number(t.amount.replace(",", ".")) }, a), {}));
 assert(g.result.c12 === 1 && g.payout === 1500, "12 rätt graded");
+// a cancelled match decided by lot counts only for rows with the drawn sign
+strykResult.events[0] = { ...strykResult.events[0], cancelled: true, outcome: "1" } as any;
+db.rounds["stryktipset-4975"].state = "Open"; db.systems.s1.result = null; delete db.results["stryktipset-4975"];
+await collectResults(deps);
+assert(db.results["stryktipset-4975"].correct_row[0] === "1" && db.matches["stryktipset-4975#1"].score === "lottad", "cancelled match uses the drawn sign, not a free pass");
+assert(db.history["Stryktipset4975"].events[0].r === "1" && db.history["Stryktipset4975"].events[0].c === 1, "history keeps the drawn sign and a cancelled flag");
 
 // team news
 assert(newsStage(Date.parse(close), Date.parse("2026-10-17T20:00:00+02:00")) === "d" && newsStage(Date.parse(close), Date.parse("2026-10-18T14:10:00+02:00")) === "l" && newsStage(Date.parse(close), Date.parse("2026-10-16T08:00:00+02:00")) === null, "news stages: day before, lineups, too early");
