@@ -1,0 +1,380 @@
+{
+ "game": "Europatipset",
+ "draw": 2620,
+ "round": "Europatipset v 44, stänger 2026-10-28 18:59",
+ "author": "Claude (schemalagd)",
+ "updatedAt": 1793091608395,
+ "checkedAt": {
+  "d": "2026-10-27T10:00:08+01:00"
+ },
+ "matches": [
+  {
+   "n": 1,
+   "home": "Liverpool",
+   "away": "Chelsea",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Liverpool fyra raka segrar (senast 2–0 mot Brighton 25/10), spelar CL – rotation trolig. Szoboszlai har varit borta, Muñoz tveksam (läge inför helgen).",
+    "Bortalag: Chelsea (Xabi Alonso) föll 0–2 hemma mot Tottenham 24/10. Borta: E. Martínez (käke), Emegha, Reece James, Gittens; Chavarria stort frågetecken.",
+    "Form/tabell: PL efter 8 omg: Liverpool 4:a (15 p), Chelsea 5:a (13 p). Inga färska förhandsrapporter om cupuppställningar hittade."
+   ],
+   "lineup": "",
+   "take": "Jämnt enligt oddsen (36/24/40) men 1:an streckas 67 % och 2:an bara 3 % – 2:an är kraftigt understreckad, 1:an överstreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 22 okt",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/martinez-james-chavarria-updates-chelsea-injury-suspension-list-vs-spurs_607365.html"
+    },
+    {
+     "title": "Khel Now, 25 okt",
+     "url": "https://khelnow.com/football/liverpool-injury-news-ahead-brighton-premier-league-202610"
+    },
+    {
+     "title": "Football Web Pages, 25 okt",
+     "url": "https://www.footballwebpages.co.uk/premier-league/league-table"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "home": "Manchester City",
+   "away": "Brighton",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: City ledare (21 p) men föll 1–2 mot Aston Villa 24/10; möter Brighton igen i ligan lör 31/10 och Leipzig i CL 4/11 – tung rotation väntas.",
+    "Bortalag: Brighton 3:a (16 p), förlorade 0–2 mot Liverpool 25/10. Borta: Ferguson, Tzimas, Mitoma, Yohanna; Minteh, Wieffer, Struijk tveksamma.",
+    "Form/tabell: Båda lagen lär prioritera lördagens ligamöte."
+   ],
+   "lineup": "",
+   "take": "Med rotation på båda håll är 88 % på 1:an (odds 56 %) en stor överstreckning; X (3 % mot 23 %) och 2 är understreckade.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sussex Express, 23 okt",
+     "url": "https://www.sussexexpress.co.uk/sport/football/brighton-and-hove-albion/minteh-mitoma-and-wieffer-brighton-injury-list-in-full-and-expected-return-dates-ahead-of-liverpool-9305405"
+    },
+    {
+     "title": "Football Web Pages, City-program",
+     "url": "https://www.footballwebpages.co.uk/manchester-city/fixtures-results"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "home": "Bournemouth",
+   "away": "Aston Villa",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Bournemouth 13:e (9 p). Ingen färsk laginformation hittad.",
+    "Bortalag: Aston Villa 9:a (11 p), slog serieledande City 2–1 i lördags. Ingen färsk laginformation hittad.",
+    "Form/tabell: Villa på uppgång; båda bör rotera något."
+   ],
+   "lineup": "",
+   "take": "X streckas bara 10 % mot oddsens 27 % – klart understreckad. 1:an något överstreckad (55 mot 41).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Football Web Pages, 25 okt",
+     "url": "https://www.footballwebpages.co.uk/premier-league/league-table"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "home": "Sunderland",
+   "away": "Brentford",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Sunderland jumbo i PL (5 p), spelade EL i torsdags och möter Coventry i en bottenmatch lör – kraftig rotation trolig. Danso avstängd, Ballard borta.",
+    "Bortalag: Brentford (Keith Andrews) 1–1 borta mot Hull 25/10, inget Europaspel. Dasilva och Furo borta (äldre uppgift).",
+    "Form/tabell: Sunderland utan seger i sex ligamatcher; Brentford ostabil (D F O V V O)."
+   ],
+   "lineup": "",
+   "take": "Streck i stort sett i linje med oddsen; 1:an något överstreckad (37 mot 28). Sunderlands prioritering av ligan talar för Brentford.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, matchsida",
+     "url": "https://www.sportsmole.co.uk/football/efl-cup/sunderland-vs-brentford_game_260628.html"
+    },
+    {
+     "title": "On Tour Football",
+     "url": "https://ontourfootball.com/fixtures/sunderland-vs-brentford-2026-10-28"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "home": "Fulham",
+   "away": "Crystal Palace",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Fulham två raka ligasegrar (1–0 mot Coventry 24/10), inget Europaspel men brukar rotera.",
+    "Bortalag: Crystal Palace i dålig form – 0–2 mot Newcastle, 0–5 mot Brighton, spelar EL varje torsdag. Färsk skadeinfo saknas.",
+    "Form/tabell: Palace obesegrade i sex raka mot Fulham."
+   ],
+   "lineup": "",
+   "take": "1:an streckas 73 % mot oddsens 50 % – överstreckad; X (5 mot 24) är kraftigt understreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Futboltotal, 26 okt",
+     "url": "https://futboltotal.futbol/partido/fulham-vs-crystal-palace-carabao-cup-2026-10-28"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "home": "Genoa",
+   "away": "Juventus",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Genoa (De Rossi) 16:e, 7 p på fem senaste, slog Venezia 1–0. Sow, Havel, Venturino borta, Wiafe osäker.",
+    "Bortalag: Juventus 7:a, stor skadekris: Yildiz, Locatelli, K. Thuram, Grabara, N. González, Celik, Conceição, Ekhator borta. Tredje matchen på en vecka, Napoli i helgen. Spalletti under press.",
+    "Form/tabell: Juve 2–0 mot Lecce senast; har hållit nollan i fem raka ligamöten med Genoa."
+   ],
+   "lineup": "",
+   "take": "Skadorna är kända sedan flera dagar. 1:an streckas 32 % mot oddsens 17 % – kraftigt överstreckad; X (6 mot 25) understreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 26 okt",
+     "url": "https://www.sportsmole.co.uk/football/genoa/preview/genoa-vs-juventus-prediction-team-news-lineups_607716.html"
+    },
+    {
+     "title": "Sky Sport Italia, 23 okt",
+     "url": "https://sport.sky.it/calcio/serie-a/infortunati-juventus-formazione-news"
+    },
+    {
+     "title": "Starting11",
+     "url": "https://starting11.com/fixtures/genoa-vs-juventus"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "home": "Monza",
+   "away": "Napoli",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Monza (Juric) 15:e, 6 av 9 hemmapoäng, föll 2–3 mot Torino. Pessina och Ziolkowski borta, Maye tveksam.",
+    "Bortalag: Napoli 10:e, 3–3 mot Roma. Allegri avstängd två matcher (beslut 26/10) och saknas på bänken. Buongiorno, Neres borta, Badiashile troligen borta; Vergara oklar. Porto (CL) och Juventus väntar – viss rotation möjlig.",
+    "Form/tabell: Napoli utan bortaseger på cirka två månader."
+   ],
+   "lineup": "",
+   "take": "2:an streckas 61 % mot oddsens 51 % – överstreckad trots svag bortaform. 1:an något understreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 26 okt",
+     "url": "https://www.sportsmole.co.uk/football/monza/preview/monza-vs-napoli-prediction-team-news-lineups_607725.html"
+    },
+    {
+     "title": "Football Italia, 26 okt",
+     "url": "https://football-italia.net/official-serie-a-hand-two-game-ban-to-allegri/"
+    },
+    {
+     "title": "Starting11",
+     "url": "https://starting11.com/fixtures/monza-vs-napoli"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "home": "IFK Göteborg",
+   "away": "Djurgården",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: IFK Göteborg (Björklund) 9:a, 37 p, obesegrade i åtta raka. Ingen färsk skadeinfo hittad.",
+    "Bortalag: Djurgården 3:a, 48 p, slåss om Europaplats med Hammarby och Häcken. Ingen färsk skadeinfo hittad.",
+    "Form/tabell: Djurgården vann vårmötet 6–0. Inget Europaspel som stör."
+   ],
+   "lineup": "",
+   "take": "Streck nära oddsen; X något överstreckad (35 mot 24), 1:an något understreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "TheStatsAPI, tabell 27 okt",
+     "url": "https://www.thestatsapi.com/football/league/allsvenskan/standings"
+    },
+    {
+     "title": "Planet Sport",
+     "url": "https://livesoccer.planetsport.com/live/soccer/match-detail/sweden-allsvenskan-ifk-goteborg-vs-djurgarden/2026-10-28/3183869/teamhistory"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "home": "Halmstad",
+   "away": "Malmö",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Halmstad (Baxter) jumbo, 17 p, 2 p efter Örgryte – måste vinna. Vann 2–1 borta mot Västerås 23/10. Ingen färsk skadeinfo.",
+    "Bortalag: Malmö 7:a, 37 p, lite att spela för. 0–0 mot Elfsborg senast. Ingen färsk skadeinfo.",
+    "Form/tabell: Malmö har vunnit fem raka inbördes."
+   ],
+   "lineup": "",
+   "take": "2:an streckas 71 % mot oddsens 56 % – överstreckad med tanke på Halmstads motivation; X (12 mot 24) understreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "TheStatsAPI, tabell 27 okt",
+     "url": "https://www.thestatsapi.com/football/league/allsvenskan/standings"
+    },
+    {
+     "title": "FotMob, Halmstad",
+     "url": "https://www.fotmob.com/ckb/teams/8310/overview"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "home": "Degerfors",
+   "away": "Västerås",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Degerfors (Goitom) 14:e (kvalplats), 20 p, utan seger i fem (1–10 i mål), senast 0–4 mot Häcken.",
+    "Bortalag: Västerås 6:a, 38 p, lite att spela för; förlorade hemma mot Halmstad 23/10.",
+    "Form/tabell: Ingen färsk skade- eller avstängningsinfo hittad."
+   ],
+   "lineup": "",
+   "take": "1:an streckas 54 % mot oddsens 35 % trots Degerfors formras – överstreckad; 2:an (12 mot 37) kraftigt understreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "TheStatsAPI, tabell 27 okt",
+     "url": "https://www.thestatsapi.com/football/league/allsvenskan/standings"
+    },
+    {
+     "title": "FotMob, Degerfors",
+     "url": "https://www.fotmob.com/uk/teams/6544/overview"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "home": "Brommapojkarna",
+   "away": "Häcken",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Brommapojkarna 10:e, 33 p, säkrade; 3–0 borta mot Kalmar senast.",
+    "Bortalag: Häcken 4:a, 45 p, fyra raka segrar, bara ett insläppt mål på fem. Jagar topp 3.",
+    "Form/tabell: Ingen färsk skadeinfo hittad."
+   ],
+   "lineup": "",
+   "take": "2:an streckas 70 % mot oddsens 55 % – överstreckad; 1:an (11 mot 22) understreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Oddscalendar, 27 okt (form)",
+     "url": "https://www.oddscalendar.com/football/sweden/allsvenskan/if-brommapojkarna-vs-bk-hacken/1494314"
+    },
+    {
+     "title": "TheStatsAPI, tabell 27 okt",
+     "url": "https://www.thestatsapi.com/football/league/allsvenskan/standings"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "home": "Hearts",
+   "away": "Rangers",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Hearts (Vrancken) 3:a, 19 p, tredje matchen på sju dagar efter Conference League. Åtta borta, bl.a. försvararna Halkett, Findlay, McEntee och Milne samt Spittal.",
+    "Bortalag: Rangers 2:a, 23 p, nio raka utan förlust, utvilade. Borta: Shankland, Devlin, Yokota, Cifuentes, McCrorie, Chermiti. McInnes tillbaka på Tynecastle.",
+    "Form/tabell: Hearts har vunnit tre av fyra senaste mötena."
+   ],
+   "lineup": "",
+   "take": "2:an streckas 72 % mot oddsens 46 % – kraftigt överstreckad; X (5 mot 26) och 1 (23 mot 28) understreckade.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 26 okt",
+     "url": "https://www.sportsmole.co.uk/football/hearts/preview/hearts-vs-rangers-prediction-team-news-lineups_607741.html"
+    },
+    {
+     "title": "Starting11, 26 okt",
+     "url": "https://starting11.com/fixtures/hearts-vs-rangers"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "home": "Hannover 96",
+   "away": "Kaiserslautern",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Hannover (Wagner) 16:e i 2. Bundesliga, utan seger i tre (0–2 i derbyt mot Braunschweig). Gindorf, Steinmann, Pichler, Siewert borta; Bundu oklar.",
+    "Bortalag: Kaiserslautern 3:a, fyra raka hållna nollor. Frees borta, Yardimci osäker; Lieberknecht väntas rotera.",
+    "Form/tabell: Lautern utan seger i tre senaste besöken i Hannover."
+   ],
+   "lineup": "",
+   "take": "Hemmaseger favorit enligt oddsen (46 %) men streckas bara 32 % – 1:an understreckad, X (36 mot 25) överstreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 26 okt",
+     "url": "https://www.sportsmole.co.uk/football/hannover/dfb-pokal/preview/hannover-vs-kaiserslautern-prediction-team-news-lineups_607767.html"
+    },
+    {
+     "title": "Hessenschau, 25 okt",
+     "url": "https://www.hessenschau.de/sport/ergebnisse-tabellen/fussball-2bl100~_matchday-9.html"
+    }
+   ]
+  }
+ ]
+}
