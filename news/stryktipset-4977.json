@@ -3,23 +3,23 @@
  "draw": 4977,
  "round": "Stryktipset v 44, stänger 2026-10-31 15:59",
  "author": "Claude (schemalagd)",
- "updatedAt": 1793350929203,
+ "updatedAt": 1793437083943,
  "checkedAt": {
-  "d": "2026-10-30T09:02:09+00:00"
+  "d": "2026-10-31T08:58:03+00:00"
  },
  "matches": [
   {
    "n": 1,
    "home": "Aston Villa",
    "away": "Fulham",
-   "impact": "medium",
+   "impact": "low",
    "notes": [
-    "Hemmalag: Villa saknar Onana, Wan-Bissaka och Ruggeri. Vilade Jackson, Manzambi m.fl. i ligacupen (0–3 mot Bournemouth) så starkaste elvan väntas.",
-    "Bortalag: Fulham utan avstängde Sessegnon; Smith Rowe sentest men väntas spela. Förlorade ligacupmatchen mot Palace i veckan.",
-    "Form/tabell: Villa 9:a (11 p), två raka ligasegrar. Fulham 15:e (8 p) efter två raka segrar."
+    "Hemmalag: Villa utan Onana, Wan-Bissaka och Ruggeri. Jackson och Manzambi listas plötsligt som tveksamma; Emery tror ändå att de spelar.",
+    "Bortalag: Fulham utan avstängde Sessegnon. Smith Rowe spelklar, Affengruber väntas tillbaka efter vila i ligacupen. Inga nya skador enligt Arbeloa.",
+    "Form/tabell: Villa 9:a (11 p), två raka ligasegrar. Fulham 15:e (8 p), två raka ligasegrar men utslaget i ligacupen."
    ],
    "lineup": "",
-   "take": "Inga färska nyheter som oddsen missat. Folket streckar 1:an till 64 % mot oddsens 48 %, så 1:an är kraftigt överstreckad och X/2 understreckade.",
+   "take": "Villa-frågetecknen (Jackson, Manzambi) är små. Folket streckar 1:an 64 % mot oddsens 48 % – kraftigt överstreckad, 2:an (16 mot 26) och X understreckade.",
    "suggest": [
     0,
     0,
@@ -27,16 +27,16 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 29 okt",
-     "url": "https://www.sportsmole.co.uk/football/aston-villa/preview/aston-villa-vs-fulham-prediction-team-news-lineups_607920.html"
+     "title": "Sports Mole, 30 okt",
+     "url": "https://www.sportsmole.co.uk/football/aston-villa/injury-news/team-news/aston-villa-vs-fulham-injury-suspension-list-predicted-xis_607923.html"
     },
     {
-     "title": "Read Aston Villa, 30 okt",
-     "url": "https://readastonvilla.com/2026/10/30/aston-villa-vs-fulham-injury-news/"
+     "title": "Fantasy Football Scout, 30 okt",
+     "url": "https://fantasyfootballscout.co.uk/2026/10/30/fpl-gameweek-9-team-news-fridays-live-injury-updates-3"
     },
     {
-     "title": "Fantasy Football Scout, 29 okt",
-     "url": "https://fantasyfootballscout.co.uk/2026/10/29/fpl-notes-evanilson-jackson-manzambi-rested-for-gameweek-9"
+     "title": "Premier League News Now, 31 okt",
+     "url": "https://premierleaguenewsnow.com/2026/10/31/premier-league-gameweek-9-injury-list/"
     }
    ]
   },
@@ -44,14 +44,14 @@
    "n": 2,
    "home": "Tottenham",
    "away": "Crystal Palace",
-   "impact": "medium",
+   "impact": "low",
    "notes": [
-    "Hemmalag: Spurs utan Bentancur (avstängd), Simons, Odobert och Savio. Maddison (ljumske) tveksam, även Udogie och Adarabioyo. Ingen match i veckan.",
-    "Bortalag: Palace utan Sarr, Tomiyasu och Riad. Mateta redo att starta. Spelade och vann ligacup i onsdags.",
-    "Form/tabell: Spurs 14:e (9 p) efter två raka segrar. Palace 17:e (7 p), flest insläppta mål; tränaren Sage uppges få sparken vid förlust."
+    "Hemmalag: Spurs utan Bentancur (avstängd), Bergvall, Adarabioyo, Savio, Mudryk, Simons och Odobert. Maddison och Udogie spelklara enligt De Zerbi.",
+    "Bortalag: Palace utan Sarr, Tomiyasu och Riad. Mateta väntas starta; Strand Larsen och Timber kan få minuter. Henderson tillbaka i mål.",
+    "Form/tabell: Spurs 14:e (9 p) efter två raka segrar. Palace 17:e (7 p); Sage behöver resultat."
    ],
    "lineup": "",
-   "take": "Sages pressade läge är känt sedan 27 okt. Streck 64 % mot oddsens 62 % på 1:an – rimligt prissatt.",
+   "take": "Maddison och Udogie klara väger upp Bergvall/Adarabioyo. Streck 64 % mot oddsens 62 % på 1:an – rimligt prissatt.",
    "suggest": [
     0,
     0,
@@ -59,20 +59,20 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 29 okt",
-     "url": "https://www.sportsmole.co.uk/football/spurs/preview/spurs-vs-crystal-palace-prediction-team-news-lineups_607925.html"
+     "title": "BBC via Yahoo, 30 okt",
+     "url": "https://sports.yahoo.com/articles/spurs-maddison-fit-face-palace-154933254.html"
     },
     {
-     "title": "Sports Mole, 27 okt",
-     "url": "https://www.sportsmole.co.uk/football/crystal-palace/sack-race/news/crystal-palace-make-crucial-decision-over-sage-future-as-sack-rumours-grow_607824.html"
+     "title": "Tottenham, 30 okt",
+     "url": "https://www.tottenhamhotspur.com/news/1182287/team-news-udogie-back-bergvall-savio-tosin-out-for-palace-clash"
     },
     {
-     "title": "Yahoo/Standard, 29 okt",
-     "url": "https://uk.sports.yahoo.com/news/tottenham-xi-vs-crystal-palace-190656338.html"
+     "title": "Hayters, 29 okt",
+     "url": "https://hayters.com/sage-hopeful-of-triple-crystal-palace-boost-for-spurs/"
     },
     {
-     "title": "LiveScore, 30 okt",
-     "url": "https://www.livescore.com/en/news/football/team/crystal-palace/daily/friday-crystal-palace-daily-news-20261030/"
+     "title": "Sports Mole, 30 okt",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/team-news/spurs-vs-crystal-palace-injury-suspension-list-predicted-xis_607928.html"
     }
    ]
   },
@@ -80,14 +80,14 @@
    "n": 3,
    "home": "Manchester City",
    "away": "Brighton",
-   "impact": "low",
+   "impact": "none",
    "notes": [
-    "Hemmalag: City utan Semenyo (knä). Haaland, Donnarumma, Dias, Gvardiol vilade i ligacupen och är fräscha.",
-    "Bortalag: Brighton utan Mitoma, Ferguson, Struijk m.fl. Kadıoğlu, Chema Andrés och Kostoulas tillbaka som alternativ.",
-    "Form/tabell: City 1:a (21 p) trots förlust mot Villa. Brighton 3:a (16 p), förlorade mot Liverpool och i ligacupen mot City (straffar)."
+    "Hemmalag: City saknar bara Semenyo (knä). Maresca: 'alla andra tillgängliga'; Nunes tillbaka. Haaland, Donnarumma, Dias och Gvardiol vilade i ligacupen.",
+    "Bortalag: Brighton utan Mitoma, Ferguson, Struijk, Azeez, Tzimas och Yohanna. Kadıoğlu och Chema Andrés tillbaka i truppen.",
+    "Form/tabell: City 1:a (21 p). Brighton 3:a (16 p) efter två raka förluster."
    ],
    "lineup": "",
-   "take": "Streck i linje med oddsen (59/22/19 mot 58/22/20). Ingen justering.",
+   "take": "Inget nytt. Streck i linje med oddsen (59/22/19 mot 58/22/20).",
    "suggest": [
     0,
     0,
@@ -95,16 +95,12 @@
    ],
    "sources": [
     {
-     "title": "Brighton officiell, 30 okt",
-     "url": "https://www.brightonandhovealbion.com/media-article/team-news-chema-kostoulas-and-kadioglu-could-return-against-city"
+     "title": "Man City via Yahoo, 30 okt",
+     "url": "https://sports.yahoo.com/articles/city-only-missing-semenyo-ahead-135000153.html"
     },
     {
-     "title": "Sports Mole, 29 okt",
-     "url": "https://www.sportsmole.co.uk/football/man-city/predicted-lineups/haaland-among-eight-changes-predicted-man-city-lineup-vs-brighton_607916.html"
-    },
-    {
-     "title": "dave.sport, 29 okt",
-     "url": "https://dave.sport/news/man-city-vs-brighton-injury-news/"
+     "title": "BBC via AOL, 29 okt",
+     "url": "https://aol.com/articles/hurzeler-injuries-team-bonding-revenge-121258000.html"
     }
    ]
   },
@@ -114,12 +110,12 @@
    "away": "Leeds",
    "impact": "low",
    "notes": [
-    "Hemmalag: Bournemouth utan Scott, Tóth, Araujo; Milosavljević tveksam. Fem raka segrar (14–0) men tre matcher på sex dagar, roterade i ligacupen.",
-    "Bortalag: Leeds utan Joseph; Stach tveksam. Elvedi, Calvert-Lewin och Okafor spelklara. Ingen match i veckan.",
-    "Form/tabell: Bournemouth 13:e (9 p), Leeds 7:a (11 p) men utan seger på fyra."
+    "Hemmalag: Bournemouth utan Scott, Tóth och Araujo; Milosavljević lutar åt att missa. Fem raka segrar men tätt schema.",
+    "Bortalag: Leeds utan Joseph och Rodon; Stach tveksam. Elvedi, Calvert-Lewin och Okafor spelklara. Utvilat.",
+    "Form/tabell: Bournemouth 13:e (9 p). Leeds 7:a (11 p) men utan seger på fyra."
    ],
    "lineup": "",
-   "take": "Bournemouth i form men tätt schema; Leeds utvilat. Folket 50 % på 1:an mot oddsens 45 % – lätt överstreckad, 2:an understreckad.",
+   "take": "Inget nytt av vikt. Folket 50 % på 1:an mot oddsens 45 % – lätt överstreckad, 2:an understreckad (23 mot 28).",
    "suggest": [
     0,
     0,
@@ -127,16 +123,16 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 29 okt",
-     "url": "https://www.sportsmole.co.uk/football/bournemouth/preview/bournemouth-vs-leeds-prediction-team-news-lineups_607929.html"
+     "title": "Leeds United, 29 okt",
+     "url": "https://www.leedsunited.com/en/news/daniel-farke-shares-latest-news-on-nico-elvedi-dominic-calvert-lewin-and-joe-rodon"
     },
     {
-     "title": "BBC via Yahoo, 29 okt",
-     "url": "https://sports.yahoo.com/articles/rose-kroupi-scott-five-consecutive-151629156.html"
+     "title": "Sports Mole, 30 okt",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/feature/premier-league-gw9-injury-suspension-list-every-out-and-doubtful-player_608098.html"
     },
     {
-     "title": "BBC via AOL, 29 okt",
-     "url": "https://www.aol.com/articles/farke-injury-list-bahoya-hype-151406000.html"
+     "title": "Premier League News Now, 31 okt",
+     "url": "https://premierleaguenewsnow.com/2026/10/31/premier-league-gameweek-9-injury-list/"
     }
    ]
   },
@@ -146,12 +142,12 @@
    "away": "Sunderland",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Coventry utan Woolfenden, Amenda, Eccles och Wright. Mittbacken Bobby Thomas tveksam (vad); Mfuni ersätter i så fall.",
-    "Bortalag: Sunderland utan Ballard och Mundle. Danso, Meunier och Isidor tillbaka. Spelade ligacup i onsdags (3–2 mot Brentford) och Europa League – rotation trolig.",
+    "Hemmalag: Coventry utan Woolfenden, Amenda, Eccles och Wright. Mittbacken Bobby Thomas (vad) fortsatt tveksam.",
+    "Bortalag: Sunderland utan Ballard och Mundle. Nya frågetecken: Mukiele, Alderete, Ta Bi och Angulo; Isidor 'bör vara tillgänglig'. Ligacup och Europa League i veckan – rotation trolig.",
     "Form/tabell: Bottenmöte – Coventry 19:e (6 p), Sunderland 20:e (5 p)."
    ],
    "lineup": "",
-   "take": "Sunderland är favorit i oddsen (41 %) men streckas bara 33 %, medan 1:an streckas 37 % mot 31 %. 2:an är understreckad.",
+   "take": "Sunderland har fler frågetecken och tungt schema. Ändå favorit i oddsen (41 %) men streckas bara 33 % – 2:an understreckad, 1:an överstreckad (37 mot 31).",
    "suggest": [
     0,
     0,
@@ -159,20 +155,16 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 29 okt",
-     "url": "https://www.sportsmole.co.uk/football/coventry-city/relegation-battle/preview/coventry-vs-sunderland-prediction-team-news-lineups_607956.html"
+     "title": "Coventry Telegraph via Yahoo, 29 okt",
+     "url": "https://sports.yahoo.com/articles/lampard-coventry-city-injury-worry-161300081.html"
     },
     {
-     "title": "Sports Mole, 30 okt",
-     "url": "https://www.sportsmole.co.uk/football/coventry-city/injury-news/predicted-lineups/thomas-injury-predicted-coventry-xi-vs-sunderland_608023.html"
+     "title": "dave.sport, okt 2026",
+     "url": "https://dave.sport/news/coventry-vs-sunderland-injury-news/"
     },
     {
-     "title": "Sports Mole, 30 okt",
-     "url": "https://www.sportsmole.co.uk/football/sunderland/injury-news/predicted-lineups/will-alderete-play-predicted-sunderland-xi-vs-coventry_608029.html"
-    },
-    {
-     "title": "Fantasy Football Scout, 29 okt",
-     "url": "https://fantasyfootballscout.co.uk/2026/10/29/fpl-gameweek-9-team-news-thursdays-live-injury-updates-2"
+     "title": "Premier League News Now, 31 okt",
+     "url": "https://premierleaguenewsnow.com/2026/10/31/premier-league-gameweek-9-injury-list/"
     }
    ]
   },
@@ -182,12 +174,12 @@
    "away": "Nottingham",
    "impact": "low",
    "notes": [
-    "Hemmalag: Brentford utan Yarmoliuk (avstängd), Dasilva, Milambo, Henry, Furo. Janelt tillbaka. Förlorade ligacup i onsdags.",
-    "Bortalag: Forest utan Savona och Igor Jesus. Ndoye (baksida) tveksam, Domínguez osäker. Williams spelklar.",
-    "Form/tabell: Brentford 6:a, en seger på sju. Forest 18:e (6 p), utan seger på fyra."
+    "Hemmalag: Brentford utan Yarmoliuk (avstängd), Henry, Furo och nu även Carvalho (borta till efter landslagsuppehållet). Janelt tillbaka.",
+    "Bortalag: Forest utan Savona och Igor Jesus. Ndoye har inte tränat och lutar åt att missa; Domínguez nära comeback.",
+    "Form/tabell: Brentford 6:a (11 p) men utan seger på fyra i alla tävlingar. Forest 18:e (6 p)."
    ],
    "lineup": "",
-   "take": "Folket 57 % på 1:an mot oddsens 48 % – klart överstreckad; 2:an understreckad (20 mot 27).",
+   "take": "Carvalho- och Ndoye-avbuden tar ut varandra. Folket 57 % på 1:an mot oddsens 48 % – klart överstreckad; 2:an understreckad (20 mot 27).",
    "suggest": [
     0,
     0,
@@ -195,16 +187,12 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 29 okt",
-     "url": "https://www.sportsmole.co.uk/football/brentford/preview/brentford-vs-nottm-forest-prediction-team-news-lineups_607937.html"
+     "title": "Sports Mole, 30 okt",
+     "url": "https://www.sportsmole.co.uk/football/brentford/injury-news/news/andrews-rules-out-brentford-attacker-until-after-international-break_608103.html"
     },
     {
-     "title": "Sports Mole, 29 okt",
-     "url": "https://www.sportsmole.co.uk/football/nottingham-forest/injury-news/news/nottingham-forest-star-joins-injury-doubts-ahead-of-brentford-game_607990.html"
-    },
-    {
-     "title": "Yahoo/Hayters, 29 okt",
-     "url": "https://sports.yahoo.com/articles/glasner-confirms-nottingham-forest-boost-163000186.html"
+     "title": "LiveScore, 30 okt",
+     "url": "https://www.livescore.com/en/news/football/team/nottingham-forest/daily/friday-nottingham-forest-daily-news-20261030/"
     }
    ]
   },
@@ -214,12 +202,12 @@
    "away": "Ipswich",
    "impact": "low",
    "notes": [
-    "Hemmalag: Hull utan Matazo, Targett, Ansah, Gyabi, Hughes. Butland tveksam (beslut fredag). McBurnie, Coyle, Mendy spelklara.",
-    "Bortalag: Ipswich utan Taylor; Lukić tveksam. I övrigt full trupp.",
-    "Form/tabell: Lika på 10 p. Hull utan ligaseger på sex men obesegrat hemma. Ingen spelade i veckan."
+    "Hemmalag: Hull utan Matazo, Targett, Ansah, Gyabi och Hughes. Butland (armbåge) sent beslut – annars Tzolakis. Gourna-Douath tveksam; McBurnie och Coyle klara.",
+    "Bortalag: Ipswich utan Taylor; Lukić sent beslut. I övrigt full trupp.",
+    "Form/tabell: Lika på 10 p. Hull utan ligaseger på sex men obesegrat hemma."
    ],
    "lineup": "",
-   "take": "Folket 41 % på 1:an mot oddsens 36 %; 2:an något understreckad.",
+   "take": "Inget avgjort än. Folket 41 % på 1:an mot oddsens 36 %; 2:an något understreckad (30 mot 35).",
    "suggest": [
     0,
     0,
@@ -227,16 +215,12 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 29 okt",
-     "url": "https://www.sportsmole.co.uk/football/hull-city/preview/hull-city-vs-ipswich-prediction-team-news-lineups_607868.html"
+     "title": "RotoWire, 30 okt",
+     "url": "https://www.rotowire.com/soccer/headlines/jack-butland-injury-late-call-for-ipswich-clash-543094"
     },
     {
-     "title": "dave.sport, 29 okt",
-     "url": "https://dave.sport/news/hull-vs-ipswich-preview-mkm-stadium/"
-    },
-    {
-     "title": "Fantasy Football Scout, 29 okt",
-     "url": "https://fantasyfootballscout.co.uk/2026/10/29/fpl-gameweek-9-team-news-thursdays-live-injury-updates-2"
+     "title": "BBC via AOL, 29 okt",
+     "url": "https://www.aol.com/articles/jakirovic-mendys-return-tigers-progress-135822000.html"
     }
    ]
   },
@@ -246,12 +230,12 @@
    "away": "Bristol City",
    "impact": "low",
    "notes": [
-    "Hemmalag: Bolton utan Erhahon; Forino tveksam. Föll 1–5 mot Middlesbrough senast.",
-    "Bortalag: Bristol City utan Adebayo och Eile; Tolaj sentest (höft). Dickie tillbaka i träning.",
-    "Form/tabell: Bolton 14 p, City 13 p och utan seger på fyra (ett mål)."
+    "Hemmalag: Bolton utan Erhahon, McAtee (knä) och Hardie (baksida lår). Forino har tränat hela veckan och kan återvända.",
+    "Bortalag: Bristol City utan Adebayo och Eile; Tolaj tveksam. Uppgifterna om Dickie går isär (tillbaka i träning vs borta).",
+    "Form/tabell: Bolton 18:e, senast 1–5 mot Middlesbrough. City 14:e, utan seger på fyra och två mål på fem."
    ],
    "lineup": "",
-   "take": "Folket 37 % på 1:an mot oddsens 33 %, 2:an något understreckad.",
+   "take": "Bolton tappar ytterligare två. Folket 37 % på 1:an mot oddsens 33 % – 2:an något understreckad (34 mot 40).",
    "suggest": [
     0,
     0,
@@ -259,16 +243,16 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 29 okt",
-     "url": "https://www.sportsmole.co.uk/football/bristol-city/preview/bolton-vs-bristol-city-prediction-team-news-lineups_607975.html"
+     "title": "The72, 30 okt",
+     "url": "https://the72.co.uk/2026/10/30/bolton-wanderers-team-news-and-predicted-xi-to-face-bristol-city-chris-forino-returns-in-four-changes/"
     },
     {
-     "title": "Hayters, 29 okt",
-     "url": "https://hayters.com/skubala-gives-updates-on-bristol-city-strikers-ahead-of-bolton/"
+     "title": "Bristol City FC, 30 okt",
+     "url": "https://www.bcfc.co.uk/city-men-news/preview-bolton-wanderers-a/"
     },
     {
-     "title": "The72 via Yahoo, 28 okt",
-     "url": "https://uk.sports.yahoo.com/news/chris-forino-injury-bolton-wanderers-115345245.html"
+     "title": "Starting11, 31 okt",
+     "url": "https://starting11.com/fixtures/bolton-vs-bristol-city"
     }
    ]
   },
@@ -278,12 +262,12 @@
    "away": "Portsmouth",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Burnley har ny tränare – Fabio Celestini (debut) efter att Hayen fick sparken 24 okt. Utan bl.a. Amdouni, Humphreys, Beyer; Walker, Broja och Vardy tveksamma.",
-    "Bortalag: Portsmouth utan Colby Bishop (knä, minst en månad) och flera till.",
-    "Form/tabell: Burnley 22:a, en seger på tolv. Portsmouth 11:e i form (vann mot Millwall)."
+    "Hemmalag: Burnley – Fabio Celestini debuterar. Utan Humphreys, Beyer, Amdouni, Hannibal, Ramsey och Bruun Larsen; Vardy, Walker och Broja tveksamma.",
+    "Bortalag: Portsmouth utan Bishop, Arthur, Ogilvie, Kosznovszky, Swift, Anderson och Brooke-Smith. Shaughnessy och Murphy kan återvända.",
+    "Form/tabell: Burnley 22:a, en seger på tolv. Portsmouth i form."
    ],
    "lineup": "",
-   "take": "Tränarbytet är känt sedan några dagar. Folket understreckar Burnley (42 % mot oddsens 48 %) och överstreckar 2:an (32 mot 26).",
+   "take": "Tränarbytet är känt sedan en vecka. Folket understreckar Burnley (42 % mot 48 %) och överstreckar 2:an (32 mot 26).",
    "suggest": [
     0,
     0,
@@ -291,16 +275,12 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 29 okt",
+     "title": "Sports Mole, 30 okt",
      "url": "https://www.sportsmole.co.uk/football/burnley/preview/burnley-vs-portsmouth-prediction-team-news-lineups_607977.html"
     },
     {
-     "title": "Goal, ca 29 okt",
-     "url": "https://www.goal.com/en/news/burnley-appoint-former-cska-moscow-basel-boss-fabio-celestini-new-head-coach-sacking-nicky-hayen/blt41e54aededf866f3"
-    },
-    {
-     "title": "Hayters, 24 okt",
-     "url": "https://hayters.com/portsmouth-duo-in-line-for-returns-but-striker-set-to-miss-at-least-a-month/"
+     "title": "The72, 30 okt",
+     "url": "https://the72.co.uk/2026/10/30/burnley-fabio-celestini-why-he-took-on-clarets-job/"
     }
    ]
   },
@@ -310,8 +290,8 @@
    "away": "Derby",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Millwall utan Arconte, Coburn, De Norre; Ivanovic tillbaka men inte matchfit.",
-    "Bortalag: Derby i backkris – Sanderson avstängd, Langas, Cashin, Clarke, Taylor skadade. Nyvärvade Shane Duffy (34) spelklar. Agyemang borta.",
+    "Hemmalag: Millwall – Esse tillbaka och kan starta, Ivanovic och möjligen Neghli tillbaka. Crocombe i mål (Marschall borta).",
+    "Bortalag: Derby i backkris – Sanderson avstängd; Langas, Cashin, Clarke och Taylor skadade. Duffy spelklar.",
     "Form/tabell: Millwall 13:e, en seger på sju. Derby 23:e, utan seger på åtta."
    ],
    "lineup": "",
@@ -323,16 +303,12 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 29 okt",
-     "url": "https://www.sportsmole.co.uk/football/millwall/preview/millwall-vs-derby-prediction-team-news-lineups_607971.html"
+     "title": "The72, 31 okt",
+     "url": "https://the72.co.uk/2026/10/31/millwall-who-alex-neil-should-start-vs-derby-county/"
     },
     {
-     "title": "The72 via Yahoo, 29 okt",
-     "url": "https://uk.sports.yahoo.com/news/derby-county-address-defensive-woes-122003218.html"
-    },
-    {
-     "title": "Southwark News, 27 okt",
-     "url": "https://southwarknews.co.uk/sport/football/millwall/neil-hopeful-of-millwall-injury-boost-ahead-of-derby-county-clash/"
+     "title": "Southwark News, 29 okt",
+     "url": "https://southwarknews.co.uk/sport/football/millwall/millwall-boss-says-derby-are-better-than-their-position-suggests/"
     }
    ]
   },
@@ -342,12 +318,12 @@
    "away": "Queens Park Rangers",
    "impact": "low",
    "notes": [
-    "Hemmalag: Southampton hoppas på Larin och Downes men oklart; Dobbin startar annars. Bäst hemma i serien.",
-    "Bortalag: QPR: Kemper, Lloyd och Chair väntas klara; Clarke-Salter tveksam. Lamptey, Madsen, Burrell borta.",
-    "Form/tabell: 6:a och 8:a på samma poäng. Saints en förlust på tio; QPR vann 5–0 mot Swansea."
+    "Hemmalag: Southampton – Eckert 'mycket positiv' till att Larin och/eller Downes är med. Roerslev borta. Vann 3–2 mot West Ham senast.",
+    "Bortalag: QPR utan Madsen, Lamptey, Burrell och Mbengue; Clarke-Salter tveksam.",
+    "Form/tabell: 6:a och 8:a på samma poäng. QPR vann 5–0 mot Swansea men utan bortaseger på fyra."
    ],
    "lineup": "",
-   "take": "Streck i linje med oddsen. Ingen justering.",
+   "take": "Streck i linje med oddsen (55/24/21 mot 54/24/22). Ingen justering.",
    "suggest": [
     0,
     0,
@@ -355,16 +331,12 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 29 okt",
-     "url": "https://www.sportsmole.co.uk/football/southampton/preview/southampton-vs-qpr-prediction-team-news-lineups_607942.html"
+     "title": "Hayters, 30 okt",
+     "url": "https://hayters.com/eckert-provides-latest-update-on-southampton-duo-ahead-of-qpr-clash/"
     },
     {
-     "title": "West London Sport, 28 okt",
-     "url": "https://www.westlondonsport.com/qpr/football-clarke-salter-a-doubt-but-stephan-quite-positive-qpr-trio-will-be-fit-for-southampton-game"
-    },
-    {
-     "title": "Hayters, 28 okt",
-     "url": "https://hayters.com/stephan-gives-updates-on-four-qpr-stars-ahead-of-southampton-clash/"
+     "title": "West London Sport, 30 okt",
+     "url": "https://www.westlondonsport.com/qpr/boost-for-southampton-ahead-of-qpr-game"
     }
    ]
   },
@@ -374,12 +346,12 @@
    "away": "Blackburn",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Swansea får tillbaka Josh Key. Väntade förändringar efter 0–5 mot QPR; Matos under viss press.",
-    "Bortalag: Blackburn utan lagkaptenen Morsy (avstängd), Jorgensen (lår, ny skada), Morishita, Forshaw.",
-    "Form/tabell: Swansea 2:a men två raka förluster, bara 7 gjorda mål. Blackburn 10:e, 13 p på sex."
+    "Hemmalag: Swansea – Key tränar igen (oklart), Eustaquio tillbaka. Ronald, Yeo och Burgess borta. Förändringar väntas efter 0–5 mot QPR.",
+    "Bortalag: Blackburn utan Morsy (avstängd), Jorgensen, Morishita, Forshaw, Miller och Ohashi.",
+    "Form/tabell: Swansea 2:a men två raka förluster och bara 7 gjorda mål. Blackburn 10:e, 13 p på sex."
    ],
    "lineup": "",
-   "take": "Folket 56 % på 1:an mot oddsens 52 % – lätt överstreckad trots Swansea-svacka och Blackburns form.",
+   "take": "Inget nytt. Folket 56 % på 1:an mot oddsens 52 % – lätt överstreckad trots Swansea-svackan.",
    "suggest": [
     0,
     0,
@@ -387,16 +359,12 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 29 okt",
-     "url": "https://www.sportsmole.co.uk/football/swansea-city/preview/swansea-vs-blackburn-prediction-team-news-lineups_607939.html"
+     "title": "The Hard Tackle, 30 okt",
+     "url": "https://thehardtackle.com/round-up/2026/10/30/swansea-city-vs-blackburn-rovers-preview-prediction-probable-lineups-tactics-team-news-key-stats/"
     },
     {
-     "title": "Hayters, 29 okt",
-     "url": "https://hayters.com/matos-reveals-swansea-boost-for-blackburn-clash/"
-    },
-    {
-     "title": "The72, 29 okt",
-     "url": "https://the72.co.uk/2026/10/29/blackburn-rovers-triple-injury-boost-jorgensen-blow/"
+     "title": "The72, 26 okt",
+     "url": "https://the72.co.uk/2026/10/26/blackburn-rovers-sam-morsy-suspended-swansea-city/"
     }
    ]
   },
@@ -404,35 +372,27 @@
    "n": 13,
    "home": "West Ham",
    "away": "West Bromwich",
-   "impact": "medium",
+   "impact": "low",
    "notes": [
-    "Hemmalag: West Ham utan Mavropanos (knä) och Lamadrid. Bowen vrickade foten i träning men väntas spela; Castellanos osäker.",
-    "Bortalag: WBA utan Galves och Collyer. Morgan och Heggebo kan starta.",
+    "Hemmalag: West Ham utan Mavropanos (knä, mindre allvarligt än befarat). Bowen tränade fredag och 'verkar okej'. Veltman tveksam.",
+    "Bortalag: WBA utan Galves och Collyer.",
     "Form/tabell: West Ham 3:a men utan hemmaseger på tre, Nuno pressad. WBA 5:a, obesegrat på tre."
    ],
    "lineup": "",
-   "take": "Sena frågetecken kring Mavropanos, Bowen och Castellanos. Oddsen 61 % på 1:an mot streck 57 %; liten sänkning av 1:an.",
+   "take": "Bowen-oron är avblåst, så gårdagens lilla sänkning av 1:an tas bort. Oddsen 61 % på 1:an mot streck 57 % – 1:an lätt understreckad, X överstreckat.",
    "suggest": [
-    -1,
-    1,
+    0,
+    0,
     0
    ],
    "sources": [
     {
-     "title": "Sports Mole, 29 okt",
-     "url": "https://www.sportsmole.co.uk/football/west-ham-united/preview/west-ham-vs-west-brom-prediction-team-news-lineups_607976.html"
-    },
-    {
-     "title": "Yahoo/West Brom News, 29 okt",
-     "url": "https://sports.yahoo.com/articles/jarrod-bowens-injury-scare-key-142413561.html"
+     "title": "The72, 30 okt",
+     "url": "https://the72.co.uk/2026/10/30/west-ham-nuno-jarrod-bowen-training-injury-concern/"
     },
     {
      "title": "West Ham World, 30 okt",
-     "url": "https://westhamworld.co.uk/match-preview/west-ham-united-v-west-brom-injury-news-predicted-xi-head-to-head-and-stats"
-    },
-    {
-     "title": "Claret & Hugh, 29 okt",
-     "url": "https://www.claretandhugh.info/west-ham-v-west-brom-preview-predicted-xi-for-game-nuno-dare-not-lose/"
+     "url": "https://westhamworld.co.uk/news/nuno-confirms-major-west-ham-blow-but-delivers-welcome-injury-boost-before-west-brom-report"
     }
    ]
   }

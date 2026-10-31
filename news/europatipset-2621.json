@@ -1,0 +1,404 @@
+{
+ "game": "Europatipset",
+ "draw": 2621,
+ "round": "Europatipset v 44, stänger 2026-11-01 14:59",
+ "author": "Claude (schemalagd)",
+ "updatedAt": 1793437083943,
+ "checkedAt": {
+  "d": "2026-10-31T08:58:03+00:00"
+ },
+ "matches": [
+  {
+   "n": 1,
+   "home": "Liverpool",
+   "away": "Arsenal",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Liverpool utan Ekitike, Bradley, Frimpong och Leoni. Szoboszlai och Muñoz har 'en chans'. Wirtz tillbaka efter fotledsskada.",
+    "Bortalag: Arsenal utan Dowman (avstängd), Saka och Saliba. Rice, Calafiori och Tzolis väntas klara; Madueke (fotled) osäker.",
+    "Form/tabell: Liverpool 4:a, sex poäng efter Arsenal, fem raka segrar i alla tävlingar (CL midweek). Arsenal 2:a, utslaget i ligacupen men stark i ligan."
+   ],
+   "lineup": "",
+   "take": "Båda lagen har viktiga avbud (Ekitike resp. Saka/Saliba), kända sedan tidigare. Streck nära oddsen; krysset understreckat (23 mot 27).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 30 okt",
+     "url": "https://www.sportsmole.co.uk/football/liverpool/preview/liverpool-vs-arsenal-prediction-team-news-lineups_608057.html"
+    },
+    {
+     "title": "Sports Mole, 30 okt",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/news/advantage-arsenal-arteta-confirms-triple-injury-boost-for-liverpool-clash_608077.html"
+    },
+    {
+     "title": "Yahoo Sports, 30 okt",
+     "url": "https://sports.yahoo.com/articles/liverpool-arsenal-both-confirm-major-164142698.html"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "home": "Juventus",
+   "away": "Napoli",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Juventus utan Yıldız, Thuram, Locatelli, Conceição, Nico González, Çelik och Grabara. Spalletti (pressad) överväger 4-3-3 med Koopmeiners in.",
+    "Bortalag: Napoli utan Lobotka, Buongiorno, Neres, Spinazzola m.fl.; Rrahmani osäker. Allegri avstängd från bänken. CL tre dagar senare.",
+    "Form/tabell: Lagen grannar i tabellen (7:a/8:a), 11 p bakom toppen. Juve förlorade 0–2 mot Genoa; Napoli 4–3 mot Bodø/Glimt i CL."
+   ],
+   "lineup": "",
+   "take": "Juve har en lång frånvarolista, men det är känt. Folket streckar 2:an 37 % mot oddsens 25 % – kraftigt överstreckad; 1:an understreckad (38 mot 47).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 30 okt",
+     "url": "https://www.sportsmole.co.uk/football/preview/juventus-vs-napoli-prediction-team-news-lineups_608087.html"
+    },
+    {
+     "title": "Napoli Magazine, 31 okt",
+     "url": "https://www.napolimagazine.com/in-primo-piano/articolo/serie-a-juventus-napoli-le-probabili-formazioni-focus-sulle-scelte-dei-mister-e-gli-indisponibili-31-10-2026"
+    },
+    {
+     "title": "Tuttosport, 31 okt",
+     "url": "https://tuttosport.com/news/calcio/serie-a/juventus/2026/10/31-152267079/novit_juve_l_altro_modulo_di_spalletti_uno_tra_kolo_muani_e_woltemade_fuori_ecco_perch"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "home": "Lazio",
+   "away": "Cagliari",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Lazio saknar bara Gudmundsson. Marusic, Rovella och Pinamonti tillbaka.",
+    "Bortalag: Cagliari utan Idrissi och Felici; Winks (rygg) tveksam.",
+    "Form/tabell: Lazio delad etta, fem segrar på sex, senast 6–2 mot Sassuolo. Cagliari tre raka förluster."
+   ],
+   "lineup": "",
+   "take": "Allt talar för Lazio, men folket 86 % mot oddsens 65 % – 1:an extremt överstreckad, X (8 mot 22) och 2 (6 mot 14) kraftigt understreckade.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 30 okt",
+     "url": "https://www.sportsmole.co.uk/football/lazio/preview/lazio-vs-cagliari-prediction-team-news-lineups_608091.html"
+    },
+    {
+     "title": "Fantamaster, 31 okt",
+     "url": "https://www.fantamaster.it/probabili-formazioni-10-giornata-seriea-2026-2027-titolari-ballottaggi-ultime-dai-campi/"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "home": "Lecce",
+   "away": "Genoa",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Lecce utan Gaspar (avstängd), Berisha, Coulibaly, Pierotti, Ilić och enligt senaste uppgift även Geubbels.",
+    "Bortalag: Genoa utan Havel och Venturino; Ellertsson och Ehizibue osäkra.",
+    "Form/tabell: Lecce föll 1–5 mot Frosinone i torsdags. Genoa slog Juventus 2–0 men har fyra raka bortaförluster."
+   ],
+   "lineup": "",
+   "take": "Lecce har kort vila och lång skadelista. Streck i linje med oddsen (34/29/37 mot 34/30/36).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 30 okt",
+     "url": "https://www.sportsmole.co.uk/football/lecce/preview/lecce-vs-genoa-prediction-team-news-lineups_608043.html"
+    },
+    {
+     "title": "Fantamaster, 31 okt",
+     "url": "https://www.fantamaster.it/probabili-formazioni-10-giornata-seriea-2026-2027-titolari-ballottaggi-ultime-dai-campi/"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "home": "Frosinone",
+   "away": "Torino",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Frosinone saknar bara Grillitsch. Spelade i torsdags (5–1 mot Lecce) – viss rotation möjlig.",
+    "Bortalag: Torino (ny tränare Abate) utan Mandragora, R. Rodríguez och Cacciamani.",
+    "Form/tabell: Frosinone 6:a (17 p) i form. Torino 9:a, fyra poäng bakom, föll 1–3 mot Como."
+   ],
+   "lineup": "",
+   "take": "Inget avgörande nytt. Streck nära oddsen (41/26/33 mot 43/25/31).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 30 okt",
+     "url": "https://www.sportsmole.co.uk/football/frosinone/preview/frosinone-vs-torino-prediction-team-news-lineups_608066.html"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "home": "Racing Santander",
+   "away": "Real Madrid",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Racing utan Salinas (avstängd) och Eriksson. Två raka segrar; cupmatch i torsdags.",
+    "Bortalag: Real Madrid utan Vinícius (avstängd), Rodrygo, Mendy och Asencio. Valverde osäker och kan sparas till CL mot AEK på onsdag.",
+    "Form/tabell: Real 3:a efter 2–1 i El Clásico. Racing 13:e (11 p)."
+   ],
+   "lineup": "",
+   "take": "Viss rotationsrisk inför CL. Folket 86 % på 2:an mot oddsens 77 % – överstreckad; 1 och X understreckade.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 30 okt",
+     "url": "https://www.sportsmole.co.uk/football/real-madrid/race-for-the-la-liga-title/preview/racing-vs-real-madrid-prediction-team-news-lineups_608064.html"
+    },
+    {
+     "title": "ElDesmarque, 30 okt",
+     "url": "https://www.eldesmarque.com/futbol/liga-1a-division/20261030/jose-mourinho-pendiente-estado-fisico-titulares-real-madrid_18_020583145.html"
+    },
+    {
+     "title": "Goal, 30 okt",
+     "url": "https://www.goal.com/en/news/racing-coach-challenges-mourinho-a-bold-message-before-the-real-madrid-clash/blte1962a86cd15adb3"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "home": "Athletic Bilbao",
+   "away": "Real Sociedad",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Athletic utan Guruzeta, Egiluz och Ruiz de Galarreta (enligt FútbolFantasy). Laporte tillbaka efter avstängning; Sancet troligen bänk.",
+    "Bortalag: Real Sociedad utan Odriozola, Beitia och möjligen Marchal. Aramburu och Herrera tillbaka.",
+    "Form/tabell: Sociedad 5:a (19 p) i stark form. Athletic 8:a (12 p), ojämnt. Baskiskt derby."
+   ],
+   "lineup": "",
+   "take": "Sociedad i bättre form. Folket streckar 1:an 36 % mot oddsens 46 % – 1:an understreckad, X och 2 överstreckade.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 30 okt",
+     "url": "https://www.sportsmole.co.uk/football/real-sociedad/preview/athletic-bilbao-vs-real-sociedad-prediction-team-news-lineups_608068.html"
+    },
+    {
+     "title": "FútbolFantasy, 30 okt",
+     "url": "https://www.futbolfantasy.com/laliga/noticias/153817-beitia-odriozola-y-marchal-unicas-bajas-a-dos-dias-del-derbi"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "home": "Elche",
+   "away": "Valencia",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Elche (15:e, 10 p) utan Aguado; Fer Niño tveksam. Vann 3–0 mot Rayo.",
+    "Bortalag: Valencia (19:e, 6 p) utan avstängde Harvey Elliott, Canós, Diego López, Sadiq m.fl.; Gayà tveksam (näsa).",
+    "Form/tabell: Bottenmöte. Valencia bara 7 gjorda mål."
+   ],
+   "lineup": "",
+   "take": "Elche i form, Valencia försvagat. Men folket 52 % på 1:an mot oddsens 39 % – kraftigt överstreckad, 2:an understreckad (22 mot 33).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 30 okt",
+     "url": "https://www.sportsmole.co.uk/football/valencia/preview/elche-vs-valencia-prediction-team-news-lineups_608073.html"
+    },
+    {
+     "title": "Starting11, okt 2026",
+     "url": "https://starting11.com/fixtures/elche-vs-valencia"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "home": "Häcken",
+   "away": "IFK Göteborg",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Häcken (4:a, 46 p) utan avstängde Gustav Lindgren; Helander tveksam (yrsel). Obesegrat på sju, fem raka nollor.",
+    "Bortalag: IFK Göteborg (9:a, 38 p, räddat). Heintz spelar på sprutor; Felix Eriksson tillbaka efter avstängning.",
+    "Form/tabell: Omgång 27 av 30. Häcken jagar 3:e platsen; IFK obesegrat på åtta men tre raka kryss. Derby."
+   ],
+   "lineup": "",
+   "take": "Häcken har mer att spela för. Folket 63 % på 1:an mot oddsens 56 % – överstreckad, 2:an understreckad (15 mot 21).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Bollsvenskan, 28 okt",
+     "url": "https://bollsvenskan.se/hacken-nollat-av-bp-segersvit-bruten-lindgren-avstangd-infor-derbyt-mot-ifk-goteborg/"
+    },
+    {
+     "title": "Bollsvenskan, 30 okt",
+     "url": "https://bollsvenskan.se/det-vore-extra-kul-att-sla-dem-ackermann-infor-hacken-och-rollen-som-hogerback/"
+    },
+    {
+     "title": "GP, 28 okt",
+     "url": "https://www.gp.se/sport/ny-nolla-for-hacken-som-kryssade-mot-brommapojkarna.3ea2088e-7104-5507-bc05-99081e7b4c00"
+    },
+    {
+     "title": "Allsvenskantabellen, 30 okt",
+     "url": "https://allsvenskantabellen.se/"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "home": "Elfsborg",
+   "away": "Örgryte",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Elfsborg (5:a, 43 p) tre raka kryss. Frick, Elfström och Hägg-Johansson saknades mot AIK.",
+    "Bortalag: Örgryte (15:e, 19 p) en poäng från kvalplats; sämst målskillnad (-26). Ingen färsk skadeinfo.",
+    "Form/tabell: Omgång 27 av 30. Örgryte maximalt motiverat; Elfsborg slåss om 3:e–4:e plats."
+   ],
+   "lineup": "",
+   "take": "Inga färska nyheter. Folket 74/10/16 mot oddsens 69/19/12 – krysset kraftigt understreckat, 2:an något överstreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Bollsvenskan, 27 okt",
+     "url": "https://bollsvenskan.se/fyra-elfsborgsbackar-en-varning-fran-avstangning-infor-aik-hamberg-ruckar-inte-pa-aggressiviteten/"
+    },
+    {
+     "title": "Bollsvenskan, 30 okt",
+     "url": "https://bollsvenskan.se/miettinen-avgjorde-mjallby-brot-nio-matcher-utan-seger-i-bottenmotet-med-orgryte/"
+    },
+    {
+     "title": "Allsvenskantabellen, 30 okt",
+     "url": "https://allsvenskantabellen.se/"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "home": "Västerås",
+   "away": "Brommapojkarna",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Västerås (6:a, 41 p) vann 3–0 i Degerfors. Ingen färsk skadeinfo.",
+    "Bortalag: Brommapojkarna (räddat, 34 p) två raka nollor (3–0 Kalmar, 0–0 Häcken). Ingen färsk skadeinfo.",
+    "Form/tabell: Omgång 27 av 30. VSK har något att spela för, BP låg tabellmotivation."
+   ],
+   "lineup": "",
+   "take": "Folket 63 % på 1:an mot oddsens 51 % – klart överstreckad; X (17 mot 24) och 2 understreckade.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "GP, 28 okt",
+     "url": "https://gp.se/sport/vasteras-sk-vann-borta-mot-degerfors.16e35f0b-2ea6-525b-ab19-f8f619fc35c2"
+    },
+    {
+     "title": "Hurbra, 28 okt",
+     "url": "https://hurbra.se/bp-hacken-0-0-28-oktober-2026/"
+    },
+    {
+     "title": "Allsvenskantabellen, 30 okt",
+     "url": "https://allsvenskantabellen.se/"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "home": "Paris FC",
+   "away": "Monaco",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Paris FC (6:a, 14 p) obesegrat hemma. Koleosho och Sangui borta; flera på väg tillbaka.",
+    "Bortalag: Monaco (4:a, 15 p) utan Ansu Fati (ca 6 veckor) och Idumbo; Dier avgörs på lördagen. Conference League i veckan.",
+    "Form/tabell: Monaco utan ligaseger på tre. Paris FC vann båda mötena förra säsongen."
+   ],
+   "lineup": "",
+   "take": "Folket 48/31/21 mot oddsens 42/26/32 – 2:an kraftigt understreckad, 1 och X överstreckade.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "But! Football Club, okt 2026",
+     "url": "https://www.butfootballclub.fr/1708950-pronostic-paris-fc-as-monaco-01-11-prono-cotes-et-compos/"
+    },
+    {
+     "title": "La Diagonale, 30 okt",
+     "url": "https://www.ladiagonale.net/index.php/2026/10/30/filipe-luis-laisse-planer-le-doute-sur-un-retour-de-dier/"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "home": "Union Berlin",
+   "away": "Köln",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Union (17:e, 6 p) utan Ilić och Uduokhai, fler frånvarande enligt Starting11. Lustrinelli kräver reaktion.",
+    "Bortalag: Köln (12:e, 8 p) utan Ache m.fl.; brist på mittbackar, Schmied väntas starta.",
+    "Form/tabell: Köln vann 5–0 mot Union i cupen i tisdags – andra mötet på fem dagar."
+   ],
+   "lineup": "",
+   "take": "Cupkrossen är känd och prissatt. Streck nära oddsen (36/25/39 mot 38/26/36).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Tagesspiegel/dpa, 30 okt",
+     "url": "https://www.tagesspiegel.de/berlin/dpa-fussball-bundesliga-unions-lustrinelli-fordert-reaktion-das-regt-mich-auf-16219808.html"
+    },
+    {
+     "title": "Sportschau, 30 okt",
+     "url": "https://www.sportschau.de/regional/rbb/rbb-union-vor-bundesligaspiel-gegen-koeln-dieses-mal-mit-bock-100.html"
+    },
+    {
+     "title": "come-on-fc.com, 30 okt",
+     "url": "https://come-on-fc.com/profis/joel-schmied-wagner-einsatz-union-berlin/"
+    }
+   ]
+  }
+ ]
+}
