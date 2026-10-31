@@ -1,236 +1,6 @@
 {
  "rounds": [
   {
-   "id": "stryktipset-4977",
-   "game": "Stryktipset",
-   "draw": 4977,
-   "name": "Stryktipset v 44, stänger 2026-10-31 15:59",
-   "close": "2026-10-31T15:59:00+01:00",
-   "matches": [
-    {
-     "n": 1,
-     "home": "Aston Villa",
-     "away": "Fulham",
-     "league": "Premier League",
-     "kickoff": "2026-10-31T21:00:00+01:00",
-     "odds": [
-      2.02,
-      3.9,
-      3.7
-     ],
-     "streck": [
-      64,
-      20,
-      16
-     ]
-    },
-    {
-     "n": 2,
-     "home": "Tottenham",
-     "away": "Crystal Palace",
-     "league": "Premier League",
-     "kickoff": "2026-10-31T18:30:00+01:00",
-     "odds": [
-      1.56,
-      4.7,
-      5.8
-     ],
-     "streck": [
-      64,
-      20,
-      16
-     ]
-    },
-    {
-     "n": 3,
-     "home": "Manchester City",
-     "away": "Brighton",
-     "league": "Premier League",
-     "kickoff": "2026-10-31T16:00:00+01:00",
-     "odds": [
-      1.68,
-      4.5,
-      4.8
-     ],
-     "streck": [
-      59,
-      22,
-      19
-     ]
-    },
-    {
-     "n": 4,
-     "home": "Bournemouth",
-     "away": "Leeds",
-     "league": "Premier League",
-     "kickoff": "2026-10-31T16:00:00+01:00",
-     "odds": [
-      2.18,
-      3.6,
-      3.5
-     ],
-     "streck": [
-      50,
-      27,
-      23
-     ]
-    },
-    {
-     "n": 5,
-     "home": "Coventry",
-     "away": "Sunderland",
-     "league": "Premier League",
-     "kickoff": "2026-10-31T16:00:00+01:00",
-     "odds": [
-      3.2,
-      3.45,
-      2.38
-     ],
-     "streck": [
-      37,
-      30,
-      33
-     ]
-    },
-    {
-     "n": 6,
-     "home": "Brentford",
-     "away": "Nottingham",
-     "league": "Premier League",
-     "kickoff": "2026-10-31T16:00:00+01:00",
-     "odds": [
-      2.02,
-      3.95,
-      3.6
-     ],
-     "streck": [
-      57,
-      23,
-      20
-     ]
-    },
-    {
-     "n": 7,
-     "home": "Hull",
-     "away": "Ipswich",
-     "league": "Premier League",
-     "kickoff": "2026-10-31T16:00:00+01:00",
-     "odds": [
-      2.7,
-      3.35,
-      2.8
-     ],
-     "streck": [
-      41,
-      29,
-      30
-     ]
-    },
-    {
-     "n": 8,
-     "home": "Bolton",
-     "away": "Bristol City",
-     "league": "Championship",
-     "kickoff": "2026-10-31T16:00:00+01:00",
-     "odds": [
-      2.9,
-      3.6,
-      2.43
-     ],
-     "streck": [
-      37,
-      29,
-      34
-     ]
-    },
-    {
-     "n": 9,
-     "home": "Burnley",
-     "away": "Portsmouth",
-     "league": "Championship",
-     "kickoff": "2026-10-31T16:00:00+01:00",
-     "odds": [
-      2.02,
-      3.7,
-      3.7
-     ],
-     "streck": [
-      42,
-      26,
-      32
-     ]
-    },
-    {
-     "n": 10,
-     "home": "Millwall",
-     "away": "Derby",
-     "league": "Championship",
-     "kickoff": "2026-10-31T16:00:00+01:00",
-     "odds": [
-      1.78,
-      3.9,
-      4.7
-     ],
-     "streck": [
-      61,
-      23,
-      16
-     ]
-    },
-    {
-     "n": 11,
-     "home": "Southampton",
-     "away": "Queens Park Rangers",
-     "league": "Championship",
-     "kickoff": "2026-10-31T16:00:00+01:00",
-     "odds": [
-      1.79,
-      4.1,
-      4.35
-     ],
-     "streck": [
-      55,
-      24,
-      21
-     ]
-    },
-    {
-     "n": 12,
-     "home": "Swansea",
-     "away": "Blackburn",
-     "league": "Championship",
-     "kickoff": "2026-10-31T16:00:00+01:00",
-     "odds": [
-      1.85,
-      3.75,
-      4.4
-     ],
-     "streck": [
-      56,
-      24,
-      20
-     ]
-    },
-    {
-     "n": 13,
-     "home": "West Ham",
-     "away": "West Bromwich",
-     "league": "Championship",
-     "kickoff": "2026-10-31T16:00:00+01:00",
-     "odds": [
-      1.6,
-      4.5,
-      5.4
-     ],
-     "streck": [
-      57,
-      26,
-      17
-     ]
-    }
-   ]
-  },
-  {
    "id": "europatipset-2621",
    "game": "Europatipset",
    "draw": 2621,
@@ -244,14 +14,14 @@
      "league": "Premier League",
      "kickoff": "2026-11-01T17:30:00+01:00",
      "odds": [
-      3,
-      3.65,
-      2.35
+      2.95,
+      3.5,
+      2.5
      ],
      "streck": [
-      34,
-      23,
-      43
+      35,
+      31,
+      34
      ]
     },
     {
@@ -261,14 +31,14 @@
      "league": "Serie A",
      "kickoff": "2026-11-01T20:45:00+01:00",
      "odds": [
-      2.04,
-      3.55,
-      3.8
+      2.2,
+      3.45,
+      3.45
      ],
      "streck": [
-      38,
-      25,
-      37
+      48,
+      29,
+      23
      ]
     },
     {
@@ -278,14 +48,14 @@
      "league": "Serie A",
      "kickoff": "2026-11-01T15:00:00+01:00",
      "odds": [
-      1.5,
-      4.5,
-      7
+      1.47,
+      4.7,
+      7.5
      ],
      "streck": [
       86,
-      8,
-      6
+      9,
+      5
      ]
     },
     {
@@ -295,14 +65,14 @@
      "league": "Serie A",
      "kickoff": "2026-11-01T18:00:00+01:00",
      "odds": [
-      2.88,
+      3.4,
       3.2,
-      2.7
+      2.4
      ],
      "streck": [
-      34,
-      29,
-      37
+      28,
+      32,
+      40
      ]
     },
     {
@@ -312,14 +82,14 @@
      "league": "Serie A",
      "kickoff": "2026-11-01T15:00:00+01:00",
      "odds": [
-      2.23,
-      3.8,
-      3.1
+      2.12,
+      4,
+      3.2
      ],
      "streck": [
-      41,
-      26,
-      33
+      56,
+      25,
+      19
      ]
     },
     {
@@ -329,14 +99,14 @@
      "league": "La Liga",
      "kickoff": "2026-11-01T16:15:00+01:00",
      "odds": [
-      11,
-      7,
-      1.26
+      11.5,
+      7.5,
+      1.24
      ],
      "streck": [
       5,
-      9,
-      86
+      8,
+      87
      ]
     },
     {
@@ -346,14 +116,14 @@
      "league": "La Liga",
      "kickoff": "2026-11-01T21:00:00+01:00",
      "odds": [
-      2.12,
-      3.7,
-      3.55
+      2.23,
+      3.75,
+      3.25
      ],
      "streck": [
-      36,
+      43,
       31,
-      33
+      26
      ]
     },
     {
@@ -363,14 +133,14 @@
      "league": "La Liga",
      "kickoff": "2026-11-01T18:30:00+01:00",
      "odds": [
-      2.5,
-      3.45,
-      2.95
+      2.43,
+      3.5,
+      3.05
      ],
      "streck": [
-      52,
-      26,
-      22
+      50,
+      29,
+      21
      ]
     },
     {
@@ -380,14 +150,14 @@
      "league": "Allsvenskan",
      "kickoff": "2026-11-01T16:30:00+01:00",
      "odds": [
-      1.71,
-      4.35,
-      4.5
+      1.8,
+      4.2,
+      4.1
      ],
      "streck": [
-      63,
-      22,
-      15
+      58,
+      25,
+      17
      ]
     },
     {
@@ -402,9 +172,9 @@
       8
      ],
      "streck": [
-      74,
-      10,
-      16
+      81,
+      11,
+      8
      ]
     },
     {
@@ -414,14 +184,14 @@
      "league": "Allsvenskan",
      "kickoff": "2026-11-01T16:30:00+01:00",
      "odds": [
-      1.92,
-      4,
-      3.95
+      2,
+      3.9,
+      3.75
      ],
      "streck": [
       63,
-      17,
-      20
+      20,
+      17
      ]
     },
     {
@@ -431,14 +201,14 @@
      "league": "Ligue 1",
      "kickoff": "2026-11-01T17:15:00+01:00",
      "odds": [
-      2.32,
-      3.8,
+      2.38,
+      3.6,
       3.05
      ],
      "streck": [
-      48,
-      31,
-      21
+      47,
+      26,
+      27
      ]
     },
     {
@@ -448,14 +218,14 @@
      "league": "Bundesliga",
      "kickoff": "2026-11-01T15:30:00+01:00",
      "odds": [
-      2.6,
-      3.75,
-      2.7
+      2.7,
+      3.65,
+      2.65
      ],
      "streck": [
-      36,
-      25,
-      39
+      37,
+      29,
+      34
      ]
     }
    ]
