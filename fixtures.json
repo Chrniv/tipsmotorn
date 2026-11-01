@@ -1,3 +1,234 @@
 {
- "rounds": []
+ "rounds": [
+  {
+   "id": "europatipset-2622",
+   "game": "Europatipset",
+   "draw": 2622,
+   "name": "Europatipset v 45, stänger 2026-11-04 20:44",
+   "close": "2026-11-04T20:44:00+01:00",
+   "matches": [
+    {
+     "n": 1,
+     "home": "Slavia Prag",
+     "away": "Arsenal",
+     "league": "Champions League",
+     "kickoff": "2026-11-04T21:00:00+01:00",
+     "odds": [
+      11,
+      5.75,
+      1.33
+     ],
+     "streck": [
+      2,
+      9,
+      89
+     ]
+    },
+    {
+     "n": 2,
+     "home": "RB Leipzig",
+     "away": "Manchester City",
+     "league": "Champions League",
+     "kickoff": "2026-11-04T21:00:00+01:00",
+     "odds": [
+      5.6,
+      4.6,
+      1.6
+     ],
+     "streck": [
+      14,
+      17,
+      69
+     ]
+    },
+    {
+     "n": 3,
+     "home": "Dortmund",
+     "away": "Real Betis",
+     "league": "Champions League",
+     "kickoff": "2026-11-04T21:00:00+01:00",
+     "odds": [
+      1.72,
+      4.3,
+      4.8
+     ],
+     "streck": [
+      68,
+      19,
+      13
+     ]
+    },
+    {
+     "n": 4,
+     "home": "Porto",
+     "away": "Napoli",
+     "league": "Champions League",
+     "kickoff": "2026-11-04T21:00:00+01:00",
+     "odds": [
+      2.23,
+      3.6,
+      3.35
+     ],
+     "streck": [
+      50,
+      31,
+      19
+     ]
+    },
+    {
+     "n": 5,
+     "home": "PSV Eindhoven",
+     "away": "Club Brügge",
+     "league": "Champions League",
+     "kickoff": "2026-11-04T21:00:00+01:00",
+     "odds": [
+      2.08,
+      4.35,
+      3.2
+     ],
+     "streck": [
+      53,
+      22,
+      25
+     ]
+    },
+    {
+     "n": 6,
+     "home": "Lens",
+     "away": "Como",
+     "league": "Champions League",
+     "kickoff": "2026-11-04T21:00:00+01:00",
+     "odds": [
+      3.05,
+      3.9,
+      2.28
+     ],
+     "streck": [
+      17,
+      21,
+      62
+     ]
+    },
+    {
+     "n": 7,
+     "home": "Viking",
+     "away": "Sabah Masazir",
+     "league": "Champions League",
+     "kickoff": "2026-11-04T21:00:00+01:00",
+     "odds": [
+      1.52,
+      4.9,
+      6.25
+     ],
+     "streck": [
+      83,
+      13,
+      4
+     ]
+    },
+    {
+     "n": 8,
+     "home": "Bristol City",
+     "away": "Wolverhampton",
+     "league": "Championship",
+     "kickoff": "2026-11-04T21:00:00+01:00",
+     "odds": [
+      3.35,
+      3.55,
+      2.2
+     ],
+     "streck": [
+      15,
+      33,
+      52
+     ]
+    },
+    {
+     "n": 9,
+     "home": "Cardiff",
+     "away": "West Ham",
+     "league": "Championship",
+     "kickoff": "2026-11-04T20:45:00+01:00",
+     "odds": [
+      3.7,
+      4.3,
+      1.89
+     ],
+     "streck": [
+      13,
+      22,
+      65
+     ]
+    },
+    {
+     "n": 10,
+     "home": "Wrexham",
+     "away": "Middlesbrough",
+     "league": "Championship",
+     "kickoff": "2026-11-04T20:45:00+01:00",
+     "odds": [
+      4.25,
+      4,
+      1.83
+     ],
+     "streck": [
+      11,
+      24,
+      65
+     ]
+    },
+    {
+     "n": 11,
+     "home": "Oxford",
+     "away": "Reading",
+     "league": "League One",
+     "kickoff": "2026-11-04T20:45:00+01:00",
+     "odds": [
+      2.55,
+      3.5,
+      2.6
+     ],
+     "streck": [
+      52,
+      26,
+      22
+     ]
+    },
+    {
+     "n": 12,
+     "home": "Botafogo RJ",
+     "away": "Atletico Mineiro",
+     "league": "Brasileiro Serie A",
+     "kickoff": "2026-11-05T01:30:00+01:00",
+     "odds": [
+      2.18,
+      3.8,
+      3.35
+     ],
+     "streck": [
+      70,
+      20,
+      10
+     ]
+    },
+    {
+     "n": 13,
+     "home": "Sao Paulo",
+     "away": "Corinthians",
+     "league": "Brasileiro Serie A",
+     "kickoff": "2026-11-05T01:30:00+01:00",
+     "odds": [
+      2.18,
+      3.3,
+      3.85
+     ],
+     "streck": [
+      68,
+      20,
+      12
+     ]
+    }
+   ]
+  }
+ ]
 }
