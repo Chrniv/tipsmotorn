@@ -3,9 +3,10 @@
  "draw": 2622,
  "round": "Europatipset v 45, stänger 2026-11-04 20:44",
  "author": "Claude (schemalagd)",
- "updatedAt": 1793782703041,
+ "updatedAt": 1793819932765,
  "checkedAt": {
-  "d": "2026-11-04T08:58:23+00:00"
+  "d": "2026-11-04T08:58:23+00:00",
+  "l": "2026-11-04T19:18:52+00:00"
  },
  "matches": [
   {
@@ -14,18 +15,26 @@
    "away": "Arsenal",
    "impact": "low",
    "notes": [
-    "Hemmalag: Slavia (Trpišovský) väntas ställa upp ungefär som den mycket unga elvan i 5–0 mot Jablonec, ca sex CL-debutanter. Markovič med i truppen, Provod högst kort inhopp, N'Guessan oklar. Piták borta; Sports Mole anger även Chorý (avstängd), Ogbu och Kanté borta. Ouanda och Schranz: uppgifter om borta/osäkra går isär.",
-    "Bortalag: Arsenal utan Saka. Saliba kör 45 min bakom stängda dörrar och 'känns redo' – ändrat läge mot i går, men start ej säker. Eze mindre skada, tippas ändå starta. Arteta: alla kan få chans, rotation möjlig.",
+    "Hemmalag: Slavia (Trpišovský) med mycket ung elva väntad, ca sex CL-debutanter. Piták borta; Chorý (avstängd), Ogbu och Kanté borta enligt Sports Mole. Ouanda och Schranz listas av UEFA som borta.",
+    "Bortalag: Arsenal utan Saka. Saliba tillbaka i truppen men enligt YSscores på bänken, liksom Ødegaard, Havertz, Timber och Dowman. Eze startar trots mindre skada.",
     "Form/tabell: Slavia 32:a i CL med 1 p, Arsenal 7:a med 7 p. Arsenal vann 1–0 borta mot Liverpool i söndags."
    ],
-   "lineup": "",
-   "take": "Saliba och Slavias oerfarna lag drar mot tvåan, Arsenals rotation åt andra hållet – netto inget. Streck 4/9/87 mot odds 9/16/76 – tvåan klart överstreckad, X och 1 understreckade.",
+   "lineup": "Ej märkt officiell (YSscores): Slavia Domchak; Kubiak, Zima, Holeš, Vlček, Sadílek, Moses, Suleiman, Sturm, Ayaosi; Nowak. Arsenal Raya; Hincapié, Gabriel, Konsa, White; Zubimendi, Rice; Madueke, Merino, Eze; Gyökeres.",
+   "take": "Arsenal roterar något men elvan är stark, ingen justering. Streck 4/9/87 mot odds 9/16/76 – tvåan klart överstreckad, X och 1 understreckade.",
    "suggest": [
     0,
     0,
     0
    ],
    "sources": [
+    {
+     "title": "YSscores, 4 nov",
+     "url": "https://www.ysscores.com/en/lineup/6106389/SK-Slavia-Prague-vs-Arsenal-FC"
+    },
+    {
+     "title": "Evening Standard/Yahoo, 4 nov",
+     "url": "https://uk.sports.yahoo.com/news/arsenal-xi-vs-slavia-prague-194819778.html"
+    },
     {
      "title": "iSport, 3 nov",
      "url": "https://isport.blesk.cz/clanek/fotbal-evropske-pohary-liga-mistru/481732/trpisovsky-pred-arsenalem-debut-az-pro-sest-hracu-co-inspirace-ve-ctvrte-anglicke-lize.html"
@@ -54,18 +63,34 @@
    "away": "Manchester City",
    "impact": "low",
    "notes": [
-    "Hemmalag: Leipzig (Demichelis) utan Ouédraogo och Guiu; Estève osäker. Baumgartner uppges starta för första gången i säsongen. Nkunkus roll oklar – med i ESPN:s elva, inte i rb-fans.",
-    "Bortalag: City (Maresca) har bara Semenyo borta. Guéhi och O'Reilly väntas tillbaka, Foden och Cherki troliga, Haaland på topp. Bouaddi kan vila. Närmare fullt lag än rotationssnacket antydde.",
+    "Hemmalag: Leipzig (Demichelis) utan Ouédraogo och Guiu; Estève osäker. Baumgartner startar, Demichelis bekräftade. Nkunku inte i elvan enligt 101GG.",
+    "Bortalag: City (Maresca) har bara Semenyo borta. Fyra byten: Guéhi, O'Reilly, Cherki, Foden in; Dias på bänken för första gången i säsongen, Gvardiol, Doku och Bouaddi också bänkade. Haaland kapten.",
     "Form/tabell: Leipzig 4:a i Bundesliga men 29:a i CL (1–4 mot Real Madrid). City föll 0–1 mot Brighton, 11 insläppta på 6 matcher."
    ],
-   "lineup": "",
-   "take": "Baumgartner hjälper Leipzig, City nästan fulltaligt – tar ut varandra. Streck 15/19/66 mot odds 19/20/60 – tvåan något överstreckad, ettan understreckad.",
+   "lineup": "City bekräftad: Donnarumma; Nunes, Khusanov, Guéhi, O'Reilly; Anderson, Fernández; Foden, Cherki, Ndiaye; Haaland. Leipzig enligt 101GG (ej märkt officiell): Vandevoordt; Baku, Orbán, Lukeba, Raum; El Aynaoui, Baumgartner, Banzuzi; Gruda, Cardoso, Nusa.",
+   "take": "Dias bänkad är en överraskning men ingen självklar försvagning. Inget som flyttar priset. Streck 15/19/66 mot odds 19/20/60 – tvåan något överstreckad, ettan understreckad.",
    "suggest": [
     0,
     0,
     0
    ],
    "sources": [
+    {
+     "title": "Sports Mole, 4 nov",
+     "url": "https://www.sportsmole.co.uk/football/man-city/champions-league/news/leipzig-vs-man-city-confirmed-xis-captain-haaland-as-cherki-foden-guehi-decisions-made_608404.html"
+    },
+    {
+     "title": "City Xtra/Yahoo, 4 nov",
+     "url": "https://sports.yahoo.com/articles/confirmed-line-ups-rb-leipzig-184500835.html"
+    },
+    {
+     "title": "101GreatGoals, 4 nov",
+     "url": "https://www.101greatgoals.com/football/champions-league/rb-leipzig-v-manchester-city-confirmed-team-news-line-ups/"
+    },
+    {
+     "title": "t-online/dpa, 4 nov",
+     "url": "https://leipzig.t-online.de/region/leipzig/id_101511556/rb-leipzig-mit-baumgartner-in-der-startelf-gegen-man-city.html"
+    },
     {
      "title": "rb-fans, 4 nov",
      "url": "https://rb-fans.de/article/20261103-cl-kracher-in-leipzig-rb-empfaengt-manchester-city"
@@ -86,18 +111,22 @@
    "away": "Real Betis",
    "impact": "low",
    "notes": [
-    "Hemmalag: Kovac: truppen komplett utom Can och Konstantelias. Prates och Reggiani spelar med U19 (inte skadade). Lerma listas som borta av Fútbol Fantasy. Karetsas tillbaka men troligen inte från start.",
-    "Bortalag: Betis utan Cucho Hernández, Firpo och Losada; Fidalgo sjuk (en källa). Antonys start osäker ('vi får se') efter fysiska besvär; Llorente kan starta. Bernal spelklar, avstängningen gäller bara ligan.",
+    "Hemmalag: Dortmund (Kovac) utan Can och Konstantelias. Guirassy och Fábio Silva startar. Bensebaini i backlinjen.",
+    "Bortalag: Betis utan Cucho Hernández och Firpo; Fidalgo sjuk och inte med. Antony startar – tvivlet från i går är borta. Llorente också från start.",
     "Form/tabell: Betis 5:a i CL med 9 p, Dortmund 13:a med 6 p. Dortmund 2–2 mot Bayern i lördags."
    ],
-   "lineup": "",
-   "take": "Liten lutning mot Dortmund av Antony-tvivlet, men för svagt för justering. Streck 71/17/12 mot odds 56/23/21 – ettan rejält överstreckad, X och 2 ger fortsatt värde.",
+   "lineup": "Officiellt: Dortmund Kobel; Anton, Schlotterbeck, Bensebaini; Ryerson, Nmecha, Svensson, Veerman, Bellingham; Fábio Silva, Guirassy. Betis Vallés; Á. Ortiz, Llorente, Natan, V. Gómez; Ceballos, Bernal, Deossa; Antony, Abde; Parrott.",
+   "take": "Antony från start tar bort den lilla lutningen mot Dortmund. Ingen justering. Streck 71/17/12 mot odds 56/23/21 – ettan rejält överstreckad, X och 2 ger värde.",
    "suggest": [
     0,
     0,
     0
    ],
    "sources": [
+    {
+     "title": "El Desmarque, 4 nov",
+     "url": "https://www.eldesmarque.com/futbol/champions-league/20261104/alineaciones-borussia-dortmund-betis-champions_18_020622092.html"
+    },
     {
      "title": "BVBWLD, 3 nov",
      "url": "https://bvbwld.de/2026/11/03/bvb-vor-betis-duell-kovac-spricht-ueber-die-personelle-lage/"
@@ -124,20 +153,28 @@
    "n": 4,
    "home": "Porto",
    "away": "Napoli",
-   "impact": "high",
+   "impact": "medium",
    "notes": [
-    "Hemmalag: Porto (Farioli): William Gomes klart borta enligt tränaren. Pietuszewski tränade anpassat och är ett alternativ. Smalling, Prpic, Vasco Sousa och Gabriel Mec ej UEFA-registrerade.",
-    "Bortalag: Napoli i kris – Allegri: 'vi är tretton'. Di Lorenzo och Olivera (ej med till Portugal), Lobotka, Neres, Spinazzola, Buongiorno, Badiashile, Alisson, Favasuli, Milinković-Savić och Marianucci borta. De Bruyne tippas på bänken, beslut efter sista träningen. Højlund spelar. Väntad 3-5-2.",
+    "Hemmalag: Porto (Farioli) utan William Gomes. Pietuszewski på bänken. Smalling, Prpic, Vasco Sousa och Gabriel Mec ej UEFA-registrerade.",
+    "Bortalag: Napoli fortfarande tunna: Di Lorenzo, Olivera, Lobotka, Neres, Spinazzola, Buongiorno m.fl. borta. Men De Bruyne STARTAR, tvärtemot tidigare uppgifter, och Højlund spelar. Vergara från start. Bänken har bara två målvakter och fem utespelare, bl.a. Lucca, Giovane och Lang.",
     "Form/tabell: Porto förlustfritt i ligan (4–0 mot Estoril) men 0 p på 3 CL-matcher. Napoli föll 0–2 mot Juventus."
    ],
-   "lineup": "",
-   "take": "Färskaste nyheten i omgången: extremt tunn Napoli-trupp och De Bruyne troligen ej från start, delvis uppvägt av Højlund och Gomes-bortfallet. Extra på Porto. Streck 47/29/24 mot odds 48/26/26 – ingen trängsel på ettan, X något överstreckat.",
+   "lineup": "Officiellt: Porto D. Costa; A. Costa, Bednarek, Kiwior, M. Fernandes; Rosario, Froholdt, G. Veiga; Pepê, André Silva, B. Sainz. Napoli Meret; Beukema, Rrahmani, R. Marín; Politano, Anguissa, Gilmour, McTominay, Vergara; De Bruyne, Højlund.",
+   "take": "De Bruyne från start minskar lutningen mot Porto; sänk tidigare +3 till +1. Tunn bänk talar fortfarande lite för hemmalaget. Streck 47/29/24 mot odds 48/26/26 – ettan rättvis, X något överstreckat.",
    "suggest": [
-    3,
-    -1,
-    -2
+    1,
+    0,
+    -1
    ],
    "sources": [
+    {
+     "title": "Il Napolista, 4 nov",
+     "url": "https://www.ilnapolista.it/2026/11/porto-napoli-formazioni-ufficiali-giocano-vergara-e-de-bruyne-in-panchina-lang-e-giovane/"
+    },
+    {
+     "title": "CalcioNapoli24, 4 nov",
+     "url": "https://www.calcionapoli24.it/champions_league/formazioni-ufficiali-porto-napoli-champions-league-le-scelte-di-farioli-e-allegri-n703090.html"
+    },
     {
      "title": "Sportitalia, 3 nov",
      "url": "https://www.sportitalia.it/2026/11/03/porto-napoli-allegri-lancia-lallarme-siamo-in-tredici-non-riusciamo-nemmeno-a-fare-un-torello/"
@@ -174,18 +211,26 @@
    "away": "Club Brügge",
    "impact": "low",
    "notes": [
-    "Hemmalag: PSV (Bosz) utan Wanner och Lammers (Wanner åter först efter landslagsuppehållet), Ouaissa, Schouten och Plea; Nagalo listas också som borta. Pepi redo att starta enligt Bosz, UEFA tippar dock Til på topp.",
-    "Bortalag: Club Brügge (Leko) saknar bara Ordoñez.",
+    "Hemmalag: PSV (Bosz) utan Wanner, Lammers, Ouaissa, Schouten och Plea. Pepi på bänken; Mijnans fortsätter som anfallare, Kostic tillbaka på vänsterback för Gasiorowski.",
+    "Bortalag: Club Brügge (Leko) saknar bara Ordoñez, samma elva som senast.",
     "Form/tabell: PSV 18:a i CL med 4 p, 7–0 mot Willem II i helgen. Brügge 11:a med 6 p efter segrar mot Inter och Lens."
    ],
-   "lineup": "",
-   "take": "Pepi och Wanner tar ut varandra. Streck 46/24/30 mot odds 47/22/31 – nära rättvist, X något överstreckat.",
+   "lineup": "PSV (Sporza, ej märkt officiell): Kovář; Dest, Geertruida, Obispo, Kostić; Sano, Mijnans, Mauro Júnior, Perišić, Til, van Bommel. Brügge: Sommer; Sabbe, Spileers, Mechele, Seys; Potts, Vetlesen, Vanaken; Forbs, Tresoldi, Virgili.",
+   "take": "Pepi på bänken är lite oväntat men Mijnans-lösningen gav 7–0 i helgen. Ingen justering. Streck 46/24/30 mot odds 47/22/31 – nära rättvist, X något överstreckat.",
    "suggest": [
     0,
     0,
     0
    ],
    "sources": [
+    {
+     "title": "VI, 4 nov",
+     "url": "https://www.vi.nl/nieuws/opstelling-psv-bosz-houdt-vast-aan-spits-mijnans-kostic-terug-in-basis"
+    },
+    {
+     "title": "Sporza, 4 nov",
+     "url": "https://sporza.be/nl/matches/voetbal/eur/uefa-champions-league/2026-2027/leaguefase/04/psv-club-brugge-live-copy-paste-bij-club-brugge-voor-prestigeduel-met-psv-bekijk-hier-de-opstellingen~1781707208074/"
+    },
     {
      "title": "PSVFans, 3 nov",
      "url": "https://www.psvfans.nl/bosz-komt-met-update-over-blessures-na-de-interlandperiode/"
@@ -214,18 +259,26 @@
    "away": "Como",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Lens (Cahuzac) utan Édouard, Ganiou, Sima och Nawrocki, inga nya bortfall. Todibo spelklar men inte i full rytm.",
-    "Bortalag: Como (Fàbregas) utan Kean, Diao (lår), J. Rodríguez, Addai – och nu klart att Chalobah saknas. Fàbregas: UEFA-listan ger bara 15 spelare, nästan ingen rotation. Väntad elva med Paz, Baturina och Da Cunha bakom Douvikas.",
+    "Hemmalag: Lens (Cahuzac) utan Édouard, Ganiou, Sima och Nawrocki. Todibo på bänken, Thauvin och Hazard från start.",
+    "Bortalag: Como (Fàbregas) utan Kean, Diao, J. Rodríguez, Addai och Chalobah. Överraskning: Baturina på bänken, Caqueret in; orsak ej angiven. Butez i mål.",
     "Form/tabell: Lens 27:a i CL, förlust mot Lille i derbyt. Como 5 raka segrar, 9:a i CL, 1–0 mot Venezia."
    ],
-   "lineup": "",
-   "take": "Chalobah ute och tunn bänk lutar lite mot Lens. Streck 17/24/59 mot odds 32/25/44 – tvåan kraftigt överstreckad, ettan är omgångens tydliga värdetecken.",
+   "lineup": "Officiellt: Lens Risser; Antonio, Baidoo, Udol; Aguilar, Cuisance, Thauvin, Haidara, Skoras; Ivanovic, Hazard. Como Butez; Yan Couto, Ramon, Kempf, Valle; Milla, Perrone; Da Cunha, Paz, Caqueret; Douvikas.",
+   "take": "Chalobah ute och Baturina bänkad lutar lite mot Lens. Streck 17/24/59 mot odds 32/25/44 – tvåan kraftigt överstreckad, ettan är tydligt värdetecken.",
    "suggest": [
     1,
     0,
     -1
    ],
    "sources": [
+    {
+     "title": "Pazzi di Fanta, 4 nov",
+     "url": "https://www.pazzidifanta.com/news/lens-como-formazioni-ufficiali-4a-giornata-champions-league-2026-2027-460430"
+    },
+    {
+     "title": "CalcioComo, 4 nov",
+     "url": "https://www.calciocomo.it/lens-como-le-formazioni-ufficiali-in-porta-ce-butez-out-baturina/"
+    },
     {
      "title": "TMW, 3 nov",
      "url": "https://www.tuttomercatoweb.com/serie-a/como-fabregas-la-lista-uefa-penalizza-riposa-15-giocheranno-tutti-2290383"
@@ -254,18 +307,30 @@
    "away": "Sabah Masazir",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Viking utan Bjørshol, D'Agostino, Berisha, Baertelsen och Roseth. Nytt: toppskytten fick avbryta träningen och är osäker (Aftenbladet 3 nov; TV 2-rubrik nämner Peter Christiansen, artikeln ej läst). UEFA har honom kvar i tippad elva.",
-    "Bortalag: Sabah (Dambrauskas) har 23 spelare redo, besked om några efter kvällsträningen. Simić fortsatt osäker. Starting11 anger Solvet och Zedadka avstängda men UEFA tippar båda från start – fortsatt oklart.",
+    "Hemmalag: Viking utan Bjørshol, D'Agostino, Berisha, Baertelsen och Roseth. Toppskytten Peter Christiansen: stelhet i baksida lår, 'ingen skada', beslut före avspark enligt tränaren. TV 2 har elvan publicerad, men vi kunde inte läsa den.",
+    "Bortalag: Sabah (Dambrauskas) har 23 spelare redo. Simić osäker. Solvet och Zedadka finns i tippade elvor; uppgifterna om avstängning från Starting11 är fortsatt obekräftade.",
     "Form/tabell: Viking 1 p (3–3 mot Bayern) på 3 CL-matcher. Sabah 3 p (2–0 mot Slavia, 1–2 mot Dortmund)."
    ],
-   "lineup": "",
-   "take": "Färsk och troligen inte fullt prisad skaderisk för Vikings målskytt, kolla laguppställningen. Streck 80/12/8 mot odds 65/20/15 – ettan klart överstreckad, X och 2 understreckade.",
+   "lineup": "Bekräftad elva ej hittad, kolla TV 2 'Disse starter for Viking'. Tippad: Østbø; Heggheim, Stensness, Falchener, Haugen; Bjørdal, Bell, Askildsen; Christiansen, Botheim, Tripić.",
+   "take": "Christiansen är enda öppna frågan; 'ingen skada' dämpar oron så sänk från -2. Streck 80/12/8 mot odds 65/20/15 – ettan klart överstreckad, X och 2 understreckade.",
    "suggest": [
-    -2,
+    -1,
     1,
-    1
+    0
    ],
    "sources": [
+    {
+     "title": "Tipsbladet/NTB, 3 nov",
+     "url": "https://tipsbladet.no/treneren-roper-vikings-storscorer-usikker-til-storkamp-i-champions-league/"
+    },
+    {
+     "title": "TV 2, 4 nov",
+     "url": "https://www.tv2.no/sport/disse-starter-for-viking/19395151/"
+    },
+    {
+     "title": "Tipsbladet, 4 nov",
+     "url": "https://tipsbladet.no/kampanalyse/viking-vs-sabah-historisk-champions-league-seier-i-sikte-pa-lyse-arena/"
+    },
     {
      "title": "Aftenbladet, 3 nov",
      "url": "https://www.aftenbladet.no/sport/i/GrpXpq/viking-avsloerer-skadesmell-maatte-avbryte-treningen"
@@ -294,18 +359,30 @@
    "away": "Wolverhampton",
    "impact": "low",
    "notes": [
-    "Hemmalag: Bristol City (Skubala): Dickie tillbaka i träning (klubben: tillgänglig, FLW: osäker). Adebayo (lår) osäker, Eile sjuk och borta.",
-    "Bortalag: Wolves (Peixoto): J. James på gränsen. Jimenez borta till ca januari, B. Traoré borta, Djiga osäker. Rodrigo Gomes (fot) och López (vad) listas borta/osäkra av Starting11.",
+    "Hemmalag: Bristol City (Skubala) utan Eile. Dickie och Adebayo finns varken i elvan eller på bänken enligt YSscores. Tolaj startar trots skadeoron.",
+    "Bortalag: Wolves (Peixoto) utan J. James (tvingat byte), Jimenez, B. och Bo. Traoré. Djiga på bänken. López startar.",
     "Form/tabell: Wolves 3:a, 24 p, 3–0 mot Cardiff. Bristol 14:e, 18 p, 3–2 borta mot Bolton men ojämnt hemma."
    ],
-   "lineup": "",
-   "take": "Inget som flyttar mycket; Dickie liten plus för hemmalaget. Streck 17/27/56 mot odds 29/27/44 – tvåan överstreckad, ettan underspelad med värde.",
+   "lineup": "Ej märkt officiell (YSscores): Bristol Collins; Pring, Eissat, McNally, Tanner; Williams, Knight; Cardines, Twine, Bell; Tolaj. Wolves Sá; Bueno, Krejčí, Mosquera, Trippier; Munetsi, André; Saïd, López, Bellegarde; Armstrong.",
+   "take": "Inget som flyttar mycket; Dickie saknas hos hemmalaget och James hos Wolves. Streck 17/27/56 mot odds 29/27/44 – tvåan överstreckad, ettan underspelad med värde.",
    "suggest": [
     0,
     0,
     0
    ],
    "sources": [
+    {
+     "title": "YSscores, 4 nov",
+     "url": "https://www.ysscores.com/en/lineup/5836918/Bristol-City-vs-Wolverhampton-Wanderers"
+    },
+    {
+     "title": "Last Word on Football, 4 nov",
+     "url": "https://lastwordonsports.com/football/2026/11/04/bristol-city-vs-wolves-confirmed-lineups/"
+    },
+    {
+     "title": "Express & Star, 4 nov",
+     "url": "https://www.expressandstar.com/sport/football/wolverhampton-wanderers/wolves-team-news-vs-bristol-city-one-forced-change-by-cesar-peixoto-9331161"
+    },
     {
      "title": "Bristol City, 3 nov",
      "url": "https://www.bcfc.co.uk/city-men-news/preview-wolverhampton-wanderers-h-2/"
@@ -330,18 +407,34 @@
    "away": "West Ham",
    "impact": "high",
    "notes": [
-    "Hemmalag: Cardiff (Barry-Murphy): Osho avstängd, Bielik och Davies borta, Lawlor, Chambers och Robinson borta. Fish osäker, Ng bedöms, Robertson oklar.",
-    "Bortalag: West Ham sparkade Nuno 3 nov. Noble, Potts och Prenderville förbereder laget; Scott Parker uppges klar men är inte bekräftad och kanske bara på läktaren. Mavropanos troligen borta, Walker-Peters bedöms, Lamadrid borta.",
+    "Hemmalag: Cardiff (Barry-Murphy): Osho avstängd, Bielik, Chambers och Lawlor borta. Fish, Ng och Robertson med i elvan enligt YSscores.",
+    "Bortalag: West Ham sparkade Nuno 3 nov; Scott Parker tillträdde i morse och står vid sidlinjen. Fem byten: Magassa första start för säsongen, Mavropanos spelar trots tidigare tvivel. Soucek på bänken, Walker-Peters borta.",
     "Form/tabell: Cardiff 17:e, 14 p men obesegrat hemma på 6 (3-3-0). West Ham 8:a, 22 p, två raka förluster men obesegrat borta (3-3-0) och flest gjorda mål (33)."
    ],
-   "lineup": "",
-   "take": "Tränarbytet är omgångens största nyhet, men riktningen är oklar: lyft med ny ledare mot ingen träningstid. Oddsen i fixtures är från före sparkningen – kolla färskt odds. Streck 16/23/61 mot odds 28/23/48 – tvåan kraftigt överstreckad, ettan understreckad.",
+   "lineup": "West Ham bekräftad: Hermansen; Veltman, Mavropanos, Kilman, Morato; Magassa, Engels, Mukasa; Bowen, Solomon, Castellanos. Cardiff ej märkt officiell (YSscores): Trott, Scanlon, Bagan, Fish, Ng, Moylan, Robertson, Willock, Colwill, Tanner, Salech.",
+   "take": "Tränarbytet är stort, men riktningen oklar: nytt lyft mot en elva utan samträning. Ingen justering. Oddsen i fixtures kan vara äldre – kolla färskt odds. Streck 16/23/61 mot odds 28/23/48 – tvåan kraftigt överstreckad, ettan understreckad.",
    "suggest": [
     0,
     0,
     0
    ],
    "sources": [
+    {
+     "title": "Inside Futbol, 4 nov",
+     "url": "https://insidefutbol.com/2026/11/04/soungoutou-magassa-starts-west-ham-team-vs-cardiff-city-confirmed/732157/"
+    },
+    {
+     "title": "Claret & Hugh, 4 nov",
+     "url": "https://www.claretandhugh.info/cardiff-city-v-west-ham-new-era-scott-parker-starting-xi-announced-with-five-changes/"
+    },
+    {
+     "title": "The West Ham Way, 4 nov",
+     "url": "https://www.thewesthamway.com/2026/11/04/scott-parker-will-be-in-charge-of-west-ham-vs-cardiff/"
+    },
+    {
+     "title": "YSscores, 4 nov",
+     "url": "https://www.ysscores.com/en/lineup/5836919/Cardiff-City-vs-West-Ham-United"
+    },
     {
      "title": "Sky Sports, 3 nov",
      "url": "https://www.skysports.com/football/news/13606997/west-ham-nuno-espirito-santo-sacked-by-hammers-with-club-sitting-in-eighth-place-in-the-championship"
@@ -372,20 +465,32 @@
    "n": 10,
    "home": "Wrexham",
    "away": "Middlesbrough",
-   "impact": "medium",
+   "impact": "high",
    "notes": [
-    "Hemmalag: Wrexham (Parkinson, under press) utan Sam Smith (knä, möjlig operation, lång frånvaro), Windass, Broadhead och Cacace. O'Hare och Revan osäkra, Cleworth tillbaka. Patterson eller Ward i målet oklart.",
-    "Bortalag: Middlesbrough (Hellberg): Lankshear hade kramp, väntas spela. Strelec tillbaka, Pukštas ca en månad, A. Jones borta. Hellberg vill fördela minuter inför Watford – viss rotation möjlig.",
+    "Hemmalag: Wrexham (Parkinson, under press) utan Sam Smith, Windass, Broadhead, Cacace och Revan. Patterson i mål enligt YSscores, Ward på bänken.",
+    "Bortalag: Middlesbrough (Hellberg) utan Lankshear (13 mål) – 'misses out' enligt Gazette trots att Hellberg i går trodde på spel, orsak ej läst. Strelec på bänken, Joseph på topp. Pukštas och A. Jones borta.",
     "Form/tabell: Boro etta, 28 p, obesegrat på 5. Wrexham 18:e, 14 p, två raka förluster."
    ],
-   "lineup": "",
-   "take": "Smith-bortfallet och Lankshear spelklar drar mot tvåan, rotation lite åt andra hållet; ingen justering. Streck 12/19/69 mot odds 23/25/53 – tvåan rejält överstreckad, ettan och X understreckade.",
+   "lineup": "Ej märkt officiell (YSscores): Wrexham Patterson; Doyle, Worrall, Cleworth, Thomason, Whiteman, Dobson, Kaboré, Ekomie, O'Brien, Moore. Boro Vítek; Malanda, Phillips, Ayling, Borges, Berhalter, Morris, Brittain, Conway, Cozier-Duberry; Joseph.",
+   "take": "Boros skyttekung ute och Strelec bara på bänken är färskt, troligen inte fullt prisat. Dra från tvåan. Streck 12/19/69 mot odds 23/25/53 – tvåan rejält överstreckad, 1 och X understreckade.",
    "suggest": [
-    0,
-    0,
-    0
+    2,
+    1,
+    -3
    ],
    "sources": [
+    {
+     "title": "Gazette Live, 4 nov",
+     "url": "https://www.gazettelive.co.uk/sport/football/football-news/middlesbrough-blow-lankshear-misses-out-34864457"
+    },
+    {
+     "title": "YSscores, 4 nov",
+     "url": "https://www.ysscores.com/en/lineup/5836921/Wrexham-AFC-vs-Middlesbrough-FC"
+    },
+    {
+     "title": "Football League World/Yardbarker, 3 nov",
+     "url": "https://www.yardbarker.com/soccer/articles/kim_hellberg_drops_new_will_lankshear_update_in_big_middlesbrough_boost/s1_17896_44511296"
+    },
     {
      "title": "Yahoo, 3 nov",
      "url": "https://sports.yahoo.com/articles/everything-phil-parkinson-said-ahead-180417949.html"
@@ -410,11 +515,11 @@
    "away": "Reading",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Oxford (A. Ramsey): målvakten Cumming avstängd efter rött kort, inget besked om överklagan hittat; Eastwood väntas in. McDonnell, Jeon och Rooksen borta. Brannagan och Brown kan vara tillgängliga.",
-    "Bortalag: Reading (Richardson) utan Lane, Earthy, B. Ward och Patton. Marriott på bänken mot Plymouth, kan starta.",
+    "Hemmalag: Oxford (A. Ramsey): målvakten Cumming avstängd efter rött kort, Eastwood väntas in (även med i Goals lista). McDonnell, Jeon och Rooksen borta.",
+    "Bortalag: Reading (Richardson) utan Lane, Earthy, B. Ward och Patton. Marriott i Goals startelva, ej bekräftat.",
     "Form/tabell: Oxford 3:a, obesegrat hemma, 5-4-0 på sista nio. Reading 6:a, en poäng efter, en förlust på åtta men 1-3-2 borta. Lokalderby; två senaste mötena 1–1."
    ],
-   "lineup": "",
+   "lineup": "Bekräftade elvor hittades inte. Goal har en omärkt lista där lagindelningen är tolkad: Oxford Eastwood, Brannagan, Goodrham, Harris, Currie, Dembele, Helik, Andrews, Kioso, Emakhu, Brown.",
    "take": "Inget färskt, tunn nyhetsbevakning. Streck 45/29/26 mot odds 37/27/36 – ettan överstreckad, tvåan klart understreckad och värdetecken.",
    "suggest": [
     0,
@@ -422,6 +527,10 @@
     0
    ],
    "sources": [
+    {
+     "title": "Goal, 4 nov",
+     "url": "https://www.goal.com/en/news/live-stream-online-tv-where-to-watch-oxford-united-v-reading/blt28ed06f96ac99e5c"
+    },
     {
      "title": "Last Word on Football, 2 nov",
      "url": "https://lastwordonsports.com/football/2026/11/02/team-news-form-and-predicted-line-up-as-oxford-united-welcome-reading/"
@@ -442,18 +551,30 @@
    "away": "Atletico Mineiro",
    "impact": "high",
    "notes": [
-    "Hemmalag: Botafogo (Tite): Kaio Pantaleão, Barrera och Arthur Chaves skadade, Júnior Santos troligen borta (klausul). Danilo kan återvända, Montoro tillbaka från avstängning. Väntad anfallstrio Ziyech, Tiquinho, M. Martins.",
-    "Bortalag: Atlético-MG vilar nästan hela startelvan inför Copa do Brasil mot Grêmio: Natanael, Lodi, Lyanco, Franco, Bernard, Igor Gomes, Castaño, Maycon, Victor Hugo, Cuello och Minda ej i truppen, minst 8 U20/U17-spelare med. Scarpa, Preciado, Vitão, Cissé och Dudu med; Everson väntas i mål. Tränaren Domínguez tränar A-laget i BH och reser först på matchdagen.",
-    "Form/tabell: Botafogo 12:a, 39 p, nära strecket, två raka förluster och Tite under press (53 insläppta). Atlético 7:a, 50 p, fyra raka förluster inkl. cupen."
+    "Hemmalag: Botafogo (Tite): Kaio Pantaleão, Barrera, Arthur Chaves och Danilo (lårbesvär, väntas inte tillbaka) borta. Júnior Santos borta enligt FogãoNET. Montoro tillbaka. Tiquinho väntas starta före Arthur Cabral.",
+    "Bortalag: Atlético-MG vilar startelvan inför Copa do Brasil mot Grêmio 7 nov: tio spelare kvar i BH, däribland Natanael, Lyanco, Lodi, Maycon, Castaño, Igor Gomes, Franco, Bernard, Minda och Cuello. Everson väntas i mål, Scarpa och Cissé med. Vitor Hugos status oklar.",
+    "Form/tabell: Botafogo 13:e, 39 p, två poäng över strecket, Tite under press. Atlético 7:a, 50 p, fyra raka förluster inkl. cupen."
    ],
-   "lineup": "",
-   "take": "Truppen kom sent 3 nov och är mer B-lag än väntat, odds i fixtures är äldre – klart extra på Botafogo. Streck 56/27/17 mot odds 47/25/27 – ettan redan överstreckad, så säkra inte dyrt.",
+   "lineup": "Inte ute än, avspark 01:30 svensk tid, efter spelstopp. Tippat Atlético: Everson; L. Duarte, Vitão, Vitor Hugo, Pascini; Pérez, Cissé, Alexsander, Scarpa; Preciado (Dudu), Cauã Soares.",
+   "take": "Atlético-vilan bekräftas av flera källor, extra på Botafogo men odds i fixtures kan vara uppdaterade. Streck 56/27/17 mot odds 47/25/27 – ettan redan överstreckad, så säkra inte dyrt.",
    "suggest": [
     4,
     -1,
     -3
    ],
    "sources": [
+    {
+     "title": "Bolavip, 4 nov",
+     "url": "https://br.bolavip.com/atletico-mineiro/atletico-mg-poupa-titulares-contra-o-botafogo-e-dominguez-prepara-mudancas-na-escalacao"
+    },
+    {
+     "title": "FogãoNET, 4 nov",
+     "url": "https://www.fogaonet.com/noticias-do-botafogo/botafogo-atletico-mg-onde-assistir-escalacoes-desfalques-pendurados-arbitragem-campeonato-brasileiro-2026/"
+    },
+    {
+     "title": "VAVEL, 4 nov",
+     "url": "https://www.vavel.com/br/futebol/2026/11/04/botafogo/1278091-em-fases-distintas-botafogo-e-atletico-mg-se-enfrentam-pelo-brasileirao.html"
+    },
     {
      "title": "FogãoNet, 3 nov",
      "url": "https://www.fogaonet.com/noticias-do-botafogo/atletico-mg-deixa-titulares-fora-botafogo-relaciona-garotos/"
@@ -486,18 +607,26 @@
    "away": "Corinthians",
    "impact": "medium",
    "notes": [
-    "Hemmalag: São Paulo (Dorival) utan Marcos Antônio (fotled) och Sabino (avstängd, knäoperation 4 nov). Gazeta anger även D. Duarte, Buta och Nicolas borta. Iago trolig start, Artur och Ferreirinha tillbaka. Spelas på Vila Belmiro – Morumbis upptaget av konsert.",
-    "Bortalag: Corinthians (Seedorf) utan Matheuzinho (avstängd), Raniele, Labyad, Kayke och nu även G. Paulista (ljumske). Lingard (revben) troligen borta. Memphis tillgänglig men i ingen tippad elva – beslut en timme före match.",
-    "Form/tabell: São Paulo 10:a, 43 p, 2–3 mot Bahia. Corinthians 17:e, 36 p, nedflyttningsstrid, fem raka bortaförluster."
+    "Hemmalag: São Paulo (Dorival) utan Marcos Antônio och Sabino. Iago trolig start, Artur tillbaka. Spelas på Vila Belmiro – Morumbis upptaget.",
+    "Bortalag: Corinthians (Seedorf) utan Matheuzinho (avstängd), Raniele, Labyad, Kayke och G. Paulista. Memphis: lårbesvär enligt SBT, startar på bänken enligt ND Mais; Seedorf håller det hemligt. Lingard troligen borta.",
+    "Form/tabell: São Paulo 10:a, 43 p, 2–3 mot Bahia. Corinthians 17:e–18:e, 36 p, nedflyttningsstrid, fem raka bortaförluster."
    ],
-   "lineup": "",
-   "take": "Corinthians-bortfallen och Memphis på bänken ger liten lutning mot ettan, men hemmaplanen är ingen riktig fördel. Streck 64/24/12 mot odds 45/30/25 – ettan kraftigt överstreckad, tvåan har stort streckvärde ändå.",
+   "lineup": "Inte ute än, avspark 01:30 svensk tid, efter spelstopp. Tippat Corinthians: Hugo Souza; Milans, Ramalho, G. Henrique, Angileri; André, Bidon, Garro; Kaio César, Yuri Alberto, Bidu.",
+   "take": "Corinthians-bortfallen och Memphis utanför elvan ger liten lutning mot ettan, men hemmaplanen är ingen riktig fördel. Streck 64/24/12 mot odds 45/30/25 – ettan kraftigt överstreckad, tvåan har stort streckvärde ändå.",
    "suggest": [
     1,
     0,
     -1
    ],
    "sources": [
+    {
+     "title": "SBT Sports, 4 nov",
+     "url": "https://sports.sbt.com.br/noticia/brasileirao/sao-paulo-x-corinthians-horario-escalacao-e-arbitragem"
+    },
+    {
+     "title": "ND Mais, 4 nov",
+     "url": "https://ndmais.com.br/futebol/sao-paulo-x-corinthians-onde-assistir-ao-vivo-horario-escalacoes-brasileirao/"
+    },
     {
      "title": "Gazeta Esportiva, 3 nov",
      "url": "https://www.gazetaesportiva.com/campeonatos/brasileiro-serie-a/sao-paulo-x-corinthians-campeonato-brasileiro-04-11-2026/"
