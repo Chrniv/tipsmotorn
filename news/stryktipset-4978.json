@@ -3,9 +3,9 @@
  "draw": 4978,
  "round": "Stryktipset v 45, stänger 2026-11-07 15:59",
  "author": "Claude (schemalagd)",
- "updatedAt": 1793955589466,
+ "updatedAt": 1794041890253,
  "checkedAt": {
-  "d": "2026-11-06T08:59:49+00:00"
+  "d": "2026-11-07T08:58:10+00:00"
  },
  "matches": [
   {
@@ -14,12 +14,12 @@
    "away": "Manchester City",
    "impact": "low",
    "notes": [
-    "Hemmalag: Forest utan Savona; Domínguez (muskel) och Ndoye osäkra – källorna spretar om Ndoye. Igor Jesus har tränat fullt efter vadskada. Glasner har lovat förändringar efter 0–2 mot Brentford; Wood kan ersätta Delap.",
-    "Bortalag: City saknar Semenyo; Nunes har en smäll. Vann 3–2 i Leipzig i veckan, rotation väntas (Dias, Gvardiol in).",
-    "Form/tabell: Forest 19:a (6 p), en seger på 9 och mållöst i fem hemmamatcher. City 2:a (21 p), två raka ligaförluster före Leipzig."
+    "Hemmalag: Savona (knä), Ndoye och Domínguez (båda muskel) listas nu som borta enligt starting11, uppdaterad 6/11 23:34. I går var Ndoye och Domínguez osäkra. Williams (armbåge) och Igor Jesus (vad) är osäkra. Enligt uppgift har tränaren sagt att Jesus är tillbaka i truppen och att Savona är tillgänglig, vilket strider mot listan.",
+    "Bortalag: Semenyo (knä) borta, Nunes (smäll) osäker. City spelade CL tre dagar före matchen och har roterat mycket (36 % av elvan behållen) – fler byten är troliga. Haaland och Foden finns i den tippade elvan.",
+    "Form/tabell: Forest är 19:e med 6 p (form LLLDL, 1 p på 4 hemmamatcher, 0-2 mot Brentford senast). City är 2:a med 21 p men förlorade 0-1 mot Brighton i omg 9."
    ],
    "lineup": "",
-   "take": "Inget nytt som oddsen missar; Citys rotation är den stora frågan till startelvorna. Folket 26 % på 1:an mot oddsens 21 % – något överstreckad; X (20 mot 23) lite understreckat.",
+   "take": "Forest är i kris med flera mittfältare borta, och City är klar favorit trots rotationen. Ettan är överstreckad (26 mot 21) och tvåan något understreckad (54 mot 56), så City-tvåan har ett litet värde.",
    "suggest": [
     0,
     0,
@@ -27,24 +27,12 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 5 nov",
-     "url": "https://www.sportsmole.co.uk/football/nottingham-forest/preview/nottm-forest-vs-man-city-prediction-team-news-lineups_608420.html"
-    },
-    {
-     "title": "Sports Mole, 5 nov",
-     "url": "https://www.sportsmole.co.uk/football/nottingham-forest/predicted-lineups/delap-or-wood-munoz-or-aina-predicted-nottm-forest-lineup-vs-man-city_608421.html"
-    },
-    {
-     "title": "Starting11, 5 nov",
+     "title": "starting11, 6 nov 2026",
      "url": "https://starting11.com/fixtures/nottingham-forest-vs-manchester-city"
     },
     {
-     "title": "LiveScore, nov",
-     "url": "https://www.livescore.com/en/news/football/premier-league/predictions/premier-league-predictions-all-10-matchday-10-games/"
-    },
-    {
-     "title": "Fantasy Football Hub, 5 nov",
-     "url": "https://www.fantasyfootballhub.co.uk/premier-league-predicted-lineups"
+     "title": "footballdream.in, uppd. 4 nov 2026",
+     "url": "https://www.footballdream.in/blog/nottingham-forest-vs-manchester-city-gw10-premier-league-2026-27"
     }
    ]
   },
@@ -52,14 +40,14 @@
    "n": 2,
    "home": "Arsenal",
    "away": "Hull",
-   "impact": "low",
+   "impact": "medium",
    "notes": [
-    "Hemmalag: Saka (lår) borta, Dowman avstängd. Konsa utbytt i Prag (knä, ca 75 %) – Mosquera alternativ. Saliba frisk men väntas sparas. Gyökeres eller Havertz på topp; rotation efter 2–1 i Prag.",
-    "Bortalag: Crooks avstängd. Gyabi, Matazo, Targett, Ansah och Hughes skadade; Butland och Gourna-Douath tveksamma.",
-    "Form/tabell: Arsenal 1:a (24 p), tre poäng före tvåan. Hull 11:a (11 p), utan seger på fem."
+    "Hemmalag: Saka (lår) och även Saliba (rygg) är borta. Tzolis (baksida lår), Calafiori (revben) och Madueke (fotled) är osäkra. Konsa finns med i den tippade elvan. Arsenal spelade CL i veckan och har roterat (44 % av elvan behållen).",
+    "Bortalag: Crooks avstängd (5 gula). Matazo, Gyabi, Butland (målvakt), Ansah, Targett och Hughes är borta. Gourna-Douath och Mendy är osäkra. Hull har en stabil elva (80 %).",
+    "Form/tabell: Arsenal är 1:a med 24 p efter 9 omgångar (LWWWW). Nykomlingen Hull är 11:a med 11 p (LDLDD) och har aldrig slagit Arsenal på 10 möten."
    ],
    "lineup": "",
-   "take": "Bortfallen i Arsenal kompenseras av bredden och Hull är kraftigt decimerat. 1:an understreckad (75 mot 85 %), 2:an överstreckad (11 mot 5 %).",
+   "take": "Trots att Saliba och Saka saknas och att Arsenal roterar är ettan tung, och Hull har själva en lång skadelista. Ettan är understreckad (75 mot 84) och tvåan överstreckad (11 mot 5), så en spikad etta har bra värde.",
    "suggest": [
     0,
     0,
@@ -67,24 +55,12 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 5 nov",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/predicted-lineups/gyokeres-or-havertz-will-saliba-start-predicted-arsenal-xi-vs-hull_608466.html"
+     "title": "starting11, 7 nov 2026",
+     "url": "https://starting11.com/fixtures/arsenal-vs-hull-city"
     },
     {
-     "title": "Sports Mole, 31 okt",
-     "url": "https://www.sportsmole.co.uk/football/arsenal/news/arsenal-handed-early-boost-for-hull-clash-as-suspension-confirmed_608157.html"
-    },
-    {
-     "title": "Khel Now, 5 nov",
-     "url": "https://khelnow.com/football/arsenal-vs-hull-city-preview-premier-league-202611"
-    },
-    {
-     "title": "LiveScore, nov",
-     "url": "https://www.livescore.com/en/news/football/premier-league/predictions/premier-league-predictions-all-10-matchday-10-games/"
-    },
-    {
-     "title": "Fantasy Football Hub, 5 nov",
-     "url": "https://www.fantasyfootballhub.co.uk/premier-league-predicted-lineups"
+     "title": "footballdream.in, uppd. 4 nov 2026",
+     "url": "https://www.footballdream.in/blog/arsenal-vs-hull-city-gw10-premier-league-2026-27"
     }
    ]
   },
@@ -92,14 +68,14 @@
    "n": 3,
    "home": "Fulham",
    "away": "Newcastle",
-   "impact": "medium",
+   "impact": "low",
    "notes": [
-    "Hemmalag: Inga nya skador enligt LiveScore och FPL, Sessegnon tillbaka från avstängning. Starting11 listar dock Affengruber och Smith Rowe som tveksamma.",
-    "Bortalag: Joelinton borta (Jaissle) och J. Ramsey avstängd – tunt centralt. Jaouen borta, Livramento forceras inte. Miley och Fernandez-Pardo osäkra (ca 75 %).",
-    "Form/tabell: Fulham 15:a (9 p), obesegrat i tre ligamatcher. Newcastle 13:a (11 p), fyra förluster på sex."
+    "Hemmalag: Affengruber och Smith Rowe är osäkra. I övrigt inga flaggor på FPL-listan per 4/11.",
+    "Bortalag: J. Ramsey avstängd (rött kort), Livramento (knä) och målvakten Jaouen borta. Miley (muskel), Osula (fotled) och Fernández-Pardo (sjuk) osäkra. OBS: Joelinton är inte skadeflaggad 4/11 och står i båda källornas tippade elva – gårdagens uppgift om att han saknas bekräftas inte, kolla startelvan.",
+    "Form/tabell: Fulham 15:e med 9 p (DLWWD), Newcastle 13:e med 11 p (WLLWL). Fulham vann senaste mötet 2-0 i maj 2026."
    ],
    "lineup": "",
-   "take": "Newcastles mittfältsbortfall talar för Fulham, men uppgifterna är ett par dagar gamla och bör vara inprisade. Streck och odds i linje (44/27/29 mot 46/27/27).",
+   "take": "Jämnt mittenmöte med få nyheter. Strecket ligger nära oddsen (1:an 44 mot 46, 2:an 29 mot 27), så inget tydligt värde. Joelintons status är det enda att bevaka.",
    "suggest": [
     0,
     0,
@@ -107,24 +83,12 @@
    ],
    "sources": [
     {
-     "title": "Dave, 6 nov",
-     "url": "https://dave.sport/news/fulham-newcastle-injury-news/"
-    },
-    {
-     "title": "The Stats Zone, 4 nov",
-     "url": "https://www.thestatszone.com/fulham-vs-newcastle-preview-team-news-prediction-234752"
-    },
-    {
-     "title": "LiveScore, nov",
-     "url": "https://www.livescore.com/en/news/football/premier-league/predictions/premier-league-predictions-all-10-matchday-10-games/"
-    },
-    {
-     "title": "Fantasy Football Hub, 5 nov",
-     "url": "https://www.fantasyfootballhub.co.uk/premier-league-predicted-lineups"
-    },
-    {
-     "title": "Starting11, nov",
+     "title": "starting11, 7 nov 2026",
      "url": "https://starting11.com/fixtures/fulham-vs-newcastle-20261107"
+    },
+    {
+     "title": "footballdream.in, uppd. 4 nov 2026",
+     "url": "https://www.footballdream.in/blog/fulham-vs-newcastle-united-gw10-premier-league-2026-27"
     }
    ]
   },
@@ -132,14 +96,14 @@
    "n": 4,
    "home": "Blackburn",
    "away": "West Ham",
-   "impact": "medium",
+   "impact": "low",
    "notes": [
-    "Hemmalag: Alebiosu tveksam, Atcheson testas sent; Beyuku kan starta. Ohashi och Baradji kan vara tillbaka.",
-    "Bortalag: Scott Parker ny tränare (3–3 i Cardiff i onsdags, hans första match). Mavropanos spelade 90 min, Magassa tillbaka. Soucek, Piroe och Kanté kan starta.",
-    "Form/tabell: Blackburn 14:e (18 p), tre förluster på fyra. West Ham 8:a (23 p), obesegrat borta (3-4-0) men 21 insläppta."
+    "Hemmalag: Lång skadelista – Miller (hälsena), Morishita, Forshaw (höft), Litherland, Ohashi och Ribeiro (baksida lår) är borta. Blackburn förlorade 0-4 mot Swansea 31/10.",
+    "Bortalag: Mavropanos (knä) och Lamadrid borta, Veltman osäker. Scott Parker ny tränare efter Nuno; första matchen 3-3 i Cardiff i onsdags, dessförinnan 1-3 mot WBA. West Ham 8:a.",
+    "Form/tabell: Blackburn i dålig form med många skador. West Ham har klart bättre trupp men kort vila (spelade onsdag)."
    ],
    "lineup": "",
-   "take": "Tränarbytet ger West Ham nytt lyft men är känt sedan i veckan. Stor streckskillnad: 2:an 40 mot oddsens 55 % – kraftigt understreckad, 1:an överstreckad (34 mot 21).",
+   "take": "Ettan är kraftigt överstreckad (34 mot 21) och tvåan understreckad (40 mot 55). West Ham-tvåan är ett tydligt värdetecken trots ny tränare och kort vila.",
    "suggest": [
     0,
     0,
@@ -147,20 +111,16 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 5 nov",
-     "url": "https://www.sportsmole.co.uk/football/west-ham-united/preview/blackburn-vs-west-ham-prediction-team-news-lineups_608439.html"
+     "title": "starting11, 6 nov 2026",
+     "url": "https://starting11.com/fixtures/blackburn-vs-west-ham"
     },
     {
-     "title": "LiveScore, nov",
-     "url": "https://www.livescore.com/en/news/football/england-championship/predictions/championship-predictions-all-12-matchday-15-games/"
+     "title": "Flashscore, nov 2026",
+     "url": "https://www.flashscore.com/news/scott-parker-appointed-west-ham-manager-following-nuno-sacking/n54HX415/"
     },
     {
-     "title": "William Hill, 5 nov",
-     "url": "https://news.williamhill.com/football/championship-predictions-saturday-7-november/"
-    },
-    {
-     "title": "Fútbol Total, 4 nov",
-     "url": "https://futboltotal.futbol/partido/blackburn-vs-west-ham-united-championship-2026-11-07"
+     "title": "VAVEL resultat omg 13",
+     "url": "https://www.vavel.com/en/data/efl-championship/results/"
     }
    ]
   },
@@ -170,12 +130,12 @@
    "away": "Swansea",
    "impact": "low",
    "notes": [
-    "Hemmalag: Beadle borta. Priske tveksam (Sports Mole) eller tillbaka (LiveScore) – kolla startelvan. Fry och Paik nära comeback.",
-    "Bortalag: Welsh mycket tveksam efter benskada, Cabango väntas ersätta. Eom och Yeo tillbaka.",
+    "Hemmalag: Leonard (hälsena) och Paik borta, Lund saknas, Fry och Priske osäkra. Stabil elva. Vann 3-1 i Lincoln 31/10 och mötte Millwall 3/11.",
+    "Bortalag: Kukharevych, Yeo, Burgess (hälsena), Ronald (baksida lår) och Key (muskel) borta. Eustáquio och Stamenić osäkra, Welsh mycket osäker. Swansea vann 4-0 mot Blackburn 31/10.",
     "Form/tabell: Birmingham 3:a (26 p), fem segrar på sex. Swansea 5:a (26 p), tre förluster på fyra men starkast bortaform senaste fem."
    ],
    "lineup": "",
-   "take": "Inget som flyttar oddsen före startelvorna. Streck och odds nästan identiska (49/27/24 mot 50/26/24).",
+   "take": "Swansea har längre skadelista, men den verkar inräknad i oddsen. Strecket ligger nästan exakt på oddsen (49/27/24 mot 50/26/24) – inget värde åt något håll.",
    "suggest": [
     0,
     0,
@@ -183,16 +143,12 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 5 nov",
-     "url": "https://www.sportsmole.co.uk/football/birmingham-city/preview/birmingham-vs-swansea-prediction-team-news-lineups_608514.html"
+     "title": "starting11, 6 nov 2026",
+     "url": "https://starting11.com/fixtures/birmingham-vs-swansea"
     },
     {
-     "title": "LiveScore, nov",
-     "url": "https://www.livescore.com/en/news/football/england-championship/predictions/championship-predictions-all-12-matchday-15-games/"
-    },
-    {
-     "title": "Football365 Livescore, nov",
-     "url": "https://livescore.football365.com/en-gb/match/birmingham-city-vs-swansea-city"
+     "title": "VAVEL resultat omg 13",
+     "url": "https://www.vavel.com/en/data/efl-championship/results/"
     }
    ]
   },
@@ -202,12 +158,12 @@
    "away": "Burnley",
    "impact": "low",
    "notes": [
-    "Hemmalag: Ng skadad sent mot West Ham, Kpakio in. Osho tillbaka från avstängning. Lång skadelista – akademispelare kan sitta på bänken.",
-    "Bortalag: Humphreys väntas tillbaka från knäskada enligt LiveScore. Mejbri och Satpaev borta. Inga nya skador rapporterade.",
+    "Hemmalag: Lawlor (baksida lår), Bielik, Chambers (knä), Robinson och Ng borta, Colwill (fotled) osäker. 0-3 mot Wolves 31/10 och 3-3 mot West Ham 4/11 – en dag kortare vila än Burnley.",
+    "Bortalag: Burnley har 18 spelare på frånvarolistan (bl.a. Amdouni, Beyer, Broja, Larsen, Mejbri) men samma elva har startat två raka. 0-0 mot Portsmouth 31/10, mötte QPR i tisdags.",
     "Form/tabell: Cardiff 18:e (15 p), obesegrat i sju hemma. Burnley 22:a (10 p), utan seger på fem."
    ],
    "lineup": "",
-   "take": "Lite nytt utöver Ng. 1:an något överstreckad (49 mot 45), 2:an understreckad (25 mot 31).",
+   "take": "Cardiff har kortare vila och flera frånvarande. Ettan är överstreckad (49 mot 45) och tvåan understreckad (25 mot 31), så Burnley-tvåan har värde.",
    "suggest": [
     0,
     0,
@@ -215,16 +171,12 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 5 nov",
-     "url": "https://www.sportsmole.co.uk/football/cardiff-city/preview/cardiff-vs-burnley-prediction-team-news-lineups_608441.html"
+     "title": "starting11, 6 nov 2026",
+     "url": "https://starting11.com/fixtures/cardiff-vs-burnley"
     },
     {
-     "title": "LiveScore, nov",
-     "url": "https://www.livescore.com/en/news/football/england-championship/predictions/championship-predictions-all-12-matchday-15-games/"
-    },
-    {
-     "title": "Fútbol Total, 4 nov",
-     "url": "https://futboltotal.futbol/partido/cardiff-vs-burnley-championship-2026-11-07"
+     "title": "VAVEL spelschema",
+     "url": "https://www.vavel.com/en/data/efl-championship/fixtures/"
     }
    ]
   },
@@ -234,12 +186,12 @@
    "away": "Sheffield U",
    "impact": "low",
    "notes": [
-    "Hemmalag: Apter borta; Sichenje och Godden listas borta, men LiveScore skriver att Godden jagar startplats. Chalobah tillbaka (en halvlek mot Bolton).",
-    "Bortalag: Bamford, Oné och Rothwell borta; Phillips testas sent men forceras knappast. Kitching tillbaka från avstängning.",
+    "Hemmalag: Apter (knä), Sichenje (knä) och Godden (muskel) borta, Chalobah (muskel) osäker. 0-3 hemma mot Middlesbrough 31/10, mötte Bolton 3/11.",
+    "Bortalag: Oné, Doherty och Shackleton borta. Phillips, målvakten Davies, Rothwell och Bamford osäkra. Vann 1-0 mot Wrexham 30/10.",
     "Form/tabell: Charlton 21:a, fyra raka förluster. Sheff U 9:a (22 p), två raka segrar, bl.a. 3–2 i Preston."
    ],
    "lineup": "",
-   "take": "Formen är inprisad. 2:an understreckad (41 mot 47), 1:an överstreckad (31 mot 26).",
+   "take": "Inga nya avgörande nyheter. Ettan är överstreckad (31 mot 27) och tvåan understreckad (41 mot 47) – litet värde på Sheffield U-tvåan.",
    "suggest": [
     0,
     0,
@@ -247,16 +199,12 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 5 nov",
-     "url": "https://www.sportsmole.co.uk/football/charlton-athletic/preview/charlton-vs-sheff-utd-prediction-team-news-lineups_608437.html"
-    },
-    {
-     "title": "Starting11, 6 nov",
+     "title": "starting11, 6 nov 2026",
      "url": "https://starting11.com/fixtures/charlton-vs-sheffield-utd"
     },
     {
-     "title": "LiveScore, nov",
-     "url": "https://www.livescore.com/en/news/football/england-championship/predictions/championship-predictions-all-12-matchday-15-games/"
+     "title": "VAVEL resultat omg 13",
+     "url": "https://www.vavel.com/en/data/efl-championship/results/"
     }
    ]
   },
@@ -266,12 +214,12 @@
    "away": "Southampton",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Leroy avstängd och Kenny (lår) ny skada. Clarke, Gibson, Gibbs och McCann borta.",
-    "Bortalag: Larin saknas fortfarande, Jandar tveksam. Scienza väntas spelklar. Eckert väljer mellan Dobbin och Mubama.",
-    "Form/tabell: Preston sist (5 p), nio från säker plats med elva förluster på 14; Alexander tog över i september. Southampton 7:a (24 p), obesegrat i sex."
+    "Hemmalag: Preston (Graham Alexander) saknar Leroy (avstängd, 5 gula), Gibbs (muskel), Clarke (knä), Carroll (fotled) och McCann (hamstring). Kenny och Lindsay osäkra.",
+    "Bortalag: Southampton (Eckert) saknar troligen Larin (hamstring), Downes osäker (fotled). Trolig elva: Peretz; Manning, Schlotterbeck, Stephens, Bree; Ward-Prowse, Matsuki; Scienza, Azaz, Fellows.",
+    "Form/tabell: Preston sist med 5 p efter 14 matcher, fem raka förluster. Southampton 7:a med 24 p, obesegrat i fem."
    ],
    "lineup": "",
-   "take": "Bortfallen förstärker favoritskapet men verkar kända. 2:an något understreckad (55 mot 59), 1:an överstreckad (25 mot 19).",
+   "take": "Formsvagt Preston utan Leroy mot Saints i form talar för 2 trots att Larin troligen saknas. Strecket överspelar 1:an (25 mot 19) och underspelar 2:an (55 mot 59).",
    "suggest": [
     0,
     0,
@@ -279,16 +227,12 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 6 nov",
-     "url": "https://www.sportsmole.co.uk/football/preston-north-end/preview/preston-vs-southampton-prediction-team-news-lineups_608543.html"
-    },
-    {
-     "title": "LiveScore, nov",
-     "url": "https://www.livescore.com/en/news/football/england-championship/predictions/championship-predictions-all-12-matchday-15-games/"
-    },
-    {
-     "title": "Starting11, nov",
+     "title": "starting11, 7 nov 2026",
      "url": "https://starting11.com/fixtures/preston-vs-southampton"
+    },
+    {
+     "title": "mediapronos, 6 nov 2026",
+     "url": "https://mediapronos.com/pronostic-preston-north-end-southampton-compo-probable-07-11/"
     }
    ]
   },
@@ -298,12 +242,12 @@
    "away": "Lincoln",
    "impact": "low",
    "notes": [
-    "Hemmalag: Madsen, Mbengue, Lamptey och Burrell borta plus en långtidsskada (Lloyd/Jones, källorna spretar); Clarke-Salter tveksam. Koné väntas spela trots känning.",
-    "Bortalag: House avstängd, Melia och Darikwa borta. McGrandles, Ladefoged och Wheatley kan vara tillbaka. Cohen åter i båset efter avstängning.",
-    "Form/tabell: QPR 11:a (21 p), bara två segrar på tio. Lincoln 19:e (15 p), två raka förluster."
+    "Hemmalag: QPR (Julien Stephan) saknar Alfie Jones (till nyår), Mbengue, Lamptey, Madsen, Burrell och Chair. Clarke-Salter osäker, Koné väntas spela trots känning.",
+    "Bortalag: Lincoln saknar House (avstängd), Darikwa och Melia. McGrandles osäker, Ladefoged och Wheatley hoppas bli spelklara.",
+    "Form/tabell: QPR 11:a men bara 2 segrar på 10 (1-1 Burnley, 1-4 Southampton). Lincoln 19:e, 5 förluster på 7 (senast 0-1 Watford)."
    ],
    "lineup": "",
-   "take": "1:an tydligt överstreckad (62 mot 54 %) trots QPR:s ojämna form och skadelista; 2:an understreckad (16 mot 21).",
+   "take": "Inga nyheter utöver det kända. Strecket överspelar 1:an kraftigt (62 mot 54) och underspelar 2:an (16 mot 21), så X2 är värdesidan vid gardering.",
    "suggest": [
     0,
     0,
@@ -311,16 +255,12 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 5 nov",
+     "title": "Sports Mole, 5 nov 2026",
      "url": "https://www.sportsmole.co.uk/football/qpr/preview/qpr-vs-lincoln-prediction-team-news-lineups_608502.html"
     },
     {
-     "title": "The72, 5 nov",
-     "url": "https://the72.co.uk/2026/11/05/qpr-vs-lincoln-city-predictions/"
-    },
-    {
-     "title": "LiveScore, nov",
-     "url": "https://www.livescore.com/en/news/football/england-championship/predictions/championship-predictions-all-12-matchday-15-games/"
+     "title": "starting11, 7 nov 2026",
+     "url": "https://starting11.com/fixtures/qpr-vs-lincoln"
     }
    ]
   },
@@ -330,12 +270,12 @@
    "away": "Middlesbrough",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Kyprianou avstängd; Ngakia, Bove och Antonio borta. Mavididi tillbaka, Payero kan återvända. Dionisi under press.",
-    "Bortalag: Skytteledaren Lankshear har lätt muskelskada och testas sent; då går Strelec in. A. Jones och Pukštas borta. McGree och Peart-Harris aktuella.",
-    "Form/tabell: Watford 20:e (14 p), slog Lincoln 1–0. Boro 1:a (28 p), men föll 0–2 i Wrexham."
+    "Hemmalag: Watford (Dionisi) saknar Bove; Ngakia osäker och Baah skadad. Mediapronos (6/11) har Kyprianou i trolig elva, vilket motsäger gårdagens uppgift om avstängning – kolla laguttagningen.",
+    "Bortalag: Boro (Kim Hellberg) saknar Pukštas och Alfie Jones. Skyttekungen Lankshear osäker (muskel) och kan bänkas; Conway trolig på topp.",
+    "Form/tabell: Boro 1:a med 28 p men föll 0-2 i Wrexham senast. Watford 20:e med 14 p, senast 1-0 mot Lincoln."
    ],
    "lineup": "",
-   "take": "Lankshear är den viktiga startelvsfrågan. 2:an kraftigt understreckad (50 mot 63 %), 1:an överstreckad (27 mot 17).",
+   "take": "Utan Lankshear försvagas Boro något, men tabellskillnaden är stor. Strecket överspelar 1:an (27 mot 17) och underspelar 2:an (50 mot 63) – tvåan tydligt understreckad.",
    "suggest": [
     0,
     0,
@@ -343,20 +283,8 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 5 nov",
-     "url": "https://www.sportsmole.co.uk/football/middlesbrough/preview/watford-vs-middlesbrough-prediction-team-news-lineups_608440.html"
-    },
-    {
-     "title": "LiveScore, nov",
-     "url": "https://www.livescore.com/en/news/football/england-championship/predictions/championship-predictions-all-12-matchday-15-games/"
-    },
-    {
-     "title": "Fútbol Total, 5 nov",
-     "url": "https://futboltotal.futbol/partido/watford-vs-middlesbrough-championship-2026-11-07"
-    },
-    {
-     "title": "Starting11, nov",
-     "url": "https://starting11.com/fixtures/watford-vs-middlesbrough"
+     "title": "mediapronos, 6 nov 2026",
+     "url": "https://mediapronos.com/?p=703002"
     }
    ]
   },
@@ -366,12 +294,12 @@
    "away": "Millwall",
    "impact": "low",
    "notes": [
-    "Hemmalag: Campbell borta (ljumske/muskel), Phillips ersätter. Galves långtidsskadad, Pereira högerback. Bany jagar första start.",
-    "Bortalag: Crama och Leonard tveksamma/borta; Osei-Tutu behåller platsen. Esse och Coburn väntas in, Arconte tillbaka.",
-    "Form/tabell: West Brom 6:a (25 p), obesegrat i fem. Millwall 13:e (18 p), föll 0–3 i Birmingham."
+    "Hemmalag: WBA (James Morrison) saknar Collyer, Galves (knä) och Johnston (benbrott). Campbell osäker snarare än säkert borta.",
+    "Bortalag: Millwall har målvaktsbrist – Jensen och Marschall skadade, Crocombe väntas stå. De Norre, Luongo, Arconte, Coburn och Servais saknas, Azeez oklar.",
+    "Form/tabell: WBA 6:a med 25 p, obesegrat i fem. Millwall 13:e med 18 p, 1 seger på 5, senast 0-3 mot Birmingham."
    ],
    "lineup": "",
-   "take": "Små bortfall på båda sidor. 1:an kraftigt överstreckad (54 mot 45 %), 2:an understreckad (20 mot 28).",
+   "take": "Form och Millwalls skadelista talar för 1, men det är inprisat. Strecket överspelar 1:an (54 mot 45) och underspelar 2:an (20 mot 28) – dåligt värde att spika ettan.",
    "suggest": [
     0,
     0,
@@ -379,16 +307,12 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, 5 nov",
-     "url": "https://www.sportsmole.co.uk/football/west-brom-albion/preview/west-brom-vs-millwall-prediction-team-news-lineups_608512.html"
+     "title": "mediapronos, 6 nov 2026",
+     "url": "https://mediapronos.com/pronostic-west-bromwich-albion-millwall-compo-probable-07-11/"
     },
     {
-     "title": "LiveScore, nov",
-     "url": "https://www.livescore.com/en/news/football/england-championship/predictions/championship-predictions-all-12-matchday-15-games/"
-    },
-    {
-     "title": "Fútbol Total, 4 nov",
-     "url": "https://futboltotal.futbol/partido/west-brom-vs-millwall-championship-2026-11-07"
+     "title": "starting11, 6 nov 2026",
+     "url": "https://starting11.com/fixtures/west-brom-vs-millwall"
     }
    ]
   },
@@ -396,14 +320,14 @@
    "n": 12,
    "home": "Crewe",
    "away": "Wimbledon",
-   "impact": "none",
+   "impact": "low",
    "notes": [
-    "Hemmalag: Crewe (League Two) – ingen färsk truppinfo hittad. Senast 1–1 mot Barnet och 1–5 mot Chesterfield.",
-    "Bortalag: Wimbledon (League One) – ingen färsk truppinfo hittad. Bara en poäng på senaste fem ligamatcherna och förlust mot Arsenal U21.",
-    "Form/tabell: Cupmatch, rotation möjlig men obekräftad. Båda i svag form."
+    "Hemmalag: Crewe (Lee Bell, 4:a i League Two) har inga rapporterade skador. Gibson 5 mål på 7. Obesegrat hemma men 2 förluster på 3 (bl.a. 1-5 mot Chesterfield). Viss rotation möjlig inför EFL Trophy.",
+    "Bortalag: Wimbledon (Johnnie Jackson, 18:e i League One) saknar Stevens (hamstring) och Richards. Cornick och Stockley bär anfallet.",
+    "Form/tabell: Wimbledon utan seger på sex (bl.a. 0-5 Sheff Wed, 0-3 Mansfield). Sports Mole tippar 2-1 till Crewe."
    ],
    "lineup": "",
-   "take": "Inga nyheter att agera på. 1:an överstreckad (44 mot 37 %), 2:an understreckad (28 mot 34) – folket väger formen hårt mot Wimbledons högre division.",
+   "take": "Crewe har form och hemmaplan mot ett Wimbledon i fritt fall, men strecket överspelar redan 1:an (44 mot 37) och underspelar 2:an (28 mot 34).",
    "suggest": [
     0,
     0,
@@ -411,12 +335,8 @@
    ],
    "sources": [
     {
-     "title": "Sports Mole, matchsida",
-     "url": "https://www.sportsmole.co.uk/football/fa-cup/crewe-alexandra-vs-afc-wimbledon_game_261734.html"
-    },
-    {
-     "title": "Fútbol Total, 5 nov",
-     "url": "https://futboltotal.futbol/partido/crewe-vs-afc-wimbledon-fa-cup-2026-11-07"
+     "title": "Sports Mole, 6 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/crewe-alexandra/fa-cup/preview/crewe-vs-afc-wimbledon-prediction-team-news-lineups_608549.html"
     }
    ]
   },
@@ -426,12 +346,12 @@
    "away": "Stevenage",
    "impact": "low",
    "notes": [
-    "Hemmalag: Målvakten Cumming avstängd tre matcher (Eastwood in). McDonnell, Rooksen och Jeon borta; Helik utgick med knäproblem mot Reading.",
-    "Bortalag: James-Wildin, Kemp, Marcal, Pattenden och Roberts saknas – Kemp har fyra mål.",
-    "Form/tabell: League One-duell. Oxford obesegrat i tio ligamatcher, 2–0 mot Reading; Stevenage 2–2 mot Leicester senast."
+    "Hemmalag: Målvakten Cumming avstängd (Eastwood in); McDonnell, Rooksen och Jeon borta. Bra form, senast 2-0 mot Reading 4/11.",
+    "Bortalag: Kemp (fyra mål) saknas, även James-Wildin, Marcal, Pattenden och Roberts. Senast 2-2 borta mot Leicester.",
+    "Form/tabell: League One-duell. Oxford har 3 segrar och 2 oavgjorda i de 5 senaste mötena. Cuprotation möjlig men obekräftad."
    ],
    "lineup": "",
-   "take": "Bortfall på båda sidor, inget tydligt oprisat. 1:an något överstreckad (51 mot 48), 2:an understreckad (21 mot 25).",
+   "take": "Inga färska nyheter som rubbar oddsen. Strecket ligger nära oddsen, ettan lätt överspelad (51 mot 48) och tvåan lätt underspelad (21 mot 25).",
    "suggest": [
     0,
     0,
@@ -439,15 +359,11 @@
    ],
    "sources": [
     {
-     "title": "Last Word On Football, 5 nov",
-     "url": "https://lastwordonsports.com/football/2026/11/05/oxford-united-team-and-injury-news-for-visit-of-stevenage/"
+     "title": "Sports Mole matchsida",
+     "url": "https://www.sportsmole.co.uk/football/fa-cup/oxford-united-vs-stevenage_game_261732.html"
     },
     {
-     "title": "Last Word On Football, 5 nov",
-     "url": "https://lastwordonsports.com/football/2026/11/05/team-news-form-predicted-line-up-oxford-united-welcome-stevenage/"
-    },
-    {
-     "title": "OnTour Football, nov",
+     "title": "ontourfootball",
      "url": "https://ontourfootball.com/fixtures/oxford-united-vs-stevenage-2026-11-07"
     }
    ]
