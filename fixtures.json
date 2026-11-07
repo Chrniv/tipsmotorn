@@ -1,236 +1,6 @@
 {
  "rounds": [
   {
-   "id": "stryktipset-4978",
-   "game": "Stryktipset",
-   "draw": 4978,
-   "name": "Stryktipset v 45, stänger 2026-11-07 15:59",
-   "close": "2026-11-07T15:59:00+01:00",
-   "matches": [
-    {
-     "n": 1,
-     "home": "Nottingham",
-     "away": "Manchester City",
-     "league": "Premier League",
-     "kickoff": "2026-11-07T18:30:00+01:00",
-     "odds": [
-      4.7,
-      4.25,
-      1.74
-     ],
-     "streck": [
-      26,
-      20,
-      54
-     ]
-    },
-    {
-     "n": 2,
-     "home": "Arsenal",
-     "away": "Hull",
-     "league": "Premier League",
-     "kickoff": "2026-11-07T16:00:00+01:00",
-     "odds": [
-      1.16,
-      9,
-      21
-     ],
-     "streck": [
-      75,
-      14,
-      11
-     ]
-    },
-    {
-     "n": 3,
-     "home": "Fulham",
-     "away": "Newcastle",
-     "league": "Premier League",
-     "kickoff": "2026-11-07T16:00:00+01:00",
-     "odds": [
-      2.12,
-      3.7,
-      3.6
-     ],
-     "streck": [
-      44,
-      27,
-      29
-     ]
-    },
-    {
-     "n": 4,
-     "home": "Blackburn",
-     "away": "West Ham",
-     "league": "Championship",
-     "kickoff": "2026-11-07T16:00:00+01:00",
-     "odds": [
-      4.7,
-      4,
-      1.75
-     ],
-     "streck": [
-      34,
-      26,
-      40
-     ]
-    },
-    {
-     "n": 5,
-     "home": "Birmingham",
-     "away": "Swansea",
-     "league": "Championship",
-     "kickoff": "2026-11-07T16:00:00+01:00",
-     "odds": [
-      1.94,
-      3.75,
-      3.95
-     ],
-     "streck": [
-      49,
-      27,
-      24
-     ]
-    },
-    {
-     "n": 6,
-     "home": "Cardiff",
-     "away": "Burnley",
-     "league": "Championship",
-     "kickoff": "2026-11-07T16:00:00+01:00",
-     "odds": [
-      2.17,
-      3.9,
-      3.15
-     ],
-     "streck": [
-      49,
-      26,
-      25
-     ]
-    },
-    {
-     "n": 7,
-     "home": "Charlton",
-     "away": "Sheffield U",
-     "league": "Championship",
-     "kickoff": "2026-11-07T16:00:00+01:00",
-     "odds": [
-      3.65,
-      3.6,
-      2.08
-     ],
-     "streck": [
-      31,
-      28,
-      41
-     ]
-    },
-    {
-     "n": 8,
-     "home": "Preston",
-     "away": "Southampton",
-     "league": "Championship",
-     "kickoff": "2026-11-07T16:00:00+01:00",
-     "odds": [
-      5.1,
-      4.4,
-      1.65
-     ],
-     "streck": [
-      25,
-      20,
-      55
-     ]
-    },
-    {
-     "n": 9,
-     "home": "Queens Park Rangers",
-     "away": "Lincoln",
-     "league": "Championship",
-     "kickoff": "2026-11-07T16:00:00+01:00",
-     "odds": [
-      1.8,
-      3.85,
-      4.6
-     ],
-     "streck": [
-      62,
-      22,
-      16
-     ]
-    },
-    {
-     "n": 10,
-     "home": "Watford",
-     "away": "Middlesbrough",
-     "league": "Championship",
-     "kickoff": "2026-11-07T16:00:00+01:00",
-     "odds": [
-      5.8,
-      4.75,
-      1.54
-     ],
-     "streck": [
-      27,
-      23,
-      50
-     ]
-    },
-    {
-     "n": 11,
-     "home": "West Bromwich",
-     "away": "Millwall",
-     "league": "Championship",
-     "kickoff": "2026-11-07T16:00:00+01:00",
-     "odds": [
-      2.15,
-      3.6,
-      3.45
-     ],
-     "streck": [
-      54,
-      26,
-      20
-     ]
-    },
-    {
-     "n": 12,
-     "home": "Crewe",
-     "away": "Wimbledon",
-     "league": "FA Cup",
-     "kickoff": "2026-11-07T16:00:00+01:00",
-     "odds": [
-      2.55,
-      3.25,
-      2.75
-     ],
-     "streck": [
-      44,
-      28,
-      28
-     ]
-    },
-    {
-     "n": 13,
-     "home": "Oxford",
-     "away": "Stevenage",
-     "league": "FA Cup",
-     "kickoff": "2026-11-07T16:00:00+01:00",
-     "odds": [
-      1.95,
-      3.5,
-      3.75
-     ],
-     "streck": [
-      51,
-      28,
-      21
-     ]
-    }
-   ]
-  },
-  {
    "id": "europatipset-2623",
    "game": "Europatipset",
    "draw": 2623,
@@ -244,14 +14,14 @@
      "league": "Premier League",
      "kickoff": "2026-11-08T17:30:00+01:00",
      "odds": [
-      2.28,
-      3.8,
-      3.1
+      2.23,
+      3.75,
+      3.25
      ],
      "streck": [
-      42,
-      30,
-      28
+      44,
+      26,
+      30
      ]
     },
     {
@@ -261,14 +31,14 @@
      "league": "Premier League",
      "kickoff": "2026-11-08T15:00:00+01:00",
      "odds": [
-      5.25,
-      4.35,
-      1.66
+      6,
+      4.7,
+      1.56
      ],
      "streck": [
-      12,
-      17,
-      71
+      10,
+      13,
+      77
      ]
     },
     {
@@ -278,14 +48,14 @@
      "league": "Premier League",
      "kickoff": "2026-11-08T15:00:00+01:00",
      "odds": [
+      3.9,
       3.85,
-      3.65,
-      2.04
+      1.98
      ],
      "streck": [
-      15,
       12,
-      73
+      18,
+      70
      ]
     },
     {
@@ -295,14 +65,14 @@
      "league": "Premier League",
      "kickoff": "2026-11-08T15:00:00+01:00",
      "odds": [
-      1.98,
-      3.95,
-      3.8
+      1.92,
+      4,
+      3.95
      ],
      "streck": [
-      78,
-      13,
-      9
+      72,
+      18,
+      10
      ]
     },
     {
@@ -312,14 +82,14 @@
      "league": "Premier League",
      "kickoff": "2026-11-08T15:00:00+01:00",
      "odds": [
-      3.8,
-      3.85,
-      2
+      4.1,
+      4,
+      1.89
      ],
      "streck": [
-      18,
-      30,
-      52
+      16,
+      23,
+      61
      ]
     },
     {
@@ -329,14 +99,14 @@
      "league": "Serie A",
      "kickoff": "2026-11-08T18:00:00+01:00",
      "odds": [
-      1.84,
-      4.25,
-      4.1
+      1.9,
+      4.1,
+      3.95
      ],
      "streck": [
-      55,
-      21,
-      24
+      53,
+      25,
+      22
      ]
     },
     {
@@ -347,13 +117,13 @@
      "kickoff": "2026-11-08T15:00:00+01:00",
      "odds": [
       4.5,
-      3.6,
-      1.87
+      3.7,
+      1.85
      ],
      "streck": [
-      8,
-      22,
-      70
+      12,
+      21,
+      67
      ]
     },
     {
@@ -363,14 +133,14 @@
      "league": "Serie A",
      "kickoff": "2026-11-08T20:45:00+01:00",
      "odds": [
-      3.85,
+      3.75,
       3.7,
-      1.98
+      2.06
      ],
      "streck": [
-      14,
-      21,
-      65
+      15,
+      27,
+      58
      ]
     },
     {
@@ -380,14 +150,14 @@
      "league": "La Liga",
      "kickoff": "2026-11-08T21:00:00+01:00",
      "odds": [
-      3.75,
+      4.1,
       4.4,
-      1.89
+      1.81
      ],
      "streck": [
-      18,
-      24,
-      58
+      17,
+      22,
+      61
      ]
     },
     {
@@ -397,14 +167,14 @@
      "league": "La Liga",
      "kickoff": "2026-11-08T18:30:00+01:00",
      "odds": [
-      1.82,
-      4,
-      4.5
+      1.91,
+      3.85,
+      4.2
      ],
      "streck": [
-      75,
-      12,
-      13
+      73,
+      18,
+      9
      ]
     },
     {
@@ -414,14 +184,14 @@
      "league": "Allsvenskan",
      "kickoff": "2026-11-08T16:30:00+01:00",
      "odds": [
-      4,
-      4.2,
-      1.83
+      4.6,
+      4.25,
+      1.71
      ],
      "streck": [
+      23,
       27,
-      29,
-      44
+      50
      ]
     },
     {
@@ -431,14 +201,14 @@
      "league": "Allsvenskan",
      "kickoff": "2026-11-08T16:30:00+01:00",
      "odds": [
-      2.5,
-      3.6,
+      2.55,
+      3.75,
       2.75
      ],
      "streck": [
-      43,
+      41,
       29,
-      28
+      30
      ]
     },
     {
@@ -448,14 +218,14 @@
      "league": "Allsvenskan",
      "kickoff": "2026-11-08T16:30:00+01:00",
      "odds": [
-      3.2,
-      3.4,
-      2.4
+      3.3,
+      3.6,
+      2.25
      ],
      "streck": [
-      15,
-      17,
-      68
+      14,
+      23,
+      63
      ]
     }
    ]
