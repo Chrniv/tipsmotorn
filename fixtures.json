@@ -14,14 +14,14 @@
      "league": "UEFA Nations League",
      "kickoff": "2026-11-12T20:45:00+01:00",
      "odds": [
-      4,
-      3.9,
+      4.25,
+      3.85,
       1.89
      ],
      "streck": [
-      19,
-      27,
-      54
+      20,
+      31,
+      49
      ]
     },
     {
@@ -31,13 +31,13 @@
      "league": "UEFA Nations League",
      "kickoff": "2026-11-12T20:45:00+01:00",
      "odds": [
-      1.25,
-      6.5,
+      1.24,
+      6.75,
       12.5
      ],
      "streck": [
-      80,
-      15,
+      84,
+      11,
       5
      ]
     },
@@ -48,13 +48,13 @@
      "league": "UEFA Nations League",
      "kickoff": "2026-11-12T20:45:00+01:00",
      "odds": [
-      18,
-      7.5,
-      1.19
+      16,
+      8,
+      1.2
      ],
      "streck": [
-      4,
-      7,
+      3,
+      8,
       89
      ]
     },
@@ -65,14 +65,14 @@
      "league": "UEFA Nations League",
      "kickoff": "2026-11-12T20:45:00+01:00",
      "odds": [
-      1.89,
-      3.25,
-      4.4
+      1.85,
+      3.35,
+      4.5
      ],
      "streck": [
-      48,
-      29,
-      23
+      46,
+      30,
+      24
      ]
     },
     {
@@ -82,14 +82,14 @@
      "league": "UEFA Nations League",
      "kickoff": "2026-11-12T20:45:00+01:00",
      "odds": [
-      1.35,
-      4.9,
-      9
+      1.32,
+      5,
+      10
      ],
      "streck": [
-      80,
-      12,
-      8
+      81,
+      14,
+      5
      ]
     },
     {
@@ -101,11 +101,11 @@
      "odds": [
       1.49,
       4.8,
-      6.75
+      7
      ],
      "streck": [
-      66,
-      22,
+      61,
+      27,
       12
      ]
     },
@@ -121,9 +121,9 @@
       1.3
      ],
      "streck": [
-      10,
-      16,
-      74
+      6,
+      17,
+      77
      ]
     },
     {
@@ -133,14 +133,14 @@
      "league": "UEFA Nations League",
      "kickoff": "2026-11-13T20:45:00+01:00",
      "odds": [
-      1.25,
-      6,
-      15
+      1.2,
+      7,
+      19
      ],
      "streck": [
-      80,
-      13,
-      7
+      84,
+      12,
+      4
      ]
     },
     {
@@ -150,14 +150,14 @@
      "league": "UEFA Nations League",
      "kickoff": "2026-11-13T20:45:00+01:00",
      "odds": [
-      6.1,
+      6,
       3.8,
-      1.66
+      1.67
      ],
      "streck": [
-      15,
-      25,
-      60
+      13,
+      28,
+      59
      ]
     },
     {
@@ -167,14 +167,14 @@
      "league": "UEFA Nations League",
      "kickoff": "2026-11-13T20:45:00+01:00",
      "odds": [
-      3.9,
-      3.45,
-      1.95
+      4.3,
+      3.5,
+      1.86
      ],
      "streck": [
-      31,
-      31,
-      38
+      29,
+      30,
+      41
      ]
     },
     {
@@ -184,14 +184,14 @@
      "league": "UEFA Nations League",
      "kickoff": "2026-11-13T20:45:00+01:00",
      "odds": [
-      1.98,
-      3.3,
+      2.02,
+      3.2,
       3.95
      ],
      "streck": [
-      46,
-      29,
-      25
+      41,
+      32,
+      27
      ]
     },
     {
@@ -206,9 +206,9 @@
       10
      ],
      "streck": [
-      87,
-      10,
-      3
+      82,
+      14,
+      4
      ]
     },
     {
@@ -218,14 +218,244 @@
      "league": "UEFA Nations League",
      "kickoff": "2026-11-13T18:00:00+01:00",
      "odds": [
-      2.6,
+      2.55,
       3.05,
-      2.88
+      2.95
+     ],
+     "streck": [
+      43,
+      33,
+      24
+     ]
+    }
+   ]
+  },
+  {
+   "id": "stryktipset-4979",
+   "game": "Stryktipset",
+   "draw": 4979,
+   "name": "Stryktipset v 46, stänger 2026-11-14 15:59",
+   "close": "2026-11-14T15:59:00+01:00",
+   "matches": [
+    {
+     "n": 1,
+     "home": "Sverige",
+     "away": "Bosnien & Hercegovina",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-14T20:45:00+01:00",
+     "odds": [
+      1.52,
+      4.6,
+      6.25
+     ],
+     "streck": [
+      53,
+      22,
+      25
+     ]
+    },
+    {
+     "n": 2,
+     "home": "Portugal",
+     "away": "Danmark",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-14T20:45:00+01:00",
+     "odds": [
+      1.5,
+      4.8,
+      6.75
+     ],
+     "streck": [
+      50,
+      25,
+      25
+     ]
+    },
+    {
+     "n": 3,
+     "home": "Norge",
+     "away": "Wales",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-14T18:00:00+01:00",
+     "odds": [
+      1.27,
+      6.4,
+      12.5
+     ],
+     "streck": [
+      47,
+      24,
+      29
+     ]
+    },
+    {
+     "n": 4,
+     "home": "Rumänien",
+     "away": "Polen",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-14T20:45:00+01:00",
+     "odds": [
+      4.1,
+      3.85,
+      1.89
+     ],
+     "streck": [
+      45,
+      25,
+      30
+     ]
+    },
+    {
+     "n": 5,
+     "home": "Nordirland",
+     "away": "Ukraina",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-14T20:45:00+01:00",
+     "odds": [
+      2.45,
+      3.15,
+      3.25
+     ],
+     "streck": [
+      43,
+      28,
+      29
+     ]
+    },
+    {
+     "n": 6,
+     "home": "Österrike",
+     "away": "Irland",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-14T20:45:00+01:00",
+     "odds": [
+      1.61,
+      4.1,
+      6
      ],
      "streck": [
       46,
-      30,
-      24
+      25,
+      29
+     ]
+    },
+    {
+     "n": 7,
+     "home": "Georgien",
+     "away": "Ungern",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-14T18:00:00+01:00",
+     "odds": [
+      3.05,
+      3.15,
+      2.4
+     ],
+     "streck": [
+      42,
+      26,
+      32
+     ]
+    },
+    {
+     "n": 8,
+     "home": "Milton Keynes Dons",
+     "away": "Burton",
+     "league": "League One",
+     "kickoff": "2026-11-14T16:00:00+01:00",
+     "odds": [
+      1.67,
+      4,
+      4.6
+     ],
+     "streck": [
+      45,
+      27,
+      28
+     ]
+    },
+    {
+     "n": 9,
+     "home": "Sheffield W",
+     "away": "Plymouth",
+     "league": "League One",
+     "kickoff": "2026-11-14T16:00:00+01:00",
+     "odds": [
+      2.12,
+      3.75,
+      3.05
+     ],
+     "streck": [
+      45,
+      25,
+      30
+     ]
+    },
+    {
+     "n": 10,
+     "home": "Stockport",
+     "away": "Reading",
+     "league": "League One",
+     "kickoff": "2026-11-14T16:00:00+01:00",
+     "odds": [
+      1.82,
+      3.8,
+      3.95
+     ],
+     "streck": [
+      46,
+      26,
+      28
+     ]
+    },
+    {
+     "n": 11,
+     "home": "Wimbledon",
+     "away": "Blackpool",
+     "league": "League One",
+     "kickoff": "2026-11-14T16:00:00+01:00",
+     "odds": [
+      2.8,
+      3.4,
+      2.43
+     ],
+     "streck": [
+      45,
+      26,
+      29
+     ]
+    },
+    {
+     "n": 12,
+     "home": "Wigan",
+     "away": "Barnsley",
+     "league": "League One",
+     "kickoff": "2026-11-14T16:00:00+01:00",
+     "odds": [
+      2.35,
+      3.55,
+      2.8
+     ],
+     "streck": [
+      45,
+      26,
+      29
+     ]
+    },
+    {
+     "n": 13,
+     "home": "Swindon",
+     "away": "Grimsby",
+     "league": "League Two",
+     "kickoff": "2026-11-14T16:00:00+01:00",
+     "odds": [
+      3.3,
+      3.55,
+      2.02
+     ],
+     "streck": [
+      44,
+      29,
+      27
      ]
     }
    ]
