@@ -3,29 +3,37 @@
  "draw": 2624,
  "round": "Europatipset v 46, stänger 2026-11-12 20:44",
  "author": "Claude (schemalagd)",
- "updatedAt": 1794387742953,
+ "updatedAt": 1794473748979,
  "checkedAt": {
-  "d": "2026-11-11T09:02:22Z"
+  "d": "2026-11-12T08:55:48Z"
  },
  "matches": [
   {
    "n": 1,
    "home": "Italien",
    "away": "Frankrike",
-   "impact": "medium",
+   "impact": "high",
    "notes": [
-    "Hemmalag: Italien (Roberto Mancini) saknar Di Lorenzo, Raspadori och Kean; G. Mancini skadad (ersatt av Gatti/Palma), Zaniolo hemskickad av personliga skäl. Anfallet oprövat (Pio Esposito, debutanter Liberali/Cissé).",
-    "Bortalag: Frankrike (Zidane) har tappat Marcus Thuram, Kalulu och nu även Tchouaméni (adduktor, lämnade 10–11/11). Saliba och Dembélé ej med. Mbappé väntas starta, Upamecano tillbaka efter avstängning.",
+    "Hemmalag: Italien (Roberto Mancini) saknar Di Lorenzo, Raspadori, Kean och G. Mancini; Zaniolo hemskickad. Mancini osäker på anfallet till matchdagen – Sebastiano Esposito och Cambiaghi väntas på kanterna bakom Pio Esposito, Dimarco på bänken.",
+    "Bortalag: Frankrike (Zidane) UTAN Mbappé – Zidane bekräftade 11/11 att han står över (”noll risk”, siktar på söndag). Även Marcus Thuram, Dembélé, Saliba, Kalulu och Tchouaméni borta; Mayulu inkallad. Olise/Doué/Barcola väntas bilda anfallet.",
     "Form/tabell: Frankrike 10 p, Italien 7, Belgien 6. Fransk seger ger gruppseger; Italien behöver poäng inför Belgien. Förra mötet 1-1."
    ],
    "lineup": "",
-   "take": "Tchouaméni är ett sent avbräck men Frankrike har stor bredd; Italien har flera frånfall. Strecket underbetar 1:an något (19 % mot 24 % enligt oddsen) – ettan kan vara en värdefull gardering.",
+   "take": "Mbappés frånvaro blev klar sent 11/11 och är troligen inte fullt inprisad ovanpå övriga franska avbräck. Strecket ligger redan lågt på tvåan (49 % mot 52 % i odds) men ettan är understreckad (20 % mot 23 %) – 1 eller X är värda att gardera.",
    "suggest": [
+    2,
     1,
-    0,
-    -1
+    -3
    ],
    "sources": [
+    {
+     "title": "Ouest-France, 11 nov 2026",
+     "url": "https://www.ouest-france.fr/sport/football/equipe-de-france/italie-france-kylian-mbappe-est-forfait-confirme-zinedine-zidane-8c9fa06c-de04-11f1-86b6-0a2fbb1d8ed9"
+    },
+    {
+     "title": "Eurosport, 11 nov 2026",
+     "url": "https://www.eurosport.fr/football/ligue-des-nations/2026-2027/ligue-des-nations-zero-risque-zinedine-zidane-annonce-le-forfait-de-kylian-mbappe-face-a-litalie-jeudi_sto23354497/story.shtml"
+    },
     {
      "title": "Sports Mole, 10 nov 2026",
      "url": "https://www.sportsmole.co.uk/football/italy/uefa-nations-league/preview/italy-vs-france-prediction-team-news-lineups_608854.html"
@@ -50,18 +58,22 @@
    "away": "Kroatien",
    "impact": "medium",
    "notes": [
-    "Hemmalag: England saknar Saka, Guéhi, Konsa och Lewis-Skelly (Burn och debutanten James Hill inkallade). Rogers väntas ersätta Saka; Kane leder anfallet.",
+    "Hemmalag: England saknar Saka, Guéhi och Lewis-Skelly; Tuchel bekräftade 11/11 att även Konsa (knä) och Djed Spence står över – ”tar ingen risk”. Rice tillbaka, Kane leder anfallet, Pickford/Trafford i mål.",
     "Bortalag: Kroatien (Bilić) har Perišić avstängd; Pongračić, Kramarić och Ivanović skadade, Šutalo och Jakić osäkra. Flera spelare från inhemska ligan kan starta.",
     "Form/tabell: Spanien 12 p, England 9, Kroatien 3, Tjeckien 0. Oavgjort räcker för England till kvartsfinal. Kroatien en seger på fem; England vann förra mötet 7-0."
    ],
    "lineup": "",
-   "take": "Kroatiens avbräck är tyngre än Englands, men det mesta var känt i början av veckan. Strecket överbetar ettan lätt (80 % mot 77 %) och underbetar tvåan.",
+   "take": "Englands nya avbräck är på backplatserna och väger lätt mot Kroatiens frånfall. Strecket överbetar ettan (84 % mot 78 %) och underbetar kryss/tvåa något.",
    "suggest": [
     0,
     0,
     0
    ],
    "sources": [
+    {
+     "title": "Brit Brief, 11 nov 2026",
+     "url": "https://britbrief.co.uk/sports/football/konsa-and-spence-ruled-out-of-englands-croatia-clash.html"
+    },
     {
      "title": "Sports Mole, 10 nov 2026",
      "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/news/england-announce-fresh-konsa-blow-as-tuchel-makes-change-for-croatia_608831.html"
@@ -86,18 +98,26 @@
    "away": "Spanien",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Tjeckien (Santi Denia) saknar bl.a. Hranáč, Karabec, Lingr, Šulc (skador); Chorý petad av disciplinära skäl.",
-    "Bortalag: Spanien utan Lamine Yamal och Oyarzabal (reser inte till Prag), samt Rodri, Olmo och Eric García. Redan klart för kvartsfinal och möter England på söndag – rotation trolig.",
+    "Hemmalag: Tjeckien (Santi Denia) saknar Sadílek, Hranáč, Karabec, Kričfaluši, Lingr, Ryneš och Šulc; Chorý petad. Väntad elva: Kovář; Coufal, Zima, Krejčí, Jurásek; Souček, Král; Ambros, Hložek, Provod; Naderi.",
+    "Bortalag: Spanien utan Lamine Yamal (knäinflammation, ansluter fredag), Oyarzabal (influensa), Rodri, Olmo, Barrenetxea och Eric García. Laporte missade träning med virus (osäker). Möter England på söndag – rotation trolig.",
     "Form/tabell: Spanien 4 av 4 vinster (12 p), Tjeckien sist på 0 p. Spanien vann förra mötet 3-1."
    ],
    "lineup": "",
-   "take": "Spanien har lite att spela för och vilar troligen spelare inför England. Strecket på tvåan (89 %) överstiger oddsens 82 % och krysset är kraftigt understreckat (7 % mot 13 %).",
+   "take": "Spanien är kraftigt försvagat och har lite att spela för. Strecket på tvåan (89 %) överstiger oddsens 82 %, krysset är understreckat (8 % mot 12 %).",
    "suggest": [
     1,
     1,
     -2
    ],
    "sources": [
+    {
+     "title": "ČTK/České noviny, 11 nov 2026",
+     "url": "https://www.ceskenoviny.cz/zpravy/fotbaliste-zkusi-zaskocit-mistry-sveta-spanely-a-v-lize-narodu-poprve-bodovat/2900425"
+    },
+    {
+     "title": "Fotbalportal.cz, 12 nov 2026",
+     "url": "https://www.fotbalportal.cz/cesko/synot-liga/81763-luis-de-la-fuente-yamal-privilegia-spanelsko-letna-denia/"
+    },
     {
      "title": "Goal, 9 nov 2026",
      "url": "https://www.goal.com/en/news/after-yamal-s-injury-de-la-fuente-calls-up-emergency-replacement-for-spain-camp/bltb0d3919f1a81b3a7"
@@ -118,18 +138,26 @@
    "away": "Finland",
    "impact": "low",
    "notes": [
-    "Hemmalag: Albanien (Maran) saknar Mehmeti, Kumbulla och Strakosha; Broja ej uttagen. Målvakten Berisha tillbaka efter avstängning, Manaj väntas starta.",
+    "Hemmalag: Albanien (Maran) saknar Mehmeti, Kumbulla och Strakosha. Hoxha och Shpendi tränade separat 11/11 men väntas bli klara. Trolig 3-4-3: Berisha; Gjimshiti, Ismajli, Mitaj; Hysaj, Asllani, Ramadani, Pilo; Laçi, Manaj, Muçi.",
     "Bortalag: Finland (Friis) utan rapporterade skador eller avstängningar; Antman och Skyttä tillbaka.",
     "Form/tabell: Albanien 9 p, Belarus 7, Finland 7. Albansk seger kan säkra uppflyttning; förlust gör det tungt för Finland. Finland vann förra mötet 2-1."
    ],
    "lineup": "",
-   "take": "Inga färska nyheter av betydelse. Streck och odds ligger nära varandra.",
+   "take": "Inga avgörande färska nyheter. Ettan är något understreckad (46 % mot 51 % i odds).",
    "suggest": [
     0,
     0,
     0
    ],
    "sources": [
+    {
+     "title": "Gazeta Sportal, 11 nov 2026",
+     "url": "https://gazetasportal.com/maran-projekton-formacionin-anti-finlande/"
+    },
+    {
+     "title": "Newsport.al, 11 nov 2026",
+     "url": "https://newsport.al/nga-porta-e-deri-ne-sulm-dilemat-e-vetme-te-maran-per-t-i-dale-balle-finlandes-formacioni-i-mundshem-i540182"
+    },
     {
      "title": "Sports Mole, 10 nov 2026",
      "url": "https://www.sportsmole.co.uk/football/albania/uefa-nations-league/preview/albania-vs-finland-prediction-team-news-lineups_608857.html"
@@ -155,7 +183,7 @@
     "Form/tabell: Montenegro leder med 10 p, Lettland sist med 1 p utan seger på fyra. Montenegro vann i Riga 2-1."
    ],
    "lineup": "",
-   "take": "Inga stora nyheter. Ettan är kraftigt överstreckad (80 % mot 70 % i odds) – kryss/tvåa ger värde som gardering.",
+   "take": "Inga stora nyheter. Ettan är kraftigt överstreckad (81 % mot 72 % i odds) – kryss/tvåa ger värde som gardering.",
    "suggest": [
     0,
     0,
@@ -187,7 +215,7 @@
     "Form/tabell: Nederländerna och Grekland båda 8 p – matchen avgör i praktiken gruppsegern. Förra mötet 2-2."
    ],
    "lineup": "",
-   "take": "Båda lagen har viktiga avbräck, som tar ut varandra ungefär. Streck i linje med oddsen.",
+   "take": "Båda lagen har viktiga avbräck som ungefär tar ut varandra. Krysset är överstreckat (27 % mot 20 %), ettan något understreckad.",
    "suggest": [
     0,
     0,
@@ -218,7 +246,7 @@
    "away": "Tyskland",
    "impact": "high",
    "notes": [
-    "Hemmalag: Serbien har stora avbräck: Pavlović troligen borta (njursmäll), Vlahović tackade nej, Stanković (adduktor) lämnat lägret, Kostić och Terzić skadade, Lukić och Maksimović avstängda. Förbundskapten Paunović avstängd – Quinton Fortune leder laget.",
+    "Hemmalag: Serbien har stora avbräck: Pavlović troligen borta (njursmäll), Vlahović borta av privata skäl, Stanković (adduktor), Kostić (hematom, vila flera dagar) och Terzić (infektion) borta, Lukić och Maksimović avstängda. Krpić inkallad. Förbundskapten Paunović avstängd – Quinton Fortune leder laget.",
     "Bortalag: Tyskland (Klopp) utan Anton (Baku inkallad), Gnabry och Musiala. Füllkrug tillbaka.",
     "Form/tabell: Serbien 0 p efter fyra förluster; Tyskland 5 p och måste vinna för att behålla kvartsfinalchansen. Tyskland vann förra mötet 2-0."
    ],
@@ -230,6 +258,10 @@
     2
    ],
    "sources": [
+    {
+     "title": "SNM, 11 nov 2026",
+     "url": "https://snm.rs/srbija-u-petak-docekuje-nemacku-kostic-van-tima/"
+    },
     {
      "title": "Telegraf.rs, 10 nov 2026",
      "url": "https://www.telegraf.rs/sport/fudbal/4430386-paunovic-u-problemu-ostao-bez-cetvorice-pred-nemacku-i-grcku-a-jedan-izostanak-je-velika-misterija"
@@ -283,7 +315,7 @@
    "impact": "medium",
    "notes": [
     "Hemmalag: Slovenien (Cesar) utan Šeško och Elšnik (rygg). Oblak med. Spelas i Maribor inför väntat fullsatt.",
-    "Bortalag: Schweiz (Yakin) saknar lagkapten Xhaka (vad) och Muheim; Vargas magsjuk och ansluter sent.",
+    "Bortalag: Schweiz (Yakin) saknar lagkapten Xhaka och Muheim; Akanji kapten. Vargas ansluter sent. Akanji: målet är att säkra gruppsegern.",
     "Form/tabell: Schweiz 12 p, Slovenien 7. Schweiz räcker en poäng för gruppseger och uppflyttning till liga A. Schweiz vann förra mötet 2-1."
    ],
    "lineup": "",
@@ -294,6 +326,10 @@
     -2
    ],
    "sources": [
+    {
+     "title": "Bote der Urschweiz, 11 nov 2026",
+     "url": "https://bote.ch/nachrichten/sport/schweiz-vor-aufstieg-akanji-fuehrt-als-captain-gegen-slowenien-art-1731578"
+    },
     {
      "title": "SRF, 9 nov 2026",
      "url": "https://www.srf.ch/sport/fussball/nations-league/der-captain-ist-verletzt-doch-kein-comeback-xhaka-fehlt-der-nati-erneut"
@@ -315,7 +351,7 @@
     "Form/tabell: Island 8 p (obesegrat), Estland 6, Bulgarien 4, Luxemburg 3. Islands seger kan säkra gruppen. Island vann första mötet 3-0."
    ],
    "lineup": "",
-   "take": "Strecket underbetar Island kraftigt (38 % mot 48 % i odds) trots att oddsen redan räknar med skadorna – tvåan är spelvärd.",
+   "take": "Strecket underbetar Island kraftigt (41 % mot 51 % i odds) trots att oddsen redan räknar med skadorna – tvåan är spelvärd.",
    "suggest": [
     0,
     0,
@@ -379,7 +415,7 @@
     "Form/tabell: Slovakien 10 p, Färöarna 4. Första mötet 1-1."
    ],
    "lineup": "",
-   "take": "Slovakien klar favorit men ettan är mycket överstreckad (87 % mot 72 %) – kryss som gardering ger värde.",
+   "take": "Slovakien klar favorit men ettan är mycket överstreckad (82 % mot 72 %) – kryss som gardering ger värde.",
    "suggest": [
     0,
     0,
@@ -411,7 +447,7 @@
     "Form/tabell: Moldavien 4 p, Kazakstan sist med 2 p. Moldavien vann första mötet 2-1 borta."
    ],
    "lineup": "",
-   "take": "Kazakstan saknar sina två främsta offensiva spelare. Ettan är överstreckad (46 % mot 36 %) och tvåan understreckad.",
+   "take": "Kazakstan saknar sina två främsta offensiva spelare. Ettan är överstreckad (43 % mot 37 %) och tvåan understreckad (24 % mot 32 %).",
    "suggest": [
     0,
     0,
