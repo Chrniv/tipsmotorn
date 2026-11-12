@@ -3,9 +3,10 @@
  "draw": 2624,
  "round": "Europatipset v 46, stänger 2026-11-12 20:44",
  "author": "Claude (schemalagd)",
- "updatedAt": 1794473748979,
+ "updatedAt": 1794511046741,
  "checkedAt": {
-  "d": "2026-11-12T08:55:48Z"
+  "d": "2026-11-12T08:55:48Z",
+  "l": "2026-11-12T19:17:26Z"
  },
  "matches": [
   {
@@ -18,14 +19,18 @@
     "Bortalag: Frankrike (Zidane) UTAN Mbappé – Zidane bekräftade 11/11 att han står över (”noll risk”, siktar på söndag). Även Marcus Thuram, Dembélé, Saliba, Kalulu och Tchouaméni borta; Mayulu inkallad. Olise/Doué/Barcola väntas bilda anfallet.",
     "Form/tabell: Frankrike 10 p, Italien 7, Belgien 6. Fransk seger ger gruppseger; Italien behöver poäng inför Belgien. Förra mötet 1-1."
    ],
-   "lineup": "",
-   "take": "Mbappés frånvaro blev klar sent 11/11 och är troligen inte fullt inprisad ovanpå övriga franska avbräck. Strecket ligger redan lågt på tvåan (49 % mot 52 % i odds) men ettan är understreckad (20 % mot 23 %) – 1 eller X är värda att gardera.",
+   "lineup": "Frankrike (bekr.): Maignan; Gusto, Upamecano, Jacquet, Truffert; Da Cunha, Rabiot, Cherki; Olise, Doué, Barcola – Doué som nia, ingen Real Madrid-spelare från start. Italiens elva ej hittad vid kontroll.",
+   "take": "Ung och omgjord fransk elva utan Mbappé, Thuram och Dembélé – bekräftar avbräcken. Strecket underbetar ettan (20 % mot 23 %); 1 eller X värda att gardera.",
    "suggest": [
     2,
     1,
     -3
    ],
    "sources": [
+    {
+     "title": "433foot, 12 nov 2026",
+     "url": "https://www.433foot.fr/officiel-le-11-des-bleus-contre-litalie-avec-les-choix-forts-de-zidane/"
+    },
     {
      "title": "Ouest-France, 11 nov 2026",
      "url": "https://www.ouest-france.fr/sport/football/equipe-de-france/italie-france-kylian-mbappe-est-forfait-confirme-zinedine-zidane-8c9fa06c-de04-11f1-86b6-0a2fbb1d8ed9"
@@ -62,14 +67,18 @@
     "Bortalag: Kroatien (Bilić) har Perišić avstängd; Pongračić, Kramarić och Ivanović skadade, Šutalo och Jakić osäkra. Flera spelare från inhemska ligan kan starta.",
     "Form/tabell: Spanien 12 p, England 9, Kroatien 3, Tjeckien 0. Oavgjort räcker för England till kvartsfinal. Kroatien en seger på fem; England vann förra mötet 7-0."
    ],
-   "lineup": "",
-   "take": "Englands nya avbräck är på backplatserna och väger lätt mot Kroatiens frånfall. Strecket överbetar ettan (84 % mot 78 %) och underbetar kryss/tvåa något.",
+   "lineup": "England (bekr.): Pickford; Alexander-Arnold, Quansah, Burn, Hall; Rice, Anderson; Rogers, Bellingham, Gordon; Kane. Kroatien: Livaković; Stanišić, Vušković, Gvardiol, Smolčić; Kovačić, Sučić, Mišić; Vlašić, Baturina; Matanović – Modrić och Budimir på bänken.",
+   "take": "Kroatien vilar Modrić och Budimir – ytterligare försvagat utöver tidigare avbräck. Strecket överbetar redan ettan (84 % mot 78 %), så ingen anledning att spika tyngre än så, men ettan stärks något.",
    "suggest": [
-    0,
-    0,
-    0
+    2,
+    -1,
+    -1
    ],
    "sources": [
+    {
+     "title": "Yahoo Sports/The Mag, 12 nov 2026",
+     "url": "https://sports.yahoo.com/articles/england-team-v-croatia-now-184415418.html"
+    },
     {
      "title": "Brit Brief, 11 nov 2026",
      "url": "https://britbrief.co.uk/sports/football/konsa-and-spence-ruled-out-of-englands-croatia-clash.html"
@@ -102,7 +111,7 @@
     "Bortalag: Spanien utan Lamine Yamal (knäinflammation, ansluter fredag), Oyarzabal (influensa), Rodri, Olmo, Barrenetxea och Eric García. Laporte missade träning med virus (osäker). Möter England på söndag – rotation trolig.",
     "Form/tabell: Spanien 4 av 4 vinster (12 p), Tjeckien sist på 0 p. Spanien vann förra mötet 3-1."
    ],
-   "lineup": "",
+   "lineup": "Startelvor ej hittade vid kontroll 20.20 (avspark 20.45).",
    "take": "Spanien är kraftigt försvagat och har lite att spela för. Strecket på tvåan (89 %) överstiger oddsens 82 %, krysset är understreckat (8 % mot 12 %).",
    "suggest": [
     1,
@@ -142,7 +151,7 @@
     "Bortalag: Finland (Friis) utan rapporterade skador eller avstängningar; Antman och Skyttä tillbaka.",
     "Form/tabell: Albanien 9 p, Belarus 7, Finland 7. Albansk seger kan säkra uppflyttning; förlust gör det tungt för Finland. Finland vann förra mötet 2-1."
    ],
-   "lineup": "",
+   "lineup": "Startelvor ej hittade vid kontroll 20.20 (avspark 20.45).",
    "take": "Inga avgörande färska nyheter. Ettan är något understreckad (46 % mot 51 % i odds).",
    "suggest": [
     0,
@@ -182,7 +191,7 @@
     "Bortalag: Lettland saknar Varslavāns (knä) och Penkevics. Ikaunieks, Gutkovskis och Uldriķis tillbaka.",
     "Form/tabell: Montenegro leder med 10 p, Lettland sist med 1 p utan seger på fyra. Montenegro vann i Riga 2-1."
    ],
-   "lineup": "",
+   "lineup": "Startelvor ej hittade vid kontroll 20.20 (avspark 20.45).",
    "take": "Inga stora nyheter. Ettan är kraftigt överstreckad (81 % mot 72 % i odds) – kryss/tvåa ger värde som gardering.",
    "suggest": [
     0,
@@ -214,7 +223,7 @@
     "Bortalag: Grekland har Saliakas och Zafeiris avstängda; Kourbelis tveksam (stukning). Mittfältet försvagat.",
     "Form/tabell: Nederländerna och Grekland båda 8 p – matchen avgör i praktiken gruppsegern. Förra mötet 2-2."
    ],
-   "lineup": "",
+   "lineup": "Ej ute än – matchen spelas 13/11.",
    "take": "Båda lagen har viktiga avbräck som ungefär tar ut varandra. Krysset är överstreckat (27 % mot 20 %), ettan något understreckad.",
    "suggest": [
     0,
@@ -250,7 +259,7 @@
     "Bortalag: Tyskland (Klopp) utan Anton (Baku inkallad), Gnabry och Musiala. Füllkrug tillbaka.",
     "Form/tabell: Serbien 0 p efter fyra förluster; Tyskland 5 p och måste vinna för att behålla kvartsfinalchansen. Tyskland vann förra mötet 2-0."
    ],
-   "lineup": "",
+   "lineup": "Ej ute än – matchen spelas 13/11.",
    "take": "Serbiens frånvarolista växte under 10–11/11 och är troligen inte helt inprisad; Tyskland har dessutom allt att spela för. Streck i linje med oddsen.",
    "suggest": [
     -1,
@@ -290,7 +299,7 @@
     "Bortalag: Nordmakedonien (Sedloski) utan Miovski och Zajkov. Elmas och Bardhi med.",
     "Form/tabell: Nordmakedonien fyra förluster, 0–10 i mål. Skottland vann förra mötet 2-0 och behöver troligen två segrar för playoffplats."
    ],
-   "lineup": "",
+   "lineup": "Ej ute än – matchen spelas 13/11.",
    "take": "Inga färska nyheter som rubbar bilden; Skottland klar favorit. Strecket överbetar ettan lätt.",
    "suggest": [
     0,
@@ -318,7 +327,7 @@
     "Bortalag: Schweiz (Yakin) saknar lagkapten Xhaka och Muheim; Akanji kapten. Vargas ansluter sent. Akanji: målet är att säkra gruppsegern.",
     "Form/tabell: Schweiz 12 p, Slovenien 7. Schweiz räcker en poäng för gruppseger och uppflyttning till liga A. Schweiz vann förra mötet 2-1."
    ],
-   "lineup": "",
+   "lineup": "Ej ute än – matchen spelas 13/11.",
    "take": "Xhaka saknas och Schweiz kan nöja sig med kryss – talar något för 1/X. Streck i linje med oddsen.",
    "suggest": [
     1,
@@ -350,7 +359,7 @@
     "Bortalag: Island saknar Albert Guðmundsson, målvakten Elías Rafn Ólafsson, Bjarkason och Sverrir Ingi Ingason. Mikael Anderson utan match på fyra veckor; Daníel Leó ansluter dagen före. Disciplinbråk i truppen.",
     "Form/tabell: Island 8 p (obesegrat), Estland 6, Bulgarien 4, Luxemburg 3. Islands seger kan säkra gruppen. Island vann första mötet 3-0."
    ],
-   "lineup": "",
+   "lineup": "Ej ute än – matchen spelas 13/11.",
    "take": "Strecket underbetar Island kraftigt (41 % mot 51 % i odds) trots att oddsen redan räknar med skadorna – tvåan är spelvärd.",
    "suggest": [
     0,
@@ -386,7 +395,7 @@
     "Bortalag: Estland (Henn) utan Sappinen, Sinyavskiy, Kuusk, Soomets och Saarma.",
     "Form/tabell: Estland 6 p (ett insläppt mål på fyra), Luxemburg sist med 3 p. Estland vann första mötet 1-0."
    ],
-   "lineup": "",
+   "lineup": "Ej ute än – matchen spelas 13/11.",
    "take": "Luxemburgs avbräck känns tyngre än oddsen antyder (hemmalaget är favorit). Streck i linje med oddsen.",
    "suggest": [
     -1,
@@ -414,7 +423,7 @@
     "Bortalag: Färöarna utan Klettskarð; Klakstein planerar ändringar inför avgörande hemmamatchen mot Moldavien 16/11.",
     "Form/tabell: Slovakien 10 p, Färöarna 4. Första mötet 1-1."
    ],
-   "lineup": "",
+   "lineup": "Ej ute än – matchen spelas 13/11.",
    "take": "Slovakien klar favorit men ettan är mycket överstreckad (82 % mot 72 %) – kryss som gardering ger värde.",
    "suggest": [
     0,
@@ -446,7 +455,7 @@
     "Bortalag: Kazakstan (van 't Schip) saknar Satpayev och Karimov (skador), Zhaksylykov inkallad.",
     "Form/tabell: Moldavien 4 p, Kazakstan sist med 2 p. Moldavien vann första mötet 2-1 borta."
    ],
-   "lineup": "",
+   "lineup": "Ej ute än – matchen spelas 13/11.",
    "take": "Kazakstan saknar sina två främsta offensiva spelare. Ettan är överstreckad (43 % mot 37 %) och tvåan understreckad (24 % mot 32 %).",
    "suggest": [
     0,
