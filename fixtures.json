@@ -1,236 +1,6 @@
 {
  "rounds": [
   {
-   "id": "europatipset-2624",
-   "game": "Europatipset",
-   "draw": 2624,
-   "name": "Europatipset v 46, stänger 2026-11-12 20:44",
-   "close": "2026-11-12T20:44:00+01:00",
-   "matches": [
-    {
-     "n": 1,
-     "home": "Italien",
-     "away": "Frankrike",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-12T20:45:00+01:00",
-     "odds": [
-      4.25,
-      3.85,
-      1.89
-     ],
-     "streck": [
-      20,
-      31,
-      49
-     ]
-    },
-    {
-     "n": 2,
-     "home": "England",
-     "away": "Kroatien",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-12T20:45:00+01:00",
-     "odds": [
-      1.24,
-      6.75,
-      12.5
-     ],
-     "streck": [
-      84,
-      11,
-      5
-     ]
-    },
-    {
-     "n": 3,
-     "home": "Tjeckien",
-     "away": "Spanien",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-12T20:45:00+01:00",
-     "odds": [
-      16,
-      8,
-      1.2
-     ],
-     "streck": [
-      3,
-      8,
-      89
-     ]
-    },
-    {
-     "n": 4,
-     "home": "Albanien",
-     "away": "Finland",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-12T20:45:00+01:00",
-     "odds": [
-      1.85,
-      3.35,
-      4.5
-     ],
-     "streck": [
-      46,
-      30,
-      24
-     ]
-    },
-    {
-     "n": 5,
-     "home": "Montenegro",
-     "away": "Lettland",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-12T20:45:00+01:00",
-     "odds": [
-      1.32,
-      5,
-      10
-     ],
-     "streck": [
-      81,
-      14,
-      5
-     ]
-    },
-    {
-     "n": 6,
-     "home": "Nederländerna",
-     "away": "Grekland",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-13T20:45:00+01:00",
-     "odds": [
-      1.49,
-      4.8,
-      7
-     ],
-     "streck": [
-      61,
-      27,
-      12
-     ]
-    },
-    {
-     "n": 7,
-     "home": "Serbien",
-     "away": "Tyskland",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-13T20:45:00+01:00",
-     "odds": [
-      10.5,
-      6.25,
-      1.3
-     ],
-     "streck": [
-      6,
-      17,
-      77
-     ]
-    },
-    {
-     "n": 8,
-     "home": "Skottland",
-     "away": "Nordmakedonien",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-13T20:45:00+01:00",
-     "odds": [
-      1.2,
-      7,
-      19
-     ],
-     "streck": [
-      84,
-      12,
-      4
-     ]
-    },
-    {
-     "n": 9,
-     "home": "Slovenien",
-     "away": "Schweiz",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-13T20:45:00+01:00",
-     "odds": [
-      6,
-      3.8,
-      1.67
-     ],
-     "streck": [
-      13,
-      28,
-      59
-     ]
-    },
-    {
-     "n": 10,
-     "home": "Bulgarien",
-     "away": "Island",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-13T20:45:00+01:00",
-     "odds": [
-      4.3,
-      3.5,
-      1.86
-     ],
-     "streck": [
-      29,
-      30,
-      41
-     ]
-    },
-    {
-     "n": 11,
-     "home": "Luxemburg",
-     "away": "Estland",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-13T20:45:00+01:00",
-     "odds": [
-      2.02,
-      3.2,
-      3.95
-     ],
-     "streck": [
-      41,
-      32,
-      27
-     ]
-    },
-    {
-     "n": 12,
-     "home": "Slovakien",
-     "away": "Färöarna",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-13T20:45:00+01:00",
-     "odds": [
-      1.32,
-      5,
-      10
-     ],
-     "streck": [
-      82,
-      14,
-      4
-     ]
-    },
-    {
-     "n": 13,
-     "home": "Moldavien",
-     "away": "Kazakstan",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-13T18:00:00+01:00",
-     "odds": [
-      2.55,
-      3.05,
-      2.95
-     ],
-     "streck": [
-      43,
-      33,
-      24
-     ]
-    }
-   ]
-  },
-  {
    "id": "stryktipset-4979",
    "game": "Stryktipset",
    "draw": 4979,
@@ -244,14 +14,14 @@
      "league": "UEFA Nations League",
      "kickoff": "2026-11-14T20:45:00+01:00",
      "odds": [
-      1.52,
+      1.53,
       4.6,
-      6.25
+      6.5
      ],
      "streck": [
-      53,
-      22,
-      25
+      66,
+      19,
+      15
      ]
     },
     {
@@ -266,9 +36,9 @@
       6.75
      ],
      "streck": [
-      50,
-      25,
-      25
+      65,
+      21,
+      14
      ]
     },
     {
@@ -278,14 +48,14 @@
      "league": "UEFA Nations League",
      "kickoff": "2026-11-14T18:00:00+01:00",
      "odds": [
-      1.27,
-      6.4,
-      12.5
+      1.25,
+      6.75,
+      13
      ],
      "streck": [
-      47,
-      24,
-      29
+      69,
+      16,
+      15
      ]
     },
     {
@@ -300,9 +70,9 @@
       1.89
      ],
      "streck": [
-      45,
-      25,
-      30
+      26,
+      24,
+      50
      ]
     },
     {
@@ -312,14 +82,14 @@
      "league": "UEFA Nations League",
      "kickoff": "2026-11-14T20:45:00+01:00",
      "odds": [
-      2.45,
+      2.48,
       3.15,
-      3.25
+      3.2
      ],
      "streck": [
-      43,
+      47,
       28,
-      29
+      25
      ]
     },
     {
@@ -329,14 +99,14 @@
      "league": "UEFA Nations League",
      "kickoff": "2026-11-14T20:45:00+01:00",
      "odds": [
-      1.61,
+      1.6,
       4.1,
-      6
+      6.1
      ],
      "streck": [
-      46,
-      25,
-      29
+      63,
+      21,
+      16
      ]
     },
     {
@@ -351,9 +121,9 @@
       2.4
      ],
      "streck": [
-      42,
-      26,
-      32
+      30,
+      28,
+      42
      ]
     },
     {
@@ -368,9 +138,9 @@
       4.6
      ],
      "streck": [
-      45,
-      27,
-      28
+      61,
+      22,
+      17
      ]
     },
     {
@@ -385,9 +155,9 @@
       3.05
      ],
      "streck": [
-      45,
+      47,
       25,
-      30
+      28
      ]
     },
     {
@@ -402,9 +172,9 @@
       3.95
      ],
      "streck": [
-      46,
-      26,
-      28
+      57,
+      23,
+      20
      ]
     },
     {
@@ -419,9 +189,9 @@
       2.43
      ],
      "streck": [
-      45,
-      26,
-      29
+      38,
+      28,
+      34
      ]
     },
     {
@@ -436,9 +206,9 @@
       2.8
      ],
      "streck": [
-      45,
-      26,
-      29
+      49,
+      27,
+      24
      ]
     },
     {
@@ -453,9 +223,199 @@
       2.02
      ],
      "streck": [
-      44,
-      29,
+      36,
+      30,
+      34
+     ]
+    }
+   ]
+  },
+  {
+   "id": "europatipset-2625",
+   "game": "Europatipset",
+   "draw": 2625,
+   "name": "Europatipset v 46, stänger 2026-11-15 14:59",
+   "close": "2026-11-15T14:59:00+01:00",
+   "matches": [
+    {
+     "n": 1,
+     "home": "Spanien",
+     "away": "England",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-15T20:45:00+01:00",
+     "odds": [
+      1.58,
+      4.1,
+      5.1
+     ],
+     "streck": [
+      51,
+      30,
+      19
+     ]
+    },
+    {
+     "n": 2,
+     "home": "Frankrike",
+     "away": "Turkiet",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-15T20:45:00+01:00",
+     "odds": null,
+     "streck": [
+      82,
+      5,
+      13
+     ]
+    },
+    {
+     "n": 3,
+     "home": "Kroatien",
+     "away": "Tjeckien",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-15T20:45:00+01:00",
+     "odds": null,
+     "streck": [
+      63,
+      25,
+      12
+     ]
+    },
+    {
+     "n": 4,
+     "home": "Belgien",
+     "away": "Italien",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-15T20:45:00+01:00",
+     "odds": null,
+     "streck": [
+      23,
+      41,
+      36
+     ]
+    },
+    {
+     "n": 5,
+     "home": "Lettland",
+     "away": "Armenien",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-15T15:00:00+01:00",
+     "odds": null,
+     "streck": [
+      77,
+      11,
+      12
+     ]
+    },
+    {
+     "n": 6,
+     "home": "Cypern",
+     "away": "Montenegro",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-15T15:00:00+01:00",
+     "odds": null,
+     "streck": [
+      51,
+      22,
       27
+     ]
+    },
+    {
+     "n": 7,
+     "home": "Eibar",
+     "away": "Cadiz",
+     "league": "La Liga 2",
+     "kickoff": "2026-11-15T18:30:00+01:00",
+     "odds": [
+      1.66,
+      3.85,
+      5
+     ],
+     "streck": [
+      71,
+      15,
+      14
+     ]
+    },
+    {
+     "n": 8,
+     "home": "Granada",
+     "away": "Las Palmas",
+     "league": "La Liga 2",
+     "kickoff": "2026-11-15T16:15:00+01:00",
+     "odds": [
+      1.76,
+      3.7,
+      4.5
+     ],
+     "streck": [
+      78,
+      15,
+      7
+     ]
+    },
+    {
+     "n": 9,
+     "home": "Tyskland",
+     "away": "Nederländerna",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-16T20:45:00+01:00",
+     "odds": null,
+     "streck": [
+      49,
+      29,
+      22
+     ]
+    },
+    {
+     "n": 10,
+     "home": "Grekland",
+     "away": "Serbien",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-16T20:45:00+01:00",
+     "odds": null,
+     "streck": [
+      68,
+      21,
+      11
+     ]
+    },
+    {
+     "n": 11,
+     "home": "Schweiz",
+     "away": "Skottland",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-16T20:45:00+01:00",
+     "odds": null,
+     "streck": [
+      71,
+      17,
+      12
+     ]
+    },
+    {
+     "n": 12,
+     "home": "Nordmakedonien",
+     "away": "Slovenien",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-16T20:45:00+01:00",
+     "odds": null,
+     "streck": [
+      45,
+      35,
+      20
+     ]
+    },
+    {
+     "n": 13,
+     "home": "Kazakstan",
+     "away": "Slovakien",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-16T16:00:00+01:00",
+     "odds": null,
+     "streck": [
+      17,
+      25,
+      58
      ]
     }
    ]
