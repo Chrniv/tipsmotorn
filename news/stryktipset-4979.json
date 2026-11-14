@@ -3,9 +3,9 @@
  "draw": 4979,
  "round": "Stryktipset v 46, stänger 2026-11-14 15:59",
  "author": "Claude (schemalagd)",
- "updatedAt": 1794560483389,
+ "updatedAt": 1794646865601,
  "checkedAt": {
-  "d": "2026-11-13T09:01:23+00:00"
+  "d": "2026-11-14T09:01:05Z"
  },
  "matches": [
   {
@@ -14,12 +14,12 @@
    "away": "Bosnien & Hercegovina",
    "impact": "low",
    "notes": [
-    "Hemmalag: Zeneli (skadad, lämnade lägret 9/11) och Wålemark (skadad i träning 11/11) borta, Holm ej uttagen. Gyökeres, Nygren och Kulusevski tränade separat 11–12/11 – enligt förbundet planerat/försiktighet. Gudmundsson osäker efter smäll i klubben. Kulusevski tillbaka efter 17 mån, väntas börja på bänken.",
-    "Bortalag: Mittbacken Muharemović avstängd och Hadžikadunić (vad) borta – Bosnien saknar ordinarie mittbackspar. Džeko har slutat i landslaget.",
-    "Form/tabell: Grupp B4: Sverige 10 p, Bosnien 8 p. Svensk seger säkrar gruppsegern (uppflyttning till A). Förra mötet 1–1. Ca 2 grader i Solna."
+    "Hemmalag: NYTT 13/11: Potter: ”Alla är tillgängliga”. Gyökeres och Nygren vilade torsdagens träning som försiktighet och tränade fullt fredag. Kulusevski tränade också och siktar själv på ca 30 min per match, Potter sa bara ”vi får se”. Fortsatt borta: Zeneli och Wålemark (skadade), Holm ej uttagen.",
+    "Bortalag: Muharemović avstängd och Hadžikadunić borta ca 20 dagar. Barbarez avslöjar inte vem som ersätter. NYTT 13/11: Jovo har ryggbesvär och testas. Övriga friska enligt Barbarez. Džeko har slutat i landslaget.",
+    "Form/tabell: Grupp B4: Sverige 10 p, Bosnien 8 p. Svensk seger säkrar gruppsegern. Förra mötet 1–1. Ca 52 000 åskådare väntas i Solna."
    ],
    "lineup": "",
-   "take": "Sverige har allt att spela för och Bosnien är försvagat centralt. Strecket (66/19/15) ligger nära oddsen (64/21/15) – ettan marginellt överstreckad, ingen tydlig spelvärde.",
+   "take": "Sverige har full trupp och Bosnien saknar sitt mittbackspar. Strecket (66/19/15) ligger nära oddsen (64/21/15), så ettan är bara marginellt överstreckad. Spikbar etta, men utan spelvärde.",
    "suggest": [
     0,
     0,
@@ -27,16 +27,20 @@
    ],
    "sources": [
     {
+     "title": "Fotbollskanalen, 13 nov 2026",
+     "url": "https://www.fotbollskanalen.se/artiklar/sverige/potters-besked-om-gyokeres-och-kulusevski"
+    },
+    {
+     "title": "Sweden Herald, 13 nov 2026",
+     "url": "https://swedenherald.com/article/graham-potter-says-all-players-are-available-for-swedens-match-against-bosnia-and-herzegovina"
+    },
+    {
+     "title": "Klix.ba, 13 nov 2026",
+     "url": "https://www.klix.ba/sport/nogomet/barbarez-ako-danas-nemamo-samopouzdanja-onda-se-ne-trebamo-baviti-ovim-poslom-zelimo-im-pomrsiti-planove/261113235"
+    },
+    {
      "title": "Svenskafans, 12 nov 2026",
      "url": "https://www.svenskafans.com/fotboll/skadesmall-for-sverige-succespelaren-missar-nations-league-703257"
-    },
-    {
-     "title": "SVT, 9–11 nov 2026",
-     "url": "https://www.svt.se/sport/fotboll/sveriges-herrlandslag-i-fotboll?inlagg=f32e7407e1b51618cbdd949cc118ff7a"
-    },
-    {
-     "title": "reprezentacija.ba, 10 nov 2026",
-     "url": "https://reprezentacija.ba/540683-barbarez-zbog-povrede-igraca-mora-mijenjati-plan-za-svedsku"
     },
     {
      "title": "Sportsmole, 12 nov 2026",
@@ -50,33 +54,37 @@
    "away": "Danmark",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Första samlingen utan Ronaldo (slutat i landslaget). Cancelo och Francisco Conceição avstängda. Nuno Mendes ej uttagen; Leão (lår), Tomás Araújo och Nuno Tavares lämnade 11–12/11. Jesus ger unga chansen – rotation möjlig.",
-    "Bortalag: Christensen borta (ben). Dorgu osäker – Riemer kan låta honom stanna hemma inför Norge-matchen. Bah, M. Jensen och Lindstrøm tillbaka.",
-    "Form/tabell: Grupp A4: Portugal 12 p (redan klart för kvartsfinal, 1 p räcker till gruppseger), Danmark 6 p och måste försvara andraplatsen. Portugal vann 4–2 i Danmark i oktober."
+    "Hemmalag: Första samlingen utan Ronaldo. Cancelo och F. Conceição avstängda. Leão, Tomás Araújo och Nuno Tavares lämnade lägret. Nuno Mendes ej uttagen. NYTT 13/11: Palhinha (influensa torsdag) tränade fredag och truppen tränade utan avbräck. Bernardo Silva är ny kapten. A Bola gissar Diogo Costa; Dalot/Alberto, Dias, Veiga, Nazinho. Spelas i Braga.",
+    "Bortalag: NYTT 13/11: Dorgu är tillbaka i truppen. Lårskadan är lindrigare än befarat, men han är inte given som startspelare. Eriksen är inte matchklar. Christensen lämnade lägret. Bah, M. Jensen och Lindstrøm är tillbaka.",
+    "Form/tabell: Grupp A4: Portugal 12 p (klart för kvartsfinal, 1 p räcker till gruppseger), Danmark 6 p och måste försvara andraplatsen. Portugal vann 4–2 i Danmark i oktober."
    ],
    "lineup": "",
-   "take": "Portugal är kraftigt decimerat och har mindre att spela för än Danmark. Strecket (65/21/14) följer oddsen; de sena avbräcken (11–12/11) talar för att garderingar mot X/2 är rimliga.",
+   "take": "Portugal är decimerat men slipper nya avbräck, och Palhinha är tillbaka. Danmark får tillbaka Dorgu men saknar Eriksen. Strecket (65/21/14) följer oddsen (65/20/14). En lätt gardering mot kryss är fortsatt rimlig.",
    "suggest": [
-    -2,
+    -1,
     1,
-    1
+    0
    ],
    "sources": [
     {
+     "title": "A Bola, 13 nov 2026",
+     "url": "https://www.abola.pt/noticias/boa-noticia-para-jorge-jesus-antes-da-dinamarca-2026111311361759317"
+    },
+    {
+     "title": "A Bola, 14 nov 2026",
+     "url": "https://abola.pt/noticias/ausencias-abrem-a-porta-a-novidades-e-estreias-o-onze-provavel-de-portugal-2026111323142740402"
+    },
+    {
+     "title": "Tipsbladet, 13 nov 2026",
+     "url": "https://www.tipsbladet.dk/nyhed/landshold/portugal-danmark-2"
+    },
+    {
+     "title": "Observador, 13 nov 2026",
+     "url": "https://observador.pt/2026/11/13/nao-os-deixar-brilhar-demasiado-dinamarca-admite-jogar-contra-equipa-melhor-antes-de-defrontar-portugal-em-braga/"
+    },
+    {
      "title": "futebol365, 12 nov 2026",
      "url": "https://futebol365.pt/artigo/lesoes-de-tavares-araujo-e-leao-levam-jesus-a-chamar-nazinho-e-inacio/"
-    },
-    {
-     "title": "Tipsbladet, 12 nov 2026",
-     "url": "https://www.tipsbladet.dk/nyhed/landshold/her-tages-stor-beslutning-om-dorgu"
-    },
-    {
-     "title": "Rotowire, 12 nov 2026",
-     "url": "https://www.rotowire.com/soccer/article/portugal-vs-denmark-prediction-predicted-lineups-team-news-146286"
-    },
-    {
-     "title": "O Jogo, 6 nov 2026",
-     "url": "https://www.ojogo.pt/internacional/artigo/a-primeira-lista-de-convocados-de-portugal-apos-a-retirada-de-ronaldo/18145303"
     }
    ]
   },
@@ -86,12 +94,12 @@
    "away": "Wales",
    "impact": "low",
    "notes": [
-    "Hemmalag: Haaland och Ødegaard missade träning 10/11 (”småsaker”), uppges tillbaka 11/11. Strand Larsen osäker – rubrik om att han åkt hem, obekräftat. Sørloth tillbaka men inte för två hela matcher. Målvakt (Nyland/Selvik) ej klar. Träningen 12/11 ställdes in p.g.a. snö.",
-    "Bortalag: Cabango avstängd (Sportsmole anger även Sorba Thomas). Kieffer Moore (skadad, lämnade 10/11) och Jordan James borta. Harry Wilson tillbaka; Rodon bevakas efter baksida lår.",
-    "Form/tabell: Grupp A4: båda 3 p, Wales före på inbördes (2–1 i Cardiff). Norge tre raka förluster men måste vinna. Konstgräs och kyla på Ullevaal."
+    "Hemmalag: Haaland och Ødegaard är tillbaka i träning sedan 11/11 (”småsaker”). Strand Larsen har lämnat lägret med en fotledsskada (bekräftat av VG 11/11). Botheim är inkallad som ersättare. Sørloth är med. Solbakken avslöjar inte målvaktsvalet (Nyland eller Selvik).",
+    "Bortalag: Cabango och Sorba Thomas avstängda. Kieffer Moore och Jordan James borta. NYTT 13/11: Bellamy är redo att starta Rodon mot Haaland, trots att Rodon bara spelat 2 min sedan baksidesskadan i augusti. Harry Wilson är tillbaka.",
+    "Form/tabell: Grupp A4: båda har 3 p, Wales före på inbördes möte (2–1 i Cardiff). Norge har tre raka förluster men måste vinna. Konstgräs och kyla på Ullevaal."
    ],
    "lineup": "",
-   "take": "Norge är tunga favoriter och båda lagen har mycket att spela för. Tvåan är kraftigt överstreckad (15 mot 8) och ettan understreckad (69 mot 78) – ettan har klart spelvärde.",
+   "take": "Norge är tunga favoriter med Haaland och Ødegaard tillgängliga, och Wales saknar två ordinarie i försvaret. Tvåan är kraftigt överstreckad (15 mot 8) och ettan understreckad (69 mot 78), så ettan har klart spelvärde.",
    "suggest": [
     0,
     0,
@@ -99,12 +107,16 @@
    ],
    "sources": [
     {
-     "title": "Aftenposten, 10–11 nov 2026",
-     "url": "https://www.aftenposten.no/sport/fotball/i/j3PG7w/haaland-og-oedegaard-ikke-paa-trening-solbakken-nektet-aa-roepe-detaljer"
+     "title": "VG, 11 nov 2026",
+     "url": "https://www.vg.no/sport/i/Oynwrw/norge-wales-i-nations-league-erling-braut-haaland-med-landslaget"
     },
     {
-     "title": "VG, 10 nov 2026",
-     "url": "https://www.vg.no/sport/i/2v12Xl/norge-wales-og-danmark-i-nations-league-staale-solbakken-om-erling-braut-haaland"
+     "title": "Nation.Cymru, 13 nov 2026",
+     "url": "https://nation.cymru/sport/bellamy-ready-to-start-rodon-against-haaland-despite-injury-lay-off/"
+    },
+    {
+     "title": "Tipsbladet.no, 10–12 nov 2026",
+     "url": "https://tipsbladet.no/solbakken-nekter-a-rope-keepervalget-mot-wales-vi-har-lagt-en-plan/"
     },
     {
      "title": "Yahoo Sports, 10 nov 2026",
@@ -122,33 +134,37 @@
    "away": "Polen",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Răzvan Marin avstängd. Radu (axel), Stanciu och Mihăilă (muskel) borta. Trolig elva: Hindrich; Rațiu, Drăgușin, Coubiș, Bancu; Băluță, Dragomir; Man, Cicâldău, Coman; Bîrligea.",
-    "Bortalag: Bednarek avstängd. Frankowski (muskel) lämnade lägret 12/11 – Pyrka in. Förstemålvakterna Grabara och Bułka skadade, Skorupski ej uttagen. Zieliński och Reguła missade träning 12/11 (förkylning). Lewandowski med.",
+    "Hemmalag: Răzvan Marin avstängd. Radu, Stanciu och Mihăilă borta. NYTT 14/11: 23-mannatruppen är klar, Rareș Ilie är den enda som lämnas utanför. Trolig elva: Hindrich; Rațiu, Drăgușin, Coubiș, Bancu; Băluță, Dragomir; Man, Cicâldău, Coman; Bîrligea.",
+    "Bortalag: NYTT 14/11: Zieliński (virus/förkylning) är struken ur matchtruppen och ser matchen från läktaren. Reguła finns med i truppen. Bednarek avstängd och Frankowski skadad. Målvakterna i truppen är Drągowski, Abramowicz och Kochalski (Grabara och Bułka skadade).",
     "Form/tabell: Grupp B4: Polen 4 p, Rumänien 0 p (3–13 i mål). Polen vann första mötet 6–0. Ca 40 000 åskådare väntas i Bukarest."
    ],
    "lineup": "",
-   "take": "Polen är favorit men har sena avbräck (Frankowski, sjuka Zieliński) och reservmålvakt. Strecket (26/24/50) ligger nära oddsen (24/25/51); lite värde i att gardera mot ettan.",
+   "take": "Polen tappar sin främsta kreativa mittfältare samma morgon, och beskedet är troligen inte fullt inprisat. Strecket (26/24/50) ligger nära oddsen (24/25/51). Gardera mot 1 och X.",
    "suggest": [
     1,
-    0,
-    -1
+    1,
+    -2
    ],
    "sources": [
+    {
+     "title": "Interia, 14 nov 2026",
+     "url": "https://sport.interia.pl/pilka-nozna/reprezentacja-polski/news-godziny-do-meczu-z-rumunia-urban-podjal-decyzje-ws-skladu-wi,nId,23573388"
+    },
+    {
+     "title": "Meczyki, 14 nov 2026",
+     "url": "https://www.meczyki.pl/newsy/pilka-nozna/kluczowy-reprezentant-poza-kadra-to-juz-pewne/317965"
+    },
+    {
+     "title": "Digi Sport, 14 nov 2026",
+     "url": "https://www.digisport.ro/fotbal/echipa-nationala/gica-hagi-a-luat-decizia-lotul-romaniei-pentru-meciul-cu-polonia-4603161"
+    },
     {
      "title": "TVP Info, 12 nov 2026",
      "url": "https://www.tvp.info/96443644/liga-narodow-kontuzja-w-polskiej-reprezentacji-przemyslawa-frankowskiego-zmiana-w-kadrze-na-ostatnia-chwile"
     },
     {
-     "title": "Sportowe Fakty, 12 nov 2026",
-     "url": "https://sportowefakty.wp.pl/pilka-nozna/1283803/kolejne-zle-wiesci-ws-jana-urbana-alarm-przed-meczem-polski"
-    },
-    {
      "title": "Spotmedia, 13 nov 2026",
      "url": "https://spotmedia.ro/stiri/sport/gica-hagi-vrea-sa-spele-rusinea-cum-arata-echipa-probabila-a-romaniei-pentru-meciul-cu-polonia"
-    },
-    {
-     "title": "Jurnalul, 11 nov 2026",
-     "url": "https://jurnalul.ro/sport/fotbal-international/ne-asteapta-o-alta-umilinta-nationala-romaniei-fara-patru-nume-importante-contra-poloniei-1049268.html"
     }
    ]
   },
@@ -158,12 +174,12 @@
    "away": "Ukraina",
    "impact": "low",
    "notes": [
-    "Hemmalag: Bradley, Ballard, Toal, McDonnell, McCann och Ceadach O'Neill borta – tunt försvar. Atcheson har en smäll. Flera har lite matchträning. Inget mål på Windsor Park i turneringen.",
-    "Bortalag: Ponomarenko lämnade lägret skadad (Dovbyk in), Zubkov, Tsygankov och Zinchenko saknas. Tränaren talar mest om att hålla sig kvar i B.",
-    "Form/tabell: Grupp B2: Nordirland 8 p (inga insläppta), Ungern 7, Ukraina 4. Nordirland vann första mötet 3–0. Utsålt och hög motivation."
+    "Hemmalag: Bradley, Ballard, Toal, McDonnell, McCann och Ceadach O'Neill borta, så backlinjen är tunn. Atcheson har en smäll. Tippad elva enligt The False 9: Charles; Devlin, McConville, Brown; Hume; Donley, Marshall m.fl. Inga nya skador 13/11.",
+    "Bortalag: Ponomarenko (skadad), Zubkov, Tsygankov och Zinchenko saknas. Dovbyk, Shaparenko och Vanat är inkallade. Maldera har ändrat i truppen, och Zabarnyi, Mykolenko, Sudakov och Trubin är med.",
+    "Form/tabell: Grupp B2: Nordirland 8 p (inga insläppta mål), Ungern 7 p, Ukraina 4 p. Nordirland vann första mötet med 3–0. Utsålt."
    ],
    "lineup": "",
-   "take": "Jämn match där Nordirland har mest att spela för. Ettan är överstreckad (47 mot 39) medan X och 2 är understreckade – X/2 är värt att gardera med.",
+   "take": "Jämn match där Nordirland har mest att spela för. Ettan är överstreckad (47 mot 39) medan krysset (28 mot 31) och tvåan (25 mot 30) är understreckade. X och 2 är värda att gardera med.",
    "suggest": [
     0,
     0,
@@ -171,16 +187,16 @@
    ],
    "sources": [
     {
+     "title": "The False 9, 13 nov 2026",
+     "url": "https://thefalse9.com/2026/11/northern-ireland-vs-ukraine-predicted-lineup-team-news.html"
+    },
+    {
+     "title": "Irish News, 13 nov 2026",
+     "url": "https://www.irishnews.com/sport/soccer/northern-ireland-focussed-on-another-important-win-over-ukraine-SWVXWTXA3JGLVBCYXRS3FZ3KA4/"
+    },
+    {
      "title": "Sportsmole, 12 nov 2026",
      "url": "https://www.sportsmole.co.uk/football/northern-ireland/uefa-nations-league/preview/n-ireland-vs-ukraine-prediction-team-news-lineups_609024.html"
-    },
-    {
-     "title": "time.news, 11 nov 2026",
-     "url": "https://time.news/northern-ireland-eyes-league-a-oneill-says-massive-carrot/"
-    },
-    {
-     "title": "UNN, 10 nov 2026",
-     "url": "https://unn.ua/en/news/nations-league-can-ukraine-get-revenge-against-northern-ireland-in-belfast"
     },
     {
      "title": "znaj.ua, 12 nov 2026",
@@ -194,29 +210,33 @@
    "away": "Irland",
    "impact": "high",
    "notes": [
-    "Hemmalag: NYTT 13/11: Xaver Schlager och Prass (båda lårmuskel) missar matchen. Sedan tidigare borta: Grüll, Chukwuemeka, Alaba, Wöber, Wanner, Grillitsch m.fl. Baumgartner tillbaka efter lång skada.",
-    "Bortalag: Inga nya skador enligt O'Shea. Bazunu borta (Travers in), Cullen ej med. Collins och Vale tillbaka. Parrott 10 mål på 7 tävlingslandskamper.",
-    "Form/tabell: Grupp B3: Österrike 8 p – seger ger gruppseger. Irland 5 p och behöver poäng för andraplatsen. Första mötet 2–2. Österrike utan nollor på åtta matcher."
+    "Hemmalag: Xaver Schlager och Prass (lårmuskel) missar matchen (13/11). Rangnick säger att åtta spelare saknas, varav sex ordinarie (bl.a. Alaba, Chukwuemeka, Wanner). NYTT 13/11: Alexander Schlager står i mål. Baumgartner orkar bara 60–70 min. Laimer är kapten. Trolig elva: A. Schlager; Posch, Lienhart, Danso, Mwene; Seiwald, Laimer; Schmid, Baumgartner, Lang; Kalajdzic/Gregoritsch. Spelas i Linz.",
+    "Bortalag: Förbundskapten Hallgrímsson har inga skadebekymmer i truppen. NYTT 13/11: Kaptenen Nathan Collins är tillbaka och startar, Abankwah är tillbaka från avstängning, Coleman är inte med i matchtruppen. Trolig 5-2-2-1 med Parrott (10 mål på 7 tävlingslandskamper) på topp. Bazunu borta.",
+    "Form/tabell: Grupp B3: Österrike 8 p, och seger ger gruppseger. Irland 5 p och behöver poäng för andraplatsen. Första mötet slutade 2–2. Österrike har inte hållit nollan på åtta matcher."
    ],
    "lineup": "",
-   "take": "Österrike tappar två startspelare på centralt mitt/vänsterkant samma morgon – troligen inte fullt inprisat. Ettan är dessutom något överstreckad (63 mot 61), så gardera med X.",
+   "take": "Österrike är kraftigt decimerat medan Irland har full trupp. Ettan är något överstreckad (63 mot 61). Avbräcken har funnits ute sedan 13/11 och är delvis inprisade, men gardera fortsatt med X.",
    "suggest": [
-    -3,
-    2,
+    -2,
+    1,
     1
    ],
    "sources": [
     {
+     "title": "ORF Sport, 13 nov 2026",
+     "url": "https://sport.orf.at/stories/3164847/"
+    },
+    {
+     "title": "RTÉ, 13–14 nov 2026",
+     "url": "https://www.rte.ie/sport/soccer/2026/1113/1599012-preview-ireland-look-to-heed-error-message-in-austria/"
+    },
+    {
+     "title": "Irish Times, 13 nov 2026",
+     "url": "https://www.irishtimes.com/sport/soccer/2026/11/13/think-growth-mindset-heimir-hallgrimsson-tweaking-preparations-for-ireland-austria-clash/"
+    },
+    {
      "title": "oe24, 13 nov 2026",
      "url": "https://www.oe24.at/a/bitter-zwei-oefb-stars-fallen-gegen-irland-aus-900132769"
-    },
-    {
-     "title": "Joyn News, 13 nov 2026",
-     "url": "https://news.joyn.at/themen/joynnews/oefb-team-greift-gegen-irland-nach-nations-league-gruppensieg-216195"
-    },
-    {
-     "title": "Irish Times, 11 nov 2026",
-     "url": "https://www.irishtimes.com/sport/soccer/2026/11/11/republic-of-ireland-v-austria-and-kosovo-match-details-team-news-and-whats-at-stake/"
     },
     {
      "title": "balls.ie, 11 nov 2026",
@@ -230,29 +250,29 @@
    "away": "Ungern",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Kvaratskhelia och Kiteishvili skadade, Kharebashvili ej med, Kochorashvili avstängd (enl. Sportsmole). Azarov tillbaka. Inga gjorda mål i turneringen.",
-    "Bortalag: Kapten Szoboszlai osäker (knävrickning 8/11), beslut tas i sista stund. Bolla, Kerkez och Lukács tränade vid sidan 10/11 (Lukács ej bristning). Kerkez tillbaka från avstängning.",
-    "Form/tabell: Grupp B2: Georgien sist 2 p, Ungern 7 p och kan gå upp i topp med seger. Ungern vann första mötet 1–0."
+    "Hemmalag: Kvaratskhelia och Kiteishvili skadade, Kharebashvili ej med, Kochorashvili avstängd (enligt Sportsmole). NYTT 13/11: Mikautadze är tillbaka i träning, och endast Altunashvili saknades på torsdagens pass. Georgien har inte gjort mål i turneringen.",
+    "Bortalag: NYTT 13/11: Rossi: Szoboszlai, Kerkez och Bolla är ”fit”, och Szoboszlai har tränat med laget sedan fredag. Lukács spelar troligen inte och Redzic är skadad. Varga B. och Sallai är tillbaka efter skador. Trolig elva (MTI): Tóth B.; Osváth, Orbán, Csinger, Kerkez; Schäfer, Vitális; Bolla, Szoboszlai, Sallai; Varga B.",
+    "Form/tabell: Grupp B2: Georgien sist med 2 p. Ungern har 7 p och kan gå upp i topp med seger. Ungern vann första mötet med 1–0."
    ],
    "lineup": "",
-   "take": "Ungern är favorit men Szoboszlai-beskedet är avgörande; utan honom är tvåan svagare. Tvåan är redan något överstreckad (42 mot 39) – vänta på startelvan.",
+   "take": "Ungern har sin kapten och sina anfallare tillbaka, vilket stärker tvåan. Tvåan är redan något överstreckad (42 mot 39) och ettan i nivå (30 mot 31). Den fräscha nyheten talar ändå något för 2.",
    "suggest": [
+    -1,
     0,
-    0,
-    0
+    1
    ],
    "sources": [
     {
+     "title": "Origo, 13 nov 2026",
+     "url": "https://www.origo.hu/sport/sport-futball/2026/11/magyar-valogatott-rossi-sajtotajekoztato"
+    },
+    {
+     "title": "nb1.hu, 13 nov 2026",
+     "url": "https://nb1.hu/hir/georgia-magyarorszag-varhato-kezdocsapat"
+    },
+    {
      "title": "Sportsmole, 12 nov 2026",
      "url": "https://www.sportsmole.co.uk/football/hungary/uefa-nations-league/preview/georgia-vs-hungary-prediction-team-news-lineups_608996.html"
-    },
-    {
-     "title": "Origo, 12 nov 2026",
-     "url": "https://www.origo.hu/sport/sport-futball/2026/11/szoboszlai-dominik-magyar-valogatott-georgia-2"
-    },
-    {
-     "title": "Rotowire, 10 nov 2026",
-     "url": "https://www.rotowire.com/soccer/headlines/dominik-szoboszlai-injury-remains-with-hungary-despite-knee-sprain-546134"
     },
     {
      "title": "Crystalsport, 9 nov 2026",
@@ -267,7 +287,7 @@
    "impact": "low",
    "notes": [
     "Hemmalag: Skyttekungen Aaron Collins (13 ligamål) borta – uttagen till Wales. Paterson väntas bredvid Nombe. Uppgifter om saknade wingbackar, oklart vilka.",
-    "Bortalag: Sibbick och Arubi på landslagsuppdrag. Förlorade 0–3 mot Notts County i EFL Trophy 10/11 med ändrat lag.",
+    "Bortalag: Sibbick och Arubi på landslagsuppdrag. Förlorade 0–3 mot Notts County i EFL Trophy 10/11 med ändrat lag. Inga ytterligare skadebesked hittade efter Bowyers presskonferens 13/11.",
     "Form/tabell: MK Dons 12:a (18 p), fem raka segrar i alla tävlingar. Burton 15:e (17 p), en seger på sex i ligan och svagt borta, utan seger i sju möten mot MK Dons."
    ],
    "lineup": "",
@@ -285,6 +305,10 @@
     {
      "title": "MK Dons, 10 nov 2026",
      "url": "https://www.mkdons.com/news/2026/november/10/news---collins-called-up-by-wales"
+    },
+    {
+     "title": "Burton Albion, 13 nov 2026",
+     "url": "https://www.burtonalbionfc.co.uk/news/2026/november/13/press-conference--mk-dons--a-"
     }
    ]
   },
@@ -294,12 +318,12 @@
    "away": "Plymouth",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Dave Challinor gör första ligamatchen som ny tränare (ersatte Pedersen). Målvakt oklar: Maynard-Brewer skadad, Lumley kan vara tillbaka annars Trueman. Max Lowe, Reece James, Burstow, Al-Hamadi och Onyango borta. Cooper och Mitchell tillbaka i träning.",
-    "Bortalag: Anfallaren Pepple borta ca två veckor, Mitchell stor osäkerhet, Pleguezuelo och Joe Edwards ute ca en månad, Baidoo långtidsskadad. Will Evans väntas leda anfallet.",
+    "Hemmalag: Dave Challinor gör första ligamatchen som ny tränare (ersatte Pedersen). Maynard-Brewer (smäll i FA-cupen) väntas missa – Lumley tippas starta om han är fit. Max Lowe (återfall, 4–6 veckor) och Reece James borta – ingen naturlig vänsterwingback. Burstow, Al-Hamadi och Onyango borta. NYTT 13/11: Lumley, Billy Mitchell, Cooper och Louie Barry kan alla göra comeback i någon form.",
+    "Bortalag: Skytteligaledaren Pepple (vad) borta, Pleguezuelo och Joe Edwards ute ca en månad. NYTT 13/11: Baidoo fick ny baksida lår-skada i comebacken i FA-cupen, borta >1 månad – totalt sex borta. Alex Mitchell och Bakinson sena tester, Caleb Watts tillbaka i träning. Will Evans väntas leda anfallet.",
     "Form/tabell: Plymouth 5:a (23 p) och obesegrade i fyra. Wednesday 9:a (20 p) men sex matcher utan seger i alla tävlingar."
    ],
    "lineup": "",
-   "take": "Plymouths skador (13/11) är sena och kan vara ofullständigt inprisade, och ny tränare kan ge Wednesday en lyft. Ettan är lätt överstreckad (47 mot 44), men nyheterna talar för hemmalaget.",
+   "take": "Plymouth saknar sex spelare inkl. bästa målskytten och har två sena tveksamheter, medan Wednesday kan få tillbaka flera nyckelspelare. Ettan är lätt överstreckad (47 mot 44) men nyheterna talar för hemmalaget; tvåan något understreckad (28 mot 31).",
    "suggest": [
     2,
     0,
@@ -307,12 +331,20 @@
    ],
    "sources": [
     {
-     "title": "Yahoo/Plymouth Herald, 11 nov 2026",
-     "url": "https://uk.sports.yahoo.com/news/concerned-aribim-pepple-among-triple-120127526.html"
+     "title": "Vital Football, 13 nov 2026",
+     "url": "https://vitalfootball.co.uk/sheffield-wednesday-11-plymouth-26-27-h/"
+    },
+    {
+     "title": "Football Lowdown, 13 nov 2026",
+     "url": "https://footballlowdown.com/plymouth-argyle-injury-setback-revealed/"
     },
     {
      "title": "Football League World, 13 nov 2026",
      "url": "https://footballleagueworld.co.uk/the-sixteen-players-set-to-miss-sheffield-wednesday-vs-plymouth-argyle/"
+    },
+    {
+     "title": "Yahoo/Plymouth Herald, 11 nov 2026",
+     "url": "https://uk.sports.yahoo.com/news/concerned-aribim-pepple-among-triple-120127526.html"
     },
     {
      "title": "Yahoo, 12 nov 2026",
@@ -331,7 +363,7 @@
    "impact": "low",
    "notes": [
     "Hemmalag: Förstemålvakten Ashby-Hammond avstängd, Wogan skadad – lånet Whatmuff stannar hemma från England U20 och spelar. Inga andra skador. Wootton 9 mål.",
-    "Bortalag: O'Connor och Rinomhota avstängda (fem gula). Lane, Ward och Earthy skadade, Godwin-Malife väntas spela. Vilade A-laget i Trophy i veckan. Marriott 8 ligamål.",
+    "Bortalag: O'Connor och Rinomhota avstängda (fem gula). Lane, Ward och Earthy skadade, Godwin-Malife väntas spela. Lokalmedia rapporterar att Reading saknar nyckelspelare i försvaret. Vilade A-laget i Trophy i veckan. Marriott 8 ligamål.",
     "Form/tabell: Stockport 2:a (26 p), fyra raka hemmasegrar. Reading 6:e (22 p), en seger på sju bortamatcher."
    ],
    "lineup": "",
@@ -367,7 +399,7 @@
     "Form/tabell: Bottenmöte: Wimbledon 18:e (13 p, sex ligamatcher utan seger), Blackpool 19:e strax efter."
    ],
    "lineup": "",
-   "take": "Två lag i dålig form. Ettan är överstreckad (38 mot 34) och tvåan understreckad (34 mot 39) – tvåan har visst värde.",
+   "take": "Två lag i dålig form, inga nya besked från tränarnas pressträffar 13/11 hittade. Ettan är överstreckad (38 mot 34) och tvåan understreckad (34 mot 39) – tvåan har visst värde.",
    "suggest": [
     0,
     0,
@@ -385,6 +417,10 @@
     {
      "title": "Blackpool Gazette, 11 nov 2026",
      "url": "https://www.blackpoolgazette.co.uk/sport/ian-evatt-blackpool-injuries-afc-wimbledon-league-one-9346665"
+    },
+    {
+     "title": "AFC Wimbledon, 13 nov 2026",
+     "url": "https://www.afcwimbledon.co.uk/news/2026/november/13/johnnie-jackson-on-blackpool-and-plough-lane-memories"
     }
    ]
   },
@@ -428,31 +464,39 @@
    "n": 13,
    "home": "Swindon",
    "away": "Grimsby",
-   "impact": "low",
+   "impact": "medium",
    "notes": [
-    "Hemmalag: Inga färska skadebesked hittade. Förlorat båda cupmatcherna senaste veckan (MK Dons 7/11, Plymouth 10/11).",
-    "Bortalag: Ställde upp med ett rent akademilag i Trophy 10/11 – A-laget utvilat. Staunton, Sweeney, Gardner och Green på väg tillbaka.",
-    "Form/tabell: Swindon 13:e (19 p), Grimsby 6:a (20 p). Grimsby vann senaste mötet 4–0."
+    "Hemmalag: Inga färska skadebesked hittade för Ian Holloways lag. Majekodunmi och Tom Nichols pressar på för start efter inhopp. Holloway har gått över till trebackslinje med gott resultat. Förlorat båda cupmatcherna senaste veckan (MK Dons 7/11, Plymouth 10/11).",
+    "Bortalag: NYTT 13/11: Artell talar om en 'omfattande skadelista' (namn ej angivna). Geza David Turi och Maldini Kacurri borta på landslagsuppdrag. Målvakten Cartwright tillbaka efter ett års frånvaro, slåss med Pym. Antydde att akademispelare kan få chansen. Ställde upp med ett rent akademilag i Trophy 10/11 – A-laget utvilat.",
+    "Form/tabell: Swindon 13:e (19 p), obesegrade i fyra ligamatcher (senast 2–1 mot Rotherham). Grimsby 6:a (20 p), bara en seger på åtta bortamatcher i ligan, 0–2 hemma mot Northampton i senaste ligamatchen. Grimsby vann senaste mötet 4–0."
    ],
    "lineup": "",
-   "take": "Tvåan är kraftigt understreckad (34 mot 46) och ettan överstreckad (36 mot 28) – tvåan har tydligt spelvärde.",
+   "take": "Tvåan är kraftigt understreckad (34 mot 46) och ettan överstreckad (36 mot 28), men Grimsby saknar två spelare på landslagsuppdrag och har en lång skadelista samt svag bortaform. Spelvärdet på tvåan krymper; krysset är en rimlig gardering.",
    "suggest": [
-    0,
-    0,
-    0
+    1,
+    1,
+    -2
    ],
    "sources": [
     {
+     "title": "Grimsby Town, 13 nov 2026",
+     "url": "https://gtfc.co.uk/every-word-david-artells-pre-swindon-presser-2/"
+    },
+    {
+     "title": "Grimsby Town, 13 nov 2026",
+     "url": "https://gtfc.co.uk/match-preview-swindon-town-a/"
+    },
+    {
+     "title": "FootballPredictions.com, 12 nov 2026",
+     "url": "https://footballpredictions.com/footballpredictions/league-2-predictions/swindon-vs-grimsby-town-prediction-14-11-2026/"
+    },
+    {
+     "title": "LiveScore, 13 nov 2026",
+     "url": "https://www.livescore.com/en/news/football/tips/all-10-league-two-predictions-november-14-2026/"
+    },
+    {
      "title": "Grimsby Town, 10 nov 2026",
      "url": "https://gtfc.co.uk/young-mariners-gain-valuable-experience-in-forest-defeat/"
-    },
-    {
-     "title": "Grimsby Town, 7 nov 2026",
-     "url": "https://gtfc.co.uk/every-word-david-artells-pre-stafford-presser/"
-    },
-    {
-     "title": "NewsNow Swindon, 10–11 nov 2026",
-     "url": "https://www.newsnow.co.uk/h/Sport/Football/League+Two/Swindon+Town"
     }
    ]
   }

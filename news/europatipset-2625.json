@@ -1,0 +1,472 @@
+{
+ "game": "Europatipset",
+ "draw": 2625,
+ "round": "Europatipset v 46, stänger 2026-11-15 14:59",
+ "author": "Claude (schemalagd)",
+ "updatedAt": 1794646865603,
+ "checkedAt": {
+  "d": "2026-11-14T09:01:05Z"
+ },
+ "matches": [
+  {
+   "n": 1,
+   "home": "Spanien",
+   "away": "England",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Spanien (De la Fuente) får tillbaka Lamine Yamal och Oyarzabal, som vilades i 2-0 mot Tjeckien 12/11. Nico Williams tränade med gruppen 13/11 efter sjukdom. Laporte (sjuk) osäker och Zubimendi trött efter 90 minuter, så Pedri väntas in.",
+    "Bortalag: England (Tuchel) får tillbaka Lewis-Skelly efter avstängning och troligen Konsa efter skada. Spence har tränat individuellt och väntas bara på bänken. Saka och Guéhi saknades redan i förra samlingen.",
+    "Form/tabell: Båda är klara för kvartsfinal. Spanien har 15 p (5/5) och England 12 p efter 2-1 mot Kroatien. Matchen avgör gruppsegern: Spanien räcker oavgjort, England måste vinna (+9 mot +12 i målskillnad). Spanien vann första mötet 3-2 och är obesegrat i nästan 32 månader."
+   ],
+   "lineup": "Trolig (Sports Mole): Spanien: Simón; Porro, Cubarsí, Huijsen, Cucurella; Ruiz, Pedri; Yamal, López, Baena; Oyarzabal. England: Pickford; Alexander-Arnold, Konsa, Burn, Hall; Anderson, Rice; Rogers, Bellingham, Gordon; Kane.",
+   "take": "Spanien är i stort sett fulltaligt och spelar på hemmaplan. Oddsen ger 59/23/18 mot strecket 51/30/19, så ettan är understreckad med cirka 8 procentenheter och krysset överstreckat med cirka 7.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 13 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/spain/uefa-nations-league/preview/spain-vs-england-prediction-team-news-lineups_609045.html"
+    },
+    {
+     "title": "Sports Mole, 13 nov 2026 (Spaniens trolig elva)",
+     "url": "https://www.sportsmole.co.uk/football/spain/uefa-nations-league/predicted-lineups/will-yamal-oyarzabal-return-how-spain-could-line-up-against-england_609046.html"
+    },
+    {
+     "title": "Sports Mole, 13 nov 2026 (Englands trolig elva)",
+     "url": "https://www.sportsmole.co.uk/football/england/uefa-nations-league/predicted-lineups/konsa-returns-mls-call-how-england-could-line-up-against-spain_609048.html"
+    },
+    {
+     "title": "FútbolFantasy, 13 nov 2026",
+     "url": "https://www.futbolfantasy.com/laliga/noticias/154710-espana-recupera-a-lamine-yamal-nico-williams-y-oyarzabal-este-viernes"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "home": "Frankrike",
+   "away": "Turkiet",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Frankrike (Zidane) väntas ha Mbappé från start som nia, men han har haft en lättare känning och planeras för cirka 75 minuter (L'Équipe via Ouest-France 14/11). Upamecano har lämnat truppen av personliga skäl. Saliba, Tchouaméni och Dembélé är skadade.",
+    "Bortalag: Turkiet leds av nye förbundskaptenen Sergen Yalçın, som ersatt Montella; hans första match var 1-2 hemma mot Belgien. Ozan Kabak är avstängd för gula kort och har lämnat lägret. Bardakcı är tillbaka efter avstängning, och Arda Güler väntas leda anfallet.",
+    "Form/tabell: Italien och Frankrike har 10 p (Italien före på inbördes möten efter 3-1 mot Frankrike 12/11), Belgien 9 och Turkiet 0 p efter fem förluster. Frankrike behöver vinna för att säkra kvartsfinalplatsen, och för Turkiet kan resultatet avgöra om de åker ur direkt till liga B. Matchen spelas i Bordeaux."
+   ],
+   "lineup": "Trolig (Sports Mole): Frankrike: Maignan; Gusto, Jacquet, Konaté, Truffert; Camavinga, Rabiot; Olise, Cherki, Doué; Mbappé. Turkiet: Çakır; Aydın, Kabak, Demiral, Kadıoğlu; Yüksek, Kökçü; Akgün, Güler, Yılmaz; Ünal (Kabak är avstängd).",
+   "take": "Frankrike har mycket att spela för mot ett formsvagt Turkiet utan Kabak. Odds hittades inte. 82 % på ettan är rimligt för en klar favorit men ger lite marginal; Mbappés begränsade speltid är ett litet frågetecken.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 13 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/france/uefa-nations-league/preview/france-vs-turkey-prediction-team-news-lineups_609038.html"
+    },
+    {
+     "title": "MCE TV/Ouest-France, 14 nov 2026",
+     "url": "https://mcetv.ouest-france.fr/2026/equipe-france-mbappe-retour-axe-turquie/"
+    },
+    {
+     "title": "Aksiyon, 14 nov 2026",
+     "url": "https://aksiyon.com.tr/turkiye-fransa-deplasmaninda-a-ligi-nde-kalma-umudunu-son-maca-tasiyor-394814"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "home": "Kroatien",
+   "away": "Tjeckien",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Kroatien (Bilić) har Perišić tillbaka efter avstängning, och Modrić tränar fullt (han hoppade in de sista 14 minuterna på Wembley). Baturina, Vlašić, Matanović och Sučić stod över fredagens träning för vila, enligt Nova TV inte på grund av skador. Viss rotation är trolig. Matchen spelas på Opus Arena i Osijek.",
+    "Bortalag: Tjeckiens (Santi Denia) backlinje är decimerad: lagkapten Krejčí är avstängd efter rött kort mot Spanien, Hranáč skadad och Chaloupek sjuk (lämnade truppen 14/11). Debutanten Prebsl är inkallad, och bara Zima och Vlček finns kvar som mittbackar.",
+    "Form/tabell: Kroatien har 3 p och Tjeckien 0 p efter fem raka förluster (0-2 mot Spanien). Kroatien räcker oavgjort för att hålla tredjeplatsen och få playoff i mars, medan Tjeckien måste vinna för att undvika direkt nedflyttning. Denia: ”som en VM-final”. Kroatien vann första mötet 2-1 i Prag."
+   ],
+   "lineup": "Inga troliga startelvor från säkra källor ännu. Bilić väntas blanda Modrić och Perišić med utvilade spelare.",
+   "take": "Tjeckien måste gå för seger men saknar tre mittbackar, varav Chaloupek blev klar först 14/11. Det stärker Kroatiens etta något. Odds hittades inte; 63 % på ettan känns rimligt, och tvåan (12 %) är sannolikt inte underspelad.",
+   "suggest": [
+    1,
+    0,
+    -1
+   ],
+   "sources": [
+    {
+     "title": "Fotbalportal.cz, 14 nov 2026",
+     "url": "https://www.fotbalportal.cz/cesko/synot-liga/81805-filip-prebsl-chaloupek-nemoc-reprezentace-stoperi-osijek/"
+    },
+    {
+     "title": "CNN Prima NEWS/ČTK, 13 nov 2026",
+     "url": "https://cnn.iprima.cz/sport/v-chorvatsku-to-bude-jako-finale-ms-rekl-denia-veri-ze-cesko-v-nedeli-odvrati-primy-sestup-527082"
+    },
+    {
+     "title": "Glas Slavonije, 13 nov 2026",
+     "url": "https://glas-slavonije.hr/sport/nogomet/2026/11/13/vatreni-stigli-u-osijek-odradili-prvi-trening-na-opus-areni-uoci-nedjeljnog-susreta-s-ceskom-797818/"
+    },
+    {
+     "title": "Svijet Kladjenja, nov 2026",
+     "url": "https://svijetkladjenja.com/vijesti/bilic-rotacija-ceska-modric-perisic-osijek"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "home": "Belgien",
+   "away": "Italien",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Belgien (Van Bommel) har Lavia tillbaka efter avstängning och troligen in för Raskin; Seys kan ersätta De Cuyper. Lukaku (lår/höft) blir troligen klar, men mer sannolikt för bänken. Inga nya skador eller avstängningar efter 2-1 mot Turkiet.",
+    "Bortalag: Italien (Mancini) är utan Frattesi (muskel, lämnade truppen 14/11), G. Mancini (muskel), Di Lorenzo, Raspadori och Kean, och Zaniolo har lämnat av personliga skäl.",
+    "Form/tabell: Italien 10 p (vann 3-1 mot Frankrike 12/11), Frankrike 10 och Belgien 9. Oavgjort räcker för Italiens kvartsfinal och seger ger gruppseger. Belgien måste vinna för att inte vara beroende av Frankrike–Turkiet. Belgien vann första mötet 2-0."
+   ],
+   "lineup": "Trolig (Diretta): Belgien: Lammens; Castagne, Ngoy, Mechele, De Cuyper/Seys; De Bruyne, Raskin/Lavia, Tielemans; Moreira, De Ketelaere, Doku. Italien: Donnarumma; Kayode, Scalvini, Bastoni, Calafiori; ?, Tonali, Barella; S. Esposito, P. Esposito, Cambiaghi.",
+   "take": "Marknaden (cirka 2.20/3.65/3.05) ger 43/26/31 mot strecket 23/41/36. Ettan är kraftigt understreckad (cirka 20 procentenheter) och krysset överstreckat (cirka 15), så Belgien är det klart värdefullaste tecknet.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Diretta.it, nov 2026",
+     "url": "https://www.diretta.it/news/calcio-uefa-nations-league-nations-league-belgio-italia-dove-vedere-la-partita-probabili-formazioni-e-quote/CrEWFiOk/"
+    },
+    {
+     "title": "TuttoAtalanta, 14 nov 2026",
+     "url": "https://www.tuttoatalanta.com/italia/belgio-italia-frattesi-lascia-ritiro-bruxelles-pari-141822"
+    },
+    {
+     "title": "Voetbalfocus, 14 nov 2026",
+     "url": "https://voetbalfocus.be/rode-duivels-twee-wissels-tegen-italie"
+    },
+    {
+     "title": "Voetbalfocus, 13 nov 2026",
+     "url": "https://voetbalfocus.be/lukaku-inzetbaar-italie-van-bommel-blessure-update/"
+    },
+    {
+     "title": "TheHardTackle, 14 nov 2026",
+     "url": "https://thehardtackle.com/round-up/2026/11/14/belgium-vs-italy-preview-prediction-probable-lineups-tactics-team-news-key-stats"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "home": "Lettland",
+   "away": "Armenien",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Lettland saknar Varslavāns och Penkevics (skador). Meļņiks gjorde mål i 1-2 mot Montenegro 12/11, då Montenegro avgjorde på tilläggstid med tio man.",
+    "Bortalag: Armenien saknar skyttekungen Spertsyan samt Muradyan och H. Avagyan (skador). Gharibyan leder anfallet. Armenien är obesegrat i två matcher (0-0 mot Montenegro, 1-1 mot Cypern).",
+    "Form/tabell: Montenegro 13 p, Cypern 8, Armenien 5 och Lettland 1. Placeringarna är klara, så matchen gäller i princip bara prestige; Lettland vill undvika en säsong utan seger. Armenien vann första mötet 2-0. Spelas på Skonto i Riga."
+   ],
+   "lineup": "Trolig (Sports Mole): Lettland: Matrevics; Jurkovskis, Melniks, Cernomordijs, Vientiess, Cirkin; Daskevics, Vapne, Zelenkovs, Ciganiks; Uldrikis. Armenien: Mishiev; Bandikyan, Harutyunyan, Mkrtchyan, Tiknizyan; Hovhannisyan, Iwu; Grigoryan, Serobyan, Shaghoyan; Gharibyan.",
+   "take": "Oddsen (cirka 3.00/3.30/2.45) ger 32/29/39 med Armenien som favorit, medan strecket är 77/11/12. Ettan är alltså grovt överstreckad och tvåan och krysset kraftigt understreckade, så det finns stort garderingsvärde.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 13 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/latvia/uefa-nations-league/preview/latvia-vs-armenia-prediction-team-news-lineups_609054.html"
+    },
+    {
+     "title": "MightyTips, 13 nov 2026",
+     "url": "https://www.mightytips.com/football-predictions/latvia-vs-armenia-prediction-15-11-2026/"
+    },
+    {
+     "title": "Sportacentrs.com, 12 nov 2026",
+     "url": "https://sportacentrs.com/futbols/latvijas_izlase/12112026-priekspedeja_naciju_ligas_spele"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "home": "Cypern",
+   "away": "Montenegro",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Cypern (Mantzios) har Pileas avstängd, och Sielis, Christou, Sotiriou och Kosti är skadade. Kraftig rotation väntas.",
+    "Bortalag: Montenegro har Savić avstängd (utvisad mot Lettland 12/11), och Lončar är enligt uppgift också avstängd. Marušić är skadad. Krstović och Osmajić leder anfallet.",
+    "Form/tabell: Montenegro (13 p) är klart som gruppvinnare och flyttas upp till liga B. Cypern (8 p) är klart som tvåa och spelar playoff, med lottning 20/11. Matchen saknar betydelse för tabellen."
+   ],
+   "lineup": "Inga troliga startelvor från säkra källor; rotation väntas hos båda.",
+   "take": "Oddsen (cirka 3.05/3.20/2.20) ger cirka 30/29/41 mot strecket 51/22/27. Ettan är kraftigt överstreckad (cirka 21 procentenheter) och tvåan samt krysset understreckade. Matchen saknar betydelse, så rotationen gör den svårbedömd.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "The Football Faithful, 13 nov 2026",
+     "url": "https://thefootballfaithful.com/cyprus-vs-montenegro-prediction-betting-tips-15-11-2026/"
+    },
+    {
+     "title": "Alphanews.live, 12 nov 2026",
+     "url": "https://www.alphanews.live/sports/oristika-sti-2i-thesi-i-ethniki-exasfalise-tin-protia-to-mavrovounio/"
+    },
+    {
+     "title": "Sportacentrs.com, 12 nov 2026",
+     "url": "https://sportacentrs.com/futbols/latvijas_izlase/12112026-priekspedeja_naciju_ligas_spele"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "home": "Eibar",
+   "away": "Cadiz",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Eibar (Beñat San José) 4:a med 23 p på 12 matcher, men bara 2 av de senaste 12 poängen. Inga färska skaderapporter hittade.",
+    "Bortalag: Cádiz (Borja Jiménez) 20:e med 10 p, två raka ligaförluster (senast mot Oviedo). Javi Castro skadad, Kovačević och Toibibou på landslagsuppdrag – backlinjen måste göras om. Petit och Vladys tillbaka i truppen. Jiménez har inte avslöjat vem som står i mål.",
+    "Form/tabell: Eibar i formsvacka men klart bättre placerat. Senaste mötet slutade Eibar–Cádiz 3-1 (mars 2026)."
+   ],
+   "lineup": "",
+   "take": "Enligt oddsen är det 57/25/19 % mot strecket 71/15/14. Ettan är kraftigt överstreckad och krysset understreckat, och Eibars formsvacka talar för att gardera med X. Nyheterna är små och redan prissatta.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "La Gaceta de Cádiz, 13 nov 2026",
+     "url": "https://lagacetadecadiz.es/borja-jimenez-mantiene-la-incognita-en-la-porteria-del-cadiz-habra-momentos-para-los-dos/"
+    },
+    {
+     "title": "VAVEL tabell Segunda, 13 nov 2026",
+     "url": "https://www.vavel.com/en-us/data/segunda-division/standings"
+    },
+    {
+     "title": "Starting11, nov 2026",
+     "url": "https://starting11.com/fixtures/eibar-vs-cadiz"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "home": "Granada",
+   "away": "Las Palmas",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Granada (Pacheta) har vunnit fem raka och ligger 5:a med 23 p. Arnaiz, Casadesús och Diallo väntas saknas, och Owen Emeka är med i U17-VM. Alemañ, Alcaraz och Marqués har haft känningar men är spelbara.",
+    "Bortalag: Las Palmas (Albert Sánchez) ligger 10:a med 20 p efter tre raka segrar. Försvaret är hårt drabbat: Herzog och Pezzolesi är med U21-landslaget, Sandro har en vadbristning och Viti, Sergio Ruiz och Clemente är långtidsskadade. Marvin Park och Iñaki González är tillbaka men startar inte.",
+    "Form/tabell: Båda lagen är i bra form. Las Palmas måste improvisera i backlinjen."
+   ],
+   "lineup": "",
+   "take": "Enligt oddsen är det 54/25/21 % mot strecket 78/15/7. Ettan är kraftigt överstreckad även med Las Palmas avbräck, och krysset är understreckat. Las Palmas frånvaro har varit känd sedan 11–13 nov och är troligen prissatt.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Infobae/EFE, 11 nov 2026",
+     "url": "https://www.infobae.com/espana/agencias/2026/11/11/casadesus-diallo-y-arnaiz-apuntan-a-seguir-de-baja-ante-las-palmas/"
+    },
+    {
+     "title": "Infobae/EFE, 13 nov 2026",
+     "url": "https://www.infobae.com/espana/agencias/2026/11/13/la-ud-las-palmas-recupera-a-marvin-park-e-inaki-gonzalez-para-visitar-al-granada/"
+    },
+    {
+     "title": "Canarias7, 11 nov 2026",
+     "url": "https://www.canarias7.es/deportes/ud-las-palmas/defensa-cogida-alfileres-visitar-granada-bajas-herzog-20261111175253-nt.html"
+    },
+    {
+     "title": "VAVEL tabell Segunda, 13 nov 2026",
+     "url": "https://www.vavel.com/en-us/data/segunda-division/standings"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "home": "Tyskland",
+   "away": "Nederländerna",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Tyskland (Klopp) vann i Serbien 3-1 den 13/11 (självmål Babić, Wirtz, Gruda) och har 8 p. Seger tar laget till kvartsfinal. Vid oavgjort krävs att Grekland inte vinner, och förlust betyder att Tyskland är ute. Anton är borta (muskelproblem, Baku inkallad). Klopp: ”Endspiel in Berlin”.",
+    "Bortalag: Nederländerna (Xavi) krossade Grekland 7-0 och har 11 p. Laget är i praktiken klart för kvartsfinal. Frenkie de Jong har ryggbesvär och byttes ut i halvtid, men Xavi tror att han spelar. Aké är skadad 4–6 veckor och Van Dijk saknas.",
+    "Form/tabell: Nederländerna 11, Tyskland 8, Grekland 8, Serbien 0. Förra mötet slutade 1-1."
+   ],
+   "lineup": "",
+   "take": "Tyskland måste vinna, medan Nederländerna har lite att spela för och kan rotera. Strecket 49/29/22 verkar rimligt, men motivationsläget talar något för ettan.",
+   "suggest": [
+    1,
+    0,
+    -1
+   ],
+   "sources": [
+    {
+     "title": "DFB, 13 nov 2026",
+     "url": "https://www.dfb.de/news/souveraener-sieg-in-serbien"
+    },
+    {
+     "title": "Sportschau, 14 nov 2026",
+     "url": "https://www.sportschau.de/fussball/nationalmannschaft/dfb-team-sichert-sich-sein-endspiel-gegen-niederlande,serbien-deutschland-spielbericht-100.html"
+    },
+    {
+     "title": "Neue Westfälische, 14 nov 2026",
+     "url": "https://www.nw.de/sport/sport_nachrichten/24462681_Wichtiger-Sieg-gegen-Serbien-Das-sagt-Klopp-und-das-steckt-dahinter.html"
+    },
+    {
+     "title": "Berliner Kurier, nov 2026",
+     "url": "https://berliner-kurier.de/article/nations-league-deutschland-holland-klopp-viertelfinale-gruppensieg-10596427"
+    },
+    {
+     "title": "NOS liveblog, 13 nov 2026",
+     "url": "https://nos.nl/liveblog/2639338-xavi-niet-verrast-na-klinkende-zege-oranje-de-jong-had-last"
+    },
+    {
+     "title": "NOS, 13 nov 2026",
+     "url": "https://nos.nl/artikel/2639398-monsterzege-wervelend-oranje-op-grieken-7-0-kwartfinales-nations-league-vrijwel-zeker"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "home": "Grekland",
+   "away": "Serbien",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Grekland (Jovanović) föll 0-7 i Amsterdam och moralen är skakad. Laget måste vinna i Volos och behöver dessutom att Tyskland inte slår Nederländerna (vid tre lag på 11 p avgör inbördes möten). Inga nya skador rapporterade.",
+    "Bortalag: Serbien har 0 p och är klart för nedflyttning från liga A. Živković (direkt rött) och Dragojević (rött) är avstängda efter förlusten mot Tyskland. Lagkaptenen Pavlović, Vlahović och Stanković m.fl. saknades redan.",
+    "Form/tabell: Grekland 8 p, Serbien 0 p efter fem förluster."
+   ],
+   "lineup": "",
+   "take": "Grekland behöver vinna mot ett försvagat Serbien som inget har att spela för. 68 % på ettan verkar rimligt eller något lågt. Avstängningarna är nya sedan fredagen.",
+   "suggest": [
+    1,
+    0,
+    -1
+   ],
+   "sources": [
+    {
+     "title": "Gazzetta.gr, 13 nov 2026",
+     "url": "https://gazzetta.gr/football/uefa-nations-league/2586354/ellada-serbia-o-zibkobits-apoblithike-kontra-sti-germania-kai"
+    },
+    {
+     "title": "Telesport, 14 nov 2026",
+     "url": "https://telesport.rs/2026/11/14/paunovic-svlacionica-je-jako-razocarana-odlukama/"
+    },
+    {
+     "title": "Sport FM, 14 nov 2026",
+     "url": "https://www.sport-fm.gr/article/5160939"
+    },
+    {
+     "title": "DFB, 13 nov 2026",
+     "url": "https://www.dfb.de/news/souveraener-sieg-in-serbien"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "home": "Schweiz",
+   "away": "Skottland",
+   "impact": "high",
+   "notes": [
+    "Hemmalag: Schweiz (Yakin) spelade 0-0 i Slovenien och är gruppvinnare med 13 p. Laget är klart för uppflyttning till liga A och kan spela ”avslappnat”. Xhaka och Muheim är skadade, Manzambi har lämnat truppen (vaden) och Rodríguez har haft känningar. Embolo är tillbaka. Freuler står på 99 landskamper.",
+    "Bortalag: Skottland (Pocognoli) slog Nordmakedonien 2-1 (McGinn 2) och har 7 p. Laget måste vinna i St. Gallen och hoppas att Slovenien inte vinner i Skopje för att ta andraplatsen och kvalplatsen. McTominay och Ché Adams är med.",
+    "Form/tabell: Schweiz 13, Slovenien 8, Skottland 7, Nordmakedonien 0. Schweiz vann första mötet 3-0."
+   ],
+   "lineup": "",
+   "take": "Ett odds från 13/11 (1.50/4.35/6.50) ger 63/22/15 % mot strecket 71/17/12. Ettan är överstreckad, och Schweiz har inget att spela för medan Skottland måste vinna. X och 2 är värda att gardera.",
+   "suggest": [
+    -2,
+    1,
+    1
+   ],
+   "sources": [
+    {
+     "title": "blue News, 14 nov 2026",
+     "url": "https://www.bluewin.ch/de/sport/fussball/schweizer-geniessen-aufstieg-nach-schwierigem-spiel-li.3673271"
+    },
+    {
+     "title": "Sky Sports, 13 nov 2026",
+     "url": "https://www.skysports.com/football/scotland-vs-north-macedonia/report/554098"
+    },
+    {
+     "title": "Betbrothers, 13 nov 2026",
+     "url": "https://betbrothers.uk/betting-tips/switzerland-scotland-uefa-nations-league-2026/"
+    },
+    {
+     "title": "Portal24, 14 nov 2026",
+     "url": "https://portal24.si/slovenija-ustavila-svico-odlocitev-o-drugem-mestu-bo-padla-v-skopju/"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "home": "Nordmakedonien",
+   "away": "Slovenien",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Nordmakedonien (Sedloski) har 0 p, är klart för nedflyttning till liga C och har förlorat fem raka. Miovski och Zajkov saknas.",
+    "Bortalag: Slovenien (Cesar) har 8 p. Bijol är avstängd (gult kort nr två mot Schweiz), och Šeško och Elšnik (cirka en månad) är skadade. Brekalo är osäker och Zec tillbaka efter avstängning. Oavgjort räcker inte om Skottland vinner i Schweiz, så Slovenien behöver vinna för att säkra kvalplatsen.",
+    "Form/tabell: Slovenien slog Nordmakedonien 2-0 i september."
+   ],
+   "lineup": "",
+   "take": "45 % på ett mållöst bottenlag ser högt ut, och Slovenien har allt att spela för trots att Bijol saknas. Tvåan är troligen understreckad.",
+   "suggest": [
+    -1,
+    0,
+    1
+   ],
+   "sources": [
+    {
+     "title": "Planet Nogomet, 13 nov 2026",
+     "url": "https://planetnogomet.si/reprezentanca/slovenija-skopje-jaka-bijol-out-1126/"
+    },
+    {
+     "title": "Portal24, 14 nov 2026",
+     "url": "https://portal24.si/slovenija-ustavila-svico-odlocitev-o-drugem-mestu-bo-padla-v-skopju/"
+    },
+    {
+     "title": "Ekipa.mk, 9 nov 2026",
+     "url": "https://ekipa.mk/slovenija-bez-ushte-eden-vazhen-igrach-doaga-vo-skopje/"
+    },
+    {
+     "title": "VAVEL Slovenien, nov 2026",
+     "url": "https://www.vavel.com/en/data/slovenia/results/"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "home": "Kazakstan",
+   "away": "Slovakien",
+   "impact": "high",
+   "notes": [
+    "Hemmalag: Kazakstan (van 't Schip) ligger sist med 2 p efter 1-2 i Moldavien den 13/11. Satpayev och Karimov saknas. Hemmaplan är Astana Arena (avspark 20.00 lokal tid).",
+    "Bortalag: Slovakien (Weiss) spelade 2-2 mot Färöarna och har vunnit gruppen. Laget är klart för uppflyttning till liga B. Weiss säger att han kommer att rotera kraftigt och vila spelare. Lobotka, Suslov, Schranz, Sauer, Obert och Vavro är skadade. Lång resa till Astana.",
+    "Form/tabell: Slovakien vann första mötet 2-1. Kazakstan har bara tagit två oavgjorda på fem matcher."
+   ],
+   "lineup": "",
+   "take": "Slovakien har inget att spela för, roterar kraftigt och har en lång resa. 58 % på tvåan ser för högt ut, och 1 eller X är värda att gardera.",
+   "suggest": [
+    1,
+    1,
+    -2
+   ],
+   "sources": [
+    {
+     "title": "Sportnet SME, 13 nov 2026",
+     "url": "https://sportnet.sme.sk/spravy/futbal-slovensko-faerske-ostrovy-vladimir-weiss-hodnotenie-liga-narodov-2026"
+    },
+    {
+     "title": "VAVEL Kazakstan, nov 2026",
+     "url": "https://www.vavel.com/en/data/kazakhstan/results/"
+    },
+    {
+     "title": "Sports.kz, nov 2026",
+     "url": "https://www.sports.kz/news/slovakiya-obyyavila-sostav-na-match-protiv-kazahstana-v-lige-natsiy"
+    }
+   ]
+  }
+ ]
+}
