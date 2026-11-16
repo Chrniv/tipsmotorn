@@ -1,0 +1,436 @@
+{
+ "game": "Europatipset",
+ "draw": 2626,
+ "round": "Europatipset v 47, stänger 2026-11-17 20:44",
+ "author": "Claude (schemalagd)",
+ "updatedAt": 1794819520482,
+ "checkedAt": {
+  "d": "2026-11-16T08:58:40Z"
+ },
+ "matches": [
+  {
+   "n": 1,
+   "home": "Polen",
+   "away": "Sverige",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Kiwior är avstängd. Grabara (korsband) och Zieliński (sjuk) saknas. Matty Cash är osäker, och enligt Khelnow har Cash och Frankowski lämnat lägret.",
+    "Bortalag: Bergvall (knä) och Wålemark (muskel) saknas. Sverige har redan vunnit gruppen och är klart för League A, så de spelar utan tabellpress.",
+    "Form/tabell: B4: Sverige 13 p, Bosnien 8 p, Polen 4 p, Rumänien 3 p. Polen har en seger på åtta matcher och föll med 1-2 mot Rumänien. Oavgjort räcker för att Polen ska undvika direkt nedflyttning."
+   ],
+   "lineup": "Trolig (Sports Mole): Polen: Dragowski; Pyrka, Potulski, Kędziora, Kubiak; Reguła, Szymański, Nowak, Zalewski; Lewandowski, Świderski. Sverige: Johansson; Svensson, Lagerbielke, Lindelöf, Gudmundsson; Elanga, Larsson, Ayari, Nanasi; Gyökeres, Isak.",
+   "take": "Polen måste ta poäng, medan Sverige redan är klart. Oddsen ger 44/26/30 mot strecket 22/29/49, så tvåan är kraftigt överstreckad (+19) och ettan understreckad (-22).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 16 nov",
+     "url": "https://www.sportsmole.co.uk/football/poland/uefa-nations-league/preview/poland-vs-sweden-prediction-team-news-lineups_609183.html"
+    },
+    {
+     "title": "Khelnow, 15 nov",
+     "url": "https://khelnow.com/football/poland-vs-sweden-preview-uefa-nations-league-202611"
+    },
+    {
+     "title": "Flashscore, 14 nov",
+     "url": "https://www.flashscore.com/news/romania-poland-nations-league-group-b4-report-november-14-2026/2ZwysMNc/"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "home": "Danmark",
+   "away": "Norge",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Danmark har inga rapporterade skador. Danmark vann med 4-1 i Portugal, och Højlund gjorde två mål.",
+    "Bortalag: Strand Larsen har lämnat lägret med en fotledsskada, och Botheim har kallats in. Haaland och Ødegaard missade träningen 10 nov men tränade igen 11 nov. Ødegaard spelade mot Wales trots att han varit sjuk.",
+    "Form/tabell: A4: Portugal 12 p, Danmark 9 p, Norge 6 p, Wales 3 p. Danmark är klart för kvartsfinal med oavgjort eller seger. Norge måste vinna, och källorna är oense om huruvida det räcker med vilken seger som helst."
+   ],
+   "lineup": "Trolig (Sports Mole): Danmark: Hermansen; Kristensen, Andersen, Nelsson, Maehle; Højbjerg, Hjulmand; Isaksen, Damsgaard, Skov Olsen; Højlund. Norge: Selvik; Ryerson, Ajer, Heggem, Wolfe; Berg, Berge; Bobb, Ødegaard, Nusa; Haaland.",
+   "take": "Båda lagen har mycket att spela för och båda har fulla trupper. Oddsen ger 39/26/35, vilket är samma fördelning som strecket, så ingen skev streckning.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 15 nov",
+     "url": "https://www.sportsmole.co.uk/football/denmark/preview/denmark-vs-norway-prediction-team-news-lineups_609154.html"
+    },
+    {
+     "title": "The Hard Tackle, 16 nov",
+     "url": "https://thehardtackle.com/round-up/2026/11/16/denmark-vs-norway-preview-prediction-probable-lineups-tactics-team-news-key-stats"
+    },
+    {
+     "title": "beIN Sports, 11 nov",
+     "url": "https://www.beinsports.com/en-us/soccer/uefa-nations-league/articles/good-news-for-norway-haaland-and-degaard-return-to-training-2026-11-11"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "home": "Wales",
+   "away": "Portugal",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Ampadu är avstängd och Neco Williams är skadad. Wales slutar fyra i gruppen och har en seger på nio matcher. Ett poäng kan räcka till ett kvalspel mot nedflyttning.",
+    "Bortalag: Rúben Dias är avstängd och ersätts av António Silva. Portugal är klart för kvartsfinal men behöver undvika förlust för att vinna gruppen. Portugal föll med 1-4 hemma mot Danmark.",
+    "Form/tabell: A4: Portugal 12 p, Wales 3 p."
+   ],
+   "lineup": "Trolig (Sports Mole): Wales: Darlow; Roberts, Rodon, Davies, Dasilva; Cullen, Sheehan; Johnson, Brooks, Wilson; Koumas. Portugal: D. Costa; A. Costa, A. Silva, Veiga, Dalot; J. Neves, Vitinha; B. Silva, Félix, Fernandes; Ramos.",
+   "take": "Portugal har gruppsegern att spela för och är tydlig favorit. Oddsen ger 12/19/69 mot strecket 10/18/72, så tvåan är bara lätt överstreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 15 nov",
+     "url": "https://www.sportsmole.co.uk/football/portugal/uefa-nations-league/preview/wales-vs-portugal-prediction-team-news-lineups_609143.html"
+    },
+    {
+     "title": "The Hard Tackle, 16 nov",
+     "url": "https://thehardtackle.com/round-up/2026/11/16/wales-vs-portugal-preview-prediction-probable-lineups-tactics-team-news-key-stats/"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "home": "Bosnien & Hercegovina",
+   "away": "Rumänien",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Bosnien är klart som tvåa i gruppen och har inget kvar att spela för. Tabaković är osäker (knä) och Hadžikadunić är skadad. Bosnien föll med 2-3 i Sverige.",
+    "Bortalag: Băluță är avstängd. Rumänien måste vinna och samtidigt hoppas att Polen förlorar, annars åker laget ur direkt. Rumänien slog Polen med 2-1, vilket gav lagets första poäng.",
+    "Form/tabell: B4: Bosnien 8 p, Rumänien 3 p. Bosnien vann det första mötet med 4-2 i Rumänien."
+   ],
+   "lineup": "Trolig (Sports Mole): Bosnien: Zlomislić; Dedić, Katić, Radeljić, Kolašinac; Bajraktarević, Bašić, Gigović, Alajbegović; Mahmić, Demirović. Rumänien: Hindrich; Rațiu, Coubiș, Drăgușin, Eissat; Cicâldău, Screciu, Dragomir; Hagi; Coman, Man.",
+   "take": "Rumänien har betydligt mer att spela för än Bosnien. Oddsen ger 49/27/24 mot strecket 49/32/19, så tvåan är understreckad med cirka 5 procentenheter.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 16 nov",
+     "url": "https://www.sportsmole.co.uk/football/bosnia-herzegovina/uefa-nations-league/preview/bosnia-hvina-vs-romania-prediction-team-news-lineups_609182.html"
+    },
+    {
+     "title": "statz.ai, 15 nov",
+     "url": "https://statz.ai/news/19676697-bosnia-vs-romania-predictions-betting-tips"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "home": "Ukraina",
+   "away": "Georgien",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Mudryk och Ponomarenko är skadade, och Dovbyk har kallats in. Ukraina har förlorat tre raka matcher, senast 0-1 mot Nordirland. Matchen spelas i Košice i Slovakien.",
+    "Bortalag: Kvaratskhelia har en långtidsskada. Georgien har noll poäng och noll gjorda mål på fem matcher och föll med 0-2 mot Ungern.",
+    "Form/tabell: B2: Ukraina 4 p, Georgien 2 p. Matchen avgör vilket lag som hamnar sist. Båda lagen har stor motivation."
+   ],
+   "lineup": "Trolig (Sports Mole): Ukraina: Trubin; Krupskyi, Zabarnyi, Matvienko, Mykolenko; Andriyevskiy, Yarmoliuk, Ocheretko, Sudakov; Dovbyk, Krasnopir. Georgien: Mamardashvili; Kakabadze, Goglichidze, Dvali, Lochoshvili; Chakvetadze, Mekvabishvili; Kvernadze, Gagnidze, Davitashvili; Mikautadze.",
+   "take": "Ingen ny nyhet som flyttar oddsen. Oddsen ger 44/28/28 mot strecket 77/10/13, så ettan är kraftigt överstreckad (+33). Krysset och tvåan är understreckade, och här finns ett klart värde att gardera.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 15 nov",
+     "url": "https://www.sportsmole.co.uk/football/ukraine/uefa-nations-league/preview/ukraine-vs-georgia-prediction-team-news-lineups_609161.html"
+    },
+    {
+     "title": "UNN, 14 nov",
+     "url": "https://unn.ua/en/news/ukraine-suffered-its-third-consecutive-defeat-in-the-nations-league-and-came-within-one-step-of-relegation-to-the-lower-division"
+    },
+    {
+     "title": "UNN, 9 nov",
+     "url": "https://unn.ua/en/news/ponomarenko-will-not-help-the-ukrainian-national-team-in-the-nations-league-matches-it-has-become-known-who-will-replace-the-player"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "home": "Ungern",
+   "away": "Nordirland",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Orbán och Vitális är avstängda. Szoboszlai har ett knäproblem men räknar med att spela. Ungern vann med 2-0 i Georgien. Ungern måste vinna för att ta gruppsegern.",
+    "Bortalag: Donley är avstängd, och O'Neill har avstängning från sidlinjen. Ballard, Toal, McCann, McDonnell och C. O'Neill är skadade, liksom Bradley som har en långtidsskada. Nordirland har hållit nollan fem matcher i rad.",
+    "Form/tabell: B2: Nordirland 11 p, Ungern 10 p. Matchen är en direkt gruppfinal, och oavgjort räcker för att Nordirland ska gå upp till League A."
+   ],
+   "lineup": "Trolig (Sports Mole): Ungern: B. Tóth; Ősvath, Szalai, Csinger, Kerkez; R. Tóth, Schäfer; Sallai, Szoboszlai, Nagy; Varga. Nordirland: P. Charles; Atcheson, McConville, Brown; Devlin, Hume, S. Charles, Devenny; Galbraith, Magennis, Price.",
+   "take": "Ungern saknar två mittbackar, och Nordirland klarar sig med oavgjort. Oddsen ger 50/29/21 mot strecket 81/12/7, så ettan är kraftigt överstreckad (+31) och krysset understreckat (-17).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 15 nov",
+     "url": "https://www.sportsmole.co.uk/football/hungary/nations-league-predictions/preview/hungary-vs-n-ireland-prediction-team-news-lineups_609115.html"
+    },
+    {
+     "title": "dave.sport, 15 nov",
+     "url": "https://dave.sport/news/northern-ireland-nations-league-promotion-hungary/"
+    },
+    {
+     "title": "Africasoccer, 15 nov",
+     "url": "https://africasoccer.com/szoboszlai-expects-to-be-fit-for-hungarys-nations-league-decider"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "home": "Irland",
+   "away": "Kosovo",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Kaptenen Nathan Collins är osäker. Han har en knäskada från Linz, och svaret från röntgen hade inte kommit 16 nov. Cullen och Bazunu saknas. Irland föll med 0-1 i Österrike och måste vinna för att ta andraplatsen.",
+    "Bortalag: Zhegrova (skada) och V. Hoxha (avstängd) har lämnat truppen, och E. Krasniqi och Dellova saknas också. Kosovo slutar tvåa om laget undviker förlust.",
+    "Form/tabell: B3: Kosovo ligger ett poäng före Irland. Kosovo vann det första mötet med 1-0."
+   ],
+   "lineup": "Trolig (Sports Mole): Irland: Kelleher; O'Shea, Collins, Scales; Abankwah, Molumby, Azaz, Manning; Moylan; Idah, Parrott. Kosovo: Saipi; Kamberi, I. Krasniqi, Raci, Gallapeni; Emerllahu, Avdullahu; Vojvoda, Rashica, Zabergja; Muriqi.",
+   "take": "Kosovo saknar sin bästa kreatör Zhegrova, och Irland kan bli utan Collins, så nyheterna tar ungefär ut varandra. Oddsen ger 46/30/24 mot strecket 65/21/14, så ettan är överstreckad med 19 procentenheter.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 15 nov",
+     "url": "https://www.sportsmole.co.uk/football/republic-of-ireland/uefa-nations-league/preview/rep-ireland-vs-kosovo-prediction-team-news-lineups_609146.html"
+    },
+    {
+     "title": "Irish Times, 16 nov",
+     "url": "https://www.irishtimes.com/sport/soccer/2026/11/16/ireland-have-good-chance-to-end-chaotic-nations-league-campaign-on-a-high-against-kosovo/"
+    },
+    {
+     "title": "dave.sport, 15 nov",
+     "url": "https://dave.sport/news/nathan-collins-injury-knee-scan-brentford-ireland/"
+    },
+    {
+     "title": "Timoni.al, 15 nov",
+     "url": "https://timoni.al/dy-mungesa-per-kosoven-ndaj-irlandes-zhegrova-dhe-hoxha-largohen-nga-grumbullimi/"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "home": "Israel",
+   "away": "Österrike",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Shlomo är avstängd och Goren är skadad. Israel ligger sist och måste vinna. Matchen spelas på neutral plan i Debrecen.",
+    "Bortalag: Österrike har redan vunnit gruppen och är klart för League A, så rotation är trolig. Chukwuemeka och Grüll är skadade. Alaba och Sabitzer är inte uttagna.",
+    "Form/tabell: Österrike slog Irland med 1-0, och Israel spelade 0-0 mot Kosovo. Österrike vann det första mötet med 3-1."
+   ],
+   "lineup": "Trolig (Sports Mole): Israel: Da. Peretz; Dasa, Feingold, Nachmias, Stoinov, Revivo; Abada, Azoulay, Do. Peretz, Gloukh; Turgeman. Österrike: Jungwirth; Posch, Svoboda, Affengruber, Prass; Seiwald, Laimer; Demir, Baumgartner, Schmid; Kalajdzic.",
+   "take": "Israel har betydligt mer att spela för än Österrike. Oddsen ger 19/23/57 mot strecket 5/15/80, så tvåan är kraftigt överstreckad (+23). Ettan och krysset är understreckade.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 15 nov",
+     "url": "https://www.sportsmole.co.uk/football/israel/uefa-nations-league/preview/israel-vs-austria-prediction-team-news-lineups_609141.html"
+    },
+    {
+     "title": "La Nación, 16 nov",
+     "url": "https://www.lanacion.com.ar/deportes/futbol/israel-vs-austria-por-el-liga-de-naciones-2026-dia-hora-y-como-seguir-online-nid16112026/"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "home": "Chile",
+   "away": "Colombia",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Chile leds av förbundskaptenen Córdova, som är tillfällig. Paulo Díaz och Kuscevic har lämnat truppen, och Ulloa är osäker. Chile hade inget skott på mål i 0-1-förlusten i Cali. Matchen spelas på Estadio Nacional.",
+    "Bortalag: Luis Díaz är skadad, och James Rodríguez, Ríos med flera är inte uttagna. Lorenzo vill fortsätta ge unga spelare speltid.",
+    "Form/tabell: Matchen är en välgörenhetsmatch och den andra av två. Ingen tävlingsbetydelse, och många byten är att vänta."
+   ],
+   "lineup": "",
+   "take": "Det är en vänskapsmatch med föryngrade trupper och sannolik rotation. Oddsen ger 22/30/48 mot strecket 7/12/81, så Colombia är kraftigt överstreckat (+33), vilket ger klart värde i att gardera.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Al Aire Libre, 14 nov",
+     "url": "https://www.alairelibre.cl/futbol/la-roja-colombia-cali-sin-remates-cordova/"
+    },
+    {
+     "title": "El Tiempo, 13 nov",
+     "url": "https://www.eltiempo.com/deportes/futbol-internacional/nestor-lorenzo-admite-dudas-en-la-seleccion-colombia-pese-a-vencer-a-chile-en-cali-falto-control-3601039"
+    },
+    {
+     "title": "Unitel/AFP, 14 nov",
+     "url": "https://unitel.bo/noticias/agencias/sin-luis-diaz-colombia-vence-1-0-a-la-renovada-chile-en-partido-amistoso-GI24795416"
+    },
+    {
+     "title": "Al Aire Libre, 11 nov",
+     "url": "https://www.alairelibre.cl/futbol/paulo-diaz-baja-la-roja-jose-movillo-colombia/"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "home": "Häcken",
+   "away": "Manchester City WFC",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Häcken blev klart för SM-guld och avslutade säsongen med 2-0 mot Piteå 15 nov. Häcken spelade 0-0 mot Chelsea. Anvegård och Tindell saknades i startelvan mot Chelsea och det finns ingen ny information om dem. Häcken har 2 p i ligaspelet och måste vinna för att fortfarande ha en chans.",
+    "Bortalag: Greenwood (fotled) och Moorhouse (fot) är skadade. Miedema är tillbaka och kom in som avbytare. Målvakten Yamashita blev utvisad i WSL 14 nov, vilket troligen bara gäller ligan. City föll med 0-1 mot Chelsea.",
+    "Form/tabell: City har 6 p i Champions League."
+   ],
+   "lineup": "",
+   "take": "Odds saknas. City är favorit, men Häcken har stått emot Chelsea och spelar på hemmaplan. Strecket 25/14/61 verkar rimligt, kanske med krysset något lågt streckat.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "UEFA.com, 13 nov",
+     "url": "https://www.uefa.com/womenschampionsleague/news/02ab-220ff9af21a9-748c51d8b995-1000--women-s-champions-league-matchday-5-preview-chelsea-vs-pa/"
+    },
+    {
+     "title": "BK Häcken, 15 nov",
+     "url": "https://bkhacken.se/nyhet/bk-hacken-avslutade-guldsasongen-med-seger-mot-pitea-if"
+    },
+    {
+     "title": "Hayters, 13 nov",
+     "url": "https://hayters.com/man-city-handed-triple-boost-ahead-of-chelsea-wsl-clash/"
+    },
+    {
+     "title": "GP, 10 nov",
+     "url": "https://www.gp.se/sport/falk-hyllas-efter-skrallen-svettigt.5b66806e-a406-5a47-81b5-1db23e78fdcb"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "home": "Real Madrid",
+   "away": "Inter",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Real Madrid har inga rapporterade skador. Caicedo har varit lite känning men har gjort mål två matcher i rad. Real har 6 p i Champions League och spelade 3-3 mot Badalona 14 nov.",
+    "Bortalag: Inter har tappat formen med 0-6 mot Lyon, 1-4 mot City och 2-3 mot Juventus efter att ha lett med 2-0. Inga skadenyheter.",
+    "Form/tabell: Inter har 4 p i Champions League."
+   ],
+   "lineup": "",
+   "take": "Odds saknas. Real är klar favorit på hemmaplan mot ett Inter i dålig form. Strecket 85/6/9 är högt men inte orimligt.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Real Madrid, 14 nov",
+     "url": "https://www.realmadrid.com/es-ES/noticias/futbol/primer-equipo-femenino/cronicas/empate-en-el-di-stefano-14-11-2026"
+    },
+    {
+     "title": "FCInterNews, 15 nov",
+     "url": "https://www.fcinternews.it/focus/inter-women-sconfitta-juve-due-incassa-tris-3-finali-1023279"
+    },
+    {
+     "title": "UEFA.com, 12 nov",
+     "url": "https://www.uefa.com/womenschampionsleague/news/02a9-21848dfb62c3-1313bc23426c-1000--2026-27-women-s-champions-league-all-the-league-phase-fixtu/"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "home": "Chelsea",
+   "away": "Paris Saint-Germain",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Lauren James, Girma och Ramírez saknas. Buchanan (smäll mot huvudet) och Malard (baksida lår) är osäkra efter matchen 14 nov. Chelsea slog City med 1-0 och har 8 p utan insläppt mål i Champions League.",
+    "Bortalag: Feller och Leuchter är skadade. Ajibade, Ebayilin och Karchaoui saknades 14 nov utan angiven orsak. PSG vann med 2-0 i Marseille men har bara 5 p i Champions League och behöver poäng.",
+    "Form/tabell: Chelsea toppar WSL."
+   ],
+   "lineup": "",
+   "take": "Odds saknas. Båda lagen har flera frånvarande, men Chelsea har hemmaplan och bättre form. Strecket 40/22/38 kan undervärdera ettan något.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Hayters, 14 nov",
+     "url": "https://hayters.com/bompastor-gives-fitness-updates-on-two-chelsea-stars/"
+    },
+    {
+     "title": "ESPN, 14 nov",
+     "url": "https://www.espn.com/soccer/story/_/id/50480836/sonia-bompastor-chelsea-man-city-win"
+    },
+    {
+     "title": "ParisFans, 14 nov",
+     "url": "https://parisfans.fr/actu-feminin/om-psg-le-groupe-parisien-pour-le-classico-feminin-930025.html"
+    },
+    {
+     "title": "UEFA.com, 13 nov",
+     "url": "https://www.uefa.com/womenschampionsleague/news/02ab-220ff9af21a9-748c51d8b995-1000--women-s-champions-league-matchday-5-preview-chelsea-vs-pa/"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "home": "Coritiba",
+   "away": "Santos",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Coritiba leds av den tillfällige tränaren Bossle. Målvakten Morisco är med Brasiliens landslag, och Jacy är osäker (knä). Supportrarna protesterar mot ägarna. Coritiba ligger 12:a med 42 p, fem poäng ovanför nedflyttningsstrecket.",
+    "Bortalag: Neymar är tillgänglig, och Arão och Escobar är tillbaka. Brazão, Barreal, Veríssimo och Lira saknas, och Bontempo, Miguelito och Caballero är med sina landslag. Santos ligger 9:a med 47 p och jagar en plats i Libertadores.",
+    "Form/tabell: Santos har inte vunnit på tre matcher. Coritiba har inte slagit Santos i ligan sedan 2016."
+   ],
+   "lineup": "Trolig för Santos: Diógenes; Rodinei, Arão, Luan Peres, Escobar; G. Henrique, Arthur; Neymar, Coutinho, Everton; Gabigol.",
+   "take": "Santos har mer att spela för och ställer upp med sin bästa offensiv, medan Coritiba är i kris. Oddsen ger 30/26/45 mot strecket 42/22/36, så ettan är överstreckad (+12) och tvåan understreckad (-9).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Placar, 11 nov",
+     "url": "https://placar.com.br/brasileirao/coritiba-tera-mudancas-contra-o-santos-apos-a-data-fifa/?media=tv&content=geral"
+    },
+    {
+     "title": "santistas.net, 13 nov",
+     "url": "https://santistas.net/noticias-do-santos/santos-cucaca-13-11/"
+    },
+    {
+     "title": "O Tempo, 15 nov",
+     "url": "https://www.otempo.com.br/sports/futebol-nacional/santos/2026/11/15/santos-aposta-em-neymar-por-recuperacao-no-brasileirao-e-vaga-na-libertadores"
+    },
+    {
+     "title": "UmDois Esportes, 11 nov",
+     "url": "https://www.umdoisesportes.com.br/coritiba/protesto-couto-pereira-pressao-coritiba/"
+    }
+   ]
+  }
+ ]
+}
