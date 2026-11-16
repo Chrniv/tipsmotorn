@@ -1,3 +1,222 @@
 {
- "rounds": []
+ "rounds": [
+  {
+   "id": "europatipset-2626",
+   "game": "Europatipset",
+   "draw": 2626,
+   "name": "Europatipset v 47, stänger 2026-11-17 20:44",
+   "close": "2026-11-17T20:44:00+01:00",
+   "matches": [
+    {
+     "n": 1,
+     "home": "Polen",
+     "away": "Sverige",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-17T20:45:00+01:00",
+     "odds": [
+      2.23,
+      3.75,
+      3.25
+     ],
+     "streck": [
+      22,
+      29,
+      49
+     ]
+    },
+    {
+     "n": 2,
+     "home": "Danmark",
+     "away": "Norge",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-17T20:45:00+01:00",
+     "odds": [
+      2.48,
+      3.75,
+      2.75
+     ],
+     "streck": [
+      39,
+      26,
+      35
+     ]
+    },
+    {
+     "n": 3,
+     "home": "Wales",
+     "away": "Portugal",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-17T20:45:00+01:00",
+     "odds": [
+      8,
+      5.1,
+      1.42
+     ],
+     "streck": [
+      10,
+      18,
+      72
+     ]
+    },
+    {
+     "n": 4,
+     "home": "Bosnien & Hercegovina",
+     "away": "Rumänien",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-17T20:45:00+01:00",
+     "odds": [
+      1.98,
+      3.6,
+      3.95
+     ],
+     "streck": [
+      49,
+      32,
+      19
+     ]
+    },
+    {
+     "n": 5,
+     "home": "Ukraina",
+     "away": "Georgien",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-17T20:45:00+01:00",
+     "odds": [
+      2.2,
+      3.5,
+      3.4
+     ],
+     "streck": [
+      77,
+      10,
+      13
+     ]
+    },
+    {
+     "n": 6,
+     "home": "Ungern",
+     "away": "Nordirland",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-17T20:45:00+01:00",
+     "odds": [
+      1.95,
+      3.35,
+      4.5
+     ],
+     "streck": [
+      81,
+      12,
+      7
+     ]
+    },
+    {
+     "n": 7,
+     "home": "Irland",
+     "away": "Kosovo",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-17T20:45:00+01:00",
+     "odds": [
+      2.04,
+      3.15,
+      3.95
+     ],
+     "streck": [
+      65,
+      21,
+      14
+     ]
+    },
+    {
+     "n": 8,
+     "home": "Israel",
+     "away": "Österrike",
+     "league": "UEFA Nations League",
+     "kickoff": "2026-11-17T20:45:00+01:00",
+     "odds": [
+      5,
+      4.1,
+      1.68
+     ],
+     "streck": [
+      5,
+      15,
+      80
+     ]
+    },
+    {
+     "n": 9,
+     "home": "Chile",
+     "away": "Colombia",
+     "league": "Internationella vänskapsmatcher",
+     "kickoff": "2026-11-18T00:00:00+01:00",
+     "odds": [
+      4.2,
+      3.15,
+      1.96
+     ],
+     "streck": [
+      7,
+      12,
+      81
+     ]
+    },
+    {
+     "n": 10,
+     "home": "Häcken",
+     "away": "Manchester City WFC",
+     "league": "Women´s Champions League",
+     "kickoff": "2026-11-18T18:45:00+01:00",
+     "odds": null,
+     "streck": [
+      25,
+      14,
+      61
+     ]
+    },
+    {
+     "n": 11,
+     "home": "Real Madrid",
+     "away": "Inter",
+     "league": "Women´s Champions League",
+     "kickoff": "2026-11-18T18:45:00+01:00",
+     "odds": null,
+     "streck": [
+      85,
+      6,
+      9
+     ]
+    },
+    {
+     "n": 12,
+     "home": "Chelsea",
+     "away": "Paris Saint-Germain",
+     "league": "Women´s Champions League",
+     "kickoff": "2026-11-18T21:00:00+01:00",
+     "odds": null,
+     "streck": [
+      40,
+      22,
+      38
+     ]
+    },
+    {
+     "n": 13,
+     "home": "Coritiba",
+     "away": "Santos",
+     "league": "Brasileiro Serie A",
+     "kickoff": "2026-11-18T23:30:00+01:00",
+     "odds": [
+      3.3,
+      3.8,
+      2.18
+     ],
+     "streck": [
+      42,
+      22,
+      36
+     ]
+    }
+   ]
+  }
+ ]
 }
