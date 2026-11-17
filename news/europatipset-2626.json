@@ -3,9 +3,10 @@
  "draw": 2626,
  "round": "Europatipset v 47, stänger 2026-11-17 20:44",
  "author": "Claude (schemalagd)",
- "updatedAt": 1794905949296,
+ "updatedAt": 1794942749248,
  "checkedAt": {
-  "d": "2026-11-17T08:59:09Z"
+  "d": "2026-11-17T08:59:09Z",
+  "l": "2026-11-17T19:12:29Z"
  },
  "matches": [
   {
@@ -16,9 +17,10 @@
    "notes": [
     "Hemmalag: Kiwior är avstängd. Grabara (korsband) och Zieliński (sjuk) saknas. Matty Cash är osäker, och enligt Khelnow har Cash och Frankowski lämnat lägret.",
     "Bortalag: Bergvall (knä) och Wålemark (muskel) saknas. Benjamin Nygren har en lättare känning, missade lagträningen 16 nov och kör ett individuellt program. Han reser med truppen men är osäker till start. Sverige har redan vunnit gruppen.",
-    "Form/tabell: B4: Sverige 13 p, Bosnien 8 p, Polen 4 p, Rumänien 3 p. Polen har en seger på åtta matcher och föll med 1-2 mot Rumänien. Oavgjort räcker för att Polen ska undvika direkt nedflyttning."
+    "Form/tabell: B4: Sverige 13 p, Bosnien 8 p, Polen 4 p, Rumänien 3 p. Polen har en seger på åtta matcher och föll med 1-2 mot Rumänien. Oavgjort räcker för att Polen ska undvika direkt nedflyttning.",
+    "VAVEL 17 nov: Potter kan vila några från lördagens elva. Kulusevski, Karlström, Ekdal och Nygren nämns som tänkbara startspelare."
    ],
-   "lineup": "Trolig (Sports Mole): Polen: Dragowski; Pyrka, Potulski, Kędziora, Kubiak; Reguła, Szymański, Nowak, Zalewski; Lewandowski, Świderski. Sverige: Johansson; Svensson, Lagerbielke, Lindelöf, Gudmundsson; Elanga, Larsson, Ayari, Nanasi; Gyökeres, Isak.",
+   "lineup": "Startelvorna hittades inte före spelstopp (ysscores visade ännu ingen officiell elva). Nygrens status är fortfarande oklar.",
    "take": "Sverige har inget att spela för, och Nygren är osäker, medan Polen behöver poäng. Oddsen ger 43/26/31 mot strecket 32/26/42, så tvåan är överstreckad med 11 procentenheter och ettan understreckad med 11.",
    "suggest": [
     0,
@@ -41,6 +43,10 @@
     {
      "title": "Flashscore, 14 nov",
      "url": "https://www.flashscore.com/news/romania-poland-nations-league-group-b4-report-november-14-2026/2ZwysMNc/"
+    },
+    {
+     "title": "VAVEL, 17 nov",
+     "url": "https://www.vavel.com/en/football/2026/11/17/1279604-poland-vs-sweden-live-latest-score-goals-and-uefa-nations-league-updates.html"
     }
    ]
   },
@@ -54,8 +60,8 @@
     "Bortalag: Strand Larsen har lämnat lägret med en fotledsskada, och Botheim har kallats in. Haaland och Ødegaard missade träningen 10 nov men tränade igen 11 nov. Ødegaard spelade mot Wales trots att han varit sjuk.",
     "Form/tabell: A4: Portugal 12 p, Danmark 9 p, Norge 6 p, Wales 3 p. Danmark är klart för kvartsfinal med oavgjort eller seger. Norge måste vinna, och källorna är oense om huruvida det räcker med vilken seger som helst."
    ],
-   "lineup": "Trolig (Sports Mole): Danmark: Hermansen; Kristensen, Andersen, Nelsson, Maehle; Højbjerg, Hjulmand; Isaksen, Damsgaard, Skov Olsen; Højlund. Norge: Selvik; Ryerson, Ajer, Heggem, Wolfe; Berg, Berge; Bobb, Ødegaard, Nusa; Haaland.",
-   "take": "Andersen är osäker, men Danmark har god täckning i backlinjen. Oddsen ger 39/26/35 mot strecket 44/26/30, så ettan är lätt överstreckad med 5 procentenheter.",
+   "lineup": "Enligt ysscores (en källa): Danmark: Hermansen; Kristensen, Provstgaard, Andersen, Maehle; Hjulmand, Højbjerg; Isaksen, Damsgaard, Daramy; Højlund. Norge: Nyland; Ryerson, Ajer, Østigård, Heggem; Berge, Berg, Ødegaard; Nusa, Sørloth, Haaland.",
+   "take": "Andersen, Haaland och Ødegaard startar, så det finns inga överraskningar. Oddsen ger 39/26/35 mot strecket 44/26/30, så ettan är lätt överstreckad.",
    "suggest": [
     0,
     0,
@@ -77,6 +83,10 @@
     {
      "title": "beIN Sports, 11 nov",
      "url": "https://www.beinsports.com/en-us/soccer/uefa-nations-league/articles/good-news-for-norway-haaland-and-degaard-return-to-training-2026-11-11"
+    },
+    {
+     "title": "ysscores, 17 nov",
+     "url": "https://www.ysscores.com/en/lineup/5181871/Denmark-vs-Norway"
     }
    ]
   },
@@ -90,12 +100,12 @@
     "Bortalag: Rúben Dias är avstängd. Enligt Sky Sports spelar Ronaldo inte. Portugal behöver undvika förlust för att vinna gruppen.",
     "Form/tabell: A4: Portugal 12 p, Wales 3 p."
    ],
-   "lineup": "Trolig (Sports Mole): Wales: Darlow; Roberts, Rodon, Davies, Dasilva; Cullen, Sheehan; Johnson, Brooks, Wilson; Koumas. Portugal: D. Costa; A. Costa, A. Silva, Veiga, Dalot; J. Neves, Vitinha; B. Silva, Félix, Fernandes; Ramos.",
-   "take": "Portugal är klar favorit även utan Ronaldo. Oddsen ger 12/20/69 mot strecket 10/16/74, så tvåan är lätt överstreckad med 5 procentenheter.",
+   "lineup": "Enligt 101greatgoals: Wales: Ward; DaSilva, Davies, Rodon, Roberts; Sheehan, Colwill, Wilson, Brooks; Thomas, James (Darlow på bänken). Portugal: D. Costa; Dalot, A. Silva, Veiga, Cancelo; Vitinha, Fernandes, J. Neves; Trincão, Neto, Ramos. Ronaldo är inte i truppen, och Félix sitter på bänken.",
+   "take": "Portugal startar utan Bernardo, Leão och Félix, så elvan är något roterad. Oddsen ger 12/20/69 mot strecket 10/16/74, så tvåan är redan överstreckad.",
    "suggest": [
-    0,
-    0,
-    0
+    1,
+    1,
+    -2
    ],
    "sources": [
     {
@@ -113,6 +123,10 @@
     {
      "title": "The Hard Tackle, 16 nov",
      "url": "https://thehardtackle.com/round-up/2026/11/16/wales-vs-portugal-preview-prediction-probable-lineups-tactics-team-news-key-stats/"
+    },
+    {
+     "title": "101greatgoals, 17 nov",
+     "url": "https://www.101greatgoals.com/football/internationals/wales-v-portugal-confirmed-team-news-line-ups/"
     }
    ]
   },
@@ -126,7 +140,7 @@
     "Bortalag: Băluță är avstängd, och Stanciu och Mihăilă är skadade. Răzvan Marin är tillbaka. Rumänien måste vinna och samtidigt hoppas att Polen inte slår Sverige.",
     "Form/tabell: B4: Bosnien 8 p, Rumänien 3 p. Bosnien vann det första mötet med 4-2 i Rumänien."
    ],
-   "lineup": "Trolig (Sports Mole): Bosnien: Zlomislić; Dedić, Katić, Radeljić, Kolašinac; Bajraktarević, Bašić, Gigović, Alajbegović; Mahmić, Demirović. Rumänien: Hindrich; Rațiu, Coubiș, Drăgușin, Eissat; Cicâldău, Screciu, Dragomir; Hagi; Coman, Man.",
+   "lineup": "Startelvorna hittades inte före spelstopp. FotMob har bara en trolig elva, med Demirović, Drăgușin och Hagi från start.",
    "take": "Rumänien har mer att spela för men saknar flera nyckelspelare. Oddsen ger 50/27/23 mot strecket 72/16/12, så ettan är kraftigt överstreckad (+22) och både krysset och tvåan är understreckade.",
    "suggest": [
     0,
@@ -149,6 +163,10 @@
     {
      "title": "statz.ai, 15 nov",
      "url": "https://statz.ai/news/19676697-bosnia-vs-romania-predictions-betting-tips"
+    },
+    {
+     "title": "FotMob, 17 nov",
+     "url": "https://www.fotmob.com/matches/romania-vs-bosnia-herzegovina/3953ns"
     }
    ]
   },
@@ -156,18 +174,18 @@
    "n": 5,
    "home": "Ukraina",
    "away": "Georgien",
-   "impact": "low",
+   "impact": "medium",
    "notes": [
     "Hemmalag: Förbundskaptenen Maldera har tagit ut 23 spelare. Vanat, Varfolomejev och Andrijevskyj är inte med i truppen. Mudryk, Zintjenko, Malinovskyj, Tsyhankov, Zubkov och Ponomarenko saknas, medan Sjaparenko är tillbaka efter sjukdom. Oavgjort räcker för att Ukraina ska undvika sistaplatsen.",
     "Bortalag: Georgien leds av förbundskaptenen Svanadze. Kvaratskhelia och Kitoisjvili är skadade, och Tsitaisjvili är avstängd. Georgien har inte gjort mål på fem matcher.",
     "Form/tabell: B2: Ukraina 4 p, Georgien 2 p. Matchen avgör vilket lag som hamnar sist. Båda lagen har stor motivation."
    ],
-   "lineup": "Trolig (Sports Mole): Ukraina: Trubin; Krupskyi, Zabarnyi, Matvienko, Mykolenko; Andriyevskiy, Yarmoliuk, Ocheretko, Sudakov; Dovbyk, Krasnopir. Georgien: Mamardashvili; Kakabadze, Goglichidze, Dvali, Lochoshvili; Chakvetadze, Mekvabishvili; Kvernadze, Gagnidze, Davitashvili; Mikautadze.",
-   "take": "Ukraina har en tunn trupp, men Georgien har en usel målform. Oddsen ger 43/29/28 mot strecket 62/25/13, så ettan är kraftigt överstreckad (+19) och tvåan understreckad (-15).",
+   "lineup": "Enligt ysscores (en källa): Ukraina (3-5-2): Riznyk; Sarapiy, Zabarnyi, Matvienko, Mykolenko; Nazaryna, Yarmolyuk, Synchuk, Sudakov; Sikan, Krasnopir. Trubin och Dovbyk sitter på bänken. Georgien: Mamardashvili; Kakabadze, Goglichidze, Lochoshvili, Azarovi; Gagnidze, Kochorashvili; Kvernadze, Chakvetadze, Davitashvili; Mikautadze.",
+   "take": "Ukraina byter målvakt och har Dovbyk på bänken, medan Georgien ställer upp med full styrka. Ettan är kraftigt överstreckad, med 62 i streck mot 43 enligt oddsen.",
    "suggest": [
-    0,
-    0,
-    0
+    -2,
+    1,
+    1
    ],
    "sources": [
     {
@@ -189,6 +207,10 @@
     {
      "title": "UNN, 9 nov",
      "url": "https://unn.ua/en/news/ponomarenko-will-not-help-the-ukrainian-national-team-in-the-nations-league-matches-it-has-become-known-who-will-replace-the-player"
+    },
+    {
+     "title": "ysscores, 17 nov",
+     "url": "https://www.ysscores.com/en/lineup/5181811/Ukraine-vs-Georgia"
     }
    ]
   },
@@ -202,8 +224,8 @@
     "Bortalag: Donley är avstängd, och O'Neill har avstängning från sidlinjen. Ballard, Toal, McCann, McDonnell och C. O'Neill är skadade, liksom Bradley som har en långtidsskada. Nordirland har hållit nollan fem matcher i rad.",
     "Form/tabell: B2: Nordirland 11 p, Ungern 10 p. Matchen är en direkt gruppfinal, och oavgjort räcker för att Nordirland ska gå upp till League A."
    ],
-   "lineup": "Trolig (Sports Mole): Ungern: B. Tóth; Ősvath, Szalai, Csinger, Kerkez; R. Tóth, Schäfer; Sallai, Szoboszlai, Nagy; Varga. Nordirland: P. Charles; Atcheson, McConville, Brown; Devlin, Hume, S. Charles, Devenny; Galbraith, Magennis, Price.",
-   "take": "Szoboszlai spelar, vilket ingen annan källa motsäger. Oddsen ger 50/29/22 mot strecket 65/24/11, så ettan är överstreckad med 15 procentenheter och tvåan understreckad med 11.",
+   "lineup": "Enligt ysscores (en källa): Ungern: B. Tóth; Osváth, Markgraf, Csinger, Kerkez; Schäfer, Styles, Csongvai; Sallai, Varga, Szoboszlai. Nordirland: P. Charles; McConville, Atcheson, Brown; Devlin, Devenny, Hume, S. Charles; Galbraith, Kelly, Price (Magennis på bänken).",
+   "take": "Szoboszlai startar som väntat. Oddsen ger 50/29/22 mot strecket 65/24/11, så ettan är överstreckad.",
    "suggest": [
     0,
     0,
@@ -225,6 +247,10 @@
     {
      "title": "Africasoccer, 15 nov",
      "url": "https://africasoccer.com/szoboszlai-expects-to-be-fit-for-hungarys-nations-league-decider"
+    },
+    {
+     "title": "ysscores, 17 nov",
+     "url": "https://www.ysscores.com/en/lineup/5181810/Hungary-vs-Northern-Ireland"
     }
    ]
   },
@@ -238,8 +264,8 @@
     "Bortalag: Zhegrova (skada) och V. Hoxha (avstängd) har lämnat truppen, och E. Krasniqi och Dellova saknas också. Kosovo slutar tvåa om laget undviker förlust.",
     "Form/tabell: B3: Kosovo ligger ett poäng före Irland. Kosovo vann det första mötet med 1-0."
    ],
-   "lineup": "Trolig (Sports Mole): Irland: Kelleher; O'Shea, Collins, Scales; Abankwah, Molumby, Azaz, Manning; Moylan; Idah, Parrott. Kosovo: Saipi; Kamberi, I. Krasniqi, Raci, Gallapeni; Emerllahu, Avdullahu; Vojvoda, Rashica, Zabergja; Muriqi.",
-   "take": "Collins frånvaro blev klar 16 nov och är troligen redan inräknad i oddsen. Irland måste satsa, vilket öppnar matchen. Oddsen ger 46/30/24 mot strecket 62/23/15, så ettan är överstreckad (+16) och krysset understreckat (-7).",
+   "lineup": "Enligt ysscores (en källa): Irland: Kelleher; O'Shea, Scales, Egan, Abankwah; Moylan, Molumby, Manning; Azaz; Parrott, Idah. Kosovo: Murić; Kamberi, Krasniqi, Hajrizi; Gallapeni, Vojvoda, Avdullahu, Emerllahu, Rexhbecaj; Asllani, Muriqi (Rashica på bänken).",
+   "take": "Collins frånvaro var redan känd. Kosovo har Rashica på bänken. Oddsen ger 46/30/24 mot strecket 62/23/15, så ettan är överstreckad.",
    "suggest": [
     0,
     0,
@@ -269,6 +295,10 @@
     {
      "title": "Timoni.al, 15 nov",
      "url": "https://timoni.al/dy-mungesa-per-kosoven-ndaj-irlandes-zhegrova-dhe-hoxha-largohen-nga-grumbullimi/"
+    },
+    {
+     "title": "ysscores, 17 nov",
+     "url": "https://www.ysscores.com/en/lineup/5181823/Republic-of-Ireland-vs-Kosovo"
     }
    ]
   },
@@ -276,18 +306,18 @@
    "n": 8,
    "home": "Israel",
    "away": "Österrike",
-   "impact": "medium",
+   "impact": "high",
    "notes": [
     "Hemmalag: Shlomo är avstängd och Goren är skadad. Israel ligger sist och måste vinna. Matchen spelas på neutral plan i Debrecen.",
     "Bortalag: Österrike har redan vunnit gruppen. Schlager och Prass (lårmuskel) har lämnat truppen, liksom Chukwuemeka och Grüll. Rangnick utlovar många nya ansikten, och oe24 tror på upp till åtta byten och debut för unga Spalt och Weinhandl. Matchen spelas inför nästan tomma läktare.",
     "Form/tabell: Österrike slog Irland med 1-0, och Israel spelade 0-0 mot Kosovo. Österrike vann det första mötet med 3-1."
    ],
-   "lineup": "Trolig (Sports Mole): Israel: Da. Peretz; Dasa, Feingold, Nachmias, Stoinov, Revivo; Abada, Azoulay, Do. Peretz, Gloukh; Turgeman. Österrike: Jungwirth; Posch, Svoboda, Affengruber, Prass; Seiwald, Laimer; Demir, Baumgartner, Schmid; Kalajdzic.",
-   "take": "Kraftig rotation hos Österrike sänker deras chans något, men Rangnick sa det redan i helgen. Oddsen ger 20/24/56 mot strecket 11/17/72, så tvåan är kraftigt överstreckad (+16).",
+   "lineup": "Enligt ysscores (en källa): Österrike: Jungwirth; Laimer, Bacher, Affengruber, Mwene; Seiwald, Florucz; Horvath, Weinhandl, Adamu; Kalajdzic. Baumgartner, Posch, Svoboda och Schlager sitter på bänken. Israel: Da. Peretz; Mizrahi, Dasa, Nachmias, Stoyanov; Yehoshua, Azoulay; Solomon, Do. Peretz, Gloukh; Toklomati (osäkert namn).",
+   "take": "Österrike roterar kraftigt och har Baumgartner på bänken, så elvan blir ännu svagare än väntat. Tvåan är kraftigt överstreckad, med 72 i streck mot 56 enligt oddsen.",
    "suggest": [
-    0,
-    0,
-    0
+    2,
+    1,
+    -3
    ],
    "sources": [
     {
@@ -301,6 +331,10 @@
     {
      "title": "La Nación, 16 nov",
      "url": "https://www.lanacion.com.ar/deportes/futbol/israel-vs-austria-por-el-liga-de-naciones-2026-dia-hora-y-como-seguir-online-nid16112026/"
+    },
+    {
+     "title": "ysscores, 17 nov",
+     "url": "https://www.ysscores.com/en/lineup/5181822/Israel-vs-Austria"
     }
    ]
   },
@@ -314,7 +348,7 @@
     "Bortalag: Lorenzo utlovar förändringar och speltid åt fler spelare. Quintana eller Vásquez står i mål, och enligt Semana kan rotationen bli kraftig.",
     "Form/tabell: Matchen är en välgörenhetsmatch och den andra av två. Ingen tävlingsbetydelse, och många byten är att vänta."
    ],
-   "lineup": "",
+   "lineup": "Startelvorna är inte ute än (matchen spelas 18 nov).",
    "take": "Det är en vänskapsmatch, och Colombia roterar. Oddsen ger 25/30/45 mot strecket 16/31/53, så tvåan är överstreckad med 8 procentenheter och ettan understreckad med 9.",
    "suggest": [
     0,
@@ -362,7 +396,7 @@
     "Bortalag: Greenwood (fotled) och Moorhouse (fot) är skadade. Miedema är tillbaka och kom in som avbytare. Målvakten Yamashita blev utvisad i WSL 14 nov, vilket troligen bara gäller ligan. City föll med 0-1 mot Chelsea.",
     "Form/tabell: City har 6 p i Champions League och kommer från en klar seger mot Inter. Inga nya skadebesked har kommit 16–17 nov."
    ],
-   "lineup": "",
+   "lineup": "Startelvorna är inte ute än (matchen spelas 18 nov).",
    "take": "Odds saknas. City är favorit, men Häcken har stått emot Chelsea och spelar på hemmaplan. Strecket 11/13/76 verkar högt på City, och krysset är troligen lågt streckat.",
    "suggest": [
     0,
@@ -398,7 +432,7 @@
     "Bortalag: Inter har tappat formen med 0-6 mot Lyon, 1-4 mot City och 2-3 mot Juventus efter att ha lett med 2-0. Inga skadenyheter.",
     "Form/tabell: Inter har 4 p i Champions League."
    ],
-   "lineup": "",
+   "lineup": "Startelvorna är inte ute än (matchen spelas 18 nov).",
    "take": "Odds saknas. Real är obesegrat och klar favorit på hemmaplan mot ett Inter i dålig form. Strecket 90/6/4 är högt men inte orimligt.",
    "suggest": [
     0,
@@ -430,7 +464,7 @@
     "Bortalag: Feller och Leuchter är skadade. Ajibade, Ebayilin och Karchaoui saknades 14 nov utan angiven orsak. PSG vann med 2-0 i Marseille men har bara 5 p i Champions League och behöver poäng.",
     "Form/tabell: Chelsea spelade 0-0 i Häcken och har tappat sin topp-fyra-placering. PSG ligger tia efter 1-2 mot Bayern och måste ta poäng."
    ],
-   "lineup": "",
+   "lineup": "Startelvorna är inte ute än (matchen spelas 18 nov).",
    "take": "Odds saknas. Chelsea har hemmaplan, men båda lagen har flera frånvarande och PSG är pressat. Strecket 54/19/27 verkar rimligt.",
    "suggest": [
     0,
