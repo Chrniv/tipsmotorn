@@ -1,224 +1,6 @@
 {
  "rounds": [
   {
-   "id": "europatipset-2626",
-   "game": "Europatipset",
-   "draw": 2626,
-   "name": "Europatipset v 47, stänger 2026-11-17 20:44",
-   "close": "2026-11-17T20:44:00+01:00",
-   "matches": [
-    {
-     "n": 1,
-     "home": "Polen",
-     "away": "Sverige",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-17T20:45:00+01:00",
-     "odds": [
-      2.25,
-      3.7,
-      3.15
-     ],
-     "streck": [
-      32,
-      26,
-      42
-     ]
-    },
-    {
-     "n": 2,
-     "home": "Danmark",
-     "away": "Norge",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-17T20:45:00+01:00",
-     "odds": [
-      2.48,
-      3.75,
-      2.75
-     ],
-     "streck": [
-      44,
-      26,
-      30
-     ]
-    },
-    {
-     "n": 3,
-     "home": "Wales",
-     "away": "Portugal",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-17T20:45:00+01:00",
-     "odds": [
-      8.5,
-      5,
-      1.42
-     ],
-     "streck": [
-      10,
-      16,
-      74
-     ]
-    },
-    {
-     "n": 4,
-     "home": "Bosnien & Hercegovina",
-     "away": "Rumänien",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-17T20:45:00+01:00",
-     "odds": [
-      1.92,
-      3.65,
-      4.2
-     ],
-     "streck": [
-      72,
-      16,
-      12
-     ]
-    },
-    {
-     "n": 5,
-     "home": "Ukraina",
-     "away": "Georgien",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-17T20:45:00+01:00",
-     "odds": [
-      2.25,
-      3.3,
-      3.4
-     ],
-     "streck": [
-      62,
-      25,
-      13
-     ]
-    },
-    {
-     "n": 6,
-     "home": "Ungern",
-     "away": "Nordirland",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-17T20:45:00+01:00",
-     "odds": [
-      1.95,
-      3.35,
-      4.5
-     ],
-     "streck": [
-      65,
-      24,
-      11
-     ]
-    },
-    {
-     "n": 7,
-     "home": "Irland",
-     "away": "Kosovo",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-17T20:45:00+01:00",
-     "odds": [
-      2.05,
-      3.15,
-      3.95
-     ],
-     "streck": [
-      62,
-      23,
-      15
-     ]
-    },
-    {
-     "n": 8,
-     "home": "Israel",
-     "away": "Österrike",
-     "league": "UEFA Nations League",
-     "kickoff": "2026-11-17T20:45:00+01:00",
-     "odds": [
-      4.75,
-      4,
-      1.74
-     ],
-     "streck": [
-      11,
-      17,
-      72
-     ]
-    },
-    {
-     "n": 9,
-     "home": "Chile",
-     "away": "Colombia",
-     "league": "Internationella vänskapsmatcher",
-     "kickoff": "2026-11-18T00:00:00+01:00",
-     "odds": [
-      3.85,
-      3.25,
-      2.15
-     ],
-     "streck": [
-      16,
-      31,
-      53
-     ]
-    },
-    {
-     "n": 10,
-     "home": "Häcken",
-     "away": "Manchester City WFC",
-     "league": "Women´s Champions League",
-     "kickoff": "2026-11-18T18:45:00+01:00",
-     "odds": null,
-     "streck": [
-      11,
-      13,
-      76
-     ]
-    },
-    {
-     "n": 11,
-     "home": "Real Madrid",
-     "away": "Inter",
-     "league": "Women´s Champions League",
-     "kickoff": "2026-11-18T18:45:00+01:00",
-     "odds": null,
-     "streck": [
-      90,
-      6,
-      4
-     ]
-    },
-    {
-     "n": 12,
-     "home": "Chelsea",
-     "away": "Paris Saint-Germain",
-     "league": "Women´s Champions League",
-     "kickoff": "2026-11-18T21:00:00+01:00",
-     "odds": null,
-     "streck": [
-      54,
-      19,
-      27
-     ]
-    },
-    {
-     "n": 13,
-     "home": "Coritiba",
-     "away": "Santos",
-     "league": "Brasileiro Serie A",
-     "kickoff": "2026-11-18T23:30:00+01:00",
-     "odds": [
-      3.3,
-      3.8,
-      2.2
-     ],
-     "streck": [
-      30,
-      27,
-      43
-     ]
-    }
-   ]
-  },
-  {
    "id": "stryktipset-4980",
    "game": "Stryktipset",
    "draw": 4980,
@@ -233,13 +15,13 @@
      "kickoff": "2026-11-21T18:30:00+01:00",
      "odds": [
       6,
-      4.35,
+      4.4,
       1.6
      ],
      "streck": [
-      53,
-      21,
-      26
+      34,
+      22,
+      44
      ]
     },
     {
@@ -251,12 +33,12 @@
      "odds": [
       1.85,
       3.95,
-      4.4
+      4.35
      ],
      "streck": [
-      49,
-      26,
-      25
+      57,
+      24,
+      19
      ]
     },
     {
@@ -271,9 +53,9 @@
       6.1
      ],
      "streck": [
-      45,
-      25,
-      30
+      59,
+      21,
+      20
      ]
     },
     {
@@ -283,14 +65,14 @@
      "league": "Premier League",
      "kickoff": "2026-11-21T16:00:00+01:00",
      "odds": [
-      1.82,
+      1.83,
       3.95,
       4.5
      ],
      "streck": [
-      45,
-      26,
-      29
+      58,
+      22,
+      20
      ]
     },
     {
@@ -305,9 +87,9 @@
       3.95
      ],
      "streck": [
-      43,
-      28,
-      29
+      51,
+      26,
+      23
      ]
     },
     {
@@ -322,9 +104,9 @@
       2.95
      ],
      "streck": [
-      45,
+      44,
       25,
-      30
+      31
      ]
     },
     {
@@ -339,9 +121,9 @@
       2.48
      ],
      "streck": [
-      42,
+      38,
       27,
-      31
+      35
      ]
     },
     {
@@ -356,9 +138,9 @@
       2.55
      ],
      "streck": [
-      45,
-      27,
-      28
+      39,
+      28,
+      33
      ]
     },
     {
@@ -373,9 +155,9 @@
       7.5
      ],
      "streck": [
-      45,
-      25,
-      30
+      60,
+      19,
+      21
      ]
     },
     {
@@ -390,9 +172,9 @@
       5.3
      ],
      "streck": [
-      46,
-      26,
-      28
+      58,
+      22,
+      20
      ]
     },
     {
@@ -407,9 +189,9 @@
       2.48
      ],
      "streck": [
-      45,
-      26,
-      29
+      42,
+      27,
+      31
      ]
     },
     {
@@ -424,9 +206,9 @@
       2.8
      ],
      "streck": [
-      45,
-      26,
-      29
+      42,
+      27,
+      31
      ]
     },
     {
@@ -441,9 +223,239 @@
       9.5
      ],
      "streck": [
-      44,
+      62,
+      21,
+      17
+     ]
+    }
+   ]
+  },
+  {
+   "id": "europatipset-2627",
+   "game": "Europatipset",
+   "draw": 2627,
+   "name": "Europatipset v 47, stänger 2026-11-22 14:59",
+   "close": "2026-11-22T14:59:00+01:00",
+   "matches": [
+    {
+     "n": 1,
+     "home": "Liverpool",
+     "away": "Manchester United",
+     "league": "Premier League",
+     "kickoff": "2026-11-22T17:30:00+01:00",
+     "odds": [
+      1.79,
+      4.25,
+      4.4
+     ],
+     "streck": [
+      65,
+      23,
+      12
+     ]
+    },
+    {
+     "n": 2,
+     "home": "Hull",
+     "away": "Brighton",
+     "league": "Premier League",
+     "kickoff": "2026-11-22T15:00:00+01:00",
+     "odds": [
+      6.75,
+      4.6,
+      1.53
+     ],
+     "streck": [
+      7,
+      12,
+      81
+     ]
+    },
+    {
+     "n": 3,
+     "home": "Atalanta",
+     "away": "Inter",
+     "league": "Serie A",
+     "kickoff": "2026-11-22T20:45:00+01:00",
+     "odds": [
+      4.9,
+      4.5,
+      1.68
+     ],
+     "streck": [
+      9,
+      15,
+      76
+     ]
+    },
+    {
+     "n": 4,
+     "home": "Milan",
+     "away": "Frosinone",
+     "league": "Serie A",
+     "kickoff": "2026-11-22T18:00:00+01:00",
+     "odds": [
+      1.55,
+      4.8,
+      5.5
+     ],
+     "streck": [
+      73,
+      19,
+      8
+     ]
+    },
+    {
+     "n": 5,
+     "home": "Bologna",
+     "away": "Udinese",
+     "league": "Serie A",
+     "kickoff": "2026-11-22T15:00:00+01:00",
+     "odds": [
+      1.8,
+      3.8,
+      4.7
+     ],
+     "streck": [
+      81,
+      12,
+      7
+     ]
+    },
+    {
+     "n": 6,
+     "home": "Sassuolo",
+     "away": "Genoa",
+     "league": "Serie A",
+     "kickoff": "2026-11-22T15:00:00+01:00",
+     "odds": [
+      2.7,
+      3.45,
+      2.65
+     ],
+     "streck": [
+      37,
+      32,
+      31
+     ]
+    },
+    {
+     "n": 7,
+     "home": "Racing Santander",
+     "away": "Real Sociedad",
+     "league": "La Liga",
+     "kickoff": "2026-11-22T16:15:00+01:00",
+     "odds": [
+      3.25,
+      4.1,
+      2.08
+     ],
+     "streck": [
+      23,
+      30,
+      47
+     ]
+    },
+    {
+     "n": 8,
+     "home": "Getafe",
+     "away": "Atlético Madrid",
+     "league": "La Liga",
+     "kickoff": "2026-11-22T21:00:00+01:00",
+     "odds": [
+      6,
+      3.9,
+      1.65
+     ],
+     "streck": [
+      6,
+      21,
+      73
+     ]
+    },
+    {
+     "n": 9,
+     "home": "Osasuna",
+     "away": "Málaga",
+     "league": "La Liga",
+     "kickoff": "2026-11-22T18:30:00+01:00",
+     "odds": [
+      1.82,
+      3.8,
+      4.6
+     ],
+     "streck": [
+      86,
+      10,
+      4
+     ]
+    },
+    {
+     "n": 10,
+     "home": "Augsburg",
+     "away": "Mainz",
+     "league": "Bundesliga",
+     "kickoff": "2026-11-22T15:30:00+01:00",
+     "odds": [
+      2.8,
+      3.9,
+      2.45
+     ],
+     "streck": [
+      37,
+      33,
+      30
+     ]
+    },
+    {
+     "n": 11,
+     "home": "Werder Bremen",
+     "away": "Hamburg",
+     "league": "Bundesliga",
+     "kickoff": "2026-11-22T17:30:00+01:00",
+     "odds": [
+      1.7,
+      4.35,
+      4.9
+     ],
+     "streck": [
+      78,
+      17,
+      5
+     ]
+    },
+    {
+     "n": 12,
+     "home": "Nordsjälland",
+     "away": "FC Köpenhamn",
+     "league": "Superligan",
+     "kickoff": "2026-11-22T18:00:00+01:00",
+     "odds": [
+      2.65,
+      3.65,
+      2.7
+     ],
+     "streck": [
       28,
-      28
+      30,
+      42
+     ]
+    },
+    {
+     "n": 13,
+     "home": "Brommapojkarna",
+     "away": "Halmstad",
+     "league": "Allsvenskan",
+     "kickoff": "2026-11-22T16:30:00+01:00",
+     "odds": [
+      2.33,
+      3.65,
+      3.05
+     ],
+     "streck": [
+      52,
+      30,
+      18
      ]
     }
    ]
