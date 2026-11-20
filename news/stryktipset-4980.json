@@ -1,0 +1,412 @@
+{
+ "game": "Stryktipset",
+ "draw": 4980,
+ "round": "Stryktipset v 47, stänger 2026-11-21 15:59",
+ "author": "Claude (schemalagd)",
+ "updatedAt": 1795165121936,
+ "checkedAt": {
+  "d": "2026-11-20T08:58:41Z"
+ },
+ "matches": [
+  {
+   "n": 1,
+   "home": "Newcastle",
+   "away": "Arsenal",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Joelinton (muskel) och målvakten Jaouen (muskel) är borta. Fernandez-Pardo och Livramento uppges vara tillbaka i truppen (osäker källa).",
+    "Bortalag: Saka borta (lår, tidigast åter 2/12). Zubimendi stort frågetecken (hamstring från landskamp), testas före matchen; Arteta ska ha sagt att ingen är utesluten. Dowman avstängd. CL mot Dortmund 24/11, så viss rotation möjlig.",
+    "Form/tabell: Arsenal leder ligan, 5 p före tvåan. Newcastle 12:a med formen O F F V F F i alla tävlingar."
+   ],
+   "lineup": "",
+   "take": "Arsenal är tydliga favoriter även utan Saka. Strecket (34/22/44) överstreckar ettan kraftigt jämfört med oddsen (16/22/61), så tvåan är understreckad och har spelvärde.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 18 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/injury-news/injuries-and-suspensions/saka-zubimendi-latest-arsenal-injury-suspension-list-vs-newcastle_609267.html"
+    },
+    {
+     "title": "Sports Mole matchsida, nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/premier-league/newcastle-united-vs-arsenal_game_263178.html"
+    },
+    {
+     "title": "Starting11, nov 2026",
+     "url": "https://starting11.com/fixtures/newcastle-vs-arsenal"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "home": "Chelsea",
+   "away": "Leeds",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Lacroix (hamstring) och Reece James (knä, 2027) borta. João Pedro (lår) och Hato (rygg) stora frågetecken, Gittens (fotled) osäker. Caicedo och Acheampong har känningar men väntas spela.",
+    "Bortalag: Inga nya skador rapporterade. Leeds har startat samma elva tre matcher i rad.",
+    "Form/tabell: Chelsea 5:a (16 p), förlorade senast 0–1 mot Sunderland. Leeds 9:a (14 p), slog senast Spurs 1–0."
+   ],
+   "lineup": "",
+   "take": "Chelsea kan sakna João Pedro, men det har varit känt sedan 18/11. Strecket (57/24/19) ligger nära oddsen (53/25/22); ettan något överstreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 18 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/chelsea/injury-news/injuries-and-suspensions/caicedo-pedro-lacroix-latest-chelsea-injury-suspension-list-vs-leeds_609269.html"
+    },
+    {
+     "title": "Starting11, nov 2026",
+     "url": "https://starting11.com/fixtures/chelsea-vs-leeds"
+    },
+    {
+     "title": "Chelsea FC, nov 2026",
+     "url": "https://chelseafc.com/en/news/article/chelsea-vs-leeds-preview-tv-channel-kick-off-time-and-how-to-watch-26-27"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "home": "Tottenham",
+   "away": "Ipswich",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Xavi Simons och Odobert (knä) borta. Tel (fotled) stort frågetecken. Mudryk, Savio och Bergvall kan vara tillbaka.",
+    "Bortalag: Inga färska lagnyheter hittade för nyuppflyttade Ipswich.",
+    "Form/tabell: Spurs 11:a (12 p), förlorade senast 0–1 mot Leeds. Ipswich 14:e."
+   ],
+   "lineup": "",
+   "take": "Inga nyheter som flyttar matchen. Strecket (59/21/20) är något lägre än oddsen (63/21/16) på ettan; tvåan lätt överstreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 18 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/spurs/injury-news/injuries-and-suspensions/savio-tel-mudryk-updates-spurs-injury-suspension-list-vs-ipswich_609268.html"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "home": "Aston Villa",
+   "away": "Sunderland",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Cash borta (hjärnskakning), Ruggeri och Onana borta. Manzambi osäker (vad). Wan-Bissaka kan vara tillbaka. CL tre dagar senare, viss rotation möjlig.",
+    "Bortalag: Uppgifter (osäker källa) om att Hume och Danso är avstängda samt att Xhaka (vad) och skyttekungen Brobbey (muskel) saknas; andra källor listar Xhaka och Brobbey bara som osäkra.",
+    "Form/tabell: Villa obesegrade i ligan (senast 4–4 mot Man Utd). Sunderland slog Chelsea 1–0 senast men har annars svag ligaform."
+   ],
+   "lineup": "",
+   "take": "Om Sunderland saknar Xhaka och Brobbey är Villa ännu starkare, men det är obekräftat – bevaka laguppställningen. Strecket (58/22/20) överstreckar ettan något mot oddsen (53/25/22).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Read Aston Villa, 18 nov 2026",
+     "url": "https://readastonvilla.com/2026/11/18/aston-villa-injury-news-wan-bissaka-cash-manzambi/"
+    },
+    {
+     "title": "Sports Mole matchsida, 19 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/premier-league/aston-villa-vs-sunderland_game_263120.html"
+    },
+    {
+     "title": "Starting11, nov 2026",
+     "url": "https://starting11.com/fixtures/aston-villa-vs-sunderland-20261121"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "home": "Bournemouth",
+   "away": "Nottingham",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Toth och Juanlu Sánchez borta, Araujo troligen borta. NYTT 20/11: Alex Scott tillgänglig igen efter lårskada; Kroupi redo att starta.",
+    "Bortalag: Hudson-Odoi (ljumske) borta enligt Glasner 19/11. Neco Williams (fotled) och Schlager (lår) tveksamma efter landslagsskador. Domínguez långtidsskadad.",
+    "Form/tabell: Bournemouth 7:a med åtta raka segrar i alla tävlingar. Forest 16:e, en poäng över strecket."
+   ],
+   "lineup": "",
+   "take": "Bournemouth i form och får tillbaka Scott; Forests status för Williams/Schlager avgörs troligen först vid laguppställningen. Strecket (51/26/23) ligger nära oddsen (49/26/25).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 19 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/bournemouth/preview/bournemouth-vs-nottm-forest-prediction-team-news-lineups_609373.html"
+    },
+    {
+     "title": "Premier League News Now, 20 nov 2026",
+     "url": "https://premierleaguenewsnow.com/2026/11/20/bournemouth-injury-news-nottingham-forest-alex-scott/"
+    },
+    {
+     "title": "Nottingham Forest News, 19 nov 2026",
+     "url": "https://www.nottinghamforest.news/2026/11/19/glasner-delivers-doubtful-verdict-on-schlager-and-williams-another-player-is-definitely-out/"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "home": "Coventry",
+   "away": "Crystal Palace",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Haji Wright och Amenda borta, Mason-Clark troligen borta. Bobby Thomas och Yirenkyi tveksamma efter landslagssmällar. NYTT 20/11: Eccles uppges borta.",
+    "Bortalag: Ny tränare Thomas Frank (utsedd 16/11), första matchen. Mateta avstängd, Sarr och Tomiyasu inte redo, Riad borta. Strand Larsen tveksam (fotled).",
+    "Form/tabell: Coventry 17:e (9 p). Palace sist med fyra raka förluster."
+   ],
+   "lineup": "",
+   "take": "Tränarbytet ger Palace osäkerhet åt båda håll, men är känt sedan måndag. Strecket (44/25/31) överstreckar ettan något mot oddsen (40/27/33); krysset är lätt understreckat.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 19 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/coventry-city/relegation-battle/preview/coventry-vs-crystal-palace-prediction-team-news-lineups_609359.html"
+    },
+    {
+     "title": "Sports Mole, 19 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/crystal-palace/injury-news/news/need-to-be-careful-frank-gives-first-injury-update-as-crystal-palace-manager_609429.html"
+    },
+    {
+     "title": "The Hard Tackle, 20 nov 2026",
+     "url": "https://thehardtackle.com/round-up/2026/11/20/coventry-city-vs-crystal-palace-preview-prediction-probable-lineups-tactics-team-news-key-stats/"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "home": "Bolton",
+   "away": "Portsmouth",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Toal, Erhahon, McAtee, Jayden Nelson och Hardie borta. Målvakten Bazunu (lår) tveksam, Bonham väntas stå.",
+    "Bortalag: Ebou Adams avstängd (5 gula). Iyad Mohamed tveksam. Lång skadelista: Arthur, Ogilvie, Kosznovszky, Swift, Anderson, Brooke-Smith, Milovanovic och Bishop borta.",
+    "Form/tabell: Bolton 18:e, tre förluster på fyra. Portsmouth 11:e, två poäng från topp 8."
+   ],
+   "lineup": "",
+   "take": "Inget nytt som flyttar oddsen. Strecket (38/27/35) överstreckar ettan något mot oddsen (34/27/39); tvåan har litet värde.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 19 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/bolton-wanderers/preview/bolton-vs-portsmouth-prediction-team-news-lineups_609415.html"
+    },
+    {
+     "title": "Portsmouth News, nov 2026",
+     "url": "https://www.portsmouth.co.uk/sport/football/portsmouth-fc/portsmouth-undecided-on-midfielder-for-championship-trip-to-bolton-wanderers-9359272"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "home": "Lincoln",
+   "away": "Wrexham",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: McGrandles avstängd. Ben House tillbaka efter avstängning, troligen bänk. Rob Street kan återvända.",
+    "Bortalag: Kieffer Moore (rygg) tveksam, Cadamarteri startar om han saknas. Kaboré tveksam. Windass, Broadhead och O'Hare inte redo; Sam Smith borta säsongen.",
+    "Form/tabell: Lincoln 21:a (15 p), tre raka förluster och bara en hemmaseger. Wrexham 15:e (18 p) men utan seger på fem bortamatcher."
+   ],
+   "lineup": "",
+   "take": "Moores status är största frågetecknet. Strecket (39/28/33) överstreckar ettan mot oddsen (33/29/38); tvåan understreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 19 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/wrexham/preview/lincoln-vs-wrexham-prediction-team-news-lineups_609380.html"
+    },
+    {
+     "title": "Sportin Wales, 19 nov 2026",
+     "url": "https://sportin.wales/wrexham-injury-news-parkinson-trio-return/"
+    },
+    {
+     "title": "The72, 19 nov 2026",
+     "url": "https://the72.co.uk/2026/11/19/lincoln-city-vs-wrexham-predictions/"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "home": "Middlesbrough",
+   "away": "Bristol City",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Alfie Jones (vad) och Pukstas (hamstring) borta. NYTT 19/11: skyttekungen Lankshear (13 mål) tränar igen och lutar åt spel. Berhalter och McGree kom hem från landslag först torsdag.",
+    "Bortalag: Noah Eile (sjuk) troligen borta. Målvaktsvalet oklart. Tränaren under press men har fått förtroende.",
+    "Form/tabell: Boro i toppen (29 p), obesegrade i 7 raka hemma. Bristol City 17:e, förlorade senast 0–5 hemma mot Norwich."
+   ],
+   "lineup": "",
+   "take": "Boro klar favorit, Lankshear tillbaka. Strecket (60/19/21) understreckar ettan jämfört med oddsen (69/18/13); tvåan är överstreckad, ettan bra spik.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Yahoo Sports/Teesside Live, 19 nov 2026",
+     "url": "https://sports.yahoo.com/articles/lankshear-set-middlesbrough-return-hellberg-165600587.html"
+    },
+    {
+     "title": "Sports Mole, 19 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/middlesbrough/preview/middlesbrough-vs-bristol-city-prediction-team-news-lineups_609411.html"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "home": "Sheffield U",
+   "away": "Watford",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Seriki långtidsskadad. Doherty, Ryan One och Rothwell kan missa. Bamford (axel) väntas tillbaka.",
+    "Bortalag: NYTT 19/11: Bove och Coulibaly spelklara. Ngakia och Baah inte med. Boadu och Diatta troligen borta.",
+    "Form/tabell: Sheffield Utd 10:a (22 p). Watford 20:e (15 p), 1 poäng på 7 bortamatcher."
+   ],
+   "lineup": "",
+   "take": "Inget avgörande nytt. Strecket (58/22/20) motsvarar oddsen (58/24/18).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Hayters, 19 nov 2026",
+     "url": "https://hayters.com/watford-duo-set-to-be-involved-against-sheffield-united-but-others-likely-to-miss-out/"
+    },
+    {
+     "title": "Sports Mole, 19 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/sheffield-united/preview/sheff-utd-vs-watford-prediction-team-news-lineups_609352.html"
+    },
+    {
+     "title": "The72, 18 nov 2026",
+     "url": "https://the72.co.uk/2026/11/18/sheffield-united-patrick-bamford-injury-latest-pre-watford/"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "home": "Stoke",
+   "away": "Birmingham",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Lamine Cissé och Bocat frågetecken, Cresswell borta. Inga nya skador från landslagsuppehållet.",
+    "Bortalag: NYTT 20/11: Priske (6 mål) och målvakten Beadle spelklara efter att ha missat två matcher. Landslagsspelarna tillbaka utan skador.",
+    "Form/tabell: Topptopp – Birmingham etta, Stoke trea, båda 29 p. Stoke tre raka segrar, Birmingham 6 segrar på 7."
+   ],
+   "lineup": "",
+   "take": "Priske tillbaka stärker Birmingham, bekräftat först i dag. Strecket (42/27/31) överstreckar ettan kraftigt mot oddsen (33/27/39); tvåan är understreckad och har spelvärde.",
+   "suggest": [
+    -1,
+    0,
+    1
+   ],
+   "sources": [
+    {
+     "title": "The72, 20 nov 2026",
+     "url": "https://the72.co.uk/2026/11/20/birmingham-city-injury-update-august-priske-pre-stoke-city/"
+    },
+    {
+     "title": "Sports Mole, 19 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/stoke-city/preview/stoke-vs-birmingham-prediction-team-news-lineups_609425.html"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "home": "Swansea",
+   "away": "West Bromwich",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Tränaren Vitor Matos har lämnat för Strasbourg med hela staben (18–19/11); Ashley Williams, Joe Allen, Leon Britton och Kris O'Leary leder interimistiskt. Stamenic avstängd. Franco och Welsh tveksamma.",
+    "Bortalag: Diakité (vad, Mali) borta minst 8 veckor. Collyer, Galves och kaptenen George Campbell borta eller tveksamma. Uppgifter om att två spelare klarats för spel.",
+    "Form/tabell: WBA 5:a (28 p), obesegrade i 6 raka. Swansea 6:a (26 p), 4 förluster på 5."
+   ],
+   "lineup": "",
+   "take": "Tränarkaos hos Swansea, men känt sedan torsdag och troligen inprisat. Strecket (42/27/31) överstreckar ettan mot oddsen (37/28/34); tvåan understreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Brit Brief, 19 nov 2026",
+     "url": "https://britbrief.co.uk/sports/football/swansea-confirm-matos-exit-as-williams-leads-interim-team.html"
+    },
+    {
+     "title": "Swansea Bay News, 19 nov 2026",
+     "url": "https://swanseabaynews.com/swans-club-gives-matos-a-frosty-18-word-farewell-and-no-thank-you/"
+    },
+    {
+     "title": "Sports Mole, 19 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/swansea-city/preview/swansea-vs-west-brom-prediction-team-news-lineups_609396.html"
+    },
+    {
+     "title": "Express & Star, nov 2026",
+     "url": "https://www.expressandstar.com/sport/football/west-bromwich-albion/west-brom-duo-progress-update-as-pair-passed-fit-for-swansea-city-9362053"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "home": "Wolverhampton",
+   "away": "Charlton",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Trippier, Mosquera och Bueno kan vara tillbaka. Fer López och Bellegarde frågetecken. Jordan James och Raúl Jiménez borta, Armstrong leder anfallet.",
+    "Bortalag: Inga nya skador från landslagsuppehållet. Grant och Leaburn osäkra. Uppgift om att McNamara är avstängd är obekräftad.",
+    "Form/tabell: Wolves 4:a, en poäng från toppen. Charlton i nedre halvan och svaga borta."
+   ],
+   "lineup": "",
+   "take": "Wolves klar favorit. Strecket (62/21/17) understreckar ettan mot oddsen (72/18/10); tvåan är överstreckad – bra spik.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 19 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/wolves/preview/wolves-vs-charlton-prediction-team-news-lineups_609381.html"
+    },
+    {
+     "title": "Footballpredictions, nov 2026",
+     "url": "https://footballpredictions.com/footballpredictions/championshippredictions/wolves-vs-charlton-prediction-21-11-2026/"
+    },
+    {
+     "title": "Express & Star, nov 2026",
+     "url": "https://www.expressandstar.com/sport/football/wolverhampton-wanderers/opposition-charlton-stayed-off-international-casualty-list-after-key-win-9360588"
+    }
+   ]
+  }
+ ]
+}
