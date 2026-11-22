@@ -3,9 +3,9 @@
  "draw": 2627,
  "round": "Europatipset v 47, stänger 2026-11-22 14:59",
  "author": "Claude (schemalagd)",
- "updatedAt": 1795251576796,
+ "updatedAt": 1795338066889,
  "checkedAt": {
-  "d": "2026-11-21T08:59:36Z"
+  "d": "2026-11-22T09:01:06Z"
  },
  "matches": [
   {
@@ -14,37 +14,37 @@
    "away": "Manchester United",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Ekitike (hälsena), Leoni (knä) och Bradley (knä) är borta. Frimpong (baksida lår) och Gravenberch (underben) är osäkra.",
-    "Bortalag: Pochettino har ersatt Carrick och gör sin första match. Ugarte, Sesko och Baleba är borta. Shaw och Rashford (ljumske) är osäkra, Dorgu skickades hem från landslaget med lårproblem. Lisandro Martínez är tillbaka efter avstängning, Maguire väntas vara spelklar.",
-    "Form/tabell: Liverpool är 4:a med 18 p och slog Palace senast. United är 18:e med 8 p (1-5-4), har bara en seger och spelade 4-4 mot Villa."
+    "Hemmalag: Iraola uppger att Frimpong och Gravenberch är tillbaka i träning och bör vara tillgängliga. Van Dijk är spelklar. Ekitike är fortsatt borta, och Bradley och Leoni är inte aktuella ännu.",
+    "Bortalag: Rashford (höft) uppges inte följa med till Anfield, och Shaw är troligen borta. Dorgu och Maguire tränar igen och väntas vara med i truppen. Lisandro Martínez är tillbaka efter avstängning. Ugarte, Sesko och Baleba är borta. Det är Pochettinos första match.",
+    "Form/tabell: Liverpool är 4:a med 18 p. United är 18:e med 8 p och har bara en seger."
    ],
    "lineup": "",
-   "take": "Liverpool är favorit, men tränarbytet kan ge United en extra skjuts. Strecket överspelar 1:an (65 mot 55) och underspelar 2:an (12 mot 22), så 2:an har värde som gardering.",
+   "take": "Liverpool har stärkts med Frimpong och Gravenberch, och United tappar Rashford. Strecket (61-24-15) ligger nära oddsen (57-23-20), med 2:an lätt understreckad. 1:an är rimlig som spik eller med X som gardering.",
    "suggest": [
+    2,
     0,
-    0,
-    0
+    -2
    ],
    "sources": [
     {
-     "title": "Sports Mole, 2026-11-13",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/news/united-injury-blow-defender-fails-test-and-is-sent-home-in-worry-before-anfield_609076.html"
+     "title": "Liverpool FC, 2026-11-20",
+     "url": "https://www.liverpoolfc.com/news/liverpool-v-manchester-united-team-news-premier-league-112026"
     },
     {
-     "title": "Sports Mole, 2026-11-12",
-     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/news/mauricio-pochettino-in-line-for-double-man-utd-injury-boost-before-liverpool-clash_608959.html"
+     "title": "Yahoo/Anfield Index, 2026-11-20",
+     "url": "https://sports.yahoo.com/articles/andoni-iraola-confirms-very-good-205000909.html"
     },
     {
-     "title": "LiveScore, nov 2026",
-     "url": "https://www.livescore.com/en/news/football/premier-league/liverpool-vs-man-utd-early-injury-news-as-6-ruled-out-and-4-doubts-rush-the-kop/"
+     "title": "Sports Mole, 2026-11-22",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/news/man-utd-receive-late-rashford-injury-update-ahead-of-liverpool-clash_609596.html"
     },
     {
-     "title": "LiveScore/The Independent, ca 2026-11-13",
-     "url": "https://www.livescore.com/en/news/football/premier-league/how-mauricio-pochettinos-man-united-could-line-up-against-liverpool-the-independent/"
+     "title": "Yardbarker, 2026-11-21",
+     "url": "https://www.yardbarker.com/soccer/articles/pochettino_suffers_fresh_man_utd_blow_as_rashford_ruled_out_of_liverpool_game/s1_17898_44598584"
     },
     {
-     "title": "WithinNigeria (tabell), 2026-11-09",
-     "url": "https://www.withinnigeria.com/2026/11/09/premier-league-table-after-10-games-arsenal-top-on-27-points-brighton-second-as-man-united-fall-into-the-relegation-zone/"
+     "title": "Last Word on Sports, 2026-11-22",
+     "url": "https://lastwordonsports.com/football/2026/11/22/liverpool-vs-manchester-united-predicted-lineups/"
     }
    ]
   },
@@ -54,29 +54,29 @@
    "away": "Brighton",
    "impact": "low",
    "notes": [
-    "Hemmalag: Mittbacken Nobel Mendy (knä) är osäker efter att Senegal skickade hem honom, och Herrington ersätter om han saknas. Belloumi, Morita och Ansah testas inför matchen. Matazo och Targett är borta, Hughes är tillbaka i truppen.",
-    "Bortalag: Jag hittade inga nya skadenyheter om Brighton.",
-    "Form/tabell: Brighton är 2:a med 22 p (7-1-2) och har slagit Arsenal 3-0 och City. Hull är 13:e med 11 p (2-5-3)."
+    "Hemmalag: Tränaren Jakirović säger att Nobel Mendy och Belloumi är helt friska. Targett, Matazo, Morita och Ansah är borta. Hughes (ljumske) är osäker eller borta.",
+    "Bortalag: Mitoma (baksida lår), Ferguson (fotled) och Yohanna är borta. Minteh, Azeez och Kadioglu är tillgängliga.",
+    "Form/tabell: Brighton är 2:a med 22 p. Hull är 13:e med 11 p."
    ],
    "lineup": "",
-   "take": "Brighton är en tydlig favorit på form. Strecket överspelar 2:an kraftigt (81 mot 64) och underspelar både 1:an (7 mot 15) och X (12 mot 21), så X har bra värde om matchen ska garderas.",
+   "take": "Hull har fått tillbaka Mendy, men Brighton saknar Mitoma och Ferguson. Strecket överspelar 2:an (71 mot 64) och underspelar 1:an (10 mot 15), så X eller 1 ger värde som gardering.",
    "suggest": [
+    1,
     0,
-    0,
-    0
+    -1
    ],
    "sources": [
     {
-     "title": "Sports Mole, 2026-11-16",
-     "url": "https://www.sportsmole.co.uk/football/hull-city/injury-news/news/hull-dealt-fresh-gbp21m-injury-problem-before-brighton-clash_609225.html"
+     "title": "Premier League News Now, 2026-11-22",
+     "url": "https://premierleaguenewsnow.com/2026/11/22/hull-city-brighton-preview-jakirovic-gross/"
     },
     {
-     "title": "Yorkshire Post, ca 2026-11-17",
-     "url": "https://www.yorkshirepost.co.uk/sport/football/hull-city-injury-concern-senegal-patrick-vieira-nobel-mendy-9355251"
+     "title": "The False 9, 2026-11-21",
+     "url": "https://thefalse9.com/2026/11/hull-city-vs-brighton-predicted-lineup-team-news-22-november.html"
     },
     {
-     "title": "WithinNigeria (tabell), 2026-11-09",
-     "url": "https://www.withinnigeria.com/2026/11/09/premier-league-table-after-10-games-arsenal-top-on-27-points-brighton-second-as-man-united-fall-into-the-relegation-zone/"
+     "title": "Sports Mole, 2026-11-21",
+     "url": "https://www.sportsmole.co.uk/football/hull-city/injury-news/team-news/hull-vs-brighton-injury-suspension-list-predicted-xis_609499.html"
     }
    ]
   },
@@ -86,12 +86,12 @@
    "away": "Inter",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Inga skador rapporteras. Rowe eller Elmas spelar bakom Krstovic, som gjorde segermålet mot Monza.",
-    "Bortalag: Lautaro är nyss tillbaka från skada och väntas börja på bänken, med Pio Esposito och Thuram på topp. Akanji är inte i full form och det finns en skadeoro kring Zielinski. Martínez väntas stå i mål före Provedel.",
-    "Form/tabell: Inter är 2:a med 28 p och slog Como 2-0. Atalanta är 12:e med 14 p och vann 1-0 mot Monza."
+    "Hemmalag: Sarri saknar Kossounou, Hien, Kristensen och Pompei. Kessié och Gaetano är inte hundraprocentiga.",
+    "Bortalag: Zieliński tränade separat igen och är mycket osäker, så Sucic ersätter troligen. Lautaro är spelklar men väntas börja på bänken bakom Thuram och Pio Esposito. Akanji är skadekänning och Pavard kan starta. Bonny är borta.",
+    "Form/tabell: Inter är 2:a med 28 p. Atalanta är 12:e med 14 p."
    ],
    "lineup": "",
-   "take": "Inter är favorit även utan Lautaro från start. Strecket överspelar 2:an (76 mot 58) och underspelar 1:an (9 mot 20) och X (15 mot 22), så skräll-garderingarna har värde.",
+   "take": "Inter är favorit trots Zieliński och Lautaro på bänken. Strecket överspelar 2:an (68 mot 61) och underspelar 1:an (11 mot 18), så en Atalanta-gardering har visst värde.",
    "suggest": [
     0,
     0,
@@ -99,12 +99,20 @@
    ],
    "sources": [
     {
-     "title": "Fantamaster, 2026-11-19",
-     "url": "https://www.fantamaster.it/probabili-formazioni-atalanta-inter-12-giornata-serie-a-2026-2027/"
+     "title": "FCInter1908, 2026-11-21",
+     "url": "https://www.fcinter1908.it/ultimora/inter-zielinski-atalanta-allenamento/"
     },
     {
-     "title": "Tuttomercatoweb (11:e omgången/tabell), nov 2026",
-     "url": "https://www.tuttomercatoweb.com/i-fatti-del-giorno/serie-a-recap-risultati-11-turno-classifica-sosta-2292244"
+     "title": "FCInter1908, 2026-11-21",
+     "url": "https://www.fcinter1908.it/partite/probabili-formazioni/atalanta-inter-le-probabili-formazioni-da-lautaro-e-pavard-al-sostituto-di-zielinski-le-scelte/"
+    },
+    {
+     "title": "Internews24, 2026-11-22",
+     "url": "https://www.internews24.com/probabili-formazioni-atalanta-inter-2/"
+    },
+    {
+     "title": "BergamoNews, 2026-11-22",
+     "url": "https://www.bergamonews.it/2026/11/22/probabili-formazioni-atalanta-inter-12-giornata-serie-a-2026-27/939102"
     }
    ]
   },
@@ -114,12 +122,12 @@
    "away": "Frosinone",
    "impact": "low",
    "notes": [
-    "Hemmalag: Maignan och Pavlovic är tillbaka från skada. Pulisic kom hem från landslaget först i fredags och får bara ett träningspass, så det står mellan honom och Cisse. Amorim är tränare.",
-    "Bortalag: Raimondo saknas och Birligea ersätter honom på topp. Det står mellan Cittadini och Calvani i mittlåset.",
-    "Form/tabell: Milan är 4:a med 24 p och vann 2-1 mot Genoa. Frosinone är överraskande 6:a med 20 p och vann 1-0 mot Cagliari."
+    "Hemmalag: Pulisic väntas starta trots en lång resa. Pavlović är uttagen men kanske inte från start. Gabbia, Saelemaekers, Chukwueze, Tomori och Loftus-Cheek är skadade.",
+    "Bortalag: Frosinone har tagit ut 24 spelare. Terzić, Cichella och Calvani är tillbaka. Raimondo och Grillitsch är skadade och Bracaglia är avstängd.",
+    "Form/tabell: Milan är 4:a med 24 p. Frosinone är 6:a med 20 p och i form."
    ],
    "lineup": "",
-   "take": "Milan är favorit, men Frosinone är i form. Strecket överspelar 1:an (73 mot 62) och underspelar 2:an (8 mot 18).",
+   "take": "Milan har en del skador, och Frosinone saknar sin anfallare Raimondo. Strecket överspelar 1:an kraftigt (76 mot 62) och underspelar 2:an (8 mot 18) och X (16 mot 20).",
    "suggest": [
     0,
     0,
@@ -127,16 +135,16 @@
    ],
    "sources": [
     {
-     "title": "Fantamaster, 2026-11-19",
-     "url": "https://www.fantamaster.it/probabili-formazioni-milan-frosinone-12-giornata-serie-a-2026-2027/"
+     "title": "Fantacalcio.it, 2026-11-21",
+     "url": "https://www.fantacalcio.it/news/calcio-italia/21_11_2026/milan-frosinone-conferenza-stampa-prepartita-amorim-500939"
     },
     {
-     "title": "Fantamaster (Pulisic), 2026-11-19",
-     "url": "https://www.fantamaster.it/milan-frosinone-12-giornata-allarme-pulisic-gestione-fantacalcio/"
+     "title": "MilanNews, 2026-11-21",
+     "url": "https://www.milannews.it/news/probabile-formazione-milan-frosinone-amorim-rabiot-pulisic-modric-gila-636641"
     },
     {
-     "title": "Tuttomercatoweb (tabell), nov 2026",
-     "url": "https://www.tuttomercatoweb.com/i-fatti-del-giorno/serie-a-recap-risultati-11-turno-classifica-sosta-2292244"
+     "title": "TuttoMercatoWeb, 2026-11-21",
+     "url": "https://www.tuttomercatoweb.com/serie-a/frosinone-24-convocati-gara-milan-recuperano-3-out-raimondo-2295953"
     }
    ]
   },
@@ -146,33 +154,29 @@
    "away": "Udinese",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Miranda är skadad och Alhassane spelar till vänster i stället. El Azzouzi (adduktor) är borta i cirka två veckor och Heggem tas inte ut. Cambiaghi är osäker och Bernardeschi väntas starta.",
-    "Bortalag: Anfallaren Davis har en ny skada och testas, så hans start är osäker. Zaniolos skick ska också bedömas, och Zanoli är tillbaka. Zanetti är ny tränare efter Runjaic och leder laget i sin andra match.",
-    "Form/tabell: Bologna är 8:a med 17 p och vann 2-1 mot Parma. Udinese är sist med 5 p och förlorade 2-1 mot Venezia."
+    "Hemmalag: El Azzouzi, Miranda, Heggem, Holm, Enem och Happonen är borta. Alhassane spelar till vänster.",
+    "Bortalag: Davis (muskel) är fortsatt osäker. Tuttosport tror att han börjar på bänken och att Bayo startar. Ebosse är osäker, och Alaba, Bertola och Gueye är borta. Zanetti är ny tränare.",
+    "Form/tabell: Bologna är 8:a med 17 p. Udinese är sist med 5 p."
    ],
    "lineup": "",
-   "take": "Bologna är favorit, men strecket överspelar 1:an kraftigt (81 mot 54) och underspelar X (12 mot 26) och 2:an (7 mot 21). Det här är omgångens största streckvärde för X och 2. Om Davis saknas stärks 1:an något.",
+   "take": "Om Davis inte startar försvagas Udinese ytterligare. Men 1:an är redan kraftigt överstreckad (76 mot 56), medan X (17 mot 25) och 2 (7 mot 19) är understreckade. X är omgångens tydligaste värdegardering.",
    "suggest": [
+    1,
     0,
-    0,
-    0
+    -1
    ],
    "sources": [
     {
-     "title": "Pazzidifanta, 2026-11-20",
-     "url": "https://www.pazzidifanta.com/news/bologna-udinese-probabili-formazioni-12a-giornata-serie-a-2026-2027-460766"
+     "title": "Tuttosport, 2026-11-22",
+     "url": "https://www.tuttosport.com/news/calcio/serie-a/2026/11/22-152695939/bologna-udinese_probabili_formazioni_aggiornate_e_diretta_dove_si_vede_in_tv_e_streaming"
     },
     {
-     "title": "Fantamaster, 2026-11-19",
-     "url": "https://www.fantamaster.it/probabili-formazioni-bologna-udinese-12-giornata-seriea-2026-2027/"
+     "title": "DiarioFVG, 2026-11-21",
+     "url": "https://www.diariofvg.it/2026/11/21/udinese-davis-dubbio-bologna/"
     },
     {
-     "title": "Tuttomercatoweb (tränarbyten), 2026-11-11",
-     "url": "https://www.tuttomercatoweb.com/serie-a/sosta-novembre-tecnici-esonerati-serie-a-dovranno-svoltare-2292875"
-    },
-    {
-     "title": "Tuttomercatoweb (tabell), nov 2026",
-     "url": "https://www.tuttomercatoweb.com/i-fatti-del-giorno/serie-a-recap-risultati-11-turno-classifica-sosta-2292244"
+     "title": "Udineseblog, 2026-11-21",
+     "url": "https://www.udineseblog.it/udinese/rassegna-stampa/messaggero-veneto-oltre-a-davis-e-in-dubbio-anche-ebosse-niente-alaba/"
     }
    ]
   },
@@ -182,29 +186,29 @@
    "away": "Genoa",
    "impact": "medium",
    "notes": [
-    "Hemmalag: D'Aversa har ersatt Aquilani och gör sin första match, troligen i 3-5-2. Adzic är borta, Berardi är osäker och Esposito är också osäker med Bowie som alternativ.",
-    "Bortalag: De Rossi är tränare. Jag hittade inga rapporterade skador. Osmajic väntas starta före Colombo.",
-    "Form/tabell: Sassuolo är 17:e med 8 p och förlorade 3-0 mot Roma. Genoa är 13:e med 13 p och förlorade 2-1 mot Milan."
+    "Hemmalag: D'Aversa debuterar som tränare. Berardi har tränat med laget hela veckan och väntas starta med Esposito och Laurienté. Adžić och Volpato är borta.",
+    "Bortalag: Frendrup är osäker. Østigård och Vásquez är tillbaka. Osmajić väntas starta. De Rossi är tränare.",
+    "Form/tabell: Sassuolo är 17:e med 8 p. Genoa är 13:e med 13 p."
    ],
    "lineup": "",
-   "take": "Matchen är jämn, och den nya tränaren kan ge Sassuolo en skjuts samtidigt som Berardi är osäker. Strecket följer oddsen och har bara en lätt överspelning av X (32 mot 28), så det finns inget tydligt streckvärde.",
+   "take": "Berardis comeback och tränareffekten stärker Sassuolo något. Strecket (35-31-34) ligger nära oddsen (35-28-37), så det finns inget tydligt streckvärde.",
    "suggest": [
+    1,
     0,
-    0,
-    0
+    -1
    ],
    "sources": [
     {
-     "title": "Fantamaster, 2026-11-19",
-     "url": "https://www.fantamaster.it/probabili-formazioni-sassuolo-genoa-12-giornata-seriea-2026-2027/"
+     "title": "Fantamaster, 2026-11-21",
+     "url": "https://www.fantamaster.it/infortunio-berardi-verdetto-sassuolo-genoa-12-giornata-seriea-fantacalcio/"
     },
     {
-     "title": "Tuttomercatoweb (tränarbyten), 2026-11-11",
-     "url": "https://www.tuttomercatoweb.com/serie-a/sosta-novembre-tecnici-esonerati-serie-a-dovranno-svoltare-2292875"
+     "title": "DirettaFanta, 2026-11-22",
+     "url": "https://www.direttafanta.com/berardi-torna-subito-dal-1-de-rossi-va-con-la-certezza-osmajic-le-probabili-formazioni-di-sassuolo-genoa/"
     },
     {
-     "title": "Tuttomercatoweb (tabell), nov 2026",
-     "url": "https://www.tuttomercatoweb.com/i-fatti-del-giorno/serie-a-recap-risultati-11-turno-classifica-sosta-2292244"
+     "title": "Pazzidifanta, 2026-11-19",
+     "url": "https://www.pazzidifanta.com/news/genoa-sassuolo-de-rossi-frendrup-infortunio-460774"
     }
    ]
   },
@@ -214,12 +218,12 @@
    "away": "Real Sociedad",
    "impact": "low",
    "notes": [
-    "Hemmalag: Almeida avstängd (rött kort). Mantilla och Andrés Martín (knä, opererad) är borta. Gueye är osäker. Zabiri, Guliashvili, Belocian och Pablo García är tillbaka efter landslagsuppehållet.",
-    "Bortalag: Barrenetxea (hamstring), Sučić (sjuk) och Odriozola (knä) uppges vara borta. Mamadou Sarr är osäker (vad) men tillbaka i träning. Aramburu kan börja på bänken efter landslagsresan.",
-    "Form/tabell: Racing är 10:a med 14 p och vann senast med 2-1 borta mot Málaga. De har 3 vinster på 6 hemmamatcher. Real Sociedad ligger på europaplats och är i bra form, men förlorade senast derbyt mot Athletic."
+    "Hemmalag: Almeida är med i truppen (inte avstängd), liksom Aarón Martín och Zabiri. Gueye (4–6 veckor), Andrés Martín och Mantilla är borta.",
+    "Bortalag: Sarr och Sučić är med i truppen. Barrenetxea, Yangel Herrera (ny skada från landslaget) och Odriozola är borta.",
+    "Form/tabell: Racing är 10:a med 14 p och starkt hemma. Sociedad ligger på europaplats."
    ],
    "lineup": "",
-   "take": "Sociedad saknar flera mittfältare och yttrar, men Racing saknar också en del spelare. Streck på 2:an (47 %) är lika med odds-% (47 %), krysset är något överstreckat (30 mot 24) och 1:an är understreckad (23 mot 30). Hemmavinst kan ge visst värde som gardering.",
+   "take": "Båda lagen har fått tillbaka spelare, och läget är ungefär som oddsen anger. Strecket överspelar X (29 mot 23) och underspelar 1:an (19 mot 29), så 1:an har värde som gardering.",
    "suggest": [
     0,
     0,
@@ -227,16 +231,20 @@
    ],
    "sources": [
     {
-     "title": "Starting11, fixture 22 nov 2026",
-     "url": "https://starting11.com/fixtures/racing-santander-vs-real-sociedad-20261122"
+     "title": "FútbolFantasy, 2026-11-21",
+     "url": "https://www.futbolfantasy.com/laliga/noticias/155156-zabiri-y-aaron-entran-en-la-convocatoria-del-racing"
     },
     {
-     "title": "Comuniate, 19 nov 2026",
-     "url": "https://www.comuniate.com/noticias/39212/racing-real-sociedad-previa-alineaciones-probables-y-consejos-fantasy-jornada-13-de-laliga"
+     "title": "FútbolFantasy, 2026-11-21",
+     "url": "https://www.futbolfantasy.com/laliga/noticias/155192-saarr-entra-en-una-lista-sin-los-lesionados-barrenetxea-y-yangel"
     },
     {
-     "title": "El Gol Digital (Sarr tillbaka i träning)",
-     "url": "https://www.elgoldigital.com/futbol/real-sociedad/mamadou-sarr-real-sociedad-vuelta-grupo-racing-laliga/"
+     "title": "Infobae/EFE, 2026-11-21",
+     "url": "https://www.infobae.com/espana/agencias/2026/11/21/el-racing-a-plantar-cara-a-una-real-pendiente-de-su-enfermeria/"
+    },
+    {
+     "title": "Racinguismo, 2026-11-20",
+     "url": "https://www.racinguismo.com/2026/11/previa-racing-real-sociedad-primera.html"
     }
    ]
   },
@@ -246,12 +254,12 @@
    "away": "Atlético Madrid",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Gudelj avstängd (gula kort). Uche och Juanmi (knä) är borta. Zaid Romero kommer tillbaka från skada men är osäker. Getafe roterar mycket (42 % samma elva) och är pressade av tabelläget. Tränare är Bordalás.",
-    "Bortalag: Lookman (knä) och Cuti Romero är borta. Pubill (fotled) är osäker och lär inte forceras. Julián Álvarez, Giuliano, Baena och Kang-In Lee har haft långa landslagsresor. Atlético spelar Champions League tre dagar senare, så rotation är trolig.",
-    "Form/tabell: Atlético har haft en stabil elva (80 % samma elva). Getafe har inte fått till spel eller resultat. Exakta tabellplaceringar hittades inte."
+    "Hemmalag: Gudelj är avstängd och Uche är borta. Zaïd Romero är tillbaka. Bordalás utesluter rotation.",
+    "Bortalag: Pubill (fotled), Cuti Romero och Lookman är borta. Hjulmand tränade med laget och är tillgänglig. Atlético har förlorat mot Bayern (0-2) och Barcelona (1-2) och spelar CL i veckan.",
+    "Form/tabell: Getafe är i tabellens nedre del. Atlético kommer från två raka förluster."
    ],
    "lineup": "",
-   "take": "2:an är kraftigt överstreckad (73 mot 59) och 1:an understreckad (6 mot 16). Med Atléticos rotation inför CL och resetrötthet finns värde i att gardera med X eller 1 i stället för att spika 2.",
+   "take": "Atlético är favorit, men formen och CL-matchen i veckan öppnar för rotation. 2:an är kraftigt överstreckad (79 mot 61), medan 1 (7 mot 14) och X (14 mot 25) är understreckade. X är en bra gardering.",
    "suggest": [
     0,
     0,
@@ -259,12 +267,16 @@
    ],
    "sources": [
     {
-     "title": "Starting11, fixture 22 nov 2026",
-     "url": "https://starting11.com/fixtures/getafe-vs-atletico-madrid-20261122"
+     "title": "Infobae/EFE, 2026-11-21",
+     "url": "https://www.infobae.com/espana/agencias/2026/11/21/hjulmand-con-el-grupo-pubill-cuti-romero-y-lookman-bajas-para-getafe/"
     },
     {
-     "title": "Comuniate, 18 nov 2026",
-     "url": "https://www.comuniate.com/noticias/39201/getafe-atletico-previa-alineaciones-probables-y-consejos-fantasy-jornada-13-de-laliga"
+     "title": "Infobae/EFE, 2026-11-21",
+     "url": "https://www.infobae.com/america/agencias/2026/11/21/previa-del-getafe-cf-atletico-de-madrid/"
+    },
+    {
+     "title": "Comuniate, 2026-11-20",
+     "url": "https://www.comuniate.com/noticias/39240/bordalas-recupera-a-zaid-romero-confirma-las-bajas-de-gudelj-y-uche-y-descarta-rotaciones-ante-el-atletico"
     }
    ]
   },
@@ -274,12 +286,12 @@
    "away": "Málaga",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Målvakten Aitor Fernández (vad) och Bretones är borta, så Sergio Herrera står i mål. Torró och Diego Rico är osäkra. Osasuna kryssade senast 1-1 mot Athletic och vill dra sig bort från strecket.",
-    "Bortalag: Många borta. Rafita (långtidsskadad), Aznou (avstängd efter rött mot Racing), Lobete och Ochoa (knä) samt Abaida (personliga skäl) saknas, och Cruz anges också som skadad. Murillo är tillbaka i träning och kan spela. Puga och Calero är osäkra. Tränare är Funes.",
-    "Form/tabell: Málaga förlorade senast hemma mot Racing och har haft problem med försvaret och slutminuterna. Båda lagen är i bottenstriden."
+    "Hemmalag: Aitor Fernández, Bretones och Rockson Yeboah (ny) saknas i truppen, så Herrera står i mål. Torró och Rico är osäkra.",
+    "Bortalag: Rafita, Ochoa och Lobete är skadade och Aznou är avstängd. Dotor och Calero är osäkra, och det finns uppgifter om ett nytt problem för Calero. Murillo är tillbaka.",
+    "Form/tabell: Osasuna är 16:e med 12 p. Málaga är sist med 5 p."
    ],
    "lineup": "",
-   "take": "Málagas många frånvarande talar för 1:an, men den är extremt överstreckad (86 mot 53). X (10 mot 26) och 2 (4 mot 21) är kraftigt understreckade. Om man garderar ger X mest värde.",
+   "take": "Málagas frånvarolista talar för 1:an, men den är kraftigt överstreckad (71 mot 53). X (20 mot 26) och 2 (9 mot 21) är understreckade.",
    "suggest": [
     0,
     0,
@@ -287,11 +299,11 @@
    ],
    "sources": [
     {
-     "title": "Starting11, fixture 22 nov 2026",
-     "url": "https://starting11.com/fixtures/osasuna-vs-malaga"
+     "title": "Comuniate, matchsida",
+     "url": "https://www.comuniate.com/partido/26/6/13/osasuna-malaga"
     },
     {
-     "title": "Comuniate, 19 nov 2026",
+     "title": "Comuniate, 2026-11-19",
      "url": "https://www.comuniate.com/noticias/39207/osasuna-malaga-previa-alineaciones-probables-y-consejos-fantasy-jornada-13-de-laliga"
     }
    ]
@@ -302,25 +314,25 @@
    "away": "Mainz",
    "impact": "low",
    "notes": [
-    "Hemmalag: Banks (knä), Brackelmann (hjärnskakning) och Matsima (ljumske) är borta. Massengo och Gouweleeuw (muskel) är osäkra. Elvan har varit ganska stabil (76 %).",
-    "Bortalag: Endast Kohr (fot) är borta. Mainz har en mycket stabil elva (80 %) och ställde upp med samma startelva två matcher i rad.",
-    "Form/tabell: Mainz vann senaste mötet med 2-0 (feb 2026). Inbördes är det jämnt (Augsburg 13 vinster, Mainz 15, 3 oavgjorda enligt Starting11). Aktuell tabell hittades inte."
+    "Hemmalag: Banks, Brackelmann, Matsima, Massengo (muskel, ny) och Mounié (knä, ny) är borta. Gouweleeuw är osäker.",
+    "Bortalag: Kohr och Silas (bakslag i träningen, ny) är borta.",
+    "Form/tabell: Augsburg och Mainz är jämna, även inbördes."
    ],
    "lineup": "",
-   "take": "Augsburg har fler skadeproblem i försvaret, vilket ger ett litet plus för Mainz. Strecken följer i stort sett oddsen, men krysset är något överstreckat (33 mot 25) och 2:an något understreckad (30 mot 40).",
+   "take": "Augsburgs skadelista har växt, vilket ger Mainz ett litet plus. Strecket (34-28-38) ligger nära oddsen (36-25-39).",
    "suggest": [
+    -1,
     0,
-    0,
-    0
+    1
    ],
    "sources": [
     {
-     "title": "Starting11, fixture 22 nov 2026",
-     "url": "https://starting11.com/fixtures/fc-augsburg-vs-fsv-mainz-05"
+     "title": "Bundesliga.com, 2026-11-20",
+     "url": "https://bundesliga.com/de/bundesliga/news/voraussichtliche-aufstellungen-10-spieltag-ausfalle-verletzungen-sperren-40039"
     },
     {
-     "title": "Bundesliga.com, matchsida MD10 2026/27",
-     "url": "https://www.bundesliga.com/de/bundesliga/spieltag/2026-2027/10/fc-augsburg-vs-1-fsv-mainz-05/news"
+     "title": "Starting11",
+     "url": "https://starting11.com/fixtures/fc-augsburg-vs-fsv-mainz-05"
     }
    ]
   },
@@ -330,25 +342,33 @@
    "away": "Hamburg",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Långa skadelistan. Stage, Kolke, Musah, Topp och Weiser är borta. Alvero, Agu, N'Diaye, Lynen (sjuk) och Grüll är osäkra.",
-    "Bortalag: Lokonga, Poulsen, Torunarigha och Remberg är borta. Vušković (rygg), Nadir och Vieira är osäkra.",
-    "Form/tabell: Nordderby med extra laddning. HSV slog Gladbach med 1-0 den 6 nov, och Werder förlorade senast mot Stuttgart. Werder vann senaste mötet med 3-1 (apr 2026). Aktuell tabell hittades inte."
+    "Hemmalag: Grüll (vad) och Weiser (lår) är klara avbräck efter sista träningen. Stage, Agu, Topp, Alvero, Musah och N'Diaye är också borta. Lynen är tillbaka efter sjukdom.",
+    "Bortalag: Lokonga, Poulsen, Torunarigha, Remberg och Nadir (ny) är borta. Vieira och Capaldo är tillbaka, och Muheim är helt spelklar. Vušković kan vara med i truppen.",
+    "Form/tabell: Nordderby med extra laddning."
    ],
    "lineup": "",
-   "take": "Werder har många skadade och osäkra trots favoritskapet, och 1:an är kraftigt överstreckad (78 mot 58). 2 (5 mot 20) och X (17 mot 22) är understreckade, så det finns värde i att gardera.",
+   "take": "Werder tappar två offensiva spelare i sista stund, medan HSV har fått tillbaka flera. 1:an är kraftigt överstreckad (72 mot 59), medan X (17 mot 22) och 2 (11 mot 19) är understreckade. Garderingen har värde.",
    "suggest": [
-    0,
-    0,
-    0
+    -2,
+    1,
+    1
    ],
    "sources": [
     {
-     "title": "Starting11, fixture 22 nov 2026",
-     "url": "https://starting11.com/fixtures/werder-bremen-vs-hamburger-sv"
+     "title": "Deichstube, 2026-11-21",
+     "url": "https://www.deichstube.de/news/werder-bremen-personal-nordderby-bittere-gewissheit-hsv-mitchell-weiser-marco-gruell-ausfall-zr-94600229.html"
     },
     {
-     "title": "ZDFheute, liveticker Werder–HSV 2026/27",
-     "url": "https://www.zdfheute.de/sport/fussball-bundesliga/werder-bremen-hamburger-sv-liveticker-bundesliga-highlights-saison-2026-27-100.html"
+     "title": "90min.de, 2026-11-20",
+     "url": "https://www.90min.de/vuskovic-comeback-im-nordderby-das-sagt-hsv-coach-polzin"
+    },
+    {
+     "title": "LigaInsider, 2026-11-20",
+     "url": "https://www.ligainsider.de/miro-muheim_26094/polzin-kann-im-nordderby-auf-muheim-setzen-420945/"
+    },
+    {
+     "title": "Bundesliga.com, 2026-11-20",
+     "url": "https://bundesliga.com/de/bundesliga/news/voraussichtliche-aufstellungen-10-spieltag-ausfalle-verletzungen-sperren-40039"
     }
    ]
   },
@@ -358,12 +378,12 @@
    "away": "FC Köpenhamn",
    "impact": "low",
    "notes": [
-    "Hemmalag: Målvakten Busk är osäker, och Salquist saknar matchträning. Nordsjälland är 4:a med 23 p (2V-1O-2F senaste fem) och vann senast med 6-1 borta mot Randers. Tränare är Jens Olsen.",
-    "Bortalag: Nasnas, Mattsson (knä) och Maseko (muskel) är borta. FCK leder tabellen med 32 p, på samma poäng som Midtjylland, och är obesegrat i fem matcher (4V-1O). Tränare är Bo Svensson. Båda lagen roterar mycket (44–51 %).",
-    "Form/tabell: FCK vann 4 av de senaste 5 mötena, senast med 2-0 den 3 sep. FCK har 9 poängs försprång på Nordsjälland och måste vinna för att hålla Midtjylland bakom sig."
+    "Hemmalag: Tipsbladet tror att Hansen står i mål, vilket tyder på att Busk inte startar. Alio är troligen borta, och det finns inga avstängningar.",
+    "Bortalag: FCK har tagit ut 21 spelare. Mattsson och Nasnas är borta, medan Delaney, Cornelius och Elyounoussi är med.",
+    "Form/tabell: FCK leder ligan och har 9 poängs försprång på Nordsjälland, som är 4:a."
    ],
    "lineup": "",
-   "take": "Det finns inga stora skadenyheter. 2:an är något överstreckad (42 mot 36) och 1:an understreckad (28 mot 37). Nordsjälland hemma kan ge visst värde.",
+   "take": "Det finns inga stora skadenyheter. 2:an är överstreckad (45 mot 36) och 1:an understreckad (29 mot 37), så Nordsjälland hemma ger värde.",
    "suggest": [
     0,
     0,
@@ -371,12 +391,12 @@
    ],
    "sources": [
     {
-     "title": "Starting11, fixture 22 nov 2026",
-     "url": "https://starting11.com/fixtures/fc-nordsjaelland-vs-fc-copenhagen"
+     "title": "FCK.dk, 2026-11-21",
+     "url": "https://fck.dk/nyhed/truppen-mod-fc-nordsjaelland-261122"
     },
     {
-     "title": "Livetipsportal (DK), optakt ca 21 nov 2026",
-     "url": "https://www.livetipsportal.com/da/odds-tips/fc-nordsjaelland-vs-fc-koebenhavn-superliga-12135193/"
+     "title": "Tipsbladet, 2026-11-21",
+     "url": "https://www.tipsbladet.dk/nyhed/superliga/fc-nordsjaelland-fc-koebenhavn-4"
     }
    ]
   },
@@ -386,29 +406,33 @@
    "away": "Halmstad",
    "impact": "medium",
    "notes": [
-    "Hemmalag: BP är 11:a med 35 p och klart för nytt kontrakt. De har inget att spela för och är i svag form (LWDLD). Senast blev det 0-0 mot Mjällby. Inga skadenyheter hittades.",
-    "Bortalag: Halmstad är 16:e med 20 p, lika med Degerfors (14:e) och Örgryte (15:e), med två omgångar kvar. Direkt nedflyttning hotar, och laget kämpar om kvalplatsen. HBK slog Djurgården med 2-1 senast (form LWLLW). Inga skadenyheter hittades.",
-    "Form/tabell: Omgång 29 av 30 är en vanlig seriematch, inte kval. Kalmar på 13:e plats har 26 p, så Halmstad kan som bäst nå kvalplatsen."
+    "Hemmalag: BP är 11:a och klart för nytt kontrakt, så laget har inget att spela för. Inga skadenyheter.",
+    "Bortalag: Baxter säger att HBK måste vinna båda matcherna. Truppen är i stort sett skadefri. Zeljkovic kan missa matchen eftersom hans partner ska föda.",
+    "Form/tabell: Degerfors spelade 0-0 mot AIK i lördags och har 21 p. HBK (16:e) och Örgryte har 20 p var med två matcher kvar och kan gå om Degerfors mot kvalplatsen."
    ],
    "lineup": "",
-   "take": "Motivationen talar tydligt för Halmstad, som slåss för kvalplats, medan BP inte har något att spela för. Ändå är 1:an överstreckad (52 mot 42) och 2:an kraftigt understreckad (18 mot 32). En HBK-gardering ger värde.",
+   "take": "Lördagens kryss för Degerfors gör HBK:s motivation ännu större. Strecket (45-28-27) ligger nära oddsen (45-26-29), så en 2:a ger visst värde.",
    "suggest": [
+    -1,
     0,
-    0,
-    0
+    1
    ],
    "sources": [
     {
-     "title": "OnTourFootball, fixture 22 nov 2026",
-     "url": "https://ontourfootball.com/fixtures/if-brommapojkarna-vs-halmstad-2026-11-22"
+     "title": "Bollsvenskan, 2026-11-21",
+     "url": "https://bollsvenskan.se/hbk-zeljkovic-osaker-infor-bp-baxter-raknar-med-sex-poang-i-slutspurten/"
     },
     {
-     "title": "FotMob, Allsvenskan-tabell 2026",
-     "url": "https://www.fotmob.com/teams/8127/table"
+     "title": "SVT, 2026-11-21",
+     "url": "https://www.svt.se/sport/fotboll/degerfors-med-jattemiss-i-odesmatchen-mot-aik"
     },
     {
-     "title": "Fotbolldirekt, Allsvenskan format 2026",
-     "url": "https://fotbolldirekt.se/allsvenskan/tabell/"
+     "title": "Hallandsposten, 2026-11-21",
+     "url": "https://www.hallandsposten.se/sport/hbk/baxters-besked-infor-hbk-s-slutspurt-i-allsvenskan.31a3f6a5-d45b-5ce3-8d52-774f6a492c4f"
+    },
+    {
+     "title": "Allsvenskantabellen, 2026-11-21",
+     "url": "https://allsvenskantabellen.se/"
     }
    ]
   }
