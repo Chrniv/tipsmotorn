@@ -3,9 +3,9 @@
  "draw": 2628,
  "round": "Europatipset v 48, stänger 2026-11-25 20:44",
  "author": "Claude (schemalagd)",
- "updatedAt": 1795510699495,
+ "updatedAt": 1795596885703,
  "checkedAt": {
-  "d": "2026-11-24T08:58:19+00:00"
+  "d": "2026-11-25T08:54:45+00:00"
  },
  "matches": [
   {
@@ -15,17 +15,21 @@
    "impact": "medium",
    "notes": [
     "Hemmalag: Kvaratskhelia (korsband) och Doué (knä/baksida) borta. Dembélé, Marquinhos och Nuno Mendes tillbaka i träning och kan starta. Ferran Torres väntas ersätta Doué.",
-    "Bortalag: Pellegrini och Rensch borta. Dybala (vad) och målvakterna Svilar (uppgift om fotfraktur) och Gollini missade senaste ligamatchen; Balerdi tveksam.",
+    "Bortalag: Pellegrini och Rensch borta (Pellegrini saknas i truppen). Svilar, Dybala och Balerdi finns med i Romas CL-trupp 24/11 – målvaktsoron verkar avblåst.",
     "Form/tabell: PSG etta i CL med 12 p (4/4), tio raka segrar. Roma 20:e i CL med 4 p men trea och obesegrade i Serie A, 5–1 mot Parma 21/11."
    ],
    "lineup": "",
-   "take": "Klar PSG-favorit, Romas målvaktsoro talar ytterligare för etta. Folket (81 %) överspelar ettan mot oddsen (~71 %); X och 2 är understreckade.",
+   "take": "Klar PSG-favorit. Romas trupp starkare än befarat med Svilar och Dybala med. Folket (81 %) överspelar ettan mot oddsen (~71 %); X och 2 är understreckade.",
    "suggest": [
     0,
     0,
     0
    ],
    "sources": [
+    {
+     "title": "AS Roma, 24 nov",
+     "url": "https://www.asroma.com/en/news/76262/the-giallorossi-squad-for-psg-roma"
+    },
     {
      "title": "footballpredictions.com, 23 nov",
      "url": "https://footballpredictions.com/footballpredictions/championsleaguepredictions/psg-vs-as-roma-prediction-25-11-2026/"
@@ -74,8 +78,8 @@
    "away": "Manchester United",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Nuno Santos (knä) borta. Ioannidis tveksam efter MR med Grekland; Debast osäker. Quaresma och Ibrahima Ba tillbaka.",
-    "Bortalag: Pochettino ny tränare sedan 18/11, första CL-matchen. Cunha avstängd. Šeško, Baleba, Ugarte borta, även Rashford och Shaw enligt Starting11; Maguire, De Ligt tveksamma. Lisandro Martínez tillbaka.",
+    "Hemmalag: Nuno Santos (knä) och Debast borta enligt Starting11. Ioannidis tveksam. Quaresma och Ibrahima Ba tillbaka.",
+    "Bortalag: Pochettino ny tränare sedan 18/11, första CL-matchen. Cunha avstängd. Šeško, Baleba, Ugarte och Rashford borta; Maguire (rygg), Shaw och Lacey tveksamma. Lisandro Martínez tillbaka.",
     "Form/tabell: Sporting 10:e i CL (9 p), fyra vinster på fem. United 17:e i CL (6 p) och svag form i ligan."
    ],
    "lineup": "",
@@ -166,12 +170,12 @@
    "away": "Bayern München",
    "impact": "high",
    "notes": [
-    "Hemmalag: Tiago Santos och Igamane borta länge; Nianzou tveksam. Ethan Mbappé tillbaka efter avstängning, Ueda spelklar.",
-    "Bortalag: Harry Kane opererad för ledbandsskada i fotleden, borta ca tre månader. Olise (fotskada, kryckor) troligen borta. Neuer, Davies, Gnabry, Saibari borta; Luis Díaz tveksam. Lennart Karl kan bli nödlösning som nia.",
+    "Hemmalag: Tiago Santos, Igamane och Nianzou borta; Starting11 listar nu även Ueda (fot) som borta. Ethan Mbappé tillbaka efter avstängning.",
+    "Bortalag: Kane (fotled, opererad) och Olise borta. Starting11 listar nu även Luis Díaz (muskel) och Ndiaye som borta, plus Neuer, Davies, Gnabry, Saibari. Väntad elva: Urbig; Laimer, Upamecano, Tah, Stanišić; Pavlović, Kimmich; Musiala, Brown, Karl; Cardozo.",
     "Form/tabell: Lille 35:e i CL med 1 p, men trea i Ligue 1. Bayern 13:e i CL (8 p, obesegrade) men har tappat serieledningen till Dortmund."
    ],
    "lineup": "",
-   "take": "Bayern utan Kane och troligen Olise – färska nyheter. Tvåan har 89 % streck mot ~60 % i oddsen, kraftigt överstreckad; etta/kryss är bra garderingar.",
+   "take": "Bayern utan Kane, Olise och nu troligen Díaz – tunt anfall. Tvåan har 89 % streck mot ~60 % i oddsen, kraftigt överstreckad; etta/kryss är bra garderingar.",
    "suggest": [
     2,
     1,
@@ -179,8 +183,16 @@
    ],
    "sources": [
     {
+     "title": "Starting11, 25 nov",
+     "url": "https://starting11.com/fixtures/lille-vs-bayern-munich"
+    },
+    {
      "title": "footballpredictions.com, 23 nov",
      "url": "https://footballpredictions.com/footballpredictions/championsleaguepredictions/lille-vs-bayern-munich-prediction-25-11-2026/"
+    },
+    {
+     "title": "Bulinews, nov",
+     "url": "https://bulinews.com/fixture/1039428/predicted-lineups/losc-lille-fc-bayern"
     }
    ]
   },
@@ -302,7 +314,7 @@
    "away": "Blackburn",
    "impact": "medium",
    "notes": [
-    "Hemmalag: Dionisi sparkad efter 0–4 mot Sheffield United; ingen ersättare klar, Iordănescu uppges i långt gångna samtal. Bove, Grieves, Ngakia, Baah och Antonio borta.",
+    "Hemmalag: Dionisi sparkad 22/11. Edward Iordănescu väntades skriva på 24/11 och hoppas leda laget mot Blackburn, ej bekräftat. Bove, Grieves, Ngakia, Baah och Antonio borta.",
     "Bortalag: Mowbray har klivit åt sidan av medicinska skäl, interimstränare Johnson. Atcheson (hjärnskakning), Tóth, Forshaw, Alebiosu och Miller borta. Gudjohnsen 12 mål.",
     "Form/tabell: Watford 21:a, fyra poäng över strecket. Blackburn i mitten, 2–2 mot Burnley senast."
    ],
@@ -314,6 +326,10 @@
     0
    ],
    "sources": [
+    {
+     "title": "Dave.sport, 24 nov",
+     "url": "https://dave.sport/news/edward-iordanescu-watford-blackburn/"
+    },
     {
      "title": "Sports Mole, 23 nov",
      "url": "https://www.sportsmole.co.uk/football/blackburn-rovers/preview/watford-vs-blackburn-prediction-team-news-lineups_609670.html"
