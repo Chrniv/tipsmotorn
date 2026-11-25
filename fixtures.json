@@ -1,236 +1,6 @@
 {
  "rounds": [
   {
-   "id": "europatipset-2628",
-   "game": "Europatipset",
-   "draw": 2628,
-   "name": "Europatipset v 48, stänger 2026-11-25 20:44",
-   "close": "2026-11-25T20:44:00+01:00",
-   "matches": [
-    {
-     "n": 1,
-     "home": "Paris Saint-Germain",
-     "away": "Roma",
-     "league": "Champions League",
-     "kickoff": "2026-11-25T21:00:00+01:00",
-     "odds": [
-      1.37,
-      5.8,
-      8
-     ],
-     "streck": [
-      81,
-      14,
-      5
-     ]
-    },
-    {
-     "n": 2,
-     "home": "Club Brügge",
-     "away": "Liverpool",
-     "league": "Champions League",
-     "kickoff": "2026-11-25T21:00:00+01:00",
-     "odds": [
-      4.5,
-      4.6,
-      1.72
-     ],
-     "streck": [
-      12,
-      13,
-      75
-     ]
-    },
-    {
-     "n": 3,
-     "home": "Sporting Lissabon",
-     "away": "Manchester United",
-     "league": "Champions League",
-     "kickoff": "2026-11-25T21:00:00+01:00",
-     "odds": [
-      2.6,
-      3.75,
-      2.7
-     ],
-     "streck": [
-      40,
-      30,
-      30
-     ]
-    },
-    {
-     "n": 4,
-     "home": "Inter",
-     "away": "Stuttgart",
-     "league": "Champions League",
-     "kickoff": "2026-11-25T21:00:00+01:00",
-     "odds": [
-      1.45,
-      5.6,
-      6.4
-     ],
-     "streck": [
-      89,
-      7,
-      4
-     ]
-    },
-    {
-     "n": 5,
-     "home": "Atlético Madrid",
-     "away": "Viking",
-     "league": "Champions League",
-     "kickoff": "2026-11-25T21:00:00+01:00",
-     "odds": [
-      1.13,
-      10.5,
-      25
-     ],
-     "streck": [
-      92,
-      5,
-      3
-     ]
-    },
-    {
-     "n": 6,
-     "home": "Lille",
-     "away": "Bayern München",
-     "league": "Champions League",
-     "kickoff": "2026-11-25T21:00:00+01:00",
-     "odds": [
-      5.4,
-      4.5,
-      1.63
-     ],
-     "streck": [
-      4,
-      7,
-      89
-     ]
-    },
-    {
-     "n": 7,
-     "home": "Shakhtar Donetsk",
-     "away": "Fenerbahçe",
-     "league": "Champions League",
-     "kickoff": "2026-11-25T21:00:00+01:00",
-     "odds": [
-      2.65,
-      3.6,
-      2.7
-     ],
-     "streck": [
-      36,
-      27,
-      37
-     ]
-    },
-    {
-     "n": 8,
-     "home": "Stoke",
-     "away": "Millwall",
-     "league": "Championship",
-     "kickoff": "2026-11-25T21:00:00+01:00",
-     "odds": [
-      2.45,
-      3.5,
-      2.95
-     ],
-     "streck": [
-      69,
-      20,
-      11
-     ]
-    },
-    {
-     "n": 9,
-     "home": "Burnley",
-     "away": "Birmingham",
-     "league": "Championship",
-     "kickoff": "2026-11-25T20:45:00+01:00",
-     "odds": [
-      2.7,
-      3.65,
-      2.65
-     ],
-     "streck": [
-      32,
-      32,
-      36
-     ]
-    },
-    {
-     "n": 10,
-     "home": "Bolton",
-     "away": "West Bromwich",
-     "league": "Championship",
-     "kickoff": "2026-11-25T20:45:00+01:00",
-     "odds": [
-      3.55,
-      3.6,
-      2.1
-     ],
-     "streck": [
-      11,
-      33,
-      56
-     ]
-    },
-    {
-     "n": 11,
-     "home": "Watford",
-     "away": "Blackburn",
-     "league": "Championship",
-     "kickoff": "2026-11-25T20:45:00+01:00",
-     "odds": [
-      2.48,
-      3.45,
-      2.95
-     ],
-     "streck": [
-      26,
-      36,
-      38
-     ]
-    },
-    {
-     "n": 12,
-     "home": "Harrogate",
-     "away": "Kidderminster",
-     "league": "National League",
-     "kickoff": "2026-11-25T20:45:00+01:00",
-     "odds": [
-      1.67,
-      3.8,
-      4.5
-     ],
-     "streck": [
-      67,
-      24,
-      9
-     ]
-    },
-    {
-     "n": 13,
-     "home": "Hartlepool",
-     "away": "Solihull Moors",
-     "league": "National League",
-     "kickoff": "2026-11-25T20:45:00+01:00",
-     "odds": [
-      1.9,
-      3.55,
-      3.55
-     ],
-     "streck": [
-      51,
-      34,
-      15
-     ]
-    }
-   ]
-  },
-  {
    "id": "stryktipset-4981",
    "game": "Stryktipset",
    "draw": 4981,
@@ -244,14 +14,14 @@
      "league": "Premier League",
      "kickoff": "2026-11-28T18:30:00+01:00",
      "odds": [
-      3.45,
-      3.95,
-      2.04
+      3.6,
+      4,
+      2
      ],
      "streck": [
-      51,
-      22,
-      27
+      33,
+      26,
+      41
      ]
     },
     {
@@ -261,14 +31,14 @@
      "league": "Premier League",
      "kickoff": "2026-11-28T16:00:00+01:00",
      "odds": [
-      2,
-      3.95,
-      3.55
+      2.16,
+      3.9,
+      3.3
      ],
      "streck": [
-      49,
-      25,
-      26
+      48,
+      24,
+      28
      ]
     },
     {
@@ -278,14 +48,14 @@
      "league": "Premier League",
      "kickoff": "2026-11-28T16:00:00+01:00",
      "odds": [
-      1.58,
-      4.25,
-      6
+      1.5,
+      4.6,
+      7
      ],
      "streck": [
-      46,
-      24,
-      30
+      69,
+      16,
+      15
      ]
     },
     {
@@ -294,11 +64,15 @@
      "away": "Bolton",
      "league": "Championship",
      "kickoff": "2026-11-28T16:00:00+01:00",
-     "odds": null,
+     "odds": [
+      1.55,
+      4.5,
+      6.1
+     ],
      "streck": [
-      46,
-      26,
-      28
+      68,
+      17,
+      15
      ]
     },
     {
@@ -307,10 +81,14 @@
      "away": "Watford",
      "league": "Championship",
      "kickoff": "2026-11-28T16:00:00+01:00",
-     "odds": null,
+     "odds": [
+      2.28,
+      3.6,
+      3.15
+     ],
      "streck": [
-      43,
-      28,
+      41,
+      30,
       29
      ]
     },
@@ -321,14 +99,14 @@
      "league": "Championship",
      "kickoff": "2026-11-28T16:00:00+01:00",
      "odds": [
-      2.17,
-      3.7,
+      2.18,
+      3.65,
       3.35
      ],
      "streck": [
-      45,
-      25,
-      30
+      50,
+      27,
+      23
      ]
     },
     {
@@ -337,11 +115,15 @@
      "away": "Bristol City",
      "league": "Championship",
      "kickoff": "2026-11-28T16:00:00+01:00",
-     "odds": null,
+     "odds": [
+      1.76,
+      3.95,
+      4.8
+     ],
      "streck": [
-      43,
-      26,
-      31
+      61,
+      21,
+      18
      ]
     },
     {
@@ -350,11 +132,15 @@
      "away": "Sheffield U",
      "league": "Championship",
      "kickoff": "2026-11-28T16:00:00+01:00",
-     "odds": null,
+     "odds": [
+      2.12,
+      3.7,
+      3.4
+     ],
      "streck": [
-      44,
-      27,
-      29
+      45,
+      29,
+      26
      ]
     },
     {
@@ -363,11 +149,15 @@
      "away": "Stoke",
      "league": "Championship",
      "kickoff": "2026-11-28T16:00:00+01:00",
-     "odds": null,
+     "odds": [
+      1.61,
+      4.4,
+      5.4
+     ],
      "streck": [
-      45,
-      25,
-      30
+      50,
+      23,
+      27
      ]
     },
     {
@@ -376,11 +166,15 @@
      "away": "Portsmouth",
      "league": "Championship",
      "kickoff": "2026-11-28T16:00:00+01:00",
-     "odds": null,
+     "odds": [
+      2.08,
+      3.45,
+      3.8
+     ],
      "streck": [
-      46,
-      26,
-      28
+      51,
+      27,
+      22
      ]
     },
     {
@@ -389,11 +183,15 @@
      "away": "Oxford",
      "league": "League One",
      "kickoff": "2026-11-28T16:00:00+01:00",
-     "odds": null,
+     "odds": [
+      1.73,
+      3.85,
+      4.4
+     ],
      "streck": [
-      44,
-      26,
-      30
+      53,
+      24,
+      23
      ]
     },
     {
@@ -402,11 +200,15 @@
      "away": "Reading",
      "league": "League One",
      "kickoff": "2026-11-28T16:00:00+01:00",
-     "odds": null,
+     "odds": [
+      2.43,
+      3.6,
+      2.7
+     ],
      "streck": [
-      45,
-      26,
-      29
+      53,
+      24,
+      23
      ]
     },
     {
@@ -415,11 +217,15 @@
      "away": "Bradford",
      "league": "League One",
      "kickoff": "2026-11-28T16:00:00+01:00",
-     "odds": null,
+     "odds": [
+      2.28,
+      3.3,
+      3
+     ],
      "streck": [
-      44,
-      28,
-      28
+      36,
+      31,
+      33
      ]
     }
    ]
