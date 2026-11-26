@@ -19,9 +19,9 @@
       2
      ],
      "streck": [
-      33,
+      32,
       26,
-      41
+      42
      ]
     },
     {
@@ -67,7 +67,7 @@
      "odds": [
       1.55,
       4.5,
-      6.1
+      6
      ],
      "streck": [
       68,
@@ -83,8 +83,8 @@
      "kickoff": "2026-11-28T16:00:00+01:00",
      "odds": [
       2.28,
-      3.6,
-      3.15
+      3.55,
+      3.2
      ],
      "streck": [
       41,
@@ -99,7 +99,7 @@
      "league": "Championship",
      "kickoff": "2026-11-28T16:00:00+01:00",
      "odds": [
-      2.18,
+      2.17,
       3.65,
       3.35
      ],
@@ -117,12 +117,12 @@
      "kickoff": "2026-11-28T16:00:00+01:00",
      "odds": [
       1.76,
-      3.95,
+      3.9,
       4.8
      ],
      "streck": [
-      61,
-      21,
+      62,
+      20,
       18
      ]
     },
@@ -138,9 +138,9 @@
       3.4
      ],
      "streck": [
-      45,
+      44,
       29,
-      26
+      27
      ]
     },
     {
@@ -150,8 +150,8 @@
      "league": "Championship",
      "kickoff": "2026-11-28T16:00:00+01:00",
      "odds": [
-      1.61,
-      4.4,
+      1.6,
+      4.5,
       5.4
      ],
      "streck": [
@@ -190,8 +190,8 @@
      ],
      "streck": [
       53,
-      24,
-      23
+      25,
+      22
      ]
     },
     {
@@ -226,6 +226,236 @@
       36,
       31,
       33
+     ]
+    }
+   ]
+  },
+  {
+   "id": "europatipset-2629",
+   "game": "Europatipset",
+   "draw": 2629,
+   "name": "Europatipset v 48, stänger 2026-11-29 14:59",
+   "close": "2026-11-29T14:59:00+01:00",
+   "matches": [
+    {
+     "n": 1,
+     "home": "Arsenal",
+     "away": "Manchester City",
+     "league": "Premier League",
+     "kickoff": "2026-11-29T17:30:00+01:00",
+     "odds": [
+      1.98,
+      3.9,
+      3.8
+     ],
+     "streck": [
+      54,
+      29,
+      17
+     ]
+    },
+    {
+     "n": 2,
+     "home": "Sunderland",
+     "away": "Tottenham",
+     "league": "Premier League",
+     "kickoff": "2026-11-29T15:05:00+01:00",
+     "odds": [
+      3.7,
+      3.6,
+      2.07
+     ],
+     "streck": [
+      20,
+      23,
+      57
+     ]
+    },
+    {
+     "n": 3,
+     "home": "Brighton",
+     "away": "Newcastle",
+     "league": "Premier League",
+     "kickoff": "2026-11-29T15:05:00+01:00",
+     "odds": [
+      1.58,
+      4.6,
+      5.75
+     ],
+     "streck": [
+      72,
+      17,
+      11
+     ]
+    },
+    {
+     "n": 4,
+     "home": "Crystal Palace",
+     "away": "Hull",
+     "league": "Premier League",
+     "kickoff": "2026-11-29T15:05:00+01:00",
+     "odds": [
+      1.89,
+      3.9,
+      4.25
+     ],
+     "streck": [
+      47,
+      28,
+      25
+     ]
+    },
+    {
+     "n": 5,
+     "home": "Fulham",
+     "away": "Bournemouth",
+     "league": "Premier League",
+     "kickoff": "2026-11-29T15:05:00+01:00",
+     "odds": [
+      2.7,
+      3.7,
+      2.65
+     ],
+     "streck": [
+      28,
+      24,
+      48
+     ]
+    },
+    {
+     "n": 6,
+     "home": "Como",
+     "away": "Juventus",
+     "league": "Serie A",
+     "kickoff": "2026-11-29T20:45:00+01:00",
+     "odds": [
+      2.12,
+      3.7,
+      3.55
+     ],
+     "streck": [
+      47,
+      31,
+      22
+     ]
+    },
+    {
+     "n": 7,
+     "home": "Real Sociedad",
+     "away": "Sevilla",
+     "league": "La Liga",
+     "kickoff": "2026-11-29T21:00:00+01:00",
+     "odds": [
+      2.17,
+      3.75,
+      3.4
+     ],
+     "streck": [
+      72,
+      18,
+      10
+     ]
+    },
+    {
+     "n": 8,
+     "home": "Dortmund",
+     "away": "Bayer Leverkusen",
+     "league": "Bundesliga",
+     "kickoff": "2026-11-29T19:30:00+01:00",
+     "odds": [
+      2.15,
+      3.95,
+      3.3
+     ],
+     "streck": [
+      75,
+      13,
+      12
+     ]
+    },
+    {
+     "n": 9,
+     "home": "FC Köpenhamn",
+     "away": "Midtjylland",
+     "league": "Superligan",
+     "kickoff": "2026-11-29T16:00:00+01:00",
+     "odds": [
+      2.05,
+      3.85,
+      3.65
+     ],
+     "streck": [
+      60,
+      25,
+      15
+     ]
+    },
+    {
+     "n": 10,
+     "home": "Västerås",
+     "away": "Hammarby",
+     "league": "Allsvenskan",
+     "kickoff": "2026-11-29T15:00:00+01:00",
+     "odds": [
+      10,
+      5.8,
+      1.32
+     ],
+     "streck": [
+      9,
+      12,
+      79
+     ]
+    },
+    {
+     "n": 11,
+     "home": "IFK Göteborg",
+     "away": "Sirius",
+     "league": "Allsvenskan",
+     "kickoff": "2026-11-29T15:00:00+01:00",
+     "odds": [
+      4.5,
+      4.3,
+      1.75
+     ],
+     "streck": [
+      22,
+      19,
+      59
+     ]
+    },
+    {
+     "n": 12,
+     "home": "Djurgården",
+     "away": "Häcken",
+     "league": "Allsvenskan",
+     "kickoff": "2026-11-29T15:00:00+01:00",
+     "odds": [
+      2.04,
+      4,
+      3.5
+     ],
+     "streck": [
+      60,
+      20,
+      20
+     ]
+    },
+    {
+     "n": 13,
+     "home": "Degerfors",
+     "away": "Örgryte",
+     "league": "Allsvenskan",
+     "kickoff": "2026-11-29T15:00:00+01:00",
+     "odds": [
+      2.02,
+      3.65,
+      3.8
+     ],
+     "streck": [
+      44,
+      22,
+      34
      ]
     }
    ]
