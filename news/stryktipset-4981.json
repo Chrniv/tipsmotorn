@@ -1,0 +1,368 @@
+{
+ "game": "Stryktipset",
+ "draw": 4981,
+ "round": "Stryktipset v 48, stänger 2026-11-28 15:59",
+ "author": "Claude (schemalagd)",
+ "updatedAt": 1795769466252,
+ "checkedAt": {
+  "d": "2026-11-27T09:51:06+01:00"
+ },
+ "matches": [
+  {
+   "n": 1,
+   "home": "Ipswich",
+   "away": "Aston Villa",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Leif Davis (ankel) osäker enligt Sports Mole; Lukic tillbaka efter ljumske, Palacios hemma från landslaget.",
+    "Bortalag: Onana (korsband) och Ruggeri (hamstring) borta, Cash osäker (hjärnskakning). Spelade CL i Istanbul i tisdags – rotation väntas (Gomes, Alysson kan petas).",
+    "Form/tabell: Ipswich 16:e, utan seger på fem. Villa 12:e, sex matcher utan seger i alla tävlingar och mållösa i två."
+   ],
+   "lineup": "",
+   "take": "Villa är trötta och tandlösa men favoriter; strecket (42 %) underbetar 2:an mot oddsen (49 %) och överbetar 1:an.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 26 nov",
+     "url": "https://www.sportsmole.co.uk/football/ipswich-town/preview/ipswich-vs-aston-villa-prediction-team-news-lineups_609879.html"
+    },
+    {
+     "title": "Premier League News Now, 26 nov",
+     "url": "https://premierleaguenewsnow.com/2026/11/26/ipswich-aston-villa-preview-team-news-prediction/"
+    },
+    {
+     "title": "Yahoo Sports, 26 nov",
+     "url": "https://uk.sports.yahoo.com/news/aston-villa-predicted-xi-vs-184500122.html"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "home": "Manchester United",
+   "away": "Brentford",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Baleba, Sesko och Ugarte borta, Rashford (höft) osäker/borta, Amad osäker efter Lissabon. Cunha tillbaka, Yoros rödkort upphävt. Pochettinos första hemmamatch.",
+    "Bortalag: Igor Thiago avstängd (match 2 av 3); Hickey, Collins, Furo och Henry skadade. Wilson väntas leda anfallet.",
+    "Form/tabell: United 19:e (8 p), nio raka utan ligaseger, spelade CL i onsdags. Brentford 6:e men tio raka utan bortaseger."
+   ],
+   "lineup": "",
+   "take": "Nära jämnt mot oddsen; strecket överbetar 1:an något (48 % mot 45 %). Ny tränareffekt mot Brentfords svaga bortaform – inget nytt som inte redan är prissatt.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 26 nov",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/preview/man-utd-vs-brentford-prediction-team-news-lineups_609874.html"
+    },
+    {
+     "title": "The False 9, 27 nov",
+     "url": "https://thefalse9.com/2026/11/manchester-united-vs-brentford-predicted-lineup-team-news-28-november.html"
+    },
+    {
+     "title": "Goal, 26 nov",
+     "url": "https://www.goal.com/en/news/manchester-united-brentford-premier-league-preview/blt769b504b81f77619"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "home": "Leeds",
+   "away": "Coventry",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Endast Mateo Joseph (knä) borta; Rodon tillbaka efter tio veckor. Farke: inga nya skador.",
+    "Bortalag: Awoniyi, Haji Wright, Eccles, Amenda och Woolfenden borta; Yirenkyi och Mason-Clark ska testas.",
+    "Form/tabell: Leeds 7:e, vann 4–1 mot Chelsea och obesegrade hemma (6–4–0). Coventry 14:e, 1 seger och 4 förluster borta."
+   ],
+   "lineup": "",
+   "take": "Leeds klar favorit med bred trupp mot ett skadedrabbat Coventry. Strecket överbetar 1:an (69 % mot 65 %) och underbetar krysset (16 % mot 21 %).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 26 nov",
+     "url": "https://www.sportsmole.co.uk/football/leeds-united/preview/leeds-vs-coventry-prediction-team-news-lineups_609877.html"
+    },
+    {
+     "title": "Leeds United, 26 nov",
+     "url": "https://www.leedsunited.com/en/news/the-latest-team-news-and-daniel-farkes-coventry-expectations"
+    },
+    {
+     "title": "Premier League News Now, 25 nov",
+     "url": "https://premierleaguenewsnow.com/2026/11/25/leeds-coventry-team-news-farke-joseph-tierney/"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "home": "Birmingham",
+   "away": "Bolton",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Ethan Laird osäker (smäll mot Stoke). Millar, Solis och Stansfield väntas starta efter vila i Burnley.",
+    "Bortalag: Inga skador rapporterade; Dalby väntas tillbaka i elvan.",
+    "Form/tabell: Birmingham 4:e, 7 segrar på 9 och obesegrade i 8 hemma. Bolton nykomlingar, 1 seger på 7, förlorade 1–3 mot West Brom i onsdags."
+   ],
+   "lineup": "",
+   "take": "Stark hemmafavorit; strecket (68 %) överbetar 1:an jämfört med oddsen (62 %), krysset underbetas.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 26 nov",
+     "url": "https://www.sportsmole.co.uk/football/birmingham-city/preview/birmingham-vs-bolton-prediction-team-news-lineups_609918.html"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "home": "Derby",
+   "away": "Watford",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Inga skadenyheter hittade. Derby jumbo och har svårt att göra mål, två raka förluster.",
+    "Bortalag: Inga skadenyheter hittade. Watford 15 p på 17 matcher, två raka förluster.",
+    "Form/tabell: Två formsvaga bottenlag; låg målförväntan."
+   ],
+   "lineup": "",
+   "take": "Strecket ligger i linje med oddsen (41/30/29 mot 42/27/30). Lågmålsmatch mellan svaga lag – krysset är rimligt spelbart.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "The Stats Zone, 27 nov",
+     "url": "https://www.thestatszone.com/derby-vs-watford-preview-prediction-242874"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "home": "Millwall",
+   "away": "Burnley",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Inga skadenyheter. Millwall 18:e, fyra raka förluster (senast 1–2 i Stoke i onsdags).",
+    "Bortalag: Inga skadenyheter. Burnley 23:e med 1 seger och 8 oavgjorda, fem utan seger, 0–2 mot Birmingham i onsdags.",
+    "Form/tabell: Båda i dålig form; Burnley spelar ofta oavgjort och båda lagen gör mål i 82 % av deras matcher."
+   ],
+   "lineup": "",
+   "take": "Strecket överbetar 1:an (50 % mot 45 %) och underbetar 2:an (23 % mot 29 %). Burnleys många kryss gör X intressant.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "The Stats Zone, 27 nov",
+     "url": "https://www.thestatszone.com/millwall-vs-burnley-preview-prediction-242881"
+    },
+    {
+     "title": "Statz.ai, 26 nov",
+     "url": "https://statz.ai/news/19728958-millwall-vs-burnley-predictions-betting-tips"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "home": "West Bromwich",
+   "away": "Bristol City",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Inga skadenyheter hittade. West Brom obesegrade i flera, vann 3–1 i Bolton i onsdags.",
+    "Bortalag: Mittback Luke McNally väntas saknas (skadad mot Wrexham, ska röntgas) enligt Skubala i torsdags.",
+    "Form/tabell: West Brom jagar direktuppflyttning; Bristol City 1 poäng av senaste 12."
+   ],
+   "lineup": "",
+   "take": "Färsk skada i Bristols backlinje stärker 1:an något, men strecket överbetar redan 1:an (62 % mot 55 %).",
+   "suggest": [
+    1,
+    0,
+    -1
+   ],
+   "sources": [
+    {
+     "title": "Yahoo Sports/Hayters, 26 nov",
+     "url": "https://sports.yahoo.com/soccer/articles/skubala-confirms-bristol-city-absence-165800317.html"
+    },
+    {
+     "title": "The Stats Zone, 27 nov",
+     "url": "https://www.thestatszone.com/west-brom-vs-bristol-city-preview-prediction-242895"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "home": "Queens Park Rangers",
+   "away": "Sheffield U",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Mbengue (korsband) borta för säsongen. Kone toppskytt med 5 mål.",
+    "Bortalag: Inga skador rapporterade; Kalvin Phillips och Bamford tillbaka och kan starta.",
+    "Form/tabell: QPR 7:e, obesegrade i fyra. Sheffield United 9:e, 1–1 mot Southampton i onsdags."
+   ],
+   "lineup": "",
+   "take": "Jämn match; strecket (44/29/27) ligger nära oddsen (46/26/28), krysset något överstreckat.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sheff United Way, 26 nov",
+     "url": "https://sheffunitedway.co.uk/2026/11/26/queens-park-rangers-vs-sheffield-united-preview-3/"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "home": "West Ham",
+   "away": "Stoke",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Walker-Peters och Lamadrid borta, Areola osäker/borta. Scott Parker under hård press – ingen seger på fem försök som tränare.",
+    "Bortalag: Soumaré (muskel) och Ampah borta, Cissé osäker; Bombino tillbaka från avstängning.",
+    "Form/tabell: West Ham 13:e, sex utan seger och fem utan hemmaseger. Stoke 2:a, fem raka ligasegrar."
+   ],
+   "lineup": "",
+   "take": "Oddsen (61 % etta) räknar med West Hams kvalitet, men formen talar för Stoke. Strecket underbetar 1:an kraftigt (50 %) och överbetar 2:an (27 % mot 18 %) – ettan har värde mot folket.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Claret & Hugh, 27 nov",
+     "url": "https://www.claretandhugh.info/west-ham-v-stoke-preview-predicted-lineups-as-pressure-mounts-on-parker/"
+    },
+    {
+     "title": "The Hard Tackle, 27 nov",
+     "url": "https://thehardtackle.com/round-up/2026/11/27/west-ham-vs-stoke-city-preview-prediction-probable-lineups-tactics-team-news-key-stats/"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "home": "Wrexham",
+   "away": "Portsmouth",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Lång skadelista: Sam Smith (korsband), Meghoma (ankel, ~10 v), troligen även Cacace, Revan, Windass, O'Hare och Broadhead m.fl.",
+    "Bortalag: Inga skador rapporterade. Portsmouth två poäng från playoff, fyra borta utan förlust, slog West Ham i onsdags.",
+    "Form/tabell: Wrexham 14:e men obesegrade i fyra."
+   ],
+   "lineup": "",
+   "take": "Wrexhams skadeläge är känt sedan tidigare. Strecket överbetar 1:an (51 % mot 47 %) och underbetar 2:an (22 % mot 25 %).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 26 nov",
+     "url": "https://www.sportsmole.co.uk/football/wrexham/preview/wrexham-vs-portsmouth-prediction-team-news-lineups_609916.html"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "home": "Luton",
+   "away": "Oxford",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Jordan Clark väntas missa (skadad i Burton); Kodua, Odoffin, Morris och Naismith m.fl. borta.",
+    "Bortalag: McDonnell borta, Helik osäker, Dembele skadad; målvakt Cumming tillbaka från avstängning.",
+    "Form/tabell: Luton 5:a, 6 segrar på 8. Oxford 3:a (8–5–1), har inte vunnit i Luton sedan 2017."
+   ],
+   "lineup": "",
+   "take": "Topptätt möte; strecket (53/25/22) ligger i linje med oddsen (54/24/21). Inget att justera.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 26 nov",
+     "url": "https://www.sportsmole.co.uk/football/luton-town/preview/luton-vs-oxford-utd-prediction-team-news-lineups_609895.html"
+    },
+    {
+     "title": "Last Word On Football, 26 nov",
+     "url": "https://lastwordonsports.com/football/2026/11/26/oxford-united-team-and-injury-news-for-trip-to-luton/"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "home": "Sheffield W",
+   "away": "Reading",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Reece James, Max Lowe, Onyango och Burstow borta; Cooper tillbaka men kräver test. Obesegrade i ligan under nye tränaren Challinor.",
+    "Bortalag: Paddy Lane och Benn Ward borta; Lisbie och Roberts tillbaka från avstängning. Tränaren Leam Richardson under press.",
+    "Form/tabell: Wednesday 4:a (27 p), Reading 9:e med tre raka förluster och bara en bortaseger."
+   ],
+   "lineup": "",
+   "take": "Strecket (53 %) överbetar 1:an kraftigt mot oddsen (39 %) och underbetar 2:an (23 % mot 35 %). Formen talar för Wednesday men folket har redan tagit ut det – gardera.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 26 nov",
+     "url": "https://www.sportsmole.co.uk/football/sheffield-wednesday/preview/sheff-weds-vs-reading-prediction-team-news-lineups_609944.html"
+    },
+    {
+     "title": "The72, 26 nov",
+     "url": "https://the72.co.uk/2026/11/26/sheffield-wednesday-vs-reading-predictions/"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "home": "Wycombe",
+   "away": "Bradford",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Quitirna, Henderson och Ings borta; Casey och Leahy tillbaka från avstängning. Onyedinma osäker.",
+    "Bortalag: Ibou Touray avstängd; Pointon, Wright och Lapslie skadade, Sarcevic missar. Ligans bästa försvar (10 nollor på 15).",
+    "Form/tabell: Wycombe 15:e, Bradford 6:e efter 3–0 mot Barnsley. Bradfords tränare Duff möter sin gamla klubb."
+   ],
+   "lineup": "",
+   "take": "Strecket underbetar 1:an (36 % mot 41 %) och överbetar krysset (31 % mot 28 %). Wycombe får tillbaka två startspelare.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 26 nov",
+     "url": "https://www.sportsmole.co.uk/football/wycombe-wanderers/preview/wycombe-vs-bradford-prediction-team-news-lineups_609947.html"
+    }
+   ]
+  }
+ ]
+}
