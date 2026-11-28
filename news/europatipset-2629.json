@@ -1,0 +1,416 @@
+{
+ "game": "Europatipset",
+ "draw": 2629,
+ "round": "Europatipset v 48, stänger 2026-11-29 14:59",
+ "author": "Claude (schemalagd)",
+ "updatedAt": 1795856164276,
+ "checkedAt": {
+  "d": "2026-11-28T09:56:04+01:00"
+ },
+ "matches": [
+  {
+   "n": 1,
+   "home": "Arsenal",
+   "away": "Manchester City",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Saka (lår) och Zubimendi (hamstring) borta till strax före jul. Raya (axel) frågetecken men Arteta säger att besvären lättat. Dowman tillbaka efter avstängning.",
+    "Bortalag: Fullt friskt utom Semenyo (knä).",
+    "Form/tabell: Arsenal 1:a, sex poäng före City; fem vinster och ett kryss senaste sex i ligan, alla fem hemmamatcher vunna. City har 1 poäng av senaste 12 (tre raka förluster, sedan 1–1 mot Fulham). Båda spelade 1–1/2–2 i CL i veckan."
+   ],
+   "lineup": "",
+   "take": "Arsenal favoriter med stark hemmaform mot ett City i formsvacka, men skadorna på Saka/Zubimendi är kända och prissatta. Strecket överspelar 1 (54 mot 49) och X (29 mot 25) medan 2:an är understreckad (17 mot 26).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 27 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/arsenal/preview/arsenal-vs-man-city-prediction-team-news-lineups_609996.html"
+    },
+    {
+     "title": "Sports Mole (PL-skadelista omg 12), 27 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/feature/premier-league-team-news-injuries-suspensions-and-doubts-for-gameweek-12_610012.html"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "home": "Sunderland",
+   "away": "Tottenham",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Stor skadelista: Mundle, Ballard, Diarra, Xhaka och Brobbey borta; Methalie (sjuk) och Alderete (knäck) osäkra; Danso (lån från Spurs) får inte spela. Spelade Europa League i torsdags (1–1 mot Jagiellonia).",
+    "Bortalag: Simons, Odobert, Tel, Mudryk och Savinho borta; Adarabioyo och Bergvall osäkra. Tonali tillbaka. Ingen Europaspel – full vecka att förbereda.",
+    "Form/tabell: Sunderland 18:e (i nedflyttningsstrecket på målskillnad), en vinst senaste sex men tre nollor senaste fyra. Spurs 10:e, fyra vinster senaste sex."
+   ],
+   "lineup": "",
+   "take": "Spurs i bättre form och utvilade mot ett skadedrabbat Sunderland, men nyheterna är kända. Strecket överspelar 2:an kraftigt (57 mot 47) – 1 och X är understreckade och kan ge värde.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 27 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/sunderland/preview/sunderland-vs-spurs-prediction-team-news-lineups_609983.html"
+    },
+    {
+     "title": "Sports Mole (PL-skadelista omg 12), 27 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/feature/premier-league-team-news-injuries-suspensions-and-doubts-for-gameweek-12_610012.html"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "home": "Brighton",
+   "away": "Newcastle",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Costinha avstängd (rött kort). Borta: Ferguson, Mitoma, Yalcouye, Tzimas, Yohanna; Hadjam, O'Riley, Azeez osäkra, Boscagli kan återvända. Vann 4–0 i Conference League i torsdags.",
+    "Bortalag: Målvakten Jaouen (hamstring) och Joelinton borta.",
+    "Form/tabell: Brighton 2:a, obesegrade hemma men förlorade senast 0–2 hemma mot Hull. Newcastle 13:e, utan vinst i tre ligamatcher (senast 2–2 mot Arsenal)."
+   ],
+   "lineup": "",
+   "take": "Brighton klara favoriter, men flera skador och torsdagsmatch. Strecket överspelar 1:an (72 mot 62) – X och 2 är understreckade.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 27 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/brighton-and-hove-albion/preview/brighton-vs-newcastle-prediction-team-news-lineups_610048.html"
+    },
+    {
+     "title": "Sports Mole (PL-skadelista omg 12), 27 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/feature/premier-league-team-news-injuries-suspensions-and-doubts-for-gameweek-12_610012.html"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "home": "Crystal Palace",
+   "away": "Hull",
+   "impact": "high",
+   "notes": [
+    "Hemmalag: Mateta (sista matchen av avstängning) och Pino (5 gula) avstängda; Sarr (ljumske), Tomiyasu och Riad skadade. Ny tränare Thomas Frank – vann 2–1 mot Real Sociedad i EL i torsdags, kort återhämtning.",
+    "Bortalag: Morita, Gelhardt, Targett, Matazo, Iroegbunam borta; Hughes och Ansah osäkra.",
+    "Form/tabell: Palace sist, fem raka ligaförluster och insläppta mål fem raka matcher. Hull 11:e med 14 p, vann senast 2–0 borta mot Brighton."
+   ],
+   "lineup": "",
+   "take": "Palace saknar tre offensiva nyckelspelare och har kort vila; Sports Mole tippar 0–1. Oddsen (52 % 1:a) ser generösa ut för hemmalaget, och strecket (47/28/25) ligger något lägre på 1:an – gardering rekommenderas.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 27 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/crystal-palace/preview/crystal-palace-vs-hull-city-prediction-team-news-lineups_609984.html"
+    },
+    {
+     "title": "Sports Mole (PL-skadelista omg 12), 27 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/feature/premier-league-team-news-injuries-suspensions-and-doubts-for-gameweek-12_610012.html"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "home": "Fulham",
+   "away": "Bournemouth",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Smith Rowe (höft) och Andersen troligen borta, Lecomte ute säsongen.",
+    "Bortalag: Juanlu Sanchez och Toth borta, Araujo osäker, Kroupi kollas efter sjukdom. Spelade EL i torsdags (2–1 mot Celta Vigo).",
+    "Form/tabell: Fulham 15:e, obesegrade i fem ligamatcher men har gjort exakt ett mål sju raka matcher. Bournemouth 5:e, tio raka segrar i alla tävlingar, fyra nollor senaste fem i ligan."
+   ],
+   "lineup": "",
+   "take": "Bournemouth i toppform men med torsdagsmatch; Fulham svårslaget men ofarligt. Strecket överspelar 2:an kraftigt (48 mot 37) – 1:an (28 mot 36) är understreckad.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 27 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/fulham/preview/fulham-vs-bournemouth-prediction-team-news-lineups_609982.html"
+    },
+    {
+     "title": "Sports Mole (PL-skadelista omg 12), 27 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/man-utd/injury-news/feature/premier-league-team-news-injuries-suspensions-and-doubts-for-gameweek-12_610012.html"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "home": "Como",
+   "away": "Juventus",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Kean, Kambwala och Jesus Rodriguez borta; Addai och Diao osäkra, Caqueret stort frågetecken. Vann 1–0 mot AEK i CL i veckan.",
+    "Bortalag: Yildiz, Khephren Thuram och Locatelli borta; Nico Gonzalez osäker. Vann 4–1 mot Omonia i EL.",
+    "Form/tabell: Como 26 p på 12 matcher, fem vinster senaste sex; en vinst ger åtta poängs avstånd till Juve. Juventus 6:a, 11 p efter ledande Lazio, tre raka vinster i alla tävlingar."
+   ],
+   "lineup": "",
+   "take": "Juve saknar sin bästa spelare Yildiz plus två mittfältare, Como saknar Kean – Sports Mole tippar 1–1. Strecket ligger nära oddsen på 1:an men överspelar X (31 mot 26) och underspelar 2:an (22 mot 28).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Sports Mole, 27 nov 2026",
+     "url": "https://www.sportsmole.co.uk/football/como/preview/como-vs-juventus-prediction-team-news-lineups_610031.html"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "home": "Real Sociedad",
+   "away": "Sevilla",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Barrenetxea (till maj), Odriozola (korsband) och Yangel Herrera (vad) borta; Aramburu (höft) osäker. Spelade Europa mot Crystal Palace i veckan, Matarazzo väntas rotera (Sergio Gómez, Sucic, Soler, Óskarsson kan starta).",
+    "Bortalag: Carmona, Alfon González och Miguel Sierra skadade; Marcão tillbaka i träning. García Plaza väntas köra samma elva som i 1-1 mot Betis.",
+    "Form/tabell: Real Sociedad 5:a (22 p) efter 2-3 mot Racing; Sevilla 6:a (19 p). Sevilla kan knappa in till tre poäng."
+   ],
+   "lineup": "",
+   "take": "Jämnt möte där hemmalaget har skador och europatrötthet; 1:an är kraftigt överstreckad (72 % mot 45 % odds) och X/2 understreckade. Nyheterna är kända och troligen prisade.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "FútbolFantasy, 27 nov 2026",
+     "url": "https://www.futbolfantasy.com/partidos/22588-real-sociedad-sevilla"
+    },
+    {
+     "title": "Andalucía Información, 26 nov 2026",
+     "url": "https://www.andaluciainformacion.es/sevilla/sevilla-deportes/sevilla-planea-asalto-anoeta-alcanzar-real-sociedad/202611261922213550147.html"
+    },
+    {
+     "title": "Starting11, nov 2026",
+     "url": "https://starting11.com/fixtures/real-sociedad-vs-sevilla"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "home": "Dortmund",
+   "away": "Bayer Leverkusen",
+   "impact": "low",
+   "notes": [
+    "Hemmalag: Guirassy tillbaka efter muskelbesvär (inhoppare mot Arsenal) och är ett alternativ. Emre Can, Inacio och Kaba borta. 1-1 mot Arsenal i CL i veckan.",
+    "Bortalag: Leverkusen 5:a (19 p), tre raka segrar (2-1 Köln, 4-0 Paderborn, 2-0 Dinamo Zagreb i EL). Schick har gjort mål i nio av tio omgångar.",
+    "Form/tabell: BVB etta (24 p), obesegrade på tio ligaomgångar men har inte vunnit någon av de fem senaste ligamatcherna som serieledare. Förlorade båda hemmamötena mot Leverkusen förra säsongen."
+   ],
+   "lineup": "",
+   "take": "Inga stora nya frånvaron; Leverkusen i bra form. 1:an är kraftigt överstreckad (75 % mot 46 %), vilket gör X och 2 till värdetecken.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "BVB.de, 27 nov 2026",
+     "url": "https://www.bvb.de/de/en/news/news-overview/news.html/2026/11/27/Kovac-Ahead-of-Leverkusen-Its-Tough-to-Play-Against-Dortmund.html"
+    },
+    {
+     "title": "footy.de, 27 nov 2026",
+     "url": "https://footy.de/2026/11/27/waere-fuer-sonntag-eine-option-kovac-update-zum-bvb-personal"
+    }
+   ]
+  },
+  {
+   "n": 9,
+   "home": "FC Köpenhamn",
+   "away": "Midtjylland",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Ákos Markgráf avstängd (direkt rött) och Mads Emil Madsen avstängd (gula kort). Målvakten Diant Ramaj osäker, Rúnarsson ersätter i så fall.",
+    "Bortalag: Ousmane Diao (fot) troligen borta, Kjell Wätjen (lår) och Philip Billings (sjuk) osäkra. Erlic och Gogorza tillbaka; vann 2-0 mot Pafos i Conference League torsdag.",
+    "Form/tabell: Topptopp – FCK leder tre poäng före obesegrade FCM. Parken väntas vara slutsålt."
+   ],
+   "lineup": "",
+   "take": "Båda lagen har frånvaro och FCM spelade på Cypern i torsdags. 1:an är överstreckad (60 % mot 48 %) och 2:an tydligt understreckad (15 % mot 27 %).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "PLbold, 23 nov 2026",
+     "url": "https://www.plbold.dk/nyhed/fck-maa-undvaere-stjerner-mod-fc-midtjylland/"
+    },
+    {
+     "title": "Campo, 24 nov 2026",
+     "url": "https://campo.dk/2026/11/24/tullberg-frygter-skader-til-fcm-profiler-misser-de-fck-brag/"
+    },
+    {
+     "title": "Tipsbladet, 26 nov 2026",
+     "url": "https://www.tipsbladet.dk/nyhed/conference-league/uh-han-ser-spaendende-ud-mike-tullberg"
+    },
+    {
+     "title": "Placar, 26 nov 2026",
+     "url": "https://placar.com.br/futebol-europeu/fc-midtjylland-vence-o-pafos-fora-de-casa-pela-conference-league/"
+    }
+   ]
+  },
+  {
+   "n": 10,
+   "home": "Västerås",
+   "away": "Hammarby",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Elis Jäger och Ismet Lushaku klara för säsongen; Herman Magnusson osäker efter smäll mot GAIS. VSK 6:a (45 p) och har inget avgörande att spela för.",
+    "Bortalag: Hammarby 61 p, samma som Sirius men +15 bättre målskillnad – seger ger första SM-guldet på 25 år. Skyttekungen Paulos Abraham (krampkänning) tränade vid sidan torsdag; Boudri skadad.",
+    "Form/tabell: Omgång 30 av 30, alla matcher 15:00. Hammarby vann 3-1 mot IFK Göteborg i senaste."
+   ],
+   "lineup": "",
+   "take": "Maximal motivation för Hammarby mot ett VSK utan något att spela för; Abrahams status är enda frågetecknet. Streck 79 % mot 74 % odds – lätt överstreckad men rimlig spik.",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Fotbollskanalen, 25 nov 2026",
+     "url": "https://www.fotbollskanalen.se/artiklar/allsvenskan/vsk-smallar-infor-bajen-sasongen-over"
+    },
+    {
+     "title": "Bollsvenskan, 25 nov 2026",
+     "url": "https://bollsvenskan.se/vsk-utan-jager-och-lushaku-i-avslutningen-magnusson-osaker-infor-hammarby/"
+    },
+    {
+     "title": "Bollsvenskan, 26 nov 2026",
+     "url": "https://bollsvenskan.se/skyttekungen-tranade-vid-sidan-infor-guldavgorandet-abrahams-krampkanning-oroar-hammarby/"
+    },
+    {
+     "title": "HurBra, 26 nov 2026",
+     "url": "https://hurbra.se/allsvenskan-29-november-2026/"
+    },
+    {
+     "title": "TVmatchen, 23 nov 2026",
+     "url": "https://www.tvmatchen.nu/sport/fotboll/allsvenskan-resultat-23-november-2026/"
+    }
+   ]
+  },
+  {
+   "n": 11,
+   "home": "IFK Göteborg",
+   "away": "Sirius",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: IFK 10:a (39 p), inget att spela för i tabellen men tränare Björklund och spelarna (Tolf, Thordarson) säger att de inte vill se Sirius lyfta pokalen på Ullevi – 'handlar om stolthet'. Mot Hammarby saknades Fenger (sjuk), Sam Larsson (skadad), Heintz och Bager (avstängda); oklart om de är tillbaka.",
+    "Bortalag: Sirius 61 p men +15 sämre målskillnad än Hammarby – måste vinna och hoppas att Bajen tappar. Åke Andersson och Otso Liimatta borta; Melker Heier tillgänglig efter ett litet ingrepp på stortån.",
+    "Form/tabell: Sirius har tappat en ledning på 14 poäng under hösten. Sista omgången."
+   ],
+   "lineup": "",
+   "take": "Sirius har maximal motivation men tappar form och har frånvaro, IFK är laddade för att stoppa guldfest. Strecket ligger nära oddsen (59 % mot 56 % på 2).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Bollsvenskan, 25 nov 2026",
+     "url": "https://bollsvenskan.se/heier-jag-ar-tillganglig-ingrepp-pa-stortan-infor-sirius-guldavgorande-ake-andersson-missar/"
+    },
+    {
+     "title": "Fotbollskanalen, 23 nov 2026",
+     "url": "https://www.fotbollskanalen.se/artiklar/allsvenskan/bjorklunds-skamt---mitt-i-guldstriden-ska-rulla-ut-juniorlaget"
+    },
+    {
+     "title": "Bollsvenskan, 23 nov 2026",
+     "url": "https://bollsvenskan.se/fenger-sjuk-missar-hammarby-larsson-skadad-heintz-och-bager-avstangda/"
+    },
+    {
+     "title": "TV4, nov 2026",
+     "url": "https://www.tv4.se/artikel/7tkMNEWpbqBoZ4Yd5nR81r/guldrysaren-i-allsvenskan-har-redan-bokat-segerfesten"
+    }
+   ]
+  },
+  {
+   "n": 12,
+   "home": "Djurgården",
+   "away": "Häcken",
+   "impact": "medium",
+   "notes": [
+    "Hemmalag: Djurgården 3:a (52 p, +28) – oavgjort räcker för bronset (europaplats). Två raka förluster (Halmstad, Sirius) och bråk med klacken efter Sirius-matchen, nu enligt Ståhl uppklarat. Fallenius avtackas.",
+    "Bortalag: Häcken 4:a (52 p, +18) måste vinna. Stark form: 6 vinster, 1 oavgjord, 1 förlust på senaste åtta, insläppt mål i bara två av dem.",
+    "Form/tabell: Inga rapporterade avstängningar för något av lagen. Fotbollskanalens tipsare väljer X2."
+   ],
+   "lineup": "",
+   "take": "Djurgården i sämre form och räcker med kryss, Häcken i stark form och måste gå för seger. 1:an överstreckad (60 % mot 48 %), 2:an understreckad (20 % mot 28 %).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Fotbollskanalen, 26 nov 2026",
+     "url": "https://www.fotbollskanalen.se/artiklar/topptipset/det-talar-for-hacken-i-bronsmatchen-mot-djurgarden"
+    },
+    {
+     "title": "Bollsvenskan, 26 nov 2026",
+     "url": "https://bollsvenskan.se/stahl-om-uppgorelsen-med-klacken-infor-hacken-det-kommer-sjungas-javel-vi-kommer-komma-ut-superladdade/"
+    },
+    {
+     "title": "HurBra, 26 nov 2026",
+     "url": "https://hurbra.se/allsvenskan-29-november-2026/"
+    }
+   ]
+  },
+  {
+   "n": 13,
+   "home": "Degerfors",
+   "away": "Örgryte",
+   "impact": "high",
+   "notes": [
+    "Hemmalag: Degerfors sist (21 p) – måste vinna och samtidigt hoppas att Halmstad inte vinner mot Mjällby för att nå kval; annars direkt nedflyttning. Kaptenen Daniel Sundgren och Yiriyon Gideon avstängda; Pikkarainen och Hedén Lindskog skadade. Kazper Karlsson och Sebastian Ohlsson tillbaka från sjukdom.",
+    "Bortalag: Örgryte 14:e (23 p, kvalplats) – förlust betyder direkt nedflyttning, oavgjort ger kval om Halmstad inte vinner. Michael Parker skadade knät på fredagsträningen men är inte uträknad; Styffe tillbaka, Abukar långtidsskadad. Vann 3-2 mot Kalmar senast.",
+    "Form/tabell: Ren ödesmatch i botten, båda lagen behöver resultat."
+   ],
+   "lineup": "",
+   "take": "Degerfors har avstängningar och måste vinna, Örgryte kan i vissa lägen nöja sig med kryss. Strecket överskattar 2:an (34 % mot 25 %) och underskattar X (22 % mot 27 %).",
+   "suggest": [
+    0,
+    0,
+    0
+   ],
+   "sources": [
+    {
+     "title": "Bollsvenskan, 27 nov 2026",
+     "url": "https://bollsvenskan.se/nu-ar-det-viktigt-att-alla-sluter-upp-salman-infor-degerfors-odesmatch-karlsson-och-ohlsson-tillbaka-sundgren-avstangd/"
+    },
+    {
+     "title": "Bollsvenskan, nov 2026",
+     "url": "https://bollsvenskan.se/parker-skadade-sig-pa-oisgardens-konstgras-infor-degerfors-avgorandet-det-ar-inte-kort-att-han-kan-spela/"
+    },
+    {
+     "title": "TVmatchen, 23 nov 2026",
+     "url": "https://www.tvmatchen.nu/sport/fotboll/allsvenskan-resultat-23-november-2026/"
+    },
+    {
+     "title": "HurBra, 26 nov 2026",
+     "url": "https://hurbra.se/allsvenskan-29-november-2026/"
+    }
+   ]
+  }
+ ]
+}
